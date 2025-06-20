@@ -275,3 +275,209 @@
         @endif
     </body>
 </html>
+
+
+
+
+<!-- Start Navbar Area Start -->
+        <div class="navbar-area style-2" id="navbar scrollsmoother-container">
+
+            <div class="bg-white">
+                <!-- Start Top Navbar Area -->
+                <div class="top-area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-5 col-12 col-xm-12">
+                                <div class="top-left-items">
+                                    <ul>
+                                        <li><i class='bx bxs-time'></i> Mon - Fri: 9:00 - 18:00</li>
+                                        <li><i class='bx bxs-envelope'></i> <a href="#">contact@Canyonme.edu</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-12 col-xm-12">
+                                <div class="top-right-items">
+                                    <ul>
+                                        <li><i class='bx bxs-map'></i> <a href="contact-us.html">Visit Us</a></li>
+                                        <li><a href="student-activities.html">Students</a></li>
+                                        <li><a href="faculty.html">Faculty & Staff</a></li>
+                                        <li><a href="alumni.html">Alumni</a></li>
+                                        <li><a href="the-campus-experience.html">Visitors</a></li>
+                                        <li><a href="online-education.html">Media</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Navbar Area -->
+            </div>
+
+            <div class="container-fluid bg-white">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="logo-light" src="{{ asset('img/logo/fuo-logo.png') }}" alt="logo">
+                        <img class="logo-dark" src="{{ asset('img/logo/fuo-logo.png') }}" alt="logo">
+                    </a>
+                    <div class="other-option d-lg-none">
+                        <div class="option-item">
+                            <button type="button" class="search-btn" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                                <i class='bx bx-search'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+                        <i class='bx bx-menu'></i>
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <ul class="navbar-nav ms-auto">
+                            <!-- {{-- <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link active">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Home One</a></li>
+                                    <li class="nav-item"><a href="index2.html" class="nav-link active">Home Two</a></li>
+                                    <li class="nav-item"><a href="index3.html" class="nav-link">Home Three</a></li>
+                                </ul>
+                            </li> --}} -->
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    The University
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="about-us.html" class="nav-link">About Board of Trustees</a></li>
+                                    <li class="nav-item">
+                                        <a href="news-and-blog.html" class="nav-link sub-menu">University Board of Trustees</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of FUO BOT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Governing Council</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Directory of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Decision Extracts</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Committees of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Schedule of Meetings</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">The Senate</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Congragation</a></li>
+                                    <li class="nav-item">
+                                        <a href="alumni.html" class="nav-link">Administration</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">The Vice-Chancellor </a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Registrar</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Bursar</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Librarian</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Campus</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Gallery</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Staff Downloads</a></li>
+                                    <li class="nav-item">
+                                        <a href="alumni.html" class="nav-link">Resources</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">General Downloads </a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Students' Downloads</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Academics
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                                    <li class="nav-item"><a href="undergraduate.html" class="nav-link">Undergraduate</a></li>
+                                    <li class="nav-item"><a href="graduate.html" class="nav-link">Graduate</a></li>
+                                    <li class="nav-item"><a href="online-education.html" class="nav-link">Online Education</a></li>
+                                    <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Admissions
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="admission.html" class="nav-link">Admissions</a></li>
+                                    <li class="nav-item"><a href="how-to-apply.html" class="nav-link">How to Apply</a></li>
+                                    <li class="nav-item"><a href="tuition-fees.html" class="nav-link">Tuition & Fees</a></li>
+                                    <li class="nav-item"><a href="financial-aid.html" class="nav-link">Financial Aid</a></li>
+                                    <li class="nav-item"><a href="date-deadlines.html" class="nav-link">Date & Deadlines</a></li>
+                                    <li class="nav-item"><a href="schedule-tour.html" class="nav-link">Schedule a Tour</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Colleges & Centres
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="courses.html" class="nav-link">Courses Sidebar</a></li>
+                                    <li class="nav-item"><a href="courses-details.html" class="nav-link">Course Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    University Life
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a href="university-life.html" class="nav-link">University Life</a></li>
+                                    <li class="nav-item"><a href="the-campus-experience.html" class="nav-link">The Campus Experience</a></li>
+                                    <li class="nav-item"><a href="fitness-athletics.html" class="nav-link">Fitness & Athletics</a></li>
+                                    <li class="nav-item"><a href="support-guidance.html" class="nav-link">Support & Guidance</a></li>
+                                    <li class="nav-item"><a href="student-activities.html" class="nav-link">Student Activities</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact-us.html" class="nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="others-option d-flex align-items-center">
+                            <div class="option-item">
+                                <div class="nav-btn">
+                                    <a href="{{ 'https://eportal.fuo.edu.ng' }}" class="default-btn" target="_blank">PORTALS</a>
+                                </div>
+                            </div>
+                            <div class="option-item">
+                                <div class="nav-search">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" class="search-button"><i class='bx bx-search'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Navbar Area Start -->
+
+
+        <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                    <h2></h2>
+                    <h4></h4>
+                    <p>
+                        Fountain University was granted an operational license as a Private
+                        University on May 17, 2007, by the Federal Government on the
+                        recommendations of the National Universities Commission.
+                        Following this achievement, a  Strategic implementation
+                        Committee was set up to serve as “in loco Council” to actualize
+                        the birth of the University. This Committee worked tirelessly
+                        to put in place the necessary facilities for the University
+                        to take off.
+                    <p>
+                        The desire of the Nasrul-Lahi-Il-Fatih Society  (NASFAT) to establish a
+                        University was borne out of its educational policy and plan enunciated
+                        at its strategic Retreat held at Akodo, Lagos, in the year 2000.
+                        From this humble beginning, the Society started a systematic
+                        process which led to the hosting of an academic summit of 30
+                        Distinguished Academic Personalities from where an 18-person
+                        University Planning Committee emerged in January 2004.
+                    </p>
+                </div>

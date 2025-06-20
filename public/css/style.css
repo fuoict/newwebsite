@@ -224,7 +224,7 @@ a.white-under-btn {
 
 .section-title .sub-title p{
   font-size: 20px;
-} 
+}
 
 .section-title-2 .sub-title p{
   font-size: 20px;
@@ -409,7 +409,7 @@ Banner Area CSS
   height:750px;
   position: relative;
 }
-.big-bg-1::before {    
+.big-bg-1::before {
 	position: absolute;
     content: "";
     left: 0;
@@ -461,7 +461,7 @@ Banner Area 2 CSS
   padding-top: 250px;
   padding-bottom: 200px;
 }
-.big-bg-2::before {    
+.big-bg-2::before {
 	position: absolute;
     content: "";
     left: 0;
@@ -576,7 +576,7 @@ Slider Banner Area CSS
 =================================================*/
 
 .slider-bg-1{
-  background-image: url(../img/banner/bg-Image-2.jpg);
+  background-image: url(../img/banner/banner1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -584,7 +584,26 @@ Slider Banner Area CSS
   position:relative;
   padding-bottom: 100px;
 }
-.slider-bg-1::before {    
+.slider-bg-1::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-2{
+  background-image: url(../img/banner/banner5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-2::before {
 	position: absolute;
     content: "";
     left: 0;
@@ -930,15 +949,15 @@ About Us Area 2 CSS
 }
 
 .about-us-area-2 .content-items .image.ct-bg-1{
-  background-image: url(../img/all-img/about-image-2.png);
+  background-image: url(../img/all-img/Professor-Olayinka-Ramota-Karim2.jpg);
 }
 
 .about-us-area-2 .content-items .image.ct-bg-2{
-  background-image: url(../img/all-img/about-image-3.png);
+  background-image: url(../img/all-img/Professor-Olayinka-Ramota-Karim2.jpg);
 }
 
 .about-us-area-2 .content-items .image.ct-bg-3{
-  background-image: url(../img/all-img/about-image-4.png);
+  background-image: url(../img/all-img/Professor-Olayinka-Ramota-Karim2.jpg);
 }
 
 .about-us-area-2 .content-items .content {
@@ -3056,7 +3075,7 @@ Blog Area CSS
   color: var(--mainColor);
   position: relative;
   font-weight: 500;
-  
+
 }
 
 .blog-single-card .content .butn i{
@@ -4640,7 +4659,7 @@ Subscribe Area CSS
   background-repeat: no-repeat;
   background-position: center;
 }
-.subscribe-area::before {    
+.subscribe-area::before {
 	position: absolute;
     content: "";
     left: 0;
@@ -4864,7 +4883,7 @@ Footer Area CSS
 }
 
 .copy-right-area .cpr-left{
- 
+
 }
 
 .copy-right-area .cpr-left p{
@@ -4928,7 +4947,7 @@ Footer Area CSS
 .copy-right-area.style-2 .cpr-right ul li a{
   color: var(--whiteColor);
  }
- 
+
 .copy-right-area.style-2 {
   padding-top: 40px;
 }
