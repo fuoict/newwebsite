@@ -1,0 +1,4460 @@
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  .ptb-100 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .pt-100 {
+    padding-top: 60px;
+  }
+  .pb-100 {
+    padding-bottom: 60px;
+  }
+  .ptb-70 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .pt-70 {
+    padding-top: 30px;
+  }
+  .pb-70 {
+    padding-bottom: 30px;
+  }
+  .default-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .section-title .sub-title p {
+    font-size: 16px;
+  }
+  .section-title .sub-title i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .section-title .sub-title {
+    margin-bottom: 15px;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .section-btn a i {
+    display: none;
+  }
+  .section-title-3 .sub-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .section-title-3 h2 {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+  .section-title-3 .default-btn {
+    top: 116%;
+    left: 0;
+    text-align: center;
+  }
+  .section-title-3.text-start {
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+
+/* index page */
+  .big-bg-1 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .banner-content .content {
+    top: 35px;
+    padding: 0px 30px;
+  }
+  .banner-content .content h1 {
+    font-size: 24px;
+  }
+  .white-shape {
+    height: 290px;
+    width: 100%;
+    border-bottom: 10px solid #dd0733;
+  }
+  .banner-content-2 .content h1 {
+    font-size: 38px;
+  }
+  .banner-content-2 .content span{
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .banner-content-2 .content p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .big-bg-2 {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+  .banner-content-2 .content .scroll-down a {
+    padding: 0px 18px;
+    font-size: 30px;
+  }
+  .banner-content-2 .content .buttons-action {
+    margin-bottom: 70px;
+  }
+  .slider-bg-1{
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .slider-content .content .text h1 {
+    font-size: 30px;
+  }
+  .slider-content .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .slider-content .content .short-info h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .slider-content .content .text hr {
+    border: 1px solid var(--whiteColor);
+    margin-bottom: 50px;
+  }
+  .zoom-x{
+    animation: none;
+  }
+  .white-shape::after {
+    display: none;
+  }
+  .slider-courser .owl-theme .owl-nav [class*=owl-], .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+  .slider-courser:hover .owl-nav {
+    bottom: 8%;
+  }
+  .undergraduate-area .item .content{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .undergraduate-area .item{
+    margin-bottom: 30px;
+  }
+  .undergraduate-area .row .col-lg-4:last-child .undergraduate-area .item{
+    margin-bottom: 0px;
+  }
+  a.white-under-btn {
+    margin-bottom: 15px;
+    display: block;
+  }   
+  .undergraduate-area .item .content h3{
+    font-size: 22px;
+  }
+  .undergraduate-area .item .content-2 {
+    text-align: center;
+  }
+  .undergraduate-area .item .content-2 .default-btn{
+    margin: 0;
+  }
+  .academics-item {
+    padding: 35px 30px;
+    margin-bottom: 30px;
+  }
+  .academics-item h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .academics-item p {
+    margin-bottom: 20px;
+  }
+  .academics-area .row .col-lg-4:last-child .academics-item{
+    margin-bottom: 0px;
+  }
+  .about-us-area-2 .section-title p {
+    font-size: 14px;
+  }
+  .about-us-area .content .sub-title {
+    margin-bottom: 20px;
+  }
+  .about-us-area .content .sub-title i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .about-us-area .content {
+    padding-left: 0px;
+  }
+  .about-us-area .text-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-us-area .text-content .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-us-area .text-content .sub-title i {
+    font-size: 25px;
+  }
+  .about-us-area .text-content .sub-title p {
+    font-size: 16px;
+  }
+  .about-us-area .text-content{
+    margin-bottom: 30px;
+  }
+  .academics-item a i {
+    right: -25px;
+    font-size: 20px;
+  }
+  .about-us-area .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-us-area .content {
+    margin-bottom: 30px;
+  }
+  .about-us-area .content .sub-title p {
+    font-size: 16px;
+  }
+  .about-us-area .content img {
+    width: 100%;
+  }
+  .about-university {
+    padding: 60px 0;
+  }
+  .about-university .sub-title p {
+    font-size: 16px;
+  }
+  .about-university .sub-title, .about-university .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-university .content{
+    margin-bottom: 40px;
+  }
+  .about-university .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about-us-area-2 .content-items .image {
+    width: 100%;
+    padding: 100px 100px;
+  }
+  .about-us-area-2 .content-items .content span {
+    font-size: 16px;
+  }
+  .about-us-area-2 .content-items .content {
+    padding: 40px 22px;
+    position: initial;
+  }
+  .about-us-area-2 .content-items .content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .find-degree .content-2 {
+    padding: 20px 20px;
+  }
+  .find-degree .content-image {
+    padding: 200px 100px;
+  }
+
+  .banner-content-2 .content .vertical-lr {
+    display: none;
+  }
+
+  .content-items .content span {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .content-items .content h2 {
+    font-size: 30px;
+  }
+  .content-items .content {
+    padding: 30px 20px;
+    position: initial;
+  }
+  .campus-experience-area{
+    padding-bottom: 30px;
+  }
+  .campus-experience-area .content span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .campus-experience-area .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .campus-experience-area .image {
+    margin-bottom: 40px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info {
+    margin-bottom: 20px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .image {
+    margin-bottom: 0px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .text h5 {
+    font-size: 18px;
+  }
+  .campus-experience-area .content .comment-box-info {
+    padding: 30px 30px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .icon {
+    top: 230px;
+  }
+
+  .campus-tour .content {
+    padding: 40px 15px;
+  }
+  .campus-tour .content h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .campus-tour .content .sub-title p{
+    font-size: 16px;
+  }
+  .campus-tour .content .sub-title{
+    margin-bottom: 15px;
+  }
+  .campus-tour .image {
+    padding: 100px;
+  }
+  .campus-tour .content p {
+    margin-bottom: 20px;
+  }
+  .campus-tour .content .sub-title i{
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+  .scholarship-area .content h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .success-award-area .content span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .success-award-area .content {
+    padding-right: 0;
+  }
+  .success-award-area .content .notice {
+    padding: 20px 40px;
+    margin-bottom: 30px;
+  }
+  .success-award-area .content .notice p {
+    font-size: 15px;
+  }
+  .success-award-area .content .notice i {
+    left: 15px;
+    top: 25px;
+  }
+  .success-award-area .content .arrow {
+    display: none;
+  }
+
+  .subscribe-area-3 {
+    padding-bottom: 301px !important;
+  }
+  .subscribe-area-3 .content span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .subscribe-area-3 .content h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  } 
+  .subscribe-area-3 .image {
+    bottom: -2%;
+    left: 15%;
+    right: 15%;
+  }
+  .subscribe-area-3 .content .signup {
+    height: 55px;
+  }
+  .subscribe-area-3 .content .signup .email-signup {
+    height: 30px;
+    padding: 0px 5px 0px 8px;
+    width: 155px;
+    font-size: 14px;
+  }
+  .subscribe-area-3 .content .signup .btn {
+    height: 44px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .success-award-area .content h2 {
+    font-size: 30px;
+  }
+
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 18px;
+    padding-left: 60px;
+  }
+  .footer-area-3 .footer-top-info .left-content {
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+  }
+  .footer-area-3 .footer-top-info .left-content p i {
+    font-size: 50px;
+    top: 0px;
+  }
+  .footer-area-3 .footer-top-info .left-content p a {
+    display: block;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    top: -40px;
+    right: 37%;
+  }
+  .footer-area-3 .footer-top-info .right-content {
+    text-align: center;
+  }
+  .footer-area-3 .footer-top-info .right-content ul li a {
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+  }
+
+  .faculty-area-3 .content span {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .faculty-area-3 .content h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+
+  .features-content-2 .sub-title p{
+    font-size: 16px;
+  }
+  .features-content-2 .academic-content {
+    position: initial;
+    padding-right: 0px;
+  }
+
+  .academic-item {
+    margin-bottom: 30px;
+  }
+  .academic-item:last-child{
+    margin-bottom: 30px;
+  }
+
+  .video-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .video-play-area .contant p {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .video-play-area .contant img {
+    display: none;
+  }
+  .video-play-area .play-button{
+    position: inherit;
+  }
+  .video-play-area .contant {
+    text-align: left;
+  }
+  .video-play-area .play-button {
+    padding: 12px;
+  }
+  .features-area.pt-100 {
+    padding-top: 0px;
+  }
+  .features-content.pb-70 {
+    padding-bottom: 60px;
+  }
+  .features-content.pt-70 {
+    padding-top: 60px;
+  }
+  .features-content{
+    padding-bottom: 60px;
+  }
+  .features-content .sub-title, .features-content-2 .sub-title {
+    margin-bottom: 20px;
+  }
+  .features-content .sub-title p {
+    font-size: 16px;
+  }
+  .features-content .sub-title i, .features-content-2 .sub-title i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .features-content .content h2, .features-content-2 .content h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .features-content .image {
+    position: inherit;
+  }
+  .features-content .content {
+    margin-bottom: 30px;
+  }
+  .features-content .content .item, .features-content-2 .content .item{
+    display: inline-flex;
+    margin: 20px 0;
+  }
+  .features-content .content .item .icon img, .features-content-2 .content .item .icon img {
+    left: 13px;
+    top: 12px;
+  }
+  .features-content .content .item .icon, .features-content-2 .content .item .icon {
+    height: 50px;
+    width: 190px;
+    margin-right: 15px;
+  }
+  .features-content-2 .content .arrow-icon {
+    display: none;
+  }
+  .features-content-2 .academic-content {
+    margin-top: 30px;
+  }
+  .faculty-area-2 .heading h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .faculty-area-2 .content p{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .faculty-area-2 .button {
+    text-align: center;
+  }
+
+  .find-degree .d-row {
+    display: inline-block;
+    width: 100%;
+  }
+  .find-degree .content-1 h4 {
+    font-size: 18px;
+  }
+  .find-degree .content-1 {
+    padding: 14px 10px;
+  }
+  
+  .find-degree .content-image .content h5 {
+    font-size: 14px;
+  }
+  .find-degree .content-image .content h3 {
+    font-size: 30px;
+  }
+  .find-degree .content-image .content h4 {
+    font-size: 25px;
+  }
+  .find-degree .content-image .content .btn {
+    font-size: 14px;
+  }
+  
+  .find-degree .content-image .content {
+    top: 8%;
+  }
+  .find-degree .content-1 .search-key .form-control {
+    font-size: 14px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .find-degree .d-row .d-col-1 {
+     width: 100%;
+     margin-bottom: 30px;
+  }
+  .find-degree .d-row .d-col-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .find-degree .d-row .d-col-3 {
+    width: 100%;
+  }
+
+  .global-alumni-events .global-content-items .content {
+    padding: 30px 30px;
+    position: inherit;
+  }
+  .global-alumni-events .global-content-items .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  } 
+  .global-alumni-events .global-content-items .content p {
+    margin-bottom: 20px;
+  }
+  .global-alumni-events .image {
+    padding: 120px 110px;
+  }
+
+
+  .news-content ul {
+    padding: 0px 0px;
+  }
+  .news-content ul li {
+    display: inline-block;
+  }
+  .news-item .sub-title i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .news-item .content h2 {
+    font-size: 18px;
+    margin-bottom: 15px
+  }
+  .news-item .sub-title {
+    margin-bottom: 15px;
+  }
+  .news-item .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .news-item .content .btn {
+    font-size: 14px;
+  }
+  .news-item .content p {
+    margin-bottom: 15px;
+  }
+  .news-content-right .content-box .content h3 {
+    font-size: 20px;
+  }
+  .news-content-right .content-box .content {
+    padding: 30px 22px;
+  }
+  .news-content-right .content-box .content .btn {
+    font-size: 14px;
+  }
+  .news-content ul li .image {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .news-content-item .content-box {
+    align-items: center;
+  }
+  .news-content-item .content-box .image {
+    width: 70%;
+  }
+  .news-content-item .content-box .content .sub-title i {
+    font-size: 22px;
+    top: 25px;
+    right: -5px;
+  }
+  .news-content-item .content-box .content h3 {
+    font-size: 16px;
+  }
+  .news-content-item .content-box {
+    padding-bottom: 20px;
+    padding-top: 15px;
+    align-items: center;
+  }
+  .news-content-item {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .faculty-area .content {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .faculty-area .row .col-lg-6:last-child .content{
+    margin-bottom: 0;
+  }
+  .faculty-area .content .icon {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .faculty-area .content .text {
+    padding: 0 15px;
+    text-align: center;
+  }
+  .quick-search {
+    background-position: left top;
+  }
+  .quick-search .course-search-box {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+  .quick-search .quick-content .sub-title {
+    margin-bottom: 15px;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  } 
+  .quick-search .quick-content .sub-title i {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .quick-search .course-search-box .search-key .form-control{
+    height: 50px;
+    font-size: 14px
+  }
+  .quick-search .course-search-box .search-key .form-select {
+    padding: 15px 15px;
+    font-size: 14px;
+  }
+  .quick-search .quick-content .list .list-items ul {
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+  .quick-search .quick-content .list .list-items ul li {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  .quick-search .quick-content .list .list-items ul li i {
+    font-size: 22px;
+    top: 2px;
+  }
+  .quick-search .quick-content .sub-title p {
+    font-size: 16px;
+  }
+  .quick-search .quick-content .list {
+    margin-bottom: 20px;
+  }
+  .quick-search .quick-content .apply-banner p {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .apply-banner .row .col-lg-6.text-end:last-child{
+    text-align: center !important;
+  }
+  .quick-search .quick-content .user-exprience .user-info {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .quick-search .quick-content .user-exprience .exprience {
+    justify-content: center;
+  }
+  .quick-search.style-2 .quick-content {
+    padding-left: 0px;
+  }
+  .quick-content {
+    padding-left: 0;
+}
+  .activities-card {
+    margin-bottom: 30px;
+  }
+  .activities-card .content {
+    padding: 20px 20px;
+  }
+  .activities-card .content h2 {
+    font-size: 18px;
+  }
+  .activities-card .content .btn {
+    font-size: 14px;
+  }
+  .activities-area .row .col-lg-4:last-child .activities-card{
+    margin-bottom: 0;
+  }
+  .activities-area .row .col-lg-4.pt-25{
+    padding-top: 0;
+  }
+  .activities-area .section-btn a i{
+    right: 20px;
+  }
+  .event .content{
+    display: inline-block;
+  }
+  .event .content .image {
+    width: 100%;
+  }
+  .event .content .image img {
+    width: 100%;
+  }
+  .event .content .text {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .event .content .text .tag {
+    margin-bottom: 20px;
+  }
+  .event .content .text .link {
+    top: 9%;
+  }
+  .event .content .text h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .event .content .text span {
+    margin-bottom: 15px;
+  }
+  .event .content .text::before {
+    left: 0px;
+  }
+  .recent-post .event .content .text {
+    width: 100%;
+  }
+  .upcoming-event .event-dates {
+    padding: 20px;
+  }
+  .upcoming-event .event-dates .date {
+    width: 50%;
+  }
+  .upcoming-event .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .campus-card .content h2{
+    padding: 8px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .success-area .section-title .sub-title p{
+    font-size: 14px;
+  }
+  .success-area .success-card {
+    margin-bottom: 30px;
+  }
+  .success-area .row .col-lg-4:last-child .success-card{
+    margin-bottom: 0px;
+  }
+  .success-area .success-card .play a {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    line-height: 47px;
+    font-size: 30px;
+    top: -140px;
+    left: 7px;
+  }
+  .success-area .success-card .play {
+    left: 5%;
+  }
+  .success-area .success-card .play::before {
+    height: 55px;
+    width: 55px;
+    top: -147px;
+    left: 0px;
+  }
+  .success-area .success-card ul li h3{
+    font-size: 20px;
+  }
+  .success-area .success-card ul {
+    padding: 0px 15px 0 15px;
+  }
+  .success-area.success-area-2{
+    border-radius: 0;
+    position: initial;
+  }
+  .success-award-area .image .play .button a {
+    height: 40px;
+    width: 40px;
+    line-height: 46px;
+    font-size: 30px;
+  }
+  .success-award-area .image .play .button a::before {
+    height: 55px;
+    width: 55px;
+    top: -7px;
+    left: -7px;
+  }
+
+  .banner-spacing{
+    padding: 200px 0 !important;
+    margin-bottom: 0;
+  }
+  .section-banner .section-info {
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    padding: 30px 20px;
+    max-width: 300px;
+    margin: auto;
+  }
+  .section-banner .section-info h2 {
+    font-size: 36px;
+  }
+
+  .about-alumni .content {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+  .about-alumni .content .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-alumni .content .sub-title i {
+    font-size: 25px;
+  }
+  .about-alumni .content .sub-title p {
+    font-size: 16px;
+  }
+  .about-alumni .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-alumni .image {
+    padding: 110px 150px;
+  }
+  
+
+  .slider-event.owl-theme .owl-nav [class*=owl-] {
+    left: 0px;
+    top: 112%;
+  }
+  .slider-event.owl-theme .owl-nav [class*=owl-].owl-next {
+    left: auto;
+    right: 0px;
+  }
+
+  .global-alumni-events .content-items .content {
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+  .global-alumni-events .content-items .content h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .about-content-courser .owl-dots .owl-dot button {
+    padding: 4px 14px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .about-content-courser .owl-dots .owl-dot {
+    margin-right: 8px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-] {
+    width: 40px;
+    right: 0%;
+    bottom: 0;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-].owl-next {
+    left: 0;
+  }
+  .about-content-courser.owl-theme .owl-nav {
+    margin-top: 46px;
+  }
+  .content-items .image {
+    padding: 150px 110px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+
+  .subscribe-area-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .academics-section .academics-left .ac-category ul li a {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .academics-section .academics-left .ac-category ul li {
+    margin-bottom: 15px;
+  }
+  .ac-contact {
+    margin-bottom: 40px;
+  }
+  .academics-section .academics-left .ac-contact a {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .ac-overview {
+    padding-left: 0px;
+  }
+  .academics-section .ac-overview .pera-title h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .academics-section .ac-overview .pera-title span {
+    font-size: 65px;
+    margin-right: 15px;
+  }
+  .academics-section .ac-overview .gallery {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .academics-section .ac-overview .gallery .gallery-image {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .academics-section .ac-overview .gallery .gallery-image ul li:last-child {
+    position: initial;
+  }
+  .academics-section .ac-overview .gallery .gallery-image ul li {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .academics-section .ac-overview .pera-dec h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .academics-section .ac-overview .pera-dec p {
+    margin-bottom: 30px;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys .pra-catagorys a {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box {
+    bottom: -189px;
+    max-width: 260px;
+    padding: 30px 20px;
+  }
+  .graduate-area .info-box {
+    bottom: -185px;
+    max-width: 283px;
+    padding: 30px 15px;
+  }
+  .graduate-area .info-box h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+  .graduate-area .info-box .single-info a {
+    padding: 8px 8px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box .single-info {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .academics-section .ac-overview .pera-dec h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .problem-sector .problem-list .title h3 {
+    padding: 15px 20px;
+  }
+  .problem-sector .problem-list .problem-items {
+    padding-left: 20px;
+  }
+  .problem-sector .problem-list .problem-items ul {
+    margin-bottom: 20px;
+  }
+  .problem-sector .problem-list .col-lg-6:last-child .problem-items ul{
+    margin-bottom: 0px;
+  }
+  .problem-sector .problem-list {
+    margin-bottom: 40px;
+  }
+  .problem-sector .problem-list .problem-items ul li a {
+    font-size: 14px;
+  }
+
+  .faculty-model .faculty-card .content {
+    margin-top: 20px;
+  }
+  .faculty-model .faculty-card .content h4 {
+    font-size: 18px;
+  }
+  .faculty-model .faculty-card .image .info {
+    padding: 30px 30px 30px;
+  }
+  .faculty-model .faculty-card .image .info p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+  .faculty-model .faculty-card .contact-text span {
+    margin-top: 0px;
+  }
+  .faculty-model .faculty-card .contact-text span {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .pera-dec .program-info .single-program-info {
+    padding: 0px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pera-dec .program-info .col-lg-4:last-child .single-program-info{
+    margin-bottom: 0px;
+  }
+  .pera-dec .program-info .single-program-info h4 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  .pera-dec .program-info .single-program-info p {
+    font-size: 14px;
+  }
+  .pera-dec .program-info {
+    margin-bottom: 40px;
+  }
+  .pera-dec .apply-program .content{
+    margin-bottom: 30px;
+  }
+  .pera-dec .apply-program .image{
+    margin-bottom: 30px;
+  }
+  .pera-dec .apply-program {
+    margin-bottom: 10px;
+  }
+  .pera-dec .program-points .single-point-list {
+    padding-left: 40px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .pera-dec .program-points .single-point-list .number-list h4 {
+    font-size: 25px;
+  }
+  .pera-dec .program-points .single-point-list h4 {
+    font-size: 22px;
+  }
+
+  .faq-item {
+    padding: 10px;
+  }
+  .faq-question {
+    font-size: 18px;
+  }
+  .icon-container i {
+    font-size: 22px;
+  }
+
+  .list-item-list h4{
+    font-size: 17px !important;
+    margin-bottom: 20px;
+  }
+  .faq-answer.active {
+    padding: 10px 0;
+  }
+  .list-item-list .list-item-title {
+    padding: 15px 10px;
+    margin-bottom: 20px;
+  }
+  .list-item-list .list-item-title .list-item-title-header {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  .list-item-list .list-items-details ul li p {
+    font-size: 14px;
+  }
+  .list-item-list .list-items-details {
+    padding-left: 5px;
+  }
+  .deadlines-list .list-item-list {
+    margin-bottom: 30px;
+  }
+  .applicant-from label {
+    margin-bottom: 15px;
+  }
+  .applicant-from .form-control {
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .applicant-from .form-cookies-consent label { 
+    font-size: 13px;
+  }
+  .faq-content-2 .faq-answer p {
+    margin-bottom: 30px !important;
+    font-size: 14px;
+  }
+  .faq-content-2 .faq-answer.active {
+    max-height: 210px !important;
+  }
+  .faq-content-2 .faq-item {
+    padding: 0 0px 15px 0;
+  }
+  .faq-content-2 .faq-question {
+    font-size: 18px;
+  }
+  .faq-content-2 .faq-answer {
+    margin-bottom: 20px;
+  }
+
+  .featured-clubs .clubs-item span {
+    margin-bottom: 20px;
+  }
+  .featured-clubs .clubs-item h4 {
+    font-size: 22px !important;
+    margin-bottom: 20px;
+  }
+
+  .pera-dec .apply-program .tuition-fees h5 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .pera-dec .apply-program .tuition-fees {
+    padding: 30px;
+  }
+  .pera-dec .apply-program .tuition-fees ul li {
+    margin-bottom: 20px;
+  }
+
+  .graduate-events .content-items .image {
+    position: initial;
+  }
+  .graduate-events .content-items .content {
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+  .graduate-events .content-items .content h2 {
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+  .academics-section .ac-overview .pera-dec p {
+    margin-bottom: 20px;
+  }
+  .blog-details-desc{
+    padding-right: 0px;
+  }
+  blockquote p, .blockquote p {
+    font-size: 15px !important;
+  }
+  blockquote, .blockquote {
+    padding: 0px 18px 0 25px !important;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .blog-details-desc .article-content h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .blog-details-desc .article-footer .article-tags {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .blog-details-desc .article-footer .article-share {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .blog-details-desc .article-footer {
+    text-align: center;
+  }
+  .blog-details-desc .article-footer .article-share .social {
+    text-align: center;
+  }
+  .comments-area .comments-title {
+    font-size: 18px;
+  }
+  .comments-area .comments-title::after {
+    bottom: -8px;
+    width: 60px;
+    height: 2px;
+  }
+  .comments-area .comment-author .avatar {
+    height: 50px;
+    left: -65px;
+    position: absolute;
+    width: 50px;
+  }
+  .comments-area .comment-author .reply {
+    display: none;
+  }
+  .comments-area .comment-body {
+    padding-left: 70px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .comments-area .comment-metadata {
+    font-size: 13px;
+  }
+  .comments-area .comment-content .reply {
+    display: block;
+  }
+  .comments-area .comment-body .reply a {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  .comments-area .children {
+    margin-left: 20px;
+  }
+  .comments-area .comment-reply-title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .comments-area .comment-respond .comment-form-author {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+  .comments-area .comment-respond .comment-form-email {
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+  .comments-area .comment-respond input[type="date"], .comments-area .comment-respond input[type="time"], .comments-area .comment-respond input[type="datetime-local"], .comments-area .comment-respond input[type="week"], .comments-area .comment-respond input[type="month"], .comments-area .comment-respond input[type="text"], .comments-area .comment-respond input[type="email"], .comments-area .comment-respond input[type="url"], .comments-area .comment-respond input[type="password"], .comments-area .comment-respond input[type="search"], .comments-area .comment-respond input[type="tel"], .comments-area .comment-respond input[type="number"], .comments-area .comment-respond textarea {
+    font-size: 14px;
+  }
+  .comments-area .comment-respond .comment-form-cookies-consent {
+    padding-left: 30px;
+  }
+  .comments-area .comment-respond .comment-form-cookies-consent label {
+    font-size: 14px;
+  }
+  .comments-area .comment-respond .comment-form-cookies-consent input {
+    left: 5px;
+  }
+  .comments-area .comment-respond .form-submit input {
+    padding: 10px 18px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .widget-area .widget {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .widget-area .widget .widget-title {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+  .widget-area .widget .widget-title::before {
+    width: 50px;
+    height: 2px;
+    bottom: -1px;
+  }
+  .widget-area .widget-search form .search-field {
+    height: 50px;
+    padding: 2px 0 3px 15px;
+    font-size: 14px;
+  }
+  .widget-area .widget-search form button {
+    top: 8px;
+  }
+  .widget-tags ul li a {
+    padding: 8px;
+    margin-right: 6px;
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  .widget-area .widget-catagories ul li a {
+    font-size: 14px;
+  }
+  .widget-banner .blog-banner-content .title {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
+  .widget-banner .blog-banner-content .price {
+    font-size: 48px;
+  }
+  .widget-banner .blog-banner-content .price span {
+    font-size: 14px;
+  }
+
+  .courses-details .header-title span {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .courses-details .header-title h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .courses-details .header-title ul li .avater {
+    top: 0px;
+  }
+  .courses-details .header-title ul {
+    margin-bottom: 20px;
+  }
+  .courses-details .header-title {
+    padding-bottom: 30px;
+  }
+  .courses-details .content {
+    padding-top: 30px;
+  }
+  .instructor-card .image {
+    margin-bottom: 30px;
+  }
+  .instructor-card .content h3 {
+    margin-bottom: 10px;
+  }
+  .instructor-card .content .review {
+    margin-bottom: 20px;
+  }
+  .courses-details .content .content-pra .lists li {
+    margin-bottom: 20px;
+  }
+  .instructor-card {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+  .course-widget-area {
+    margin-left: 0;
+  }
+  .course-widget-area .content .enroll-btn {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+  .course-widget-area .content .wish-btn {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+  .course-widget-area .content {
+    padding: 20px;
+  }
+  .course-widget-area .content ul li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .course-widget-area .content ul {
+    margin-bottom: 30px;
+  }
+  .grid-sorting .select-box {
+    padding-left: 0;
+  }
+  .grid-sorting .select-box .form-select {
+    padding: 17px 15px 14px 75px;
+    font-size: 14px;
+  }
+  .grid-sorting .select-box label {
+    top: 17px;
+    left: 15px;
+  }
+  .grid-sorting .title p {
+    margin-bottom: 20px;
+  }
+  .course-item .content h2 {
+    font-size: 18px;
+  }
+  .teacher-info .image p {
+    margin-left: 10px;
+  }
+  .course-item .content {
+    padding: 25px 10px;
+  }
+
+
+  .blog-pagi .pagination .page-link {
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  .blog-single-card .content .butn i {
+    font-size: 20px;
+  }
+  .blog-single-card .content h3{
+    font-size: 18px;
+  }
+
+  .contact-content {
+    margin-right: 0;
+  }
+  .contact-form .form-control {
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .contact-form label {
+    margin-bottom: 15px;
+  }
+  .contact-form .form-select {
+    margin-bottom: 30px;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .contact-form {
+    margin-bottom: 40px;
+  }
+  .contact-info .info-details ul li a {
+    font-size: 14px;
+  }
+  .comments-area .comment-respond .form-submit {
+    margin-bottom: 40px;
+  }
+
+
+  .footer-widget-info .footer-widget .info-links {
+    margin-top: 25px;
+  }
+  .footer-widget-info .footer-widget .info-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-widget-info .footer-widget .info-links a:last-child{
+    margin-bottom: 0px;
+  }
+
+  .footer-widget {
+    margin-bottom: 40px;
+  }
+  .footer-widget-info .row .col-lg-3:last-child .footer-widget{
+    margin-bottom: 0px;
+  }
+  .footer-top-info .content .image {
+    top: -20px;
+  }
+  .footer-top-info .content {
+    max-width: 300px;
+  }
+  .copy-right-area .cpr-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .copy-right-area .cpr-right {
+    text-align: center;
+    display: inline-block;
+  }
+  .copy-right-area .cpr-right ul li {
+    margin-right: 12px;
+    margin-bottom: 10px;
+  }
+  .copy-right-area .cpr-right ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .copy-right-area.style-2 .social-list{
+    margin-left: 0px;
+  }
+  .copy-right-area.style-2 {
+    padding-top: 90px;
+  }
+  .copy-right-area.style-2 .copy-logo {
+    top: -12%;
+  }
+  .copy-right-area.style-2 .social-list li a {
+    height: 35px;
+    width: 35px;
+  }
+  .copy-right-area .cpr-right ul {
+    margin-bottom: 20px;
+  }
+  .copy-right-area.style-2 .social-list li {
+    margin-bottom: 0px;
+  }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about-us-area .content img{
+    width: 100%;
+  }
+  .white-shape {
+    height: 240px;
+  }
+  .notice-content {
+    padding: 20px 20px;
+  }
+  .notice-content h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .notice-content i {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .notice-content p {
+    font-size: 13px;
+  }
+  .courses-area .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+  }
+  .video-play-area .contant {
+    text-align: right;
+  }
+  .news-item .content {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .news-content ul li {
+    display: flex;
+  }
+  .news-content ul li .image {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .news-content-right .content-box img {
+    width: 100%;
+  }
+  .news-content-item .content-box .image {
+    width: 49%;
+  }
+  .news-content-item {
+    padding-left: 10px;
+    padding-right: 0px;
+    display: flex;
+  }
+  .news-content-item .content-box {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .news-content-item .content-box .content .sub-title p {
+    margin-bottom: 0px;
+    font-size: 13px;
+  }
+  .news-content-item .content-box .content h3 {
+    font-size: 15px;
+  }
+  .news-content-item .content-box .content .sub-title i {
+    font-size: 20px;
+  }
+  .news-content-item .content-box:last-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .news-content-item .content-box .content {
+    padding-left: 15px;
+  }
+  .faculty-area .content .text {
+    padding: 0px;
+  }
+  .quick-search .quick-content .user-exprience .user-info {
+    margin-bottom: 0;
+  }
+  .quick-search .quick-content .apply-banner p {
+    margin-bottom: 0;
+  }
+  .quick-search {
+    background-image: none;
+  }
+  .activities-card .content h2 {
+    margin-bottom: 10px;
+  }
+  .activities-card .content h2 {
+   font-size: 13px;
+  }
+  .activities-card .content {
+    padding: 10px 6px;
+  }
+  .event .content {
+    display: flex;
+  }
+  .event .content .text {
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+  .event.lg  .content {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .success-area .success-card ul li h3 {
+    font-size: 16px;
+  }
+  .success-area .success-card .play a {
+    top: -109px;
+    left: 5px;
+  }
+  .success-area .success-card .play::before {
+    height: 50px;
+    width: 50px;
+    top: -114px;
+  }
+  .success-area .col-sm-6:last-child .success-card {
+    margin-bottom: 0px;
+  }
+  .section-btn {
+    padding-top: 30px;
+  }
+  .about-us-area-2 .content-items .content {
+    padding: 30px 30px;
+  }
+  .about-us-area-2 .content-items .content span {
+    margin-bottom: 15px;
+  }
+  .about-us-area-2 .content-items .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .faculty-area-2 .heading h2 {
+    margin-bottom: 25px;
+  }
+  .faculty-area-2 .content p {
+    font-size: 16px;
+  }
+  .features-content .sub-title, .features-content-2 .sub-title {
+    margin-bottom: 15px;
+  }
+  .features-content-2 .content h2 {
+    margin-bottom: 20px;
+  }
+  .activities-card.style-2 .content h2 {
+    font-size: 18px;
+  }
+  .activities-card.style-2 .content {
+    padding: 20px 25px;
+  }
+
+  .find-degree .content-1 {
+    padding: 30px 40px;
+  }
+  .find-degree .content-2 {
+    padding: 30px 40px;
+  }
+
+  .campus-experience-area .content .comment-box-info .admin-info .icon {
+    top: 300px;
+  }
+
+  .academics-item p {
+    font-size: 13px;
+  }
+  .blog-single-card .content {
+    padding: 20px;
+  }
+  .blog-single-card .content .meta ul li {
+    margin-right: 30px;
+  }
+  .blog-single-card .content .meta ul li::before {
+    right: -29px;
+    width: 20px;
+  }
+
+  .banner-spacing {
+    padding: 130px 0 !important;
+    margin-bottom: 30px;
+  }
+  .section-banner .section-info {
+    max-width: 500px;
+    bottom: -40px;
+  }
+
+  .slider-event.owl-theme .owl-nav [class*=owl-] {
+    left: 0px;
+    top: 104%;
+  }
+  .academics-section .ac-overview .gallery .gallery-image ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys .pra-catagorys a {
+    padding: 40px 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box {
+    bottom: -120px;
+    max-width: 440px;
+    padding: 30px 20px;
+  }
+  .graduate-events {
+    margin-top: 150px;
+  }
+  .content-items .image {
+    padding: 0px;
+    text-align: center;
+  }
+  .academics-section .ac-overview .pera-dec p {
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+  .academics-section .ac-overview .pera-dec h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .blog-pagi {
+    margin-bottom: 50px;
+  }
+
+  .footer-area-3 .footer-top-info {
+    padding-top: 40px;
+  }
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 16px;
+  }
+  .footer-area-3 .footer-top-info .left-content {
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    top: -30px;
+  }
+  .blog-details-desc .article-footer .article-share {
+    max-width: 50%;
+    margin-top: 0px;
+  }
+  .blog-details-desc .article-footer .article-tags {
+    max-width: 50%;
+  }
+  .instructor-card .content ul li {
+    margin-right: 20px;
+  }
+  .courses-details .content {
+    padding-top: 0px;
+  }
+  .instructor-card .content ul li .image-circle {
+    padding: 2px 4px;
+  }
+  .course-widget-area .image img {
+    width: 100%;
+  }
+
+  .copy-right-area.style-2 .cpr-left {
+    margin-bottom: 10px;
+  }
+  .copy-right-area.style-2 .cpr-right ul {
+    margin-bottom: 10px;
+  }
+  .copy-right-area.style-2 .copy-logo {
+    top: -17%;
+  }
+  .copy-right-area.style-2 .cpr-right ul {
+    margin-bottom: 10px;
+  }
+  .copy-right-area.style-2 .social-list{
+    margin-bottom: 0px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -25px;
+    left: -20px;
+  }
+  .subscribe-area-3 {
+    padding-bottom: 50px !important;
+  }
+
+  .footer-top-info .content p {
+    font-size: 18px;
+  }
+  .footer-top-info .content {
+    max-width: 500px;
+  }
+  .footer-widget-info .col-sm-6:nth-child(3) .footer-widget{
+    margin-bottom: 0px;
+  }
+  .copy-right-area .cpr-right ul {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .copy-right-area .cpr-right {
+    display: block;
+  }
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ptb-100 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pt-100 {
+    padding-top: 80px;
+  }
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+  .ptb-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-70 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 50px;
+  }
+  .default-btn {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 35px;
+  }
+  .banner-spacing {
+    margin-bottom: 60px;
+  }
+  .section-title .sub-title {
+    margin-bottom: 20px;
+  }
+  .section-title .sub-title i {
+    font-size: 25px;
+  }
+  .section-title .sub-title p {
+    font-size: 18px;
+  }
+  .section-title-3 .sub-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .section-title-3 h2 {
+    font-size: 35px;
+  }
+  .section-title-3.text-start {
+    padding-right: 230px;
+  }
+  .section-title-3 .default-btn {
+    top: 50%;
+  }
+
+  .white-shape {
+    position: relative;
+    height: 276px;
+    width: 542px;
+    background-color: var(--whiteColor);
+    border-bottom: 10px solid var(--mainColor) ;
+  }
+  .banner-content .content {
+    top: 42px;
+  }
+  .banner-content .content h1 {
+    font-size: 42px;
+  }
+  .white-shape::after{
+    display: none;
+  }
+  .big-bg-1 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .big-bg-2 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  .banner-content-2 .content .scroll-down a {
+    font-size: 50px;
+    line-height: 50px;
+    height: 50px;
+    width: 70px;
+  }
+  .banner-content-2 .content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .section-title .sub-title {
+    margin-bottom: 15px;
+  }
+  .section-title .sub-title p {
+    font-size: 16px;
+  }
+  .section-title .sub-title i {
+    font-size: 23px;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .academics-item p {
+    font-size: 14px;
+  }
+  .academics-item a {
+    font-size: 15px;
+  }
+  .academics-item a i {
+    right: -24px;
+    font-size: 22px;
+  }
+  .banner-content-2 .content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .banner-content-2 .content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .banner-spacing {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .banner-content-2 .content .buttons-action {
+    margin-bottom: 60px;
+  }
+  .banner-content-2 .content .scroll-down a {
+    padding: 0px 14px;
+    font-size: 35px;
+  }
+  .about-us-area-2 .content-items .content {
+    max-width: 572px;
+    padding: 40px 40px;
+  }
+  .about-us-area-2 .content-items .content p {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  .about-us-area-2 .content-items .content h2 {
+    font-size: 30px;
+  }
+  .about-us-area-2 .content-items .content span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .about-us-area-2 .content-items .image {
+    padding: 200px 116px;
+    width: 70%;
+  }
+  .zoom-x {
+    animation: none;
+  }
+  .slider-bg-1 {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+  .slider-courser .owl-theme .owl-nav [class*=owl-], .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    height: 45px;
+    width: 45px;
+    font-size: 28px;
+  }
+  .slider-courser:hover .owl-nav {
+    bottom: 8%;
+  }
+  .find-degree .d-row{
+    display: block;
+  }
+  .find-degree .d-row .d-col-1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .find-degree .d-row .d-col-2 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .find-degree .d-row .d-col-3 {
+    width: 100%;
+  }
+  .content-image img {
+    width: 100%;
+  }
+  .slider-content .content .text h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .slider-content .content p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .slider-content .content .short-info {
+    text-align: center;
+  }
+  .slider-content .content p::before {
+    top: 8px;
+    left: 28%;
+  }
+  .undergraduate-area .item .content-2 .default-btn{
+    margin-left: 0;
+  }
+  .undergraduate-area .item{
+    text-align: center;
+  }
+  .undergraduate-area .item .content h3 {
+    margin-bottom: 20px;
+  }
+  .undergraduate-area a.white-under-btn{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .undergraduate-area .item .content-2{
+    text-align: center;
+  }
+  .content-items .content {
+    max-width: 100%;
+    position: initial;
+  }
+  .content-items .content span {
+    font-size: 16px;
+    display: block;
+  }
+  .content-items .content h2 {
+    font-size: 30px;
+  }
+  .about-us-area .text-content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .about-us-area .text-content .sub-title i {
+    font-size: 23px;
+  }
+  .about-us-area .text-content .sub-title p {
+    font-size: 16px;
+  }
+  .about-us-area .text-content p {
+    font-size: 14px;
+  }
+  .about-us-area .text-content .sub-title {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .about-us-area .text-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-university {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about-university .content {
+    margin-bottom: 50px;
+  }
+  .about-university .sub-title, .about-university .sub-title {
+    margin-bottom: 20px;
+  }
+  .about-university .sub-title p {
+    font-size: 16px;
+  }
+  .about-us-area .content {
+    padding-left: 0px;
+  }
+  .features-content .sub-title, .features-content-2 .sub-title {
+    margin-bottom: 15px;
+  }
+  .features-content .sub-title p {
+    font-size: 16px;
+  }
+  .features-content .sub-title i, .features-content-2 .sub-title i {
+    font-size: 23px;
+  }
+  .features-content .content h2, .features-content-2 .content h2 {
+    font-size: 30px;
+  }
+  .about-university .content h2, .about-university .content h2 {
+    font-size: 30px;
+  }
+  .faculty-area-3 .content span {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .faculty-area-3 .content h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .features-content{
+    padding-bottom: 80px;
+  }
+  .features-content .content {
+    margin-bottom: 40px;
+  }
+  .features-content .image{
+    position: initial;
+  }
+  .features-content .content h2, .features-content-2 .content h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .features-content-2 .content .arrow-icon{
+    display: none;
+  }
+  .features-content-2 .academic-content {
+    position: initial;
+    padding-right: 0;
+  }
+  .features-content-2 .sub-title p {
+    font-size: 16px;
+}
+  .features-content-2 .academic-content {
+    margin-top: 30px;
+  }
+  .features-content .content .item .item-content h3, .features-content-2 .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .features-content-2 .content .item .item-content p {
+    font-size: 14px;
+  }
+  .academics-item {
+    padding: 35px 30px;
+    margin-bottom: 30px;
+  }
+  .academics-area .row .col-lg-4:last-child .academics-item{
+    margin-bottom: 0px;
+  }
+  .faculty-area .content .icon {
+    width: 100%;
+  }
+  .faculty-area .content .text p {
+    font-size: 14px;
+  }
+
+  .campus-experience-area .image {
+    margin-bottom: 50px;
+  }
+  .campus-experience-area .content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .campus-experience-area .content h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .image{
+    margin-bottom: 0px;
+  }
+
+  .scholarship-area .content h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .activities-card {
+    margin-bottom: 30px;
+  }
+  .activities-area .row .col-lg-4:last-child .activities-card{
+    margin-bottom: 0;
+  }
+  .video-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .faculty-area-2 .heading h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .faculty-area-2 .content p{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .faculty-area-2 .button {
+    text-align: center;
+  }
+  .quick-search{
+    background: none;
+  }
+  .quick-search .quick-content .sub-title i {
+    font-size: 25px;
+  }
+  .quick-search .quick-content .sub-title {
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .quick-search .quick-content p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .quick-search .quick-content .sub-title p {
+    font-size: 16px;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .quick-search .quick-content .apply-banner {
+    padding: 25px 30px;
+}
+  .quick-search .quick-content .apply-banner p {
+    color: var(--whiteColor);
+    text-align: start;
+  }
+  .quick-search .quick-content .list .list-items ul {
+    padding-top: 10px;
+    padding-bottom: 3px;
+  }
+  .quick-search .quick-content .list .list-items ul li {
+    margin-bottom: 18px;
+    font-size: 17px;
+  }
+  .quick-search .course-search-box {
+    padding: 45px 30px;
+    margin-bottom: 40px;
+  }
+  .quick-search .course-search-box .search-key .form-control {
+    height: 50px;
+    font-size: 16px;
+  }
+  .quick-search .course-search-box .search-key .form-select {
+    padding: 14px 15px;
+    font-size: 16px;
+  }
+  .quick-search .quick-content .list .list-items ul li i {
+    font-size: 22px;
+    top: 2px;
+  }
+  .quick-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .quick-search .quick-content .user-exprience .exprience .text h4{
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  .quick-search .quick-content .user-exprience .exprience .icon {
+    margin-right: 8px;
+  }
+  .quick-search .quick-content .user-exprience .user-info {
+    justify-content: start;
+  }
+  .quick-search .quick-content .user-exprience .exprience {
+    justify-content: start;
+  }
+  .campus-card .content h2 {
+    font-size: 25px;
+  }
+  .event .content .text h2 {
+    font-size: 22px;
+  }
+  .event .content .text p {
+    font-size: 14px;
+  }
+  .event .content .text span {
+    font-size: 15px;
+  }
+  .activities-area .col-md-6.pt-25{
+    padding-top: 0px;
+  }
+  .news-content-item .content-box .content .sub-title p {
+    font-size: 14px;
+  }
+  .news-content-item .content-box .content .sub-title i {
+    font-size: 23px;
+  }
+  .news-content-item {
+    display: flex;
+  }  
+  .news-content-item .content-box .image {
+    width: 60%;
+  }
+  .news-content-right .content-box img {
+    width: 100%;
+  }
+  .news-item .sub-title {
+    margin-bottom: 15px;
+    align-items: center;
+}
+  .news-item .content p {
+    margin-bottom: 15px;
+  }
+  .news-item .content h2 {
+    margin-bottom: 15px;
+  }
+  .news-content ul li .image {
+    width: 95%;
+  }
+  .news-item .content p {
+    margin-bottom: 15px;
+  }
+  .success-area .success-card{
+    margin-bottom: 30px;
+  }
+  .success-area .row .col-lg-4:last-child .success-card{
+    margin-bottom: 0px;
+  }
+  .success-area .success-card .play a {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    line-height: 47px;
+    font-size: 30px;
+  }
+  .success-area .success-card .play {
+    left: 5%;
+  }
+  .success-area .success-card .play::before {
+    height: 55px;
+    width: 55px;
+  }
+  .success-area .success-card ul li h3{
+    font-size: 18px;
+  }
+  .success-area .success-card ul {
+    padding: 0px 15px 0 70px;
+  }
+  .success-award-area .content .arrow {
+    display: none;
+  }
+  .success-award-area .content {
+    padding-right: 0px;
+  }
+  .success-award-area .content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .success-award-area .content h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .success-award-area .image img {
+    width: 100%;
+  }
+  .success-award-area .content .notice {
+    margin-bottom: 50px;
+  }
+  .subscribe-area-3 .content .signup {
+    height: 118px;
+  }
+  .subscribe-area-3 .content span {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .subscribe-area-3 .content h2 {
+    font-size: 28px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -25px;
+    left: 0%;
+  }
+  .subscribe-area-3 {
+    background-position: right;
+    padding-bottom: 54px !important;
+  }
+  .subscribe-area-3 .content .signup .btn {
+    height: 50px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .event .content .image {
+    width: 80%;
+  }
+  .event .content .text {
+    padding-right: 30px;
+  }
+  .upcoming-event .event-dates .date {
+    width: 15%;
+  }
+  .upcoming-event .event-dates {
+    align-items: center;
+  }
+  .upcoming-event .content {
+    padding-right: 30px;
+    padding-left: 25px;
+  }
+  .about-alumni .content {
+    padding: 0 50px;
+    margin-bottom: 40px;
+  }
+  .global-alumni-events .content-items .content {
+    padding: 60px 90px;
+    margin-bottom: 30px;
+  }
+  .academics-section .ac-overview .gallery .gallery-image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .academics-section .ac-overview .gallery .gallery-image ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .academics-section .ac-overview .gallery .gallery-image ul li:last-child {
+    position: initial;
+  }
+  .academics-section .ac-overview .gallery {
+    margin-bottom: 30px;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys .pra-catagorys a {
+    padding: 60px 20px;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys.col-md-6:last-child .pra-catagorys a{
+    margin-bottom: 0px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box .single-info {
+    text-align: center;
+    padding-left: 0;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box {
+    bottom: -117px;
+    max-width: 600px;
+    padding: 55px 40px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box h3 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box .single-info a {
+    font-size: 15px;
+  }
+  .academics-section .ac-overview .pera-dec h3 {
+    margin-bottom: 30px;
+  }
+  .graduate-events {
+    margin-top: 130px;
+  }
+
+  .graduate-events .content-items .image {
+    top: 6%;
+    right: 20px;
+    max-width: 335px;
+    padding: 0;
+  }
+  .graduate-events .content-items .content {
+    position: initial;
+    padding-right: 280px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+  .graduate-events .content-items .content a {
+    font-size: 15px;
+  }
+  .graduate-events .content-items .content h2 {
+    margin-bottom: 20px;
+  }
+  .academics-section .academics-left {
+    margin-bottom: 40px;
+  }
+  .academics-section .ac-overview .pera-title span {
+    font-size: 120px;
+    margin-right: 30px;
+  }
+  .academics-section .ac-overview .pera-title h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    justify-content: center;
+  }
+  .academics-section .ac-overview .pera-dec p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .ac-overview {
+    padding-left: 0px;
+  }
+  .about-alumni .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-alumni .image {
+    padding: 190px 270px;
+  }
+  .about-alumni .content .sub-title i {
+    font-size: 23px;
+  }
+  .about-alumni .content .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-alumni .content .sub-title p {
+    font-size: 16px;
+  }
+  .about-alumni .content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .global-alumni-events .global-content-items .content {
+    padding: 60px 30px;
+    position: inherit;
+  }
+  .global-alumni-events .global-content-items .content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  } 
+  .global-alumni-events .global-content-items .content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .global-alumni-events .image {
+    padding: 180px 110px;
+  }
+
+  .about-us-area-2 .section-title p {
+    font-size: 16px;
+  }
+  .about-content-courser .owl-dots .owl-dot button {
+    padding: 5px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .about-content-courser .owl-dots .owl-dot {
+    margin-right: 8px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-] {
+    width: 60px;
+    right: 21%;
+    bottom: 0;
+    height: 30px;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-].owl-next {
+    left: 21%;
+  }
+  .about-content-courser.owl-theme .owl-nav {
+    margin-top: 46px;
+  }
+  .content-items .image {
+    padding: 185px 110px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .campus-tour .content .sub-title {
+    margin-bottom: 15px;
+  }
+  .campus-tour .content .sub-title p {
+    font-size: 16px;
+  }
+  .campus-tour .content .sub-title i {
+    font-size: 23px;
+  }
+  .campus-tour .content h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  .campus-tour .content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .section-banner .section-info h2 {
+    font-size: 40px;
+  }
+  .section-banner .section-info p {
+    font-size: 15px;
+  }
+  .blog-single-card .content h3 {
+    font-size: 20px;
+  }
+  .blog-single-card .content .meta ul li a {
+    font-size: 15px;
+  }
+  .blog-single-card .content .butn i {
+    font-size: 22px;
+  }
+  .blog-single-card .content .meta ul li{
+    font-size: 14px;
+  }
+  .blog-single-card .content .butn {
+    font-size: 15px;
+  }
+  .blog-details-desc .article-content p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  blockquote, .blockquote {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  blockquote p, .blockquote p {
+    font-size: 18px !important;
+  }
+  .blog-details-desc .article-footer .article-tags a {
+    font-size: 14px;
+  }
+  .blog-details-desc .article-footer .article-tags a {
+    font-size: 14px;
+  }
+  .comments-area .comment-author .fn {
+    font-size: 18px;
+  }
+  .comments-area .comment-metadata {
+    font-size: 15px;
+  }
+  .comments-area .comment-body .reply a {
+    font-size: 15px;
+  }
+  .comment-content p {
+    font-size: 14px;
+  }
+  .comments-area .comment-reply-title {
+    font-size: 24px;
+  }
+  .comments-area .comment-respond .form-submit input {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .problem-sector .problem-list .title h3 {
+    padding: 20px 35px;
+    font-size: 22px;
+  }
+  .problem-sector .problem-list .problem-items ul li a {
+    font-size: 15px;
+  }
+  .faculty-model .faculty-card .content p {
+    font-size: 14px;
+  }
+  .faculty-model .faculty-card .content h4 {
+    font-size: 20px;
+  }
+  .pera-dec .program-info .single-program-info h4 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .pera-dec .program-points {
+    margin-bottom: 40px;
+  }
+
+  .pera-dec .program-points .single-point-list {
+    padding-left: 45px;
+    margin-bottom: 40px;
+  }
+  .pera-dec .program-points .single-point-list h4 {
+      font-size: 25px;
+  }
+  .pera-dec .program-points .single-point-list .number-list h4 {
+    font-size: 25px;
+  }
+
+  .widget-tags ul li a {
+    font-size: 14px;
+  }
+
+  .pera-dec .program-info .single-program-info {
+    padding: 0;
+    text-align: center;
+  }
+  .pera-dec .program-info .single-program-info p {
+    font-size: 14px;
+  }
+  .pera-dec .apply-program .tuition-fees ul {
+    margin-bottom: 25px;
+  }
+  .pera-dec .apply-program .tuition-fees ul li {
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    font-size: 25px;
+  }
+  .applicant-from .form-control {
+    height: 55px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .course-item .content span {
+    font-size: 14px;
+  }
+  .course-item .content ul li .image-circle {
+    padding: 5px 10px;
+  }
+  .course-item .content {
+    padding: 25px 15px;
+  }
+  .course-item .content h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .course-widget-area .image img{
+    width: 100%;
+  }
+  .course-widget-area {
+    margin-left: 0px;
+  }
+  .instructor-card {
+    margin-bottom: 50px;
+  }
+  .teacher-info .image p {
+    font-size: 14px;
+  }
+  .blog-pagi {
+    margin-bottom: 50px;
+  }
+  .blog-area .blog-pagi {
+    margin-bottom: 0px;
+  }
+  .comments-area .comment-respond .form-submit {
+    margin-bottom: 40px;
+  }
+  .subscribe-area-3 .content .signup .email-signup {
+    height: 44px;
+    padding: 0px 5px 0px 22px;
+    width: 286px;
+    font-size: 17px;
+  }
+
+  .contact-content .header-content p {
+    font-size: 14px;
+  }
+  .contact-form {
+    margin-bottom: 40px;
+  }
+  .contact-form .form-select {
+    font-size: 14px;
+  }
+  .contact-form label {
+    font-size: 14px;
+  }
+  .contact-info .info-details ul li {
+    font-size: 14px;
+  }
+
+  .copy-right-area .cpr-left p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .copy-right-area .cpr-right {
+    justify-content: center;
+  }
+  .footer-top-info .content .image {
+    position: relative;
+    top: -25px;
+  }
+  .footer-widget {
+    margin-bottom: 40px;
+  }
+  .footer-widget-info .row .col-lg-3:last-child .footer-widget{
+    margin-bottom: 0px;
+  }
+  .footer-widget-info .row .col-lg-3:nth-child(3) .footer-widget{
+    margin-bottom: 0px;
+  }
+  .footer-widget-info .footer-widget .info-links {
+    margin-top: 25px;
+  }
+  .footer-widget-info .footer-widget .info-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-widget-info .footer-widget .info-links a:last-child{
+    margin-bottom: 0px;
+  }
+  .footer-area-3 .footer-top-info .left-content p i {
+    left: 0%;
+    top: 0px;
+    font-size: 66px;
+  }
+  .footer-area-3 .footer-top-info .left-content {
+    margin-bottom: 30px;
+  }
+  .footer-area-3 .footer-top-info .right-content {
+    text-align: center;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    display: block;
+    margin-bottom: 20px;
+    position: initial;
+  }
+  .footer-area-3 .footer-top-info {
+    padding-top: 40px;
+  }
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 16px;
+  }
+  .footer-area-3 .footer-top-info .left-content {
+    margin-bottom: 00px;
+    padding-bottom: 0px;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    top: -30px;
+  }
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 20px;
+    padding-left: 85px;
+  }
+  
+
+  .footer-top-info .content p {
+    font-size: 18px;
+  }
+  .copy-right-area.style-2 .copy-logo {
+    top: -30%;
+  }
+  .copy-right-area.style-2 {
+    padding-top: 70px;
+  }
+  .copy-right-area.style-2 .cpr-right{
+    justify-content: space-around;
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .col-xm-12{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .col-xm-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .default-btn {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .big-bg-2 {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .banner-content-2 .content span {
+    color: var(--paragraphColorSecond);
+    font-size: 20px;
+  }
+  .banner-content-2 .content h1 {
+    font-size: 65px;
+  }
+  .banner-content-2 .content p {
+    font-size: 16px;
+  }
+  .banner-content-2 .content .buttons-action {
+    margin-bottom: 80px;
+  }
+  .banner-content-2 .content .scroll-down a {
+    font-size: 40px;
+    line-height: 60px;
+    height: 60px;
+    width: 70px;
+  }
+  .banner-content-2 .content .vertical-lr {
+    bottom: -35%;
+    left: -2%;
+  }
+
+  .about-us-area-2 .section-title h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .about-us-area-2 .section-title p {
+    font-size: 17px;
+  }
+  .about-us-area-2 .content-items .content h2 {
+    font-size: 40px;
+  }
+  .about-us-area-2 .content-items .content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .about-us-area-2 .content-items .content p {
+    font-size: 15px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-] {
+    right: 25%;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-].owl-next {
+    left: 25%;
+  }
+  .features-content .content h2, .features-content-2 .content h2 {
+    font-size: 40px;
+  }
+  .features-content-2 .sub-title p {
+    font-size: 18px;
+  }
+  .features-content-2 .academic-item .content .btn i {
+    top: 1px;
+    right: -21px;
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .content h4 {
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .image .number h3 {
+    font-size: 80px;
+  }
+  .features-content-2 .content .item .item-content p {
+    font-size: 15px;
+  }
+  .features-content-2 .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .content .btn {
+    font-size: 15px;
+  }
+  .video-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section-title .sub-title {
+    margin-bottom: 15px;
+  }
+  .section-title h2 {
+    font-size: 40px;
+  }
+  .section-title-2 .sub-title p {
+    font-size: 18px;
+  }
+  .news-item .sub-title {
+    margin-bottom: 15px;
+  }
+  .news-item .sub-title i {
+    font-size: 25px;
+  }
+  .news-item .sub-title p {
+    font-size: 15px !important;
+  }
+  .news-item .content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .news-item .content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .news-item .content .btn {
+    font-size: 15px;
+  }
+  .news-content ul li .image {
+    width: 85%;
+  }
+  .news-content ul {
+    padding: 0px 20px;
+  }
+  .news-content ul li {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .news-content-right .content-box .content {
+    padding: 25px;
+  }
+  .news-content-right .content-box .content .btn {
+    font-size: 15px;
+  }
+  .news-content-right .content-box .content p {
+    font-size: 14px;
+  }
+  .news-content-right .content-box .content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .news-content-item .content-box .image {
+    width: 30%;
+  }
+  .news-content-item .content-box .content .sub-title p {
+    font-size: 14px;
+  }
+  .news-content-item .content-box .content .sub-title i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  .news-content-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .news-content-item .content-box {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .news-content-item .content-box .content {
+    width: 72%;
+    padding-left: 10px;
+  }
+  .news-content-item .content-box:last-child {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .faculty-area-2 .content p {
+    font-size: 14px;
+  }
+  .faculty-area-2 .heading h2 {
+    font-size: 40px;
+  }
+  .features-content-2 .academic-content {
+    padding-right: 25px;
+    top: 20%;
+  }
+
+  .quick-search .quick-content .sub-title {
+    margin-bottom: 15px;
+  }
+  .quick-search .quick-content .sub-title p {
+    font-size: 18px;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .quick-search .quick-content p {
+    font-size: 14px;
+  }
+  .quick-content {
+    padding-left: 10px;
+  }
+  .quick-search .course-search-box {
+    padding: 50px 40px;
+  }
+  .form-control {
+    font-size: 15px;
+  }
+  .form-select {
+    font-size: 15px;
+  }
+  .quick-search .quick-content .list .list-items ul {
+    padding-left: 24px;
+    padding-top: 10px;
+  }
+  .quick-search .quick-content .list .list-items ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .quick-search .quick-content .list .list-items ul li i {
+    font-size: 20px;
+    top: 4px;
+    left: -26px;
+  }
+  .quick-search .quick-content .apply-banner {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .quick-search .quick-content .apply-banner p {
+    font-size: 18px;
+  }
+
+  .activities-card .content .btn {
+    font-size: 15px;
+  }
+  .activities-card.style-2 .content {
+    padding: 25px 25px;
+  }
+  .activities-card .content p {
+    font-size: 14px;
+  }
+
+  .event .content .text h2 {
+    font-size: 25px;
+  }
+  .event .content .text span {
+    font-size: 15px;
+  }
+  .event .content .text p {
+    font-size: 14px;
+  }
+  .event .content .text .tag {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .event .content .image {
+    width: 66%;
+  }
+  .campus-card .content h2 {
+    padding: 8px;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .upcoming-event .content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .upcoming-event .content p {
+    font-size: 14px;
+  }
+  .news-content-item .content-box .content h3 {
+    font-size: 15px;
+  }
+  .upcoming-event .content .location {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .upcoming-event .content .location i {
+    font-size: 18px;
+    top: 1px;
+    left: -5px;
+  }
+  .upcoming-event .event-dates {
+    padding: 20px;
+  }
+  .upcoming-event .event-dates .btn i {
+    top: 0px;
+  }
+  .upcoming-event .content {
+    padding-right: 10px;
+  }
+  .success-area .success-card .play {
+    bottom: 70%;
+  }
+  .success-area .success-card .play::before {
+    height: 55px;
+    width: 55px;
+    top: -8px;
+    left: -7px;
+  }
+  .success-area .success-card .play a {
+    height: 40px;
+    width: 40px;
+    line-height: 45px;
+    font-size: 30px;
+  }
+  .success-area .success-card ul {
+    bottom: 10%;
+    padding: 0px 20px 0 17px;
+  }
+  .success-area .success-card ul li h3 {
+    font-size: 18px;
+  }
+  .footer-widget-info .footer-widget h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .footer-widget-info .footer-widget ul li a {
+    font-size: 14px;
+  }
+  .about-us-area .text-content .sub-title p {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+
+
+
+  .section-banner .section-info h2 {
+    font-size: 40px;
+  }
+  .section-banner .section-info p {
+    font-size: 14px;
+  }
+  .campus-tour .content .sub-title p {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  .campus-tour .content .sub-title i {
+    font-size: 25px;
+  }
+  .campus-tour .content p {
+    font-size: 14px;
+  }
+
+  .undergraduate-area .item .content h3 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .undergraduate-area .item .content-2 {
+    text-align: center;
+  }
+  .section-title .sub-title p {
+    font-size: 18px;
+  }
+  .section-title .sub-title i {
+    font-size: 25px;
+  }
+  .academics-item {
+    padding: 30px;
+  }
+  .academics-item p {
+    font-size: 14px;
+  }
+  .academics-item a i {
+    top: 1px;
+    right: -28px;
+    font-size: 20px;
+  }
+  .academics-item a {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .academics-item h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .about-us-area .text-content .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-us-area .text-content .sub-title i {
+    font-size: 25px;
+  }
+  .about-us-area .text-content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .about-us-area .text-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .about-us-area .text-content p {
+    font-size: 14px;
+  }
+  .notice-content i {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+  .notice-content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .notice-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .notice-content {
+    padding: 20px 20px;
+  }
+  .about-us-area .content {
+    padding-left: 0;
+  }
+  .teacher-info .image p {
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  .teacher-info .image p span {
+    font-size: 13px;
+  }
+  .course-item .content span {
+    font-size: 15px;
+  }
+  .course-item .content h2 {
+    font-size: 20px;
+  }
+  .teacher-info .price p {
+    font-size: 13px;
+  }
+  .courses-area .owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+  }
+  .features-content .image {
+    top: 0px;
+    right: -315px;
+  }
+  .features-content .sub-title p {
+    font-size: 18px;
+  }
+  .features-content .content .item .item-content p {
+    font-size: 14px;
+  }
+  .features-content .content .item .item-content h3, .features-content-2 .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .video-play-area .contant {
+    padding: 0px;
+  }
+  .video-play-area .contant p {
+    font-size: 18px;
+  }
+  .video-play-area .play-button {
+    top: 0;
+  }
+  .activities-card .content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .activities-card .content {
+    padding: 20px 20px;
+  }
+  .success-area .success-card .play {
+    bottom: 380%;
+  }
+  .copy-right-area .cpr-right ul li a {
+    font-size: 14px;
+  }
+  .copy-right-area .cpr-left p {
+    font-size: 14px;
+  }
+  .footer-top-info .content p {
+    font-size: 18px;
+  }
+  .footer-top-info .content .image {
+    top: -30px;
+  }
+  .banner-spacing {
+    padding: 150px 0;
+    margin-bottom: 40px;
+  }
+  .campus-tour .content .sub-title {
+    margin-bottom: 15px;
+  }
+  .campus-tour .content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .campus-tour .content p {
+    margin-bottom: 20px;
+  }
+
+  .slider-content .content .text h1 {
+    font-size: 50px;
+  }
+  .slider-content .content p {
+    font-size: 14px;
+  }
+  .slider-content .content .short-info h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .slider-bg-1 {
+    padding-bottom: 100px;
+  }
+  .find-degree .content-1 {
+    padding: 30px 20px;
+  }
+  .find-degree .content-1 h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .find-degree .selector-btns .default-btn {
+    padding: 14px 35px;
+  }
+  .find-degree .content-1 .btn {
+    font-size: 15px;
+  }
+  .find-degree .content-1 .search-key .form-control {
+    height: 50px;
+    font-size: 14px;
+  }
+  .selector-box .form-check-label, .selector-box-2 .form-check-label{
+    font-size: 14px;
+  }
+  .find-degree .content-image .content .btn {
+    font-size: 14px;
+  }
+  .find-degree .content-image .content h4 {
+    font-size: 25px;
+  }
+  .find-degree .content-image .content h3 {
+    font-size: 35px;
+  }
+  .find-degree .content-image .content h5 {
+    font-size: 15px;
+  }
+  .find-degree .content-image {
+    padding: 301px 100px;
+  }
+  .find-degree .content-2 {
+    padding: 37px 30px;
+  }
+  .about-university .sub-title, .about-university .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-university .sub-title p {
+    font-size: 18px;
+  }
+  .about-university .content h2, .about-university .content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .about-university .content p {
+    font-size: 14px;
+  }
+  .about-university .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .about-university .content .item {
+    margin: 25px 0;
+  }
+  .about-university {
+    padding: 100px 0;
+  }
+  .faculty-area-3 .content span {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .faculty-area .content .icon {
+    width: 50%;
+  }
+  .faculty-area-3 .content h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .faculty-area .content .text p {
+    font-size: 14px;
+  }
+  .section-title-3 .sub-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .faculty-area .content .text h3 {
+    font-size: 20px;
+  }
+  .section-title-3 h2 {
+    font-size: 40px;
+  }
+  .section-title-3.text-start {
+    padding-right: 450px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .campus-experience-area .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info {
+      margin-bottom: 20px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .text h5 {
+    font-size: 16px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .text p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .campus-experience-area .content .comment-box-info {
+    padding: 30px 30px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-comment p{
+    font-size: 14px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-comment .date {
+    font-size: 14px;
+  }
+  .campus-experience-area {
+    padding-bottom: 100px;
+  }
+  .success-award-area .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+    
+  .success-award-area .content {
+    padding-right: 0;
+  }
+  .success-award-area .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .success-award-area .content .notice p {
+    font-size: 15px;
+  }
+  .success-award-area .content .notice {
+    padding: 21px 40px;
+  }
+  .success-award-area .content .notice i {
+    top: 25px;
+    left: 15px;
+    font-size: 18px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -4%;
+    left: 12%;
+  }
+  .subscribe-area-3 .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .subscribe-area-3 .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -4%;
+    left: 12%;
+  }
+  .subscribe-area-3 .content .signup {
+    height: 130px;
+  }
+  .subscribe-area-3 .content .signup .email-signup {
+    height: 60px;
+    font-size: 17px;
+  }
+  .subscribe-area-3 .content .signup .btn {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 17px;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    right: 52%;
+  }
+  .footer-area-3 .footer-top-info {
+    padding: 50px 0;
+  }
+  .footer-widget-info .footer-widget .image {
+    margin-bottom: 20px;
+  }
+  .footer-widget-info .footer-widget p {
+    font-size: 14px;
+  }
+  .footer-widget-info .footer-widget .info-links a {
+    font-size: 15px;
+  }
+  .footer-area-3 .footer-widget-info {
+    padding: 60px 0;
+  }
+  .blog-single-card .content .meta ul li {
+    font-size: 15px;
+  }
+  .blog-single-card .content h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .widget-tags ul li a {
+    font-size: 15px;
+  }
+  .widget-area .widget-catagories ul li a {
+    font-size: 15px;
+  }
+  .widget-area .widget-catagories ul li span {
+    font-size: 15px;
+  }
+  .widget-area .widget {
+    padding: 30px;
+  }
+  .blog-single-card .content {
+    padding: 25px;
+  }
+  .blog-single-card .content .butn {
+    font-size: 15px;
+  }
+  .blog-single-card .content .butn i {
+    font-size: 21px;
+    top: 1px;
+    right: -24px;
+  }
+  .blog-details-desc .article-content .entry-meta ul li {
+    font-size: 15px;
+  }
+  .blog-details-desc .article-content p {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  blockquote p, .blockquote p {
+    font-size: 16px !important;
+  }
+  .blog-details-desc .article-footer .article-tags span {
+    font-size: 16px;
+  }
+  .comments-area .comments-title {
+    font-size: 24px;
+  }
+  .comment-content p {
+    font-size: 14px;
+  }
+  .comments-area .comment-metadata {
+    font-size: 15px;
+  }
+  .comments-area .comment-body .reply a {
+    font-size: 15px;
+  }
+  .comments-area .comment-reply-title {
+    font-size: 24px;
+  }
+  .comments-area .comment-respond .form-submit input {
+    font-size: 16px;
+  }
+  .comments-area .comment-respond .comment-form-cookies-consent label {
+    font-size: 14px;
+  }
+  .about-alumni .image {
+    padding: 200px 100px;
+  }
+  .about-alumni .content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .about-alumni .content .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-alumni .content .sub-title p {
+    font-size: 18px;
+  }
+  .about-alumni .content .sub-title i {
+    font-size: 25px;
+  }
+  .about-alumni .content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .global-alumni-events .global-content-items .content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .global-alumni-events .global-content-items .content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .global-alumni-events .global-content-items .content {
+    padding: 60px 75px;
+    max-width: 640px;
+    top: 10%;
+  }
+  .global-alumni-events .image {
+    padding: 230px 110px;
+    max-width: 800px;
+  }
+  .academics-section .ac-overview .pera-title h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  } 
+  .academics-section .ac-overview .pera-title span {
+    font-size: 100px;
+  }
+  .academics-section .ac-overview .pera-dec p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .academics-section .academics-left .ac-category ul li a {
+    font-size: 16px;
+    padding: 18px;
+  }
+  .academics-section .academics-left .ac-contact a {
+    font-size: 16px;
+  }
+  .academics-section .academics-left .ac-contact span {
+    font-size: 17px;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys {
+    margin-bottom: 30px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .academics-section .ac-overview .pera-dec .catagorys .pra-catagorys a {
+    padding: 50px 20px;
+    font-size: 16px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box {
+    max-width: 500px;
+    padding: 45px 20px;
+    bottom: -120px;
+  }
+  .graduate-events {
+    margin-top: 100px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box .single-info a {
+    font-size: 14px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box .single-info {
+    text-align: center;
+    padding-left: 0;
+  }
+  .graduate-events .content-items .content h2 {
+    font-size: 28px;
+  }
+  .graduate-events .content-items .content a {
+    font-size: 15px;
+  }
+  .graduate-events .content-items .content {
+    padding-right: 300px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+  }
+  .problem-sector .problem-list .title h3 {
+    padding: 20px 35px;
+  }
+  .graduate-events .content-items .image img {
+    width: 300px;
+  }
+  .academics-section .ac-overview .pera-dec h3 {
+    font-size: 25px;
+  }
+  .academics-section .ac-overview .pera-dec h3 {
+    font-size: 24px;
+  }
+  .problem-sector .problem-list .problem-items ul li a {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .faculty-model .faculty-card .content p {
+    font-size: 14px;
+  }
+  .faculty-model .faculty-card .content h4 {
+    font-size: 20px;
+  }
+  .faculty-model .col-lg-6 .faculty-card {
+    margin-bottom: 20px;
+  }
+  .pera-dec .program-info .single-program-info h4 {
+    font-size: 56px;
+    margin-bottom: 15px;
+  }
+  .pera-dec .program-info .single-program-info {
+    padding: 0 0px;
+  }
+  .pera-dec .apply-program a {
+    font-size: 15px;
+  }
+  .pera-dec .apply-program .tuition-fees {
+    padding: 30px;
+  }
+  .pera-dec .program-points .single-point-list {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .faq-question {
+    font-size: 24px;
+  }
+  .deadlines-list .list-item-list {
+    margin-bottom: 30px;
+  }
+  .applicant-from .form-control {
+    height: 50px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .applicant-from label {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .widget-area .widget-list ul li span {
+    font-size: 15px;
+  }
+  .radio-label {
+    font-size: 15px;
+  }
+  .grid-sorting .select-box {
+    padding-left: 50px;
+  }
+  .grid-sorting .select-box .form-select {
+    padding: 15px 25px 15px 100px;
+  }
+  .grid-sorting .select-box label {
+    left: 80px;
+    font-size: 15px;
+    top: 15px;
+  }
+  .course-item .content ul li .image-circle {
+    padding: 6px 10px;
+  }
+  .course-item .content ul li span {
+    margin-left: 10px;
+  }
+  .courses-details .header-title h2 {
+    font-size: 40px;
+  }
+  .courses-details .content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .courses-details .content .content-pra .tag ul li a {
+    font-size: 14px;
+  }
+  .courses-details .content .content-pra .lists li {
+    margin-bottom: 15px;
+    align-items: flex-start;
+  }
+  .courses-details .content .content-pra {
+    margin-bottom: 30px;
+  }
+  .courses-details .content p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .instructor-card .content a {
+    font-size: 15px;
+  }
+  .instructor-card .content ul li span {
+    font-size: 15px;
+  }
+  .faq-content-2 .faq-question {
+    font-size: 22px;
+  }
+  .faq-content-2 .faq-item {
+    padding: 0 0px 20px 0;
+  }
+  .featured-clubs .clubs-item span {
+    font-size: 15px;
+  }
+  .std-activities .featured-clubs ul li a {
+    font-size: 15px;
+  }
+  .featured-clubs .clubs-item h4 {
+    margin-bottom: 20px;
+  }
+  .contact-content .header-content h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .contact-content .header-content p {
+    font-size: 14px;
+  }
+  .contact-form .form-control {
+    height: 50px;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }   
+  .contact-form label {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  .contact-info .info-details ul li {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+  .contact-form .form-select {
+    height: 50px;
+    font-size: 14px;
+}
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .nav-search a {
+    font-size: 30px !important;
+  }
+  .default-btn {
+    padding: 15px 30px;
+  }
+  .banner-content-2 .content span {
+    font-size: 24px;
+    margin-bottom: 25px;
+    display: block;
+  }
+  .banner-content-2 .content h1 {
+    font-size: 65px;
+  }
+  .banner-content-2 .content p {
+    font-size: 16px;
+  }
+  .banner-content-2 .content .buttons-action {
+    margin-bottom: 80px;
+  }
+  .banner-content-2 .content .scroll-down a {
+    font-size: 40px;
+    line-height: 60px;
+    height: 60px;
+    width: 70px;
+  }
+  .banner-content-2 .content .vertical-lr {
+    bottom: -45%;
+    left: -4%;
+  }
+
+  .about-us-area-2 .section-title h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .about-us-area-2 .section-title p {
+    font-size: 17px;
+  }
+  .about-us-area-2 .content-items .content h2 {
+    font-size: 40px;
+  }
+  .about-us-area-2 .content-items .content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .about-us-area-2 .content-items .content p {
+    font-size: 15px;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-] {
+    right: 29%;
+  }
+  .about-content-courser.owl-theme .owl-nav [class*=owl-].owl-next {
+    left: 29%;
+  }
+  .features-content .content h2, .features-content-2 .content h2 {
+    font-size: 40px;
+  }
+  .features-content-2 .sub-title p {
+    font-size: 18px;
+  }
+  .features-content-2 .academic-item .content .btn i {
+    top: 1px;
+    right: -21px;
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .content h4 {
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .image .number h3 {
+    font-size: 80px;
+  }
+  .features-content-2 .content .item .item-content p {
+    font-size: 15px;
+  }
+  .features-content-2 .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .features-content-2 .academic-item .content .btn {
+    font-size: 15px;
+  }
+  .video-area {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  .section-title .sub-title {
+    margin-bottom: 0px;
+  }
+  .section-title h2 {
+    font-size: 40px;
+  }
+  .section-title-2 .sub-title p {
+    font-size: 18px;
+  }
+  .news-item .sub-title i {
+    font-size: 25px;
+  }
+  .news-item .sub-title p {
+    font-size: 15px !important;
+  }
+  .news-item .content h2 {
+    font-size: 22px;
+  }
+  .news-item .content p {
+    font-size: 14px;
+  }
+  .news-item .content .btn {
+    font-size: 15px;
+  }
+  .news-content ul li .image {
+    width: 71%;
+  }
+  .news-content ul {
+    padding: 0px 20px;
+  }
+  .news-content ul li {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .news-content-right .content-box .content {
+    padding: 25px;
+  }
+  .news-content-right .content-box .content .btn {
+    font-size: 15px;
+  }
+  .news-content-right .content-box .content p {
+    font-size: 14px;
+  }
+  .news-content-right .content-box .content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .news-content-item .content-box .image {
+    width: 50%;
+  }
+  .news-content-item .content-box .content .sub-title p {
+    font-size: 14px;
+  }
+  .news-content-item .content-box .content .sub-title i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  .news-content-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .news-content-item .content-box {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .news-content-item .content-box .content {
+    width: 90%;
+  }
+
+  .faculty-area-2 .content p {
+    font-size: 14px;
+  }
+  .faculty-area-2 .heading h2 {
+    font-size: 40px;
+  }
+  .features-content-2 .academic-content {
+    padding-right: 25px;
+    top: 20%;
+  }
+
+  .quick-search .quick-content .sub-title {
+    margin-bottom: 15px;
+  }
+  .quick-search .quick-content .sub-title p {
+    font-size: 18px;
+  }
+  .quick-search .quick-content h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .quick-search .quick-content p {
+    font-size: 14px;
+  }
+  .quick-content {
+    padding-left: 10px;
+  }
+  .quick-search .course-search-box {
+    padding: 50px 40px;
+  }
+  .form-control {
+    font-size: 15px;
+  }
+  .form-select {
+    font-size: 15px;
+  }
+  .quick-search .quick-content .list .list-items ul {
+    padding-left: 24px;
+    padding-top: 10px;
+  }
+  .quick-search .quick-content .list .list-items ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .quick-search .quick-content .list .list-items ul li i {
+    font-size: 20px;
+    top: 4px;
+    left: -26px;
+  }
+  .quick-search .quick-content .apply-banner {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .quick-search .quick-content .apply-banner p {
+    font-size: 18px;
+  }
+
+  .activities-card .content .btn {
+    font-size: 15px;
+  }
+  .activities-card.style-2 .content {
+    padding: 25px 25px;
+  }
+  .activities-card .content p {
+    font-size: 14px;
+  }
+
+  .event .content .text h2 {
+    font-size: 25px;
+  }
+  .event .content .text span {
+    font-size: 15px;
+  }
+  .event .content .text p {
+    font-size: 14px;
+  }
+  .event .content .text .tag {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .event .content .image {
+    width: 66%;
+  }
+  .campus-card .content h2 {
+    padding: 8px;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .upcoming-event .content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .upcoming-event .content p {
+    font-size: 14px;
+  }
+  .news-content-item .content-box .content h3 {
+    font-size: 18px;
+  }
+  .upcoming-event .content .location {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .upcoming-event .content .location i {
+    font-size: 18px;
+    top: 1px;
+    left: -5px;
+  }
+  .upcoming-event .event-dates {
+    padding: 25px 20px;
+  }
+  .upcoming-event .event-dates .btn i {
+    top: 0px;
+  }
+  .upcoming-event .content {
+    padding-right: 25px;
+  }
+  .success-area-2 .success-card .play {
+    bottom: 70% !important;
+  }
+  .success-area .success-card .play::before {
+    height: 55px;
+    width: 55px;
+    top: -8px;
+    left: -7px;
+  }
+  .success-area .success-card .play a {
+    height: 40px;
+    width: 40px;
+    line-height: 45px;
+    font-size: 30px;
+  }
+  .success-area .success-card ul {
+    bottom: 10%;
+    padding: 0px 20px 0 17px;
+  }
+  .success-area .success-card ul li h3 {
+    font-size: 18px;
+  }
+  .footer-widget-info .footer-widget h4 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .notice-content i {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .notice-content h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+	line-height: 32px;
+  }
+  .notice-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .notice-content {
+    padding: 44px 30px;
+  }
+  .about-us-area .content {
+    padding-left: 0;
+  }
+
+
+  .features-content .image {
+    top: -84px;
+    right: -292px;
+  }
+  .video-play-area .contant {
+    padding: 0px;
+  }
+  .video-play-area .contant p {
+    font-size: 18px;
+  }
+  .video-play-area .play-button {
+    top: 0;
+  }
+
+  .news-item .content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .news-item .sub-title {
+    margin-bottom: 15px;
+  }
+  .news-item .sub-title p {
+    font-size: 16px !important;
+  }
+
+  .quick-search .quick-content p {
+    font-size: 16px;
+  }
+  .quick-search .quick-content .list .list-items ul {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+  .quick-search .quick-content .list .list-items ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .quick-search .quick-content .list .list-items ul li i {
+    font-size: 24px;
+    top: 5px;
+    left: -30px;
+  }
+  .success-area .success-card .play {
+    bottom: 470%;
+  }
+  .success-area .success-card ul {
+    bottom: 10%;
+    padding: 0px 30px 0 25px;
+  }
+
+
+  .slider-content .content .text h1 {
+    font-size: 60px;
+  }
+  .slider-content .content p {
+    font-size: 15px;
+  }
+  .slider-content .content .short-info h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .slider-bg-1 {
+    padding-bottom: 100px;
+  }
+  .find-degree .content-1 {
+    padding: 30px 20px;
+  }
+  .find-degree .content-2 {
+    padding: 30px 25px;
+  }
+  .find-degree .content-2 .tab-content ul li {
+    margin-bottom: 24px;
+  }
+  .find-degree .content-1 h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .find-degree .selector-btns .default-btn {
+    padding: 14px 35px;
+  }
+  .find-degree .content-1 .btn {
+    font-size: 15px;
+  }
+  .find-degree .content-1 .search-key .form-control {
+    height: 50px;
+    font-size: 14px;
+  }
+  .selector-box .form-check-label, .selector-box-2 .form-check-label{
+    font-size: 15px;
+  }
+  .find-degree .content-image .content .btn {
+    font-size: 14px;
+  }
+  .find-degree .content-image .content h4 {
+    font-size: 25px;
+  }
+  .find-degree .content-image .content h3 {
+    font-size: 35px;
+  }
+  .find-degree .content-image .content h5 {
+    font-size: 15px;
+  }
+  .find-degree .content-image {
+    padding: 290px 100px;
+  }
+  .find-degree .content-2 {
+    padding: 37px 30px;
+  }
+  .about-university .sub-title, .about-university .sub-title {
+    margin-bottom: 15px;
+  }
+  .about-university .sub-title p {
+    font-size: 18px;
+  }
+  .about-university .content h2, .about-university .content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .about-university .content p {
+    font-size: 14px;
+  }
+  .about-university .content .item .item-content h3 {
+    font-size: 20px;
+  }
+  .about-university .content .item {
+    margin: 25px 0;
+  }
+  .faculty-area-3 .content span {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .faculty-area .content .icon {
+    width: 50%;
+  }
+  .faculty-area-3 .content h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .faculty-area .content .text p {
+    font-size: 14px;
+  }
+  .section-title-3 .sub-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .faculty-area .content .text h3 {
+    font-size: 30px;
+  }
+  .section-title-3 h2 {
+    font-size: 40px;
+  }
+  .section-title-3.text-start {
+    padding-right: 450px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .campus-experience-area .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info {
+      margin-bottom: 20px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .text h5 {
+    font-size: 16px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-info .text p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .campus-experience-area .content .comment-box-info {
+    padding: 30px 30px;
+    margin-bottom: 30px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-comment p{
+    font-size: 14px;
+  }
+  .campus-experience-area .content .comment-box-info .admin-comment .date {
+    font-size: 14px;
+  }
+  .campus-experience-area {
+    padding-bottom: 100px;
+  }
+  .success-award-area .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .find-degree .search-key .form-select{
+    font-size: 16px;
+  }
+  .find-degree .content-1 .search-key .form-control {
+    font-size: 16px;
+  }
+    
+  .success-award-area .content {
+    padding-right: 0;
+  }
+  .success-award-area .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .success-award-area .content .notice p {
+    font-size: 15px;
+  }
+  .success-award-area .content .notice {
+    padding: 21px 40px;
+  }
+  .success-award-area .content .notice i {
+    top: 25px;
+    left: 15px;
+    font-size: 18px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -4%;
+    left: 12%;
+  }
+  .subscribe-area-3 .content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .subscribe-area-3 .content span {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .subscribe-area-3 .image {
+    bottom: -4%;
+    left: 12%;
+  }
+  .subscribe-area-3 .content .signup {
+    height: 130px;
+  }
+  .subscribe-area-3 .content .signup .email-signup {
+    height: 60px;
+    font-size: 17px;
+  }
+  .subscribe-area-3 .content .signup .btn {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .footer-area-3 .footer-top-info .left-content p {
+    font-size: 17px;
+  }
+  .footer-area-3 .footer-top-info .right-content span {
+    right: 52%;
+  }
+  .footer-area-3 .footer-top-info {
+    padding: 50px 0;
+  }
+  .footer-widget-info .footer-widget .image {
+    margin-bottom: 20px;
+  }
+  .footer-widget-info .footer-widget .info-links a {
+    font-size: 15px;
+  }
+  .footer-area-3 .footer-widget-info {
+    padding: 60px 0;
+  }
+
+  .campus-tour .content .sub-title {
+    margin-bottom: 15px;
+  }
+
+  .about-alumni .image {
+    padding: 250px 100px;
+  }
+  .about-alumni .content .sub-title {
+    margin-bottom: 20px;
+  }
+  .graduate-events .content-items .image img {
+    width: 350px;
+  }
+  .graduate-events .content-items .content {
+    padding-right: 260px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box {
+    bottom: -150px;
+    max-width: 650px;
+    padding: 60px 30px;
+  }
+  .academics-section .ac-overview .pera-dec .graduate-area .info-box h3 {
+    margin-bottom: 40px;
+  }
+  .graduate-events {
+    margin-top: 160px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
