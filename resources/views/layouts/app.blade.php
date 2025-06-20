@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
         <title>Fountain University, Osogbo - Welcome to Fountain University</title>
-        <link rel="icon" type="image/png" href="{{ asset('img/all-img/favicon.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
     </head>
     <body>
 
@@ -36,8 +36,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">
-                        <img class="logo-light" src="{{ asset('img/logo/white-logo.png') }}" alt="logo">
-                        <img class="logo-dark" src="{{ asset('img/logo/logo.png') }}" alt="logo">
+                        <img class="logo-light" src="{{ asset('img/logo/fuo-logo.png') }}" alt="logo">
+                        <img class="logo-dark" src="{{ asset('img/logo/fuo-logo.png') }}" alt="logo">
                     </a>
                     <div class="other-option d-lg-none">
                         <div class="option-item">
@@ -51,7 +51,7 @@
                     </a>
                     <div class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link active">
                                     Home
                                 </a>
@@ -60,16 +60,52 @@
                                     <li class="nav-item"><a href="index2.html" class="nav-link active">Home Two</a></li>
                                     <li class="nav-item"><a href="index3.html" class="nav-link">Home Three</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    Pages
+                                    The University
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
-                                    <li class="nav-item"><a href="news-and-blog.html" class="nav-link">News and Blog</a></li>
-                                    <li class="nav-item"><a href="blog-details.html" class="nav-link">Blog Details</a></li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Alumni</a></li>
+                                    <li class="nav-item"><a href="about-us.html" class="nav-link">About Board of Trustees</a></li>
+                                    <li class="nav-item">
+                                        <a href="news-and-blog.html" class="nav-link sub-menu">University Board of Trustees</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of FUO BOT</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Governing Council</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Directory of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Decision Extracts</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Committees of Council</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Schedule of Meetings</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">The Senate</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Congragation</a></li>
+                                    <li class="nav-item">
+                                        <a href="alumni.html" class="nav-link">Administration</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">The Vice-Chancellor </a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Registrar</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Bursar</a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Librarian</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Campus</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Gallery</a></li>
+                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Staff Downloads</a></li>
+                                    <li class="nav-item">
+                                        <a href="alumni.html" class="nav-link">Resources</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="blog.html" class="nav-link">General Downloads </a></li>
+                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Students' Downloads</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -99,7 +135,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    Courses
+                                    Colleges & Centres
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="courses.html" class="nav-link">Courses Sidebar</a></li>
@@ -127,7 +163,7 @@
                         <div class="others-option d-flex align-items-center">
                             <div class="option-item">
                                 <div class="nav-btn">
-                                    <a href="contact-us.html" class="default-btn">Contact Us</a>
+                                    <a href="{{ 'https://eportal.fuo.edu.ng' }}" class="default-btn" target="_blank">PORTALS</a>
                                 </div>
                             </div>
                             <div class="option-item">
