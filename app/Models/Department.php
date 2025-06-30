@@ -19,4 +19,8 @@ class Department extends Model
         'department_description',
         'is_active'
     ];
+
+    public function college(){
+        return $this->belongsTo(College::class, 'college_id');
+    }
 }

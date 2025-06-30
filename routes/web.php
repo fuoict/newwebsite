@@ -44,6 +44,7 @@ Route::get('school-of-postgraduate-applications', [PagesController::class, 'spgs
 Route::get('undergraduate-applications', [PagesController::class, 'underGraduateApplications'])->name('undergraduate-applications');
 Route::get('sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');
 Route::get('colleges', [PagesController::class, 'colleges'])->name('colleges');
+Route::get('colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
 Route::get('scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
 Route::get('annual-report', [PagesController::class, 'annualReport'])->name('annual-report');

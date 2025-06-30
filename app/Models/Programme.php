@@ -17,4 +17,13 @@ class Programme extends Model
         'entry_requirements',
         'is_active'
     ];
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class, 'department_id');
+    }
+    public function college()
+    {
+        return $this->belongsTo(College::class, 'college_id');
+    }
 }

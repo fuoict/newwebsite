@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\College;
+use App\Models\Department;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -153,9 +155,20 @@ class PagesController extends Controller
 
 
     // UNIVERSITY DIVISIONS .......................................
-    public function colleges()
+    public function colleges(Request $request)
     {
-        return view('pages.divisions.colleges');
+        // If you want to pass data to the view, you can do it like this:
+        // $colleges = College::all(); // Assuming you have a College model
+        // return view('pages.divisions.colleges.colleges', compact('colleges'));
+        // If you want to show a specific college, you can use route model binding or pass an ID
+        // return view('pages.divisions.colleges.colleges', ['college' =>
+        $id = $request->route('id');
+        $Data = [
+            'Departments' => Department::where('is_active', true)->where('college_id', $id)->first(),
+            'Colleges' => College::whereId($id)->first()
+        ];
+        
+        return view('pages.divisions.colleges.colleges', $Data);
     }
 
     
