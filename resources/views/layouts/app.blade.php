@@ -18,6 +18,9 @@
 
         <title>Fountain University, Osogbo - Welcome to Fountain University</title>
         <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
+
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     </head>
     <body>
 
@@ -172,7 +175,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="courses-details.html" class="nav-link">Centres</a>
+                                        <a href="courses-details.html" class="nav-link">Centres & Directorate</a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item"><a href="admission.html" class="nav-link">Centre for Community Development</a></li>
                                             <li class="nav-item"><a href="tuition-fees.html" class="nav-link">Centre for Consultancy Services</a></li>
@@ -202,7 +205,7 @@
                                     Publications
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="university-life.html" class="nav-link">Fountains Journals</a></li>
+                                    <li class="nav-item"><a href="{{ 'https://fountainjournals.com/' }}" class="nav-link">Fountains Journals</a></li>
                                     <li class="nav-item"><a href="the-campus-experience.html" class="nav-link">Inaugural Lectures</a></li>
                                     <li class="nav-item"><a href="fitness-athletics.html" class="nav-link">Annual Reports</a></li>
                                     <li class="nav-item"><a href="support-guidance.html" class="nav-link">Fountain Chronicles</a></li>
@@ -227,6 +230,11 @@
             </div>
             <!-- End Navbar Area Start -->
 
+
+
+
+            
+
             @yield('content')
 
             <div class="go-top active">
@@ -236,12 +244,12 @@
         </div>
 
         <!-- Links of JS files -->
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        
         <script src="{{ asset('js/aos.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
         <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
+
+
     </body>
 </html>
-

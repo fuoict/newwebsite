@@ -63,7 +63,7 @@ Default CSS
   --paragraphColorSecond: #B9B9BA;
   --whiteColor: #ffffff;
   --blackColor: #002147;
-  --fontSize: 16px;
+  --fontSize: 14px;
   --transition: .5s;
 }
 
@@ -353,7 +353,7 @@ Top Navbar Area CSS
   margin-left: 30px;
   margin-bottom: 15px;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--paragraphColor);
 }
 
@@ -2312,7 +2312,7 @@ Video Area CSS
 =================================================*/
 
 .video-area{
-  background-image: url(../img/all-img/video-image.jpg);
+  background-image: url(../img/all-img/student-life-on-campus.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
