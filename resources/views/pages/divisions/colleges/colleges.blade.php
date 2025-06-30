@@ -131,18 +131,21 @@
                                             <div class="problem-items">
                                                 <ul>
                                                     {{-- <li><a href="{{ route('departments', $Colleges->id) }}">Business Media</a></li> --}}
-                                                    <li><a href="#">Corporate Finance</a></li>
-                                                    <li><a href="#">Business Administration</a></li>
+                                                    @foreach ($Departments as $index => $Department)
+                                                        <li><a href="{{ route('department', $Department->id) }}">{{ $Department->department_name }}</a></li>
+                                                    @endforeach
+                                                    {{-- <li><a href="#">Corporate Finance</a></li>
+                                                    <li><a href="#">Business Administration</a></li> --}}
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
-                                                <ul>
+                                                {{-- <ul>
                                                     <li><a href="#">Business Ethics</a></li>
                                                     <li><a href="#">Marketing</a></li>
                                                     <li><a href="#">Accounting And Finance</a></li>
-                                                </ul>
+                                                </ul> --}}
                                             </div>
                                         </div>
                                     </div>

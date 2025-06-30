@@ -33,8 +33,8 @@
                                 <div class="number-list">
                                     <h4>Team Member</h4>
                                 </div>
-                                <h4>Complete Application Form</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut laboregna aliqua. Ut enim ad minim ven iam quis nostrud xerci.</p>
+                                <h4>Ajibade Abdulbasit</h4>
+                                <p>Public Relations Assistant /Graphic Designer</p>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="{{ asset('img/all-img/units/internal-audit-unit.jpg') }}" alt="image" class="img-fluid" style="max-height: 370px; border:solid 1px #ddd; border-radius: 10px;">
+                                <img src="{{ asset('img/all-img/units/pro-unit.jpg') }}" alt="image" class="img-fluid" style="max-height: 370px; border:solid 1px #ddd; border-radius: 10px;">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">

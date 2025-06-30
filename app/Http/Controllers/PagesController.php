@@ -164,7 +164,7 @@ class PagesController extends Controller
         // return view('pages.divisions.colleges.colleges', ['college' =>
         $id = $request->route('id');
         $Data = [
-            'Departments' => Department::where('is_active', true)->where('college_id', $id)->first(),
+            'Departments' => Department::where('is_active', 1)->where('college_id', $id)->get(),
             'Colleges' => College::whereId($id)->first()
         ];
         
@@ -175,7 +175,7 @@ class PagesController extends Controller
     {
         $id = $request->route('id');
         $Department = Department::whereId($id)->where('is_active', true)->first();
-        return view('pages.divisions.colleges.departments', $Department);
+        return view('pages.divisions.colleges.departments', compact('Department'));
     }
 
     
