@@ -9,176 +9,202 @@ class PagesController extends Controller
     //
     public function about()
     {
-        return view('home');
+        return view('pages.about');
     }
 
     // ABOUT THE UNIVERSITY ......................
     public function aboutBoardOfTrustee()
     {
-        return view('about');
+        return view('pages.theuniversity.about-board-of-trustee');
     }
 
     public function profileBOT()
     {
-        return view('home');
+        return view('pages.theuniversity.profile-member-bot');
     }
 
     public function dirOfCouncil()
     {
-        return view('home');
+        return view('pages.theuniversity.director-of-council');
     }
 
     public function memberOfCouncil()
     {
-        return view('home');
+        return view('pages.theuniversity.profile-member-bot');
     }
 
     public function decisionExtract()
     {
-        return view('home');
+        return view('pages.theuniversity.decision-extract');
     }
 
     public function commiteeOfCouncil()
     {
-        return view('home');
+        return view('pages.theuniversity.committee-of-council');
     }
 
     public function scheduleOfMeetings()
     {
-        return view('home');
+        return view('pages.theuniversity.schedule-of-meeting');
     }
 
     public function theSenate()
     {
-        return view('home');
+        return view('pages.theuniversity.the-senate');
     }
 
     public function congregation()
     {
-        return view('home');
+        return view('pages.theuniversity.congregation');
     }
 
     public function theViceChancellor()
     {
-        return view('home');
+        return view('pages.theuniversity.office-of-the-vice-chancellor');
     }
 
     public function theRegistrar()
     {
-        return view('home');
+        return view('pages.theuniversity.office-of-the-registrar');
     }
 
-    public function thebursar()
+    public function theBursar()
     {
-        return view('home');
+        return view('pages.theuniversity.office-of-the-bursar');
     }
 
     public function theLibrarian()
     {
-        return view('home');
+        return view('pages.theuniversity.office-of-the-librarian');
     }
 
     public function ourCampus()
     {
-        return view('home');
+        return view('pages.theuniversity.our-campus');
     }
 
     public function ourGallery()
     {
-        return view('home');
+        return view('pages.theuniversity.our-gallery');
     }
 
     public function staffDownloads()
     {
-        return view('home');
+        return view('pages.theuniversity.staff-downloads');
     }
 
     public function resources()
     {
-        return view('home');
+        return view('pages.theuniversity.resources');
     }
 
     // UNIVERSITY ACADEMICS ..........................
     public function subDegrees()
     {
-        return view('home');
+        return view('pages.academics.subdegrees-programme');
     }
 
     public function underGraduate()
     {
-        return view('home');
+        return view('pages.academics.undergradute-programme');
     }
 
     public function postGraduate()
     {
-        return view('home');
+        return view('pages.academics.postgraduate-programme');
     }
 
     public function spgsDean()
     {
-        return view('home');
+        return view('pages.academics.spgs-dean');
     }
 
     public function ourStaff()
     {
-        return view('home');
+        return view('pages.academics.our-staff');
     }
 
 
     // ADMISSION ......................................
     public function admissionRequirement()
     {
-        return view('home');
+        return view('pages.admissions.admission-requirement');
     }
 
     public function spgsApplications()
     {
-        return view('home');
+        return view('pages.admissions.spgs-application');
     }
 
     public function underGraduateApplications()
     {
-        return view('home');
+        return view('pages.admissions.undergraduate-applications');
     }
 
     public function sandWichApplications()
     {
-        return view('home');
+        return view('pages.admissions.sandwich-application');
     }
 
 
     // UNIVERSITY DIVISIONS .......................................
     public function colleges()
     {
-        return view('home');
+        return view('pages.divisions.colleges');
     }
 
     
     public function centres()
     {
-        return view('home');
+        return view('pages.divisions.centres');
     }
 
     public function units()
     {
-        return view('home');
+        return view('pages.divisions.units');
     }
 
     // UNIVERSITY PUBLICATIONS ................................
 
     public function inauguralLectures()
     {
-        return view('home');
+        return view('pages.publications.inaugural-lectures');
     }
 
     public function annualReport()
     {
-        return view('home');
+        return view('pages.publications.annual-reports');
     }
 
     public function fuoChronicles()
     {
-        return view('home');
+        return view('pages.publications.fountain-chronicles');
+    }
+
+    // SPECIAL PAGES ........................................
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+
+    public function gallery()
+    {
+        return view('pages.gallery');
+    }
+
+    public function alumni()
+    {
+        return view('pages.alumni');
+    }
+
+    public function faq()
+    {
+        return view('pages.faq');
+    }
+
+    public function applyForAdmission()
+    {
+        return view('pages.apply-for-admission');
     }
 
 }
