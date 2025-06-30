@@ -23,6 +23,11 @@ class PagesController extends Controller
         return view('pages.theuniversity.profile-member-bot');
     }
 
+    public function aboutGoverningCouncil()
+    {
+        return view('pages.theuniversity.about-governing-council');
+    }
+
     public function dirOfCouncil()
     {
         return view('pages.theuniversity.director-of-council');

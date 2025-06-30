@@ -53,12 +53,12 @@
                             <div class="top-right-items">
                                 <ul>
                                     {{-- <i class='bx bxs-map'></i>  --}}
-                                    <li><a href="contact-us.html">Library</a></li>
-                                    <li><a href="student-activities.html">Webmail</a></li>
-                                    <li><a href="faculty.html">FAQ</a></li>
-                                    <li><a href="alumni.html">Alumni</a></li>
-                                    <li><a href="the-campus-experience.html">Gallery</a></li>
-                                    <li><a href="online-education.html">Contact</a></li>
+                                    <li><a href="{{ route('the-librarian') }}">Library</a></li>
+                                    <li><a href="{{ 'https://gmail.com' }}">Webmail</a></li>
+                                    <li><a href="{{ route('faq') }}">FAQ</a></li>
+                                    <li><a href="{{ route('alumni') }}">Alumni</a></li>
+                                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                                    <li><a href="{{ route('contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
             <div class="navbar-area" id="navbar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img class="logo-dark" src="{{ asset('img/logo/fuo-logo.png') }}" alt="logo">
                     </a>
                     <div class="other-option d-lg-none">
@@ -92,41 +92,41 @@
                                     The University
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="{{ route('about-bot') }}" class="nav-link">About Board of Trustees</a></li>
+                                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Fountain University</a></li>
                                     <li class="nav-item">
-                                        <a href="news-and-blog.html" class="nav-link sub-menu">University Board of Trustees</a>
+                                        <a href="#!" class="nav-link sub-menu">University Board of Trustees</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of FUO BOT</a></li>
+                                            <li class="nav-item"><a href="{{ route('about-bot') }}" class="nav-link">About Board of Trustees</a></li>
+                                            <li class="nav-item"><a href="{{ route('fuo-bot-profile') }}" class="nav-link">Profile of Members of FUO BOT</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Governing Council</a>
+                                        <a href="#!" class="nav-link">Governing Council</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="blog.html" class="nav-link">About Board of Trustees</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Directory of Council</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Profile of Members of Council</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Decision Extracts</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Committees of Council</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Schedule of Meetings</a></li>
+                                            <li class="nav-item"><a href="{{ route('about-governing-council') }}" class="nav-link">About Governing Council</a></li>
+                                            <li class="nav-item"><a href="{{ route('director-of-council') }}" class="nav-link">Director of Council</a></li>
+                                            <li class="nav-item"><a href="{{ route('fuo-bot-profile') }}" class="nav-link">Profile of Members of Council</a></li>
+                                            <li class="nav-item"><a href="{{ route('decision-extract') }}" class="nav-link">Decision Extracts</a></li>
+                                            <li class="nav-item"><a href="{{ route('commmittee-of-council') }}" class="nav-link">Committees of Council</a></li>
+                                            <li class="nav-item"><a href="{{ route('schedule-of-meetings') }}" class="nav-link">Schedule of Meetings</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">The Senate</a></li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Congragation</a></li>
+                                    <li class="nav-item"><a href="{{ route('the-senate') }}" class="nav-link">The Senate</a></li>
+                                    <li class="nav-item"><a href="{{ route('congregation') }}" class="nav-link">Congregation</a></li>
                                     <li class="nav-item">
-                                        <a href="alumni.html" class="nav-link">Administration</a>
+                                        <a href="#!" class="nav-link">Administration</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="blog.html" class="nav-link">The Vice-Chancellor </a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Registrar</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Bursar</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">The Librarian</a></li>
+                                            <li class="nav-item"><a href="{{ route('the-vice-chancellor') }}" class="nav-link">The Vice-Chancellor </a></li>
+                                            <li class="nav-item"><a href="{{ route('the-registrar') }}" class="nav-link">The Registrar</a></li>
+                                            <li class="nav-item"><a href="{{ route('the-bursar') }}" class="nav-link">The Bursar</a></li>
+                                            <li class="nav-item"><a href="{{ route('the-librarian') }}" class="nav-link">The Librarian</a></li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Campus</a></li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Our Gallery</a></li>
-                                    <li class="nav-item"><a href="alumni.html" class="nav-link">Staff Downloads</a></li>
+                                    <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li>
+                                    <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our Gallery</a></li>
+                                    <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
                                     <li class="nav-item">
-                                        <a href="alumni.html" class="nav-link">Resources</a>
+                                        <a href="{{ route('resources') }}" class="nav-link">Resources</a>
                                     </li>
                                 </ul>
                             </li>
@@ -135,14 +135,14 @@
                                     Academics
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="academics.html" class="nav-link">Sub-Degree Programmes</a></li>
-                                    <li class="nav-item"><a href="undergraduate.html" class="nav-link">Undergraduate Programmes</a></li>
+                                    <li class="nav-item"><a href="{{ route('subdegree-programme') }}" class="nav-link">Sub-Degree Programmes</a></li>
+                                    <li class="nav-item"><a href="{{ route('undergradute-programme') }}" class="nav-link">Undergraduate Programmes</a></li>
                                     <li class="nav-item">
-                                        <a href="graduate" class="nav-link">Postgraduate School</a>
+                                        <a href="#!" class="nav-link">Postgraduate School</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="blog.html" class="nav-link"> Postgraduate Programmes</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Office of the Dean</a></li>
-                                            <li class="nav-item"><a href="blog-details.html" class="nav-link">Our Staff</a></li>
+                                            <li class="nav-item"><a href="{{ route('postgraduate-programme') }}" class="nav-link"> Postgraduate Programmes</a></li>
+                                            <li class="nav-item"><a href="{{ route('the-dean-of-spgs') }}" class="nav-link">Office of the Dean</a></li>
+                                            <li class="nav-item"><a href="{{ route('our-staff') }}" class="nav-link">Our Staff</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -206,9 +206,9 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ 'https://fountainjournals.com/' }}" class="nav-link">Fountains Journals</a></li>
-                                    <li class="nav-item"><a href="the-campus-experience.html" class="nav-link">Inaugural Lectures</a></li>
-                                    <li class="nav-item"><a href="fitness-athletics.html" class="nav-link">Annual Reports</a></li>
-                                    <li class="nav-item"><a href="support-guidance.html" class="nav-link">Fountain Chronicles</a></li>
+                                    <li class="nav-item"><a href="{{ route('inaugural-lectures') }}" class="nav-link">Inaugural Lectures</a></li>
+                                    <li class="nav-item"><a href="{{ route('annual-report') }}" class="nav-link">Annual Reports</a></li>
+                                    <li class="nav-item"><a href="{{ route('fuo-chronicles') }}" class="nav-link">Fountain Chronicles</a></li>
                                 </ul>
                             </li>
                         </ul>

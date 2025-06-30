@@ -18,6 +18,7 @@ Route::get('faq', [PagesController::class, 'faq'])->name('faq');
 Route::get('gallery', [PagesController::class, 'ourGallery'])->name('gallery');
 Route::get('about-board-of-trustee', [PagesController::class, 'aboutBoardOfTrustee'])->name('about-bot');
 Route::get('profile-board-of-trustee', [PagesController::class, 'profileBOT'])->name('fuo-bot-profile');
+Route::get('about-governing-council', [PagesController::class, 'aboutGoverningCouncil'])->name('about-governing-council');
 Route::get('director-of-council', [PagesController::class, 'dirOfCouncil'])->name('director-of-council');
 Route::get('member-of-council', [PagesController::class, 'memberOfCouncil'])->name('member-of-council');
 Route::get('decision-extract', [PagesController::class, 'decisionExtract'])->name('decision-extract');
