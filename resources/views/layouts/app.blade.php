@@ -71,7 +71,7 @@
             </div>
             <!-- End Top Navbar Area -->
 
-            
+
             <!-- Start Navbar Area Start -->
             <div class="navbar-area" id="navbar">
                 <div class="container-fluid">
@@ -152,6 +152,7 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link"> Admissions </a>
                                 <ul class="dropdown-menu">
@@ -159,9 +160,9 @@
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}" class="nav-link">Postgraduate Applications</a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}" class="nav-link">Undergraduate Applications </a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}" class="nav-link">Sandwich Applications</a></li>
-
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Divisions
@@ -172,20 +173,13 @@
                                         <a href="courses.html" class="nav-link">Colleges</a>
                                         <ul class="dropdown-menu">
                                             @foreach ($Colleges as $College)
-                                            {{-- {{ route('colleges.show', $College->id) }} --}}
                                                 <li class="nav-item">
                                                     <a href="{{ route('colleges.show', $College->id) }}" class="nav-link  sub-menu">{{ $College->college_name }}</a>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="#!" class="nav-link sub-menu">University Board of Trustees</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="{{ route('about-bot') }}" class="nav-link">About Board of Trustees</a></li>
-                                            <li class="nav-item"><a href="{{ route('fuo-bot-profile') }}" class="nav-link">Profile of Members of FUO BOT</a></li>
-                                        </ul>
-                                    </li>
+                                    
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Centres & Directorate</a>
                                         <ul class="dropdown-menu">
@@ -197,17 +191,17 @@
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Units</a>
                                         <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="admission.html" class="nav-link">Academic Planning Unit</a></li>
-                                            <li class="nav-item"><a href="tuition-fees.html" class="nav-link">Bursary Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Counselling Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">ICT Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Internal Audit Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Public Relations Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Quality Assurance Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Registry Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">SIWES Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Sports Unit</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Student Affairs Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('academicplanning') }}" class="nav-link">Academic Planning Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('bursary') }}" class="nav-link">Bursary Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('counselling') }}" class="nav-link">Counselling Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('ictunit') }}" class="nav-link">ICT Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('auditunit') }}" class="nav-link">Internal Audit Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('prounit') }}" class="nav-link">Public Relations Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('qassurance') }}" class="nav-link">Quality Assurance Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('registry') }}" class="nav-link">Registry Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('siwes') }}" class="nav-link">SIWES Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('sports') }}" class="nav-link">Sports Unit</a></li>
+                                            <li class="nav-item"><a href="{{ route('student-affairs') }}" class="nav-link">Student Affairs Unit</a></li>
                                         </ul>
                                     </li>
                                 </ul>

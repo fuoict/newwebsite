@@ -171,9 +171,11 @@ class PagesController extends Controller
         return view('pages.divisions.colleges.colleges', $Data);
     }
 
-    public function departments()
+    public function departments(Request $request)
     {
-        return view('pages.divisions.colleges.departments');
+        $id = $request->route('id');
+        $Department = Department::whereId($id)->where('is_active', true)->first();
+        return view('pages.divisions.colleges.departments', $Department);
     }
 
     
@@ -228,6 +230,63 @@ class PagesController extends Controller
     public function applyForAdmission()
     {
         return view('pages.apply-for-admission');
+    }
+
+    // UNIT METHODS .....................................................
+
+    public function academicPlanningUnit()
+    {
+        return view('pages.divisions.units.academic-planning-unit');
+    }
+
+    public function bursaryUnit()
+    {
+        return view('pages.divisions.units.bursary-unit');
+    }
+
+    public function counsellingUnit()
+    {
+        return view('pages.divisions.units.counselling-unit');
+    }
+
+    public function ictUnit()
+    {
+        return view('pages.divisions.units.ict-unit');
+    }
+
+    public function internalAuditUnit()
+    {
+        return view('pages.divisions.units.internal-audit-unit');
+    }
+
+    public function publicRelationUnit()
+    {
+        return view('pages.divisions.units.public-relation-unit');
+    }
+
+    public function qualityAssuranceUnit()
+    {   
+        return view('pages.divisions.units.quality-assurance-unit');
+    }
+
+    public function registryUnit()
+    {
+        return view('pages.divisions.units.registry-unit');
+    }
+
+    public function siwesUnit()
+    {
+        return view('pages.divisions.units.siwes-unit');
+    }
+
+    public function sportUnit()
+    {
+        return view('pages.divisions.units.sport-unit');
+    }
+
+    public function studentAffairsUnit()
+    {
+        return view('pages.divisions.units.student-affairs-unit');
     }
 
 }

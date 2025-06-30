@@ -27,34 +27,29 @@
 
                             <div class="article-content">
                                 <h3>Welcome to the {{ $Colleges->college_name }}</h3>
-                                <h4>Assallamun Alaekum Warahmotullahi Wabarakatu</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam quis nostrud xerci tation ulla mco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore</p>
+                                <h4>{{ $Colleges->dean_speach_title }}</h4>
+                                <p>{{ $Colleges->dean_speach_desc }}</p>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam quis nostrud xerci tation ulla mco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore</p>
-
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolorem gna aliqua. Ut enim ad minim ven iam quis nostrud xerci.</p>
-
-                                <blockquote class="wp-block-quote">
+                                <hr>
+                                {{-- <blockquote class="wp-block-quote">
                                     <p>About the College</p>
-                                </blockquote>
+                                </blockquote> --}}
 
                                 <h3>About the College</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam quis nostrud xerci tation ulla mco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore.</p>
-
-                            
+                                <p>{{ $Colleges->about_college }}</p>
 
                                 <ul class="wp-block-gallery columns-2">
                                     <li class="blocks-gallery-item">
                                         <figure>
                                             <h4>Mission</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolorem gna aliqua. Ut enim ad minim ven iam quis nostrud xerci.</p>
+                                            <p>{{ $Colleges->mission }}</p>
                                         </figure>
                                     </li>
 
                                     <li class="blocks-gallery-item">
                                         <figure>
                                             <h4>Vision</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam quis nostrud xerci tation ulla mco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore</p>
+                                            <p>{{ $Colleges->vision }}</p>
                                         </figure>
                                     </li>
                                 </ul>
@@ -98,7 +93,7 @@
                                 <div class="blog-banner-content">
                                     <div class="title">Dean, {{ $Colleges->college_name }}</div>
                                     <div class="title">
-                                        {{ $Colleges->college_dean }}
+                                        {{ $Colleges->dean_name }}
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +130,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">Business Media</a></li>
+                                                    {{-- <li><a href="{{ route('departments', $Colleges->id) }}">Business Media</a></li> --}}
                                                     <li><a href="#">Corporate Finance</a></li>
                                                     <li><a href="#">Business Administration</a></li>
                                                 </ul>

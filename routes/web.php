@@ -45,9 +45,28 @@ Route::get('/undergraduate-applications', [PagesController::class, 'underGraduat
 Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
 Route::get('/colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
-Route::get('/departments', [PagesController::class, 'departments'])->name('departments');
+Route::get('/departments/{id}', [PagesController::class, 'departments'])->name('department');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
 Route::get('/annual-report', [PagesController::class, 'annualReport'])->name('annual-report');
 Route::get('/fuo-chronicles', [PagesController::class, 'fuoChronicles'])->name('fuo-chronicles');
+
+Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('academicplanning');
+Route::get('/bursary-unit', [PagesController::class, 'bursaryUnit'])->name('bursary');
+Route::get('/counselling-unit', [PagesController::class, 'counsellingUnit'])->name('counselling');
+Route::get('/ict-unit', [PagesController::class, 'ictUnit'])->name('ictunit');
+Route::get('/internal-audit-unit', [PagesController::class, 'internalAuditUnit'])->name('auditunit');
+Route::get('/public-relation-unit', [PagesController::class, 'publicRelationUnit'])->name('prounit');
+Route::get('/quality-assurance-unit', [PagesController::class, 'qualityAssuranceUnit'])->name('qassurance');
+Route::get('/registry-unit', [PagesController::class, 'registryUnit'])->name('registry');
+Route::get('/siwes-unit', [PagesController::class, 'siwesUnit'])->name('siwes');
+Route::get('/sport-unit', [PagesController::class, 'sportUnit'])->name('sports');
+Route::get('/student-affairs-unit', [PagesController::class, 'studentAffairsUnit'])->name('student-affairs');
+
+
+// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
+// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
+// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
+// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
+// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
 

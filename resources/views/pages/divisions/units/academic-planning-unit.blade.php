@@ -1,67 +1,14 @@
+
 @extends('layouts.app')
 
 @section('content')
-
-
-        <!-- Start Clgun Searchbar Area -->
-        <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
-            <div class="offcanvas-header">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo/logo.png" alt="image">
-                </a>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="search-box">
-                    <div class="searchwrapper"> 
-                        <div class="searchbox"> 
-                            <div class="row align-items-center"> 
-                                <div class="col-md-9"><input type="text" class="form-control" placeholder="Fiend Your Course Here!"></div> 
-                                <div class="col-lg-3"> 
-                                    <a class="btn" href="#">Search</a> 
-                                </div> 
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="offcanvas-contact-info">
-                    <h4>Contact Info</h4>
-                    <ul class="contact-info list-style">
-                        <li>
-                            <i class="bx bxs-time"></i>
-                            <p>Mon - Fri: 9:00 - 18:00</p>
-                        </li>
-                        <li><i class="bx bxs-phone-call"></i> General Inquiries - <a href="tel:+8495160885">(849) 516-0885</a></li>
-                        <li>
-                            <i class="bx bxs-envelope"></i>
-                            <a href="contact@Clgunme.edu">contact@Clgunme.edu</a>
-                        </li>
-                        <li>
-                            <i class="bx bxs-map"></i>
-                            <p>404 Camino Del Rio S, Suite 102San Diego, CA 92108</p>
-                        </li>
-                    </ul>
-                    <ul class="social-profile list-style">
-                        <li><a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                        <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                        <li><a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="https://www.dribbble.com" target="_blank"><i class='bx bxl-dribbble'></i></a></li>
-                        <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <!-- End Clgun Searchbar Area -->
 
         <!-- Start Section Banner Area -->
         <div class="section-banner bg-1">
             <div class="container">
                 <div class="banner-spacing">
                     <div class="section-info">
-                        <h2 data-aos="fade-up" data-aos-delay="100">About Us</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">Clgun University is more than just a place of learning; it's a place where dreams take flight, where ideas flourish, and where you'll find the support and...</p>
+                        <h2 data-aos="fade-up" data-aos-delay="100">Academic Planning Unit</h2>
                     </div>
                 </div>
             </div>
@@ -75,11 +22,28 @@
                     <div class="col-lg-5 col-md-12">
                         <div class="text-content" data-aos="fade-up" data-aos-delay="100">
                             <div class="sub-title">
-                                <i class='bx bxs-graduation'></i> <p>About Our University</p>
+                                <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p>
                             </div>
-                             <h2 class="title-anim">Where Knowledge Meets Innovation</h2>
-                            <p class="title-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim iam quis nostrud xerci tation ulla mco laboris nisi ut</p>
-                            <a class="default-btn" href="schedule-tour.html">Schedule A Tour</a>
+                             <h2 class="title-anim">Academic Planning Unit</h2>
+                            <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
+                            <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
+                            <ul>
+                                <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>
+                                <li>Compiles and analyze statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
+                                <li>Prepares academic brief for internal and external purposes</li>
+                                <li>Monitors resources allocation and utilization in line with the plans of the university</li>
+                                <li>Develops resource allocation parameter</li>
+                                <li>Determines manpower needs, control and staff development</li>
+                                <li>Prepares annual plans of the university for submission to government</li>
+                                <li>Provision of data-based information on various aspect of the university operations</li>
+                                <li>Coordinates defrosting of positions and recruitment exercise</li>
+                                <li>Coordinates teaching and research equipment grants</li>
+                                <li>Computes excess workload for academics and technologists in the university</li>
+                                <li>Coordinates accreditation programmes of the university</li>
+                                <li>Determines allocation parameter of Direct Teaching Laboratory Cost (DTLC) to academic departments and units</li>
+                                <li>Undertakes planning-related investigations and studies.</li>
+                                <li>Provides close monitoring of the university programmes so as to maintain the quality of our programmes and effective service delivery.</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -87,18 +51,18 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="assets/img/all-img/about-image.png" alt="image">
+                                <img src="{{ asset('img/all-img/about-image.png') }}" alt="image">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="notice-content" data-aos="fade-right" data-aos-delay="200">
                                     <i class='bx bxs-quote-left'></i>
-                                    <h4 class="title-anim">Knowledge Beyond Boundaries</h4>
-                                    <p class="title-anim">Lorem ipsum dolor sit ametco nsectetur adipcing elit sed doe iusm tem incid idunt ut labore et dolore magna aliqua.</p>
+                                    <h4 class="title-anim">Fountain University, Osogbo</h4>
+                                    <p class="title-anim">Academic Planning Unit</p>
                                     <div class="author-info">
-                                        <span>John Michael</span>
-                                        <h5>John Michael</h5>
-                                        <p>Founder</p>
+                                        <span>Prof. Goke Abidemi </span>
+                                        <h5>Lalude</h5>
+                                        <p>Director</p>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +85,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
-                            <img src="assets/img/icon/education-1.png" alt="icon">
+                            <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
                             <h4>Education Services</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
                             <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
@@ -129,7 +93,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="academics-item active" data-aos="fade-up" data-aos-delay="200">
-                            <img src="assets/img/icon/education-2.png" alt="icon">
+                            <img src="{{ asset('img/icon/education-2.png') }}" alt="icon">
                             <h4>International Hubs</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
                             <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
@@ -137,7 +101,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/img/icon/education-3.png" alt="icon">
+                            <img src="{{ asset('img/icon/education-3.png') }}" alt="icon">
                             <h4>Bachelor’s and Master’s</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
                             <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
@@ -206,26 +170,5 @@
             </div>
         </div>
         <!-- End Campus Tour Area -->
-
-        <!-- Start Subscribe Area -->
-        <div class="subscribe-area ptb-100">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title">
-                        <i class='bx bxs-graduation'></i> <p>Subscribe to Our Newsletter</p>
-                    </div>
-                    <h2>Get the Latest Clgun News Delivered to You Inbox</h2>
-                </div>
-
-                <div class="subscribe-btn text-center" data-aos="fade-up" data-aos-delay="100">
-                    <a class="default-btn" href="#">Subscribe Now</a>
-                </div>
-            </div>
-        </div> 
-        <!-- End Subscribe Area -->
-
-
-    </body>
-</html>
 
 @endsection
