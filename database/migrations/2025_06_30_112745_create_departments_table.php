@@ -21,7 +21,12 @@ return new class extends Migration
             $table->string('hod_phone')->nullable();
             $table->string('hod_image')->nullable();
             $table->string('department_image')->nullable();
+            $table->text('department_title')->nullable();
             $table->text('department_description')->nullable();
+            $table->text('about_department')->nullable();
+            $table->text('mission')->nullable();
+            $table->text('vision')->nullable();
+            $table->text('our-staffs')->nullable();
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });

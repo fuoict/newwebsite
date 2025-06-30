@@ -171,6 +171,11 @@ class PagesController extends Controller
         return view('pages.divisions.colleges.colleges', $Data);
     }
 
+    public function departments()
+    {
+        return view('pages.divisions.colleges.departments');
+    }
+
     
     public function centres()
     {

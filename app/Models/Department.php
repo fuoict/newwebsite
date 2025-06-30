@@ -16,7 +16,12 @@ class Department extends Model
         'hod_phone',
         'hod_image',
         'department_image',
+        'department_title',
         'department_description',
+        'about_department',
+        'mission',
+        'vision',
+        'our-staffs',
         'is_active'
     ];
 

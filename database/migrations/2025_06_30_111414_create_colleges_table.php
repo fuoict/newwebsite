@@ -18,10 +18,10 @@ return new class extends Migration
             $table->string('dean_name');
             $table->string('dean_image')->nullable();
             $table->string('dean_speach_title')->nullable();
-            $table->string('dean_speach_desc')->nullable();
-            $table->string('about_college')->nullable();
-            $table->string('mission')->nullable();
-            $table->string('vision')->nullable();
+            $table->text('dean_speach_desc')->nullable();
+            $table->text('about_college')->nullable();
+            $table->text('mission')->nullable();
+            $table->text('vision')->nullable();
             $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
