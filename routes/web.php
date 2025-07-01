@@ -64,9 +64,12 @@ Route::get('/sport-unit', [PagesController::class, 'sportUnit'])->name('sports')
 Route::get('/student-affairs-unit', [PagesController::class, 'studentAffairsUnit'])->name('student-affairs');
 
 
-// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
-// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
-// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
-// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
-// Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('apu');
+Route::get('/consultancy', [PagesController::class, 'consultancy'])->name('consultancy');
+Route::get('/fucrit', [PagesController::class, 'fucrit'])->name('fucrit');
+Route::get('/spiritual-growth', [PagesController::class, 'spiritualGrowth'])->name('spiritual-growth');
+Route::get('/linkages', [PagesController::class, 'linkages'])->name('linkages');
+Route::get('/arabic-islamic-research', [PagesController::class, 'arabicIslamicResearch'])->name('arabic-islamic-research');
+Route::get('/sandwich', [PagesController::class, 'sandwich'])->name('sandwich');
+Route::get('/subdegree', [PagesController::class, 'subdegree'])->name('subdegree');
+Route::get('/entrepreneurship', [PagesController::class, 'entrepreneurship'])->name('entrepreneurship');
 

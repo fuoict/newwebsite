@@ -289,4 +289,41 @@ class PagesController extends Controller
         return view('pages.divisions.units.student-affairs-unit');
     }
 
+    // CENTRES PAGES .....................................................
+    public function consultancy()
+    {
+        return view('pages.divisions.centres.consultancy');
+    }
+    public function fucrit()
+    {
+        return view('pages.divisions.centres.fucrit');
+    }
+    public function spiritualGrowth()
+    {
+        return view('pages.divisions.centres.spiritual-growth');
+    }
+    public function linkages()
+    {
+        return view('pages.divisions.centres.linkages');
+    }
+    public function arabicIslamicResearch()
+    {
+        return view('pages.divisions.centres.arabic-islamic-research');
+    }
+    public function sandwich()
+    {
+        return view('pages.divisions.centres.sandwich');
+    }
+    public function subdegree()
+    {
+        return view('pages.divisions.centres.sub-degree');
+    }
+    public function entrepreneurship()
+    {
+        return view('pages.divisions.centres.entrepreneurship');
+    }
+
+
+
+
 }

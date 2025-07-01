@@ -182,15 +182,23 @@
                                     
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Centres & Directorate</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="admission.html" class="nav-link">Centre for Community Development</a></li>
-                                            <li class="nav-item"><a href="tuition-fees.html" class="nav-link">Centre for Consultancy Services</a></li>
-                                            <li class="nav-item"><a href="how-to-apply.html" class="nav-link">Centre for Research and Innovation</a></li>
+                                        <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
+                                            <li class="nav-item"><a href="{{ route('consultancy') }}" class="nav-link">Centre for Consultancy Services</a></li>
+                                            <li class="nav-item"><a href="{{ route('fucrit') }}" class="nav-link">Centre for Research and Innovation and Technology</a></li>
+                                            <li class="nav-item"><a href="{{ route('spiritual-growth') }}" class="nav-link">Centre for Spiritual Growth and Moral Excellence</a></li>
+                                            <li class="nav-item"><a href="{{ route('linkages') }}" class="nav-link">Centre for Linkages and Advancement</a></li>
+                                            <li class="nav-item"><a href="{{ route('arabic-islamic-research') }}" class="nav-link">Centre for Arabic and Islamic Research, Translation and Immersion Programme</a></li>
+                                            <li class="nav-item"><a href="{{ route('sandwich') }}" class="nav-link">Centre for Sandwich Programmes</a></li>
+                                            <li class="nav-item"><a href="{{ route('subdegree') }}" class="nav-link">Centre for Sub-degree and Professional Programmes</a></li>
+                                            <li class="nav-item"><a href="{{ route('entrepreneurship') }}" class="nav-link">Centre for Entrepreneurship and Skill Acquisition</a></li>
+
                                         </ul>
                                     </li>
+
+
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Units</a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
                                             <li class="nav-item"><a href="{{ route('academicplanning') }}" class="nav-link">Academic Planning Unit</a></li>
                                             <li class="nav-item"><a href="{{ route('bursary') }}" class="nav-link">Bursary Unit</a></li>
                                             <li class="nav-item"><a href="{{ route('counselling') }}" class="nav-link">Counselling Unit</a></li>
