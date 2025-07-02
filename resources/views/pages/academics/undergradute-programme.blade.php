@@ -21,7 +21,7 @@
         <div class="academics-section ptb-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                   <div class="col-lg-4">
                         <div class="academics-left">
                             <div class="ac-category">
                                 <ul>
@@ -36,6 +36,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-title">
@@ -100,7 +101,7 @@
                                {{-- start of department of Biological Sciences --}}
                                <div class="problem-sector py-4">
                                 <div class="problem-list">
-                                    <div class="titlBiological Sciencese">
+                                    <div class="title">
                                         <h3>Department of Biological Sciences</h3>
                                     </div>
                                     <div class="row">
