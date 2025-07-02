@@ -33,7 +33,8 @@ Route::get('/the-librarian', [PagesController::class, 'theLibrarian'])->name('th
 Route::get('/our-campus', [PagesController::class, 'ourCampus'])->name('our-campus');
 Route::get('/our-gallery', [PagesController::class, 'ourGallery'])->name('our-gallery');
 Route::get('/staff-downloads', [PagesController::class, 'staffDownloads'])->name('staff-downloads');
-Route::get('/resources', [PagesController::class, 'resources'])->name('resources');
+Route::get('/students-download', [PagesController::class, 'studentDownloads'])->name('students-download');
+Route::get('/general-download', [PagesController::class, 'generalDownloads'])->name('general-download');
 Route::get('/sub-degree-programme', [PagesController::class, 'subDegrees'])->name('subdegree-programme');
 Route::get('/undergradute-programme', [PagesController::class, 'underGraduate'])->name('undergradute-programme');
 Route::get('/postgraduate-programme', [PagesController::class, 'postGraduate'])->name('postgraduate-programme');

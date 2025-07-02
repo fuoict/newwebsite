@@ -100,9 +100,14 @@ class PagesController extends Controller
         return view('pages.theuniversity.staff-downloads');
     }
 
-    public function resources()
+    public function studentDownloads()
     {
-        return view('pages.theuniversity.resources');
+        return view('pages.theuniversity.students-download');
+    }
+
+    public function generalDownloads()
+    {
+        return view('pages.theuniversity.general-download');
     }
 
     // UNIVERSITY ACADEMICS ..........................

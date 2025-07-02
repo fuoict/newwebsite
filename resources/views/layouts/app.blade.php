@@ -129,12 +129,18 @@
                                     </li>
                                     <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li>
                                     <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our Gallery</a></li>
-                                    <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
                                     <li class="nav-item">
-                                        <a href="{{ route('resources') }}" class="nav-link">Resources</a>
+                                        <a href="#" class="nav-link">Resources</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a href="{{ route('general-download') }}" class="nav-link">General Downloads</a></li>
+                                            <li class="nav-item"><a href="{{ route('students-download') }}" class="nav-link">Students' Downloads</a></li>
+                                            <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
+
+
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Academics
@@ -214,6 +220,7 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Publications

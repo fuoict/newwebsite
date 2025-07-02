@@ -1,81 +1,151 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- Start Section Banner Area -->
-    <div class="section-banner bg-3">
-        <div class="container">
-            <div class="banner-spacing">
-                <div class="section-info">
-                    <h2 data-aos="fade-up" data-aos-delay="100">The Registrar</h2>
-                    <p data-aos="fade-up" data-aos-delay="200">ADENEKAN, Sheriff Adeyemi</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Section Banner Area -->
-
-    <!-- End Blog Area -->
-    <div class="blog-area ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog-details-desc">
-                        <div class="article-image">
-                            <img src="assets/img/all-img/blog-details.png" alt="image">
-                        </div>
-                        <div class="article-content">
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><a href="#">The Registrar,</a></li>
-                                    <li>Fountain University, Osogbo</li>
-                                </ul>
-                            </div>
-
-                            <h3>ADENEKAN, Sheriff Adeyemi </h3>
-                            {{-- <li>(FNIFST, FCOFP. MIFT)</li> --}}
-                            <p>ADENEKAN Sheriff Adeyemi; a very inspiring, innovative, and seasoned University Administrator
-                                was born over five decades ago in Abeokuta, Ogun State.</p>
-
-                            <p>He bagged a Bachelor of Arts degree (B.A. Hons) Philosophy in 1998 from Ogun State University
-                                (now Olabisi Onabanjo University) Ago-Iwoye, Ogun State, and Masters of Arts in Philosophy
-                                in 2007 from Olabisi Onabanjo University, Ago-Iwoye, Ogun State.</p>
-
-                            <p>He is a member of relevant professional bodies, namely; The Association of Nigerian
-                                University Professional Administrators (ANUPA), Nigeria Institute of Management (NIM),
-                                Institute of Corporate Affairs Management, and Association of University Administrators
-                                (AUA) UK.</p>
-
-                            <p>He started his career as a professional University Administrator in 2004 at the Olabisi
-                                Onabanjo University (Centre for Sandwich Programmes-CESAP) as an Administrative Officer
-                                before moving to Fountain University, Osogbo in 2008 as an Assistant Registrar. He rose
-                                through the ranks to the position of Deputy Registrar in 2018. </p>
-
-                            <p>His job knowledge and experience as an astute Administrator have exposed him to various
-                                units/offices of the Registry department in the University. Apart from being one of the
-                                three pioneer staff of registry in 2008, he has had the privilege to work in most of the
-                                sensitive and highly demanding units of the registry department, ranging from Council
-                                Affairs, Admissions, Establishments, Academic Affairs, Academic Planning, Certificate &
-                                Authentication, Postgraduate schools, Student Affairs, and Alumni Office.</p>
-
-                            <p>He has been privileged to act in capacities as Head of the Registry Department on two
-                                different occasions; in 2012 when the pioneer Registrar exited and after the completion of
-                                tenure of the second substantive Registrar in August 2016.</p>
-                            <p>He has also served in the highest decision-making body of the University, as a Representative
-                                of Congregation on Governing Council of Fountain University. Also, in attendance of all
-                                Senate meetings since 2012.</p>
-                            <p>He has attended many workshops and conferences towards professional development and career
-                                advancement in his chosen field.</p>
-                            <p>Mr Adenekan is married and blessed with children.
-
-                                He was appointed as the 4th substantive Registrar of Fountain University by the University
-                                Governing Council on 13th December 2022.
-                            </p>
-                        </div>
-
+ 
+        <!-- Start Section Banner Area -->
+        <div class="section-banner bg-3">
+            <div class="container">
+                <div class="banner-spacing">
+                    <div class="section-info">
+                        <h2 data-aos="fade-up" data-aos-delay="100">The Bursar</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">Fountain University, Osogbo, Osun State, Nigeria.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Blog Area -->
+        <!-- End Section Banner Area -->
+
+         <!-- Start About Area -->
+        <div class="about-alumni ptb-100">
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="content" data-aos="fade-up" data-aos-delay="100">
+                            
+                            <h2>ALI-BALOGUN, Silifat Ayinke</h2>
+                           
+                            <h4>Biography</h4>
+                            <p>Alhaja Silifat Ali-Balogun was born in Keffi, Nassarawa state to the family of Alhaji and Alhaja Abdulraheem Owodunni of Ogbomosho, Oyo state. She attended Nurudeen Primary School, Jos, and National College, Bariga, Lagos state. She then proceeded to University of Lagos from where she completed a bachelor’s degree in Accounting. She holds an MBA degree from Obafemi Awolowo University, Ile-Ife, Osun state. She is a fellow of the Institute of Chartered Accountants of Nigeria and as associate member of the Chartered Institute of Taxation in Nigeria.</p>
+                            <p>She has worked extensively in accounting, audit, and taxation for over thirty-five years. She is the Managing Partner at S.A. Ali-Balogun & Co. (Chartered Accountants). She was the pioneer Vice President of the Society of Women Accountants of Nigeria, Osun State chapter. She is a member, Board of Trustees of Fathew Rahmon Islamic Ministry, Lagos, as well as the University of Lagos Muslim Alumni. She is a long-term member of The Criterion (Al-Furqan), An Association of Muslim Women in Business and Profession, and a member of the Dawah Committee of the Osun State chapter of the association. She is the pioneer and current Bursar of Fountain University, Oke-Osun, Osogbo.</p>
+                            <p>She is married with children and grandchildren. She likes reading, travelling, and participating in Islamic activities.</p>
+                            
+                  
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('img/all-img/adenekan-sheriff1.jpeg') }}" alt="The-Bursar" data-aos="fade-zoom-in" data-aos-delay="100">
+                        <div  >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Area -->
+
+
+        <!-- Start Global Alumni Events Area -->
+        <div class="global-alumni-events ptb-100" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="global-content-items">
+                    <div class="content">
+                        <h2>QUALIFICATIONS</h2>
+                        <p>
+                            <ul>
+                                <li>Master in Business Administration (MBA)</li>
+                                <li>B.Sc. (Accounting)</li>
+                                <li>Fellow Chartered Accountant (Institute of Chartered Accountants of Nigeria)</li>
+                                <li>Associate, Chartered Institute of Taxation of Nigeria Chartered (Institute of Taxation of Nigeria)</li>
+                                <li>Associate Chartered Accountant (Institute of Chartered Accountants of Nigeria)</li>
+                            </ul>
+                        </p>
+                        <a class="default-btn" href="#">Download CV</a>
+                    </div>
+                    <div class="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Global Alumni Events Area -->
+
+        <!-- Start Event Area -->
+        <div class="event-area-3 ptb-100">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sub-title">
+                        <i class="bx bxs-graduation"></i> <p>Fountain University, Osogbo</p>
+                    </div>
+                    <h2>Office of the Bursar</h2>
+                </div>
+
+                <div class="slider-event owl-carousel owl-theme">
+                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="image">
+                            <img src="{{ asset('img/all-img/blog-1.png') }}" alt="image">
+                        </div>
+                        
+                        <div class="content">
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">Owen Christ</a></li>
+                                    <li>Mar, 2025</li>
+                                </ul>
+                            </div>
+                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="image">
+                            <img src="{{ asset('img/all-img/blog-3.png') }}" alt="image">
+                        </div>
+                        
+                        <div class="content">
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">Owen Christ</a></li>
+                                    <li>Mar, 2025</li>
+                                </ul>
+                            </div>
+                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image">
+                            <img src="{{ asset('img/all-img/blog-4.png') }}" alt="image">
+                        </div>
+                        
+                        <div class="content">
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">Owen Christ</a></li>
+                                    <li>Mar, 2025</li>
+                                </ul>
+                            </div>
+                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
+                            
+                        </div>
+                    </div>
+                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="image">
+                            <img src="{{ asset('img/all-img/blog-5.png') }}" alt="image">
+                        </div>
+                        
+                        <div class="content">
+                            <div class="meta">
+                                <ul>
+                                    <li><a href="#">Owen Christ</a></li>
+                                    <li>Mar, 2025</li>
+                                </ul>
+                            </div>
+                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Event Area -->
+
+
 @endsection
