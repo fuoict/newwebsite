@@ -99,18 +99,10 @@
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Fountain University</a></li>
                                     <li class="nav-item">
-                                        <a href="{{ route('about-board-of-trustee') }}" class="nav-link sub-menu">University Board of Trustees</a>
+                                        <a href="{{ route('about-bot') }}" class="nav-link sub-menu">University Board of Trustees</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#!" class="nav-link">Governing Council</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="{{ route('about-governing-council') }}" class="nav-link">About Governing Council</a></li>
-                                            <li class="nav-item"><a href="{{ route('director-of-council') }}" class="nav-link">Director of Council</a></li>
-                                            <li class="nav-item"><a href="{{ route('fuo-bot-profile') }}" class="nav-link">Profile of Members of Council</a></li>
-                                            <li class="nav-item"><a href="{{ route('decision-extract') }}" class="nav-link">Decision Extracts</a></li>
-                                            <li class="nav-item"><a href="{{ route('commmittee-of-council') }}" class="nav-link">Committees of Council</a></li>
-                                            <li class="nav-item"><a href="{{ route('schedule-of-meetings') }}" class="nav-link">Schedule of Meetings</a></li>
-                                        </ul>
+                                        <a href="{{ route('about-governing-council') }}" class="nav-link">Governing Council</a>
                                     </li>
                                     <li class="nav-item"><a href="{{ route('the-senate') }}" class="nav-link">The Senate</a></li>
                                     <li class="nav-item"><a href="{{ route('congregation') }}" class="nav-link">Congregation</a></li>
