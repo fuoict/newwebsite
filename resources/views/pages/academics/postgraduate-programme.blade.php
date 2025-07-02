@@ -104,7 +104,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                </div>
                                {{-- another aspect to use --}}
                             </div>
                         </div>
