@@ -110,6 +110,11 @@ class PagesController extends Controller
         return view('pages.theuniversity.general-download');
     }
 
+    public function theUniversityLibrary()
+    {
+        return view('pages.theuniversity.the-university-library');
+    }
+
     // UNIVERSITY ACADEMICS ..........................
     public function subDegrees()
     {

@@ -13,6 +13,7 @@ Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::get('/alumni', [PagesController::class, 'alumni'])->name('alumni');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::get('/the-university-library', [PagesController::class, 'theUniversityLibrary'])->name('the-university-library');
 
 Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
 Route::get('/gallery', [PagesController::class, 'ourGallery'])->name('gallery');

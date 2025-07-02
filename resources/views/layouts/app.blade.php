@@ -57,7 +57,7 @@
                             <div class="top-right-items">
                                 <ul>
                                     {{-- <i class='bx bxs-map'></i>  --}}
-                                    <li><a href="{{ route('the-librarian') }}">Library</a></li>
+                                    <li><a href="{{ route('the-university-library') }}">Library</a></li>
                                     <li><a href="{{ 'https://gmail.com' }}">Webmail</a></li>
                                     <li><a href="{{ route('faq') }}">FAQ</a></li>
                                     <li><a href="{{ route('alumni') }}">Alumni</a></li>
@@ -99,11 +99,7 @@
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Fountain University</a></li>
                                     <li class="nav-item">
-                                        <a href="#!" class="nav-link sub-menu">University Board of Trustees</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="{{ route('about-bot') }}" class="nav-link">About Board of Trustees</a></li>
-                                            <li class="nav-item"><a href="{{ route('fuo-bot-profile') }}" class="nav-link">Profile of Members of FUO BOT</a></li>
-                                        </ul>
+                                        <a href="{{ route('about-board-of-trustee') }}" class="nav-link sub-menu">University Board of Trustees</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#!" class="nav-link">Governing Council</a>
