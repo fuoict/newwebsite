@@ -26,7 +26,7 @@
                                     <li><a href="{{ route('our-campus') }}">The Campus Experience</a></li>
                                     <li><a href="{{ route('sports') }}">Sport</a></li>
                                     <li><a href="{{ route('counselling') }}">Counseling and Guidance</a></li>
-                                    <li><a class="active" href="{{ route('student-affairs') }}">Student Affairs</a></li>
+                                    <li><a class="active" href="{{ route('consultancy') }}">Consultancy</a></li>
                                 </ul>
                             </div>
                             <div class="ac-contact">
@@ -41,7 +41,6 @@
                             <div class="pera-dec">
                                 <h4>Welcome to the Centre for Consultancy Services</h4>
                                 <p>As-salam alaykum warahmatullahi wabarakatuhu.</p>
-                                <p>Welcome to the Consulting Services Centre at Fountain University!</p>
                                 <p>We are dedicated to providing high-quality consultancy services to our university, government, and external clients. Our team of experienced consultants is dedicated to providing top-notch advisory services to both internal university departments and external clients. As the Director of Consulting Services, I am proud to lead a team of talented professionals who are committed to delivering high-quality solutions tailored to meet our client’s specific needs.</p>
                                 <p>What sets our consulting services apart is our unique combination of academic expertise, industry experience, and innovative thinking. Whether you are looking to optimize processes, develop strategic plans, or tackle complex challenges, our consultants are here to help.</p>
                                 <p>Thank you.</p>
