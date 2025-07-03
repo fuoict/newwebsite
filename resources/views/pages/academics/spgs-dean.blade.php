@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <img src="{{ asset('img/all-img/professor-abdullateef-usman.jpg') }}" alt="The-Registrar" data-aos="fade-zoom-in" data-aos-delay="100">
-                        <div class="title">Professor Abdullateef Usman</div>
+                        <h4 class="mt-3">Prof Abdullateef USMAN</h4>
                         <div class="title"> Dean, School of Postgraduate Studies </div>
                     </div>
                     <div class="col-lg-8">

@@ -576,7 +576,7 @@ Slider Banner Area CSS
 =================================================*/
 
 .slider-bg-1{
-  background-image: url(../img/banner/banner1.jpg);
+  background-image: url(../img/banner/slid-5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -595,7 +595,7 @@ Slider Banner Area CSS
 	opacity:0.6;
 }
 .slider-bg-2{
-  background-image: url(../img/banner/banner5.jpg);
+  background-image: url(../img/banner/slid-6.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -604,6 +604,25 @@ Slider Banner Area CSS
   padding-bottom: 100px;
 }
 .slider-bg-2::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-3{
+  background-image: url(../img/banner/slid-7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-3::before {
 	position: absolute;
     content: "";
     left: 0;
@@ -4575,77 +4594,77 @@ Section Banner Area CSS
   color: #EEEEEE;
 }
 .section-banner.bg-1{
-  background-image: url(../img/banner/section-image-1.png);
+  background-image: url(../img/banner/section-image1.png);
 }
 .section-banner.bg-2{
-  background-image: url(../img/banner/section-image-2.png);
+  background-image: url(../img/banner/section-image2.png);
 }
 .section-banner.bg-3{
-  background-image: url(../img/banner/section-image-3.png);
+  background-image: url(../img/banner/section-image3.png);
 }
 .section-banner.bg-4{
-  background-image: url(../img/banner/section-image-4.png);
+  background-image: url(../img/banner/section-image4.png);
 }
 .section-banner.bg-5{
-  background-image: url(../img/banner/section-image-5.png);
+  background-image: url(../img/banner/section-image5.png);
 }
 .section-banner.bg-6{
-  background-image: url(../img/banner/section-image-6.png);
+  background-image: url(../img/banner/section-image6.png);
 }
 .section-banner.bg-7{
-  background-image: url(../img/banner/section-image-7.png);
+  background-image: url(../img/banner/section-image7.png);
 }
 .section-banner.bg-8{
-  background-image: url(../img/banner/section-image-8.png);
+  background-image: url(../img/banner/section-image8.png);
 }
 .section-banner.bg-9{
-  background-image: url(../img/banner/section-image-9.png);
+  background-image: url(../img/banner/section-image9.png);
 }
 .section-banner.bg-10{
-  background-image: url(../img/banner/section-image-10.png);
+  background-image: url(../img/banner/section-image10.png);
 }
 .section-banner.bg-11{
-  background-image: url(../img/banner/section-image-11.png);
+  background-image: url(../img/banner/section-image1.png);
 }
 .section-banner.bg-12{
-  background-image: url(../img/banner/section-image-12.png);
+  background-image: url(../img/banner/section-image2.png);
 }
 .section-banner.bg-13{
-  background-image: url(../img/banner/section-image-13.png);
+  background-image: url(../img/banner/section-image3.png);
 }
 .section-banner.bg-14{
-  background-image: url(../img/banner/section-image-14.png);
+  background-image: url(../img/banner/section-image4.png);
   margin-bottom: 80px;
 }
 .section-banner.bg-15{
-  background-image: url(../img/banner/section-image-15.png);
+  background-image: url(../img/banner/section-image5.png);
 }
 .section-banner.bg-16{
-  background-image: url(../img/banner/section-image-16.png);
+  background-image: url(../img/banner/section-image6.png);
 }
 
 .section-banner.bg-17{
-  background-image: url(../img/banner/section-image-17.png);
+  background-image: url(../img/banner/section-image7.png);
 }
 
 .section-banner.bg-18{
-  background-image: url(../img/banner/section-image-18.png);
+  background-image: url(../img/banner/section-image8.png);
 }
 
 .section-banner.bg-19{
-  background-image: url(../img/banner/section-image-19.png);
+  background-image: url(../img/banner/section-image9.png);
 }
 
 .section-banner.bg-20{
-  background-image: url(../img/banner/section-image-20.png);
+  background-image: url(../img/banner/section-image10.png);
 }
 
 .section-banner.bg-21{
-  background-image: url(../img/banner/section-image-21.png);
+  background-image: url(../img/banner/section-image1.png);
 }
 
 .section-banner.bg-22{
-  background-image: url(../img/banner/section-image-22.png);
+  background-image: url(../img/banner/section-image1.png);
 }
 
 
@@ -4653,7 +4672,7 @@ Section Banner Area CSS
 Subscribe Area CSS
 =================================================*/
 .subscribe-area{
-  background-image: url(../img/all-img/subscribe-area.jpg);
+  background-image: url(../img/banner/slid-5.png);
   background-size: cover;
   position:relative;
   background-repeat: no-repeat;
