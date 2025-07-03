@@ -225,65 +225,66 @@
         </div>
         <!-- End Campus Area -->
 
-            <!-- Start Success Area -->
-            <div class="success-area ptb-100">
-                <div class="container">
-                    <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                        <div class="sub-title">
-                            <i class='bx bxs-graduation'></i> <p>Student, College and Alumni Success</p>
-                        </div>
-                         <h2 class="title-anim">Celebrating our Annual Convocations</h2>
+        <!-- Start Success Area -->
+        <div class="success-area ptb-100">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sub-title">
+                        <i class='bx bxs-graduation'></i> <p>Student, College and Alumni Success</p>
                     </div>
-        
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-sm-6 col-md-6">
-                            <div class="success-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="image">
-                                    <img src="{{ asset('img/gallery/cn1.jpg') }}" alt="image">
-                                </div>
-                                <div class="content">
-                                    <ul>
-                                        <li class="play"><a class="popup-youtube" href="https://www.youtube.com/watch?v=uk8bcR021BU"><i class='bx bx-play'></i></a></li>
-                                        <li><a href="#"><h3>Read More </h3></a></li>
-                                        <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                                    </ul>
-                                </div>
+                        <h2 class="title-anim">Celebrating our Annual Convocations</h2>
+                </div>
+    
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="success-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="image">
+                                <img src="{{ asset('img/gallery/cn1.jpg') }}" alt="image">
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-md-6">
-                            <div class="success-card" data-aos="fade-up" data-aos-delay="200">
-                                <div class="image">
-                                    <img src="{{ asset('img/gallery/cn5.jpg') }}" alt="image">
-                                </div>
-                                <div class="content">
-                                    <ul>
-                                        <li class="play"><a class="popup-youtube" href="https://www.youtube.com/watch?v=ixYPj06Eijc"><i class='bx bx-play'></i></a></li>
-                                        <li><a href="#"><h3>Watch Full Video</h3></a></li>
-                                        <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 col-md-6">
-                            <div class="success-card" data-aos="fade-up" data-aos-delay="300">
-                                <div class="image">
-                                    <img src="{{ asset('img/gallery/cn3.jpg') }}" alt="image">
-                                </div>
-                                <div class="content">
-                                    <ul>
-                                        <li class="play"><a class="popup-youtube" href="http://youtube.com/watch?v=XvHnNhzSCcQ"><i class='bx bx-play'></i></a></li>
-                                        <li><a href="#"><h3>Follow us on YouTube</h3></a></li>
-                                        <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                                    </ul>
-                                </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="play"><a class="popup-youtube" href="https://www.youtube.com/watch?v=uk8bcR021BU"><i class='bx bx-play'></i></a></li>
+                                    <li><a href="#"><h3>Read More </h3></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-
-                    <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
-                        <p>Inspiring Minds, Shaping Futures. <a href="{{ route('undergradute-programme') }}">Learn about our Program <i class='bx bx-right-arrow-alt'></i></a></p>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="success-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="image">
+                                <img src="{{ asset('img/gallery/cn5.jpg') }}" alt="image">
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="play"><a class="popup-youtube" href="https://www.youtube.com/watch?v=ixYPj06Eijc"><i class='bx bx-play'></i></a></li>
+                                    <li><a href="#"><h3>Watch Full Video</h3></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6">
+                        <div class="success-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="image">
+                                <img src="{{ asset('img/gallery/cn3.jpg') }}" alt="image">
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li class="play"><a class="popup-youtube" href="http://youtube.com/watch?v=XvHnNhzSCcQ"><i class='bx bx-play'></i></a></li>
+                                    <li><a href="#"><h3>Follow us on YouTube</h3></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
+                    <p>Inspiring Minds, Shaping Futures. <a href="{{ route('undergradute-programme') }}">Learn about our Program <i class='bx bx-right-arrow-alt'></i></a></p>
+                </div>
             </div>
-            <!-- End Success Area -->
+        </div>
+        <!-- End Success Area -->
+        
 @endsection

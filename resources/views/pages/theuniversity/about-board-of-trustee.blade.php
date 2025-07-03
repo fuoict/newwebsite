@@ -13,7 +13,7 @@
             </div>
         </div>
         <!-- End Section Banner Area -->
-         <div class="courses-area ptb-100">
+         
                 <div class="container">
                     <div class="section-title" data-aos="fade-up" data-aos-delay="100" style="text-align: left">
                         <h3>Introduction</h3>
@@ -160,7 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                             <div class="col-lg-4 col-sm-6 col<div class="courses-area ptb-100">-md-6 mb-4">
                                 <div class="course-item">
                                     <div class="image">
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}

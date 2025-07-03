@@ -37,40 +37,106 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
-                                <h3>What You Need To Join Us</h3>
-                                <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}">Apply Now</a>
+                                <h3>Fountain University Congregation</h3>
+                                <p>The Congregation Ceremony at Clgun University marks a proud and memorable milestone celebrating the academic achievements of our students as they transition from scholars to alumni.</p>
+                                <p>Held annually, this prestigious event brings together graduates, families, faculty, and dignitaries to honor the hard work, dedication, and excellence that define the Clgun experience. It’s more than a graduation—it's a celebration of potential, purpose, and the journey ahead.</p>
                                <div class="program-info mt-4">
-                                <h3>Things To Know First</h3>
-                                <br>
-
-                                <h4>All candidates applying to any of our programmes requre the following. </h4>
-                                            <ul>
-                                                <li>UTME Result printout</li>
-                                                <li>O' level results</li>
-                                                <li>Evidence of online registration with Fountain University</li>
-                                                <li>1 passport size photograph</li>
-                                            </ul>
-                               </div>
-                               <div class="apply-program">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5 col-sm-5 col-md-6">
-                                            <div class="content">
-                                                <h3>Where to submit necessary documents?</h3>
-                                                <p>Documents not submitted through the online method can be mailed to:</p>
-                                                <p><i class='bx bxs-map'></i> Oke-Osun, P.M.B. 4491, Osogbo, Osun State,Nigeria</p>
-                                                <p><i class='bx bxs-phone-call'></i> +(234) 8031145929</p>
-                                                <p><i class='bx bxs-phone-call'></i> +(234) 8037063960</p>
-                                                <p><i class='bx bxs-envelope'></i> admissions@fuo.edu.ng</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <h4>Highlights of the Ceremony:</h4>
+                                <p>
+                                    <ul>
+                                        <li>Award of Degrees, Diplomas, and Certificates</li>
+                                        <li>Cultural Performances and Moments of Reflection</li>
+                                        <li>Inspirational Speeches by Special Guests and Alumni</li>
+                                        <li>Recognition of Outstanding Academic and Leadership Achievements</li>
+                                    </ul>
+                                </p>
                                </div>
                                <div class="apply-program">
                                     <div class="row align-items-center">
                                         <div class="col-md-12">
-                                            <div class="image">
-                                                <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"> Apply Now</a>
+                                            <!-- Congregation Galley Area -->
+                                            <div class="activities-area ptb-20">
+                                                <div class="container">
+                                                    <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                                                        <div class="sub-title">
+                                                            <i class='bx bxs-graduation'></i> <p>Events</p>
+                                                        </div>
+                                                            <h2 class="title-anim">Our Memorable Events</h2>
+                                                    </div>
+
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m1.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m2.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m3.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m4.jpg') }}" alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m5.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m6.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m10.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m8.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                                            <div class="activities-card" data-aos="fade-up" data-aos-delay="100">
+                                                                <div class="image">
+                                                                    <img src="{{ asset('img/gallery/m9.jpg') }} " alt="image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                    
+                                                </div>
                                             </div>
+                                            <!-- Congregation Galley Area -->
                                         </div>
                                     </div>
                                </div>
