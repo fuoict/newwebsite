@@ -61,7 +61,7 @@
                 <div class="banner-spacing">
                     <div class="section-info">
                         <h2 data-aos="fade-up" data-aos-delay="100">About Us</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">Clgun University is more than just a place of learning; it's a place where dreams take flight, where ideas flourish, and where you'll find the support and...</p>
+                        <p data-aos="fade-up" data-aos-delay="200">Fountain University is more than just a place of learning; it's a place where dreams take flight, where ideas flourish, and where you'll find the support and resources you need to succeed.</p>
                     </div>
                 </div>
             </div>
@@ -77,29 +77,24 @@
                             <div class="sub-title">
                                 <i class='bx bxs-graduation'></i> <p>About Our University</p>
                             </div>
-                             <h2 class="title-anim">Where Knowledge Meets Innovation</h2>
-                            <p class="title-anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim iam quis nostrud xerci tation ulla mco laboris nisi ut</p>
-                            <a class="default-btn" href="schedule-tour.html">Schedule A Tour</a>
+                             <h2 class="title-anim">OUR HISTORY</h2>
+                            <p class="title-anim">The formation of Nasrul-Lahi-Il-Fatih Society (NASFAT) – the Proprietor of Fountain University- was originally focused on prayer meetings for the Muslim elites, with a view to creating necessary opportunity for them to interact and rub minds with Islamic scholars on the one hand; and to enhance their knowledge about the principles and practices of Islam, on the other hand.</p>
+                            <p>Fountain University was granted an operational licence as a Private University on May 17, 2007 by the Federal Government on the recommendations of the National Universities Commission.Following this achievement, a Fountain Universities Strategic implementation Committee was set up to serve as “in loco Council” to actualise the birth of the University. This Committee worked tirelessly to put in place the necessary facilities for the University to take-off. The Committee was dissolved in September 2007 upon the inauguration of the Governing Council led by Professor N.O.Adedipe. The first Governing Council completed its first four Year in September 2011 after which it was reconstituted.</p>
                         </div>
                     </div>
 
                     <div class="col-lg-7">
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
-                                <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="assets/img/all-img/about-image.png" alt="image">
+                                <div class="notice-content" data-aos="fade-right" data-aos-delay="200">
+                                    <p class="title-anim">The desire of the Nasrul-Lahi-Il-Fatih Society  (NASFAT) to establish a University was borne out of its educational policy and plan enunciated at its strategic Retreat held at Akodo, Lagos, in the year 2000. From this humble beginning, the Society started a systematic process which led to the hosting of an academic summit of 30 Distinguished Academic Personalities from where an 18-person University Planning Committee emerged in January 2004.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="notice-content" data-aos="fade-right" data-aos-delay="200">
                                     <i class='bx bxs-quote-left'></i>
-                                    <h4 class="title-anim">Knowledge Beyond Boundaries</h4>
-                                    <p class="title-anim">Lorem ipsum dolor sit ametco nsectetur adipcing elit sed doe iusm tem incid idunt ut labore et dolore magna aliqua.</p>
-                                    <div class="author-info">
-                                        <span>John Michael</span>
-                                        <h5>John Michael</h5>
-                                        <p>Founder</p>
-                                    </div>
+                                    <h4 class="title-anim">Our Philosophy</h4>
+                                    <p class="title-anim">our philosophy is rooted in a commitment to excellence, intellectual curiosity, and the pursuit of knowledge. We strive to create a dynamic academic environment that fosters critical thinking, encourages creativity, and empowers individuals to make a positive impact on society.</p>
                                 </div>
                             </div>
                         </div>
@@ -109,44 +104,6 @@
         </div>
         <!-- End About Us Area -->
 
-        <!-- Start Academics Area -->
-        <div class="academics-area bg-color-1 ptb-100" >
-            <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title">
-                        <i class='bx bxs-graduation'></i> <p>Academics</p>
-                    </div>
-                    <h2>Where Excellence Meets Opportunity</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
-                            <img src="assets/img/icon/education-1.png" alt="icon">
-                            <h4>Education Services</h4>
-                            <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="academics-item active" data-aos="fade-up" data-aos-delay="200">
-                            <img src="assets/img/icon/education-2.png" alt="icon">
-                            <h4>International Hubs</h4>
-                            <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
-                            <img src="assets/img/icon/education-3.png" alt="icon">
-                            <h4>Bachelor’s and Master’s</h4>
-                            <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Academics Area -->
        
         <!-- Start Campus Tour Area -->
         <div class="campus-tour">
@@ -157,10 +114,8 @@
                             <div class="sub-title">
                                 <i class='bx bxs-graduation'></i> <p>Core Values</p>
                             </div>
-                            <h2>Special Campus Tour</h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim iam quis nostrud xerci tation ulla mco laboris nisi ut</p>
+                            <h2>Our Principles</h2>
+                            <p>we are guided by a set of principles that shape our identity, drive our actions, and define our commitment to excellence in education, research, and service. These principles form the foundation of our institution’s values and guide our interactions with students, faculty, staff, and the broader community.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -179,10 +134,8 @@
                             <div class="sub-title">
                                 <i class='bx bxs-graduation'></i> <p>Core Values</p>
                             </div>
-                            <h2>Graduation</h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim iam quis nostrud xerci tation ulla mco laboris nisi ut</p>
+                            <h2>Special Campus Tour</h2>
+                            <p>A tour around Fountain University Campus gives you a splendid experience that always want you to feature as a student. Our buildings are furnished with essential and basic facilities which enhance a conducive learning environment. Our campus is endowed with recreational facilities and natural spaces and essential medical facilities that encourage a healthy lifestyle outside the classroom. Fountain University Campus is a place our students are proud to call a home during their stay in the campus.</p>
                         </div>
                     </div>
                 </div>
@@ -192,10 +145,8 @@
                             <div class="sub-title">
                                 <i class='bx bxs-graduation'></i> <p>Core Values</p>
                             </div>
-                            <h2>Special Campus Tour</h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim iam quis nostrud xerci tation ulla mco laboris nisi ut</p>
+                            <h2>Powerful Alumni</h2>
+                            <p>Campus on a tour designed for prospective graduate and professional students. You will see how our university like, facilities, studenst and life in this university. Meet our graduate admissions representative to learn more about our graduate programs and decide what it the best for you.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -212,13 +163,13 @@
             <div class="container">
                 <div class="section-title" data-aos="fade-up" data-aos-delay="100">
                     <div class="sub-title">
-                        <i class='bx bxs-graduation'></i> <p>Subscribe to Our Newsletter</p>
+                        <i class='bx bxs-graduation'></i> <p>Stay Connected with Fountain University</p>
                     </div>
-                    <h2>Get the Latest Clgun News Delivered to You Inbox</h2>
+                    <h2>We keep our community informed and inspired, check here for regular update.</h2>
                 </div>
 
                 <div class="subscribe-btn text-center" data-aos="fade-up" data-aos-delay="100">
-                    <a class="default-btn" href="#">Subscribe Now</a>
+                    <a class="default-btn" href="{{ route('contact') }}">Contact Us For More Information</a>
                 </div>
             </div>
         </div> 

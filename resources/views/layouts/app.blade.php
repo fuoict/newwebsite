@@ -92,6 +92,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav ms-auto">
 
+                            {{-- THE-UNIVERSITY MENU ------------------------------------------------------ --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     The University
@@ -108,7 +109,7 @@
                                     <li class="nav-item"><a href="{{ route('congregation') }}" class="nav-link">Congregation</a></li>
                                     <li class="nav-item">
                                         <a href="#!" class="nav-link">Administration</a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
                                             <li class="nav-item"><a href="{{ route('the-vice-chancellor') }}" class="nav-link">The Vice-Chancellor </a></li>
                                             <li class="nav-item"><a href="{{ route('the-registrar') }}" class="nav-link">The Registrar</a></li>
                                             <li class="nav-item"><a href="{{ route('the-bursar') }}" class="nav-link">The Bursar</a></li>
@@ -119,7 +120,7 @@
                                     <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our Gallery</a></li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Resources</a>
-                                        <ul class="dropdown-menu">
+                                        <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
                                             <li class="nav-item"><a href="{{ route('general-download') }}" class="nav-link">General Downloads</a></li>
                                             <li class="nav-item"><a href="{{ route('students-download') }}" class="nav-link">Students' Downloads</a></li>
                                             <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
@@ -129,6 +130,7 @@
                             </li>
 
 
+                            {{-- ACADEMICS MENU -------------------------------------------------------------- --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Academics
@@ -147,21 +149,24 @@
                                 </ul>
                             </li>
 
+                            {{-- ADMISSION MENU ----------------------------------------------------------- --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link"> Admissions </a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}" class="nav-link">Admission Requirements</a></li>
+                                    <li class="nav-item"><a href="{{ route('admission-requirement') }}" class="nav-link">Admission Requirements</a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}" class="nav-link">Postgraduate Applications</a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}" class="nav-link">Undergraduate Applications </a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}" class="nav-link">Sandwich Applications</a></li>
                                 </ul>
                             </li>
 
+                            {{-- DIVISIONS MENU ............................................. --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Divisions
                                 </a>
                                 
+                                {{-- Colleges Divisions --}}
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="courses.html" class="nav-link">Colleges</a>
@@ -174,6 +179,7 @@
                                         </ul>
                                     </li>
                                     
+                                    {{-- Centres and Directorates Divisions --}}
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Centres & Directorate</a>
                                         <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
@@ -189,7 +195,7 @@
                                         </ul>
                                     </li>
 
-
+                                    {{-- Unit Division Menu --}}
                                     <li class="nav-item">
                                         <a href="courses-details.html" class="nav-link">Units</a>
                                         <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
@@ -221,6 +227,8 @@
                                 </ul>
                             </li>
                         </ul>
+
+                        {{-- PORTAL MENU ------------------------------------------------------------------------------ --}}
                         <div class="others-option d-flex align-items-center">
                             <div class="option-item">
                                 <div class="nav-btn">
