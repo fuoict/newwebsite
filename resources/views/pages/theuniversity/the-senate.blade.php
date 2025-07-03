@@ -63,7 +63,7 @@
         <div class="container">
             <div class="banner-spacing">
                 <div class="section-info">
-                    <h2 data-aos="fade-up" data-aos-delay="100">The Senate</h2>
+                    <h2 data-aos="fade-up" data-aos-delay="200">The Senate</h2>
                     <p data-aos="fade-up" data-aos-delay="200">The Senate is the ultimate authority for decision-taking on
                         all academic matters, normally acting on advice from the School Boards and its other Committees.
                         Hence, the academic policy and procedures of the University are determined by a complex structure in
@@ -82,7 +82,7 @@
                 <div class="col-lg-12">
                     <div class="ac-overview">
                         <div class="pera-title">
-                            <h2><span>The Senate</span></h2>
+                            <h2>The Senate</h2>
                         </div>
                         <div class="pera-dec">
                             <p>The Senate is the ultimate authority for decision-taking on all academic matters, normally
@@ -165,10 +165,8 @@
                                                         dress</li>
                                                 </ul>
                                             </div>
-                                            <h6>In carrying out these functions, the Senate requires the concurrence of
+                                            <h6 class="py-5">In carrying out these functions, the Senate requires the concurrence of
                                                 Council to provide the necessary financial and other resources</h6>
-
-                                           
                                         </div>
                                     </div>
                                 </div>

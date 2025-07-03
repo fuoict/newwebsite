@@ -26,7 +26,7 @@
                             <div class="ac-category">
                                 <ul>
                                     <li><a href="{{ route('undergradute-programme') }}">Overview</a></li>
-                                    <li><a class="active" href="!#">Undergraduate</a></li>
+                                    <li><a class="active" href="#">Undergraduate</a></li>
                                     <li><a href="{{ route('subdegree-programme') }}">Sub-Degree Programmes</a></li>
                                 </ul>
                             </div>
