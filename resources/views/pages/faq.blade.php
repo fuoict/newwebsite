@@ -20,16 +20,16 @@
                         <div class="academics-left">
                             <div class="ac-category">
                                 <ul>
-                                    <li><a href="">Library</a></li>
-                                    <li><a href="">Webmail</a></li>
+                                    <li><a href="{{ route('the-university-library') }}">Library</a></li>
+                                    <li><a href="{{ 'https://google.com' }}">Webmail</a></li>
                                     <li><a class="active" href="">FAQ</a></li>
-                                    <li><a href="">Alumni</a></li>
-                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="{{ route('alumni') }}">Alumni</a></li>
+                                    <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                  </ul>
                             </div>
                             <div class="ac-contact">
                                 <span>Quick Links</span>
-                                <a href="contact-us.html">Contact Us</a>
+                                <a href="{{ route('contact') }}">Contact Us</a>
                              </div>
                         </div>
                     </div>
