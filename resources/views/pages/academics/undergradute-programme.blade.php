@@ -25,14 +25,14 @@
                         <div class="academics-left">
                             <div class="ac-category">
                                 <ul>
-                                    <li><a href="academics.html">Overview</a></li>
-                                    <li><a class="active" href="Undergraduate.html">Undergraduate</a></li>
-                                    <li><a href="faculty.html">Faculty</a></li>
+                                    <li><a href="{{ route('undergradute-programme') }}">Overview</a></li>
+                                    <li><a class="active" href="!#">Undergraduate</a></li>
+                                    <li><a href="{{ route('subdegree-programme') }}">Sub-Degree Programmes</a></li>
                                 </ul>
                             </div>
                             <div class="ac-contact">
                                 <span>Quick Links</span>
-                                <a href="contact-us.html">Contact Us</a>
+                                <a href="{{ route('contact') }}">Contact Us</a>
                             </div>
                         </div>
                     </div>

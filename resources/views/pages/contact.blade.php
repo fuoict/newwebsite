@@ -21,7 +21,7 @@
                     <div class="col-lg-7">
                         <div class="contact-content">
                             <div class="header-content">
-                                <h2>We’d Love To Hear From You</h2>
+                                <h2>We Would Love To Hear From You</h2>
                                 <p>At Fountain University, Osogbo, we are committed to providing a supportive and enriching academic environment. Whether you're exploring our programs, need help with admissions, or simply have questions, we're here to assist you.</p>
                                 <p>Our dedicated staff and college work closely with students from enrollment through graduation, offering personalized support every step of the way. Fountain University proudly offers undergraduate and postgraduate degrees in Business, Education, Natural Sciences, Health Sciences, and Nursing.</p>
                                 <p>For verifications, please email <a href="#">officeoftheregistrar@fuo.edu.ng</a></p>
