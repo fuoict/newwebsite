@@ -252,7 +252,8 @@
             <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
                 <div class="offcanvas-header">
                     <a href="index.html" class="logo">
-                        <img src="assets/img/logo/logo.png" alt="image">
+                        {{-- {{ asset('img/logo/fuo-logo.png') }} --}}
+                        <img src="{{ asset('img/logo/fuo-logo.png') }}" alt="image" class="img-fluid w-50">
                     </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
@@ -261,7 +262,7 @@
                         <div class="searchwrapper"> 
                             <div class="searchbox"> 
                                 <div class="row align-items-center"> 
-                                    <div class="col-md-9"><input type="text" class="form-control" placeholder="Fiend Your Course Here!"></div> 
+                                    <div class="col-md-9"><input type="text" class="form-control" placeholder="Fiend Your Course Here!" disabled></div> 
                                     <div class="col-lg-3"> 
                                         <a class="btn" href="#">Search</a> 
                                     </div> 
@@ -277,22 +278,21 @@
                                 <i class="bx bxs-time"></i>
                                 <p>Mon - Fri: 9:00 - 18:00</p>
                             </li>
-                            <li><i class="bx bxs-phone-call"></i> General Inquiries - <a href="tel:+8495160885">(849) 516-0885</a></li>
+                            <li><i class="bx bxs-phone-call"></i> General Inquiries - <a href="tel:+2348037063960">+(234) 8037063960</a></li>
                             <li>
                                 <i class="bx bxs-envelope"></i>
-                                <a href="contact@Clgunme.edu">contact@Clgunme.edu</a>
+                                <a href="mailto:enquiries@fuo.edu.ng">enquiries@fuo.edu.ng</a>
                             </li>
                             <li>
                                 <i class="bx bxs-map"></i>
-                                <p>404 Camino Del Rio S, Suite 102San Diego, CA 92108</p>
+                                <p>Oke-Osun, P.M.B. 4491, Osogbo, Osun State, Nigeria</p>
                             </li>
                         </ul>
                         <ul class="social-profile list-style">
-                            <li><a href="https://www.fb.com" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="https://www.dribbble.com" target="_blank"><i class='bx bxl-dribbble'></i></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a></li>
+                            <li><a href="https://www.facebook.com/fuoweb" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                            <li><a href="https://www.instagram.com/fountain.university/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="https://x.com/fuoweb" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                            <li><a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"><i class='bx bxl-linkedin' ></i></a></li>
                         </ul>
                     </div>
 
@@ -307,95 +307,97 @@
 
             @yield('content')
 
-            <!-- Start Footer Area -->
-        <div class="footer-area">
-            <div class="footer-widget-info ptb-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-md-6 bg-white">
-                            <div class="footer-widget">
-                                <h4><img src="{{ asset('img/logo/fuo-logo.png') }}" alt=""></h4>
-                                <p class="p-2">
-                                   Fountain University was granted an operational license as a
-                                   Private University on May 17, 2007, by the Federal Government
-                                   on the recommendations of the National Universities Commission.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="{{ route('about') }}"><i class='bx bx-chevron-right'></i> About Us </a></li>
-                                    <li><a href="admission.html"><i class='bx bx-chevron-right'></i> E-Portal </a></li>
-                                    <li><a href="the-campus-experience.html"><i class='bx bx-chevron-right'></i> The Senate</a></li>
-                                    <li><a href="alumni.html"><i class='bx bx-chevron-right'></i> Administration </a></li>
-                                    <li><a href="the-campus-experience.html"><i class='bx bx-chevron-right'></i> Resources</a></li>
-                                    <li><a href="graduate.html"><i class='bx bx-chevron-right'></i> Congregations </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Academics</h4>
-                                <ul>
-                                    <li><a href="university-life.html"><i class='bx bx-chevron-right'></i> Undergraduate</a></li>
-                                    <li><a href="undergraduate.html"><i class='bx bx-chevron-right'></i> Postgraduate</a></li>
-                                    <li><a href="academics.html"><i class='bx bx-chevron-right'></i> Sandwich</a></li>
-                                    <li><a href="date-deadlines.html"><i class='bx bx-chevron-right'></i> Sub-Degree</a></li>
-                                    <li><a href="how-to-apply.html"><i class='bx bx-chevron-right'></i> Apply For Admissions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Get in Touch</h4>
-                                <ul>
-                                    <li><a href="application-form.html"><i class='bx bx-home'></i> Oke-Osun, P.M.B. 4491, Osogbo, Osun State, Nigeria</a></li>
-                                    <li><a href="date-deadlines.html"><i class='bx bx-phone'></i> +(234) 8160350557</a></li>
-                                    <li><a href="student-activities.html"><i class='bx bx-phone'></i> +(234) 8037063960</a></li>
-                                    <li><a href="support-guidance.html"><i class='bx bx-envelope'></i> enquiries@fuo.edu.ng</a></li>
-                                    <li><a href="schedule-tour.html"><i class='bx bx-envelope'></i> officeoftheregistrar@fuo.edu.ng</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copy-right-area style-2">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div class="cpr-left">
-                                <p>Copyright© <a href="#">Fountain University, Osogbo</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="cpr-right">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Cookie Policy</a></li>
-                                </ul>
-                                <ul class="social-list">
-                                    <li><a href="{{ 'https://facebook.com/fuoweb' }}" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                    <li><a href="{{ 'https://twitter.com/fuoweb' }}" target="_blank"><i class='bx bxl-instagram-alt'></i></a></li>
-                                    <li><a href="{{ 'http://twitter.com/fuoweb' }}" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                    <li><a href="{{ 'https://www.linkedin.com/company/fountain-university-osogbo/' }}" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- <div class="copy-logo">
-                        <img src="{{ asset('img/logo/footer-Logo.png') }}" alt="image">
-                    </div> --}}
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Area -->
 
-        <div class="go-top active">
-            <i class="bx bx-up-arrow-alt"></i>
-        </div>
+            <!-- Start Footer Area -->
+            <div class="footer-area">
+                <div class="footer-widget-info ptb-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget">
+                                    <h4><img class="img-fluid w-50" src="{{ asset('img/logo/fuo-logo.png') }}" alt=""></h4>
+                                    <p class="p-2">
+                                    Fountain University was granted an operational license as a
+                                    Private University on May 17, 2007, by the Federal Government
+                                    on the recommendations of the National Universities Commission.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="{{ route('about') }}"><i class='bx bx-chevron-right'></i> About Us </a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng' }}"><i class='bx bx-chevron-right'></i> E-Portal </a></li>
+                                        <li><a href="{{ route('the-senate') }}"><i class='bx bx-chevron-right'></i> The Senate</a></li>
+                                        <li><a href="{{ route('gallery') }}"><i class='bx bx-chevron-right'></i> Gallery </a></li>
+                                        <li><a href="{{ route('general-download') }}"><i class='bx bx-chevron-right'></i> Resources</a></li>
+                                        <li><a href="{{ route('congregation') }}"><i class='bx bx-chevron-right'></i> Congregations </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget">
+                                    <h4>Academics</h4>
+                                    <ul>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"><i class='bx bx-chevron-right'></i> Undergraduate</a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}"><i class='bx bx-chevron-right'></i> Postgraduate</a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/CENSAP' }}"><i class='bx bx-chevron-right'></i> Sandwich</a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/CENSPS' }}"><i class='bx bx-chevron-right'></i> Sub-Degree</a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/ug/inter-university-transfer' }}"><i class='bx bx-chevron-right'></i> Inter-University</a></li>
+                                        <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"><i class='bx bx-chevron-right'></i> Apply For Admissions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="footer-widget">
+                                    <h4>Get in Touch</h4>
+                                    <ul>
+                                        <li><a href="#"><i class='bx bx-home'></i> Oke-Osun, P.M.B. 4491, Osogbo, Osun State, Nigeria</a></li>
+                                        <li><a href="tel:+2348160350557"><i class='bx bx-phone'></i> +(234) 8160350557</a></li>
+                                        <li><a href="tel:+2348037063960"><i class='bx bx-phone'></i> +(234) 8037063960</a></li>
+                                        <li><a href="mailto:enquiries@fuo.edu.ng"><i class='bx bx-envelope'></i> enquiries@fuo.edu.ng</a></li>
+                                        <li><a href="mailto:officeoftheregistrar@fuo.edu.ng"><i class='bx bx-envelope'></i> officeoftheregistrar@fuo.edu.ng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right-area style-2">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="cpr-left">
+                                    <p>Copyright © <a href="{{ 'https://fuo.edu.ng' }}">Fountain University, Osogbo</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="cpr-right">
+                                    {{-- <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Cookie Policy</a></li>
+                                    </ul> --}}
+                                    <ul class="social-list">
+                                        <li><a href="{{ 'https://facebook.com/fuoweb' }}" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li><a href="{{ 'https://www.instagram.com/fountain.university/' }}" target="_blank"><i class='bx bxl-instagram-alt'></i></a></li>
+                                        <li><a href="{{ 'http://twitter.com/fuoweb' }}" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                        <li><a href="{{ 'https://www.linkedin.com/company/fountain-university-osogbo/' }}" target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {{-- <div class="copy-logo">
+                            <img src="{{ asset('img/logo/footer-Logo.png') }}" alt="image">
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Area -->
+
+            <div class="go-top active">
+                <i class="bx bx-up-arrow-alt"></i>
+            </div>
 
 
         </div>

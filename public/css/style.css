@@ -576,7 +576,7 @@ Slider Banner Area CSS
 =================================================*/
 
 .slider-bg-1{
-  background-image: url(../img/banner/banner1.jpg);
+  background-image: url(../img/banner/slid-5.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -595,7 +595,7 @@ Slider Banner Area CSS
 	opacity:0.6;
 }
 .slider-bg-2{
-  background-image: url(../img/banner/banner5.jpg);
+  background-image: url(../img/banner/slid-6.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -604,6 +604,25 @@ Slider Banner Area CSS
   padding-bottom: 100px;
 }
 .slider-bg-2::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-3{
+  background-image: url(../img/banner/slid-7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-3::before {
 	position: absolute;
     content: "";
     left: 0;

@@ -2,7 +2,7 @@
 
 @section('content')
 
-        <!-- Start Clgun Slider Banner Area -->
+        <!-- Start Fountain Slider Area -->
         <div class="slider-banner-area">
             <div class="slider-courser owl-carousel owl-theme">
                 <div class="slider-content slider-bg-1">
@@ -50,9 +50,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="slider-content slider-bg-3">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Driven by Innovation</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Rooted in Values.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Preparing graduates ready to solve tomorrow’s challenges.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- End Clgun Slider Banner Area -->
+        <!-- End Fountain Slider Area -->
 
         <!-- Start About Us Area 2 -->
         <div id="about" class="about-us-area-2 ptb-100">
@@ -127,7 +149,7 @@
         </div>
         <!-- End About Us Area 2 -->
 
-        <!-- Start Features Area 2 -->
+        <!-- Start Features, Mission, Vision Area 2 -->
         <div class="features-area-2">
             <div class="features-content-2 ptb-100">
                 <div class="container">
@@ -263,7 +285,7 @@
                 </div>
             </div>
         </div>
-        <!-- End Features Area 2 -->
+        <!-- End Features, Mission, Vision Area 2 -->
 
         <!-- Start Video Area  -->
         <div class="video-area">
@@ -276,7 +298,7 @@
         </div>
         <!-- End Video Area  -->
 
-        <!-- Start News Area 2 -->
+        <!-- Start News and Updates Area 2 -->
         <div class="news-area ptb-100">
             <div class="container">
                 <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
@@ -307,7 +329,7 @@
                                 </li>
                                 <li class="news-item" data-aos="fade-up" data-aos-delay="200">
                                     <div class="image">
-                                        <img src="{{ asset('img/all-img/news-image-3.png') }}" alt="iamge">
+                                        <img src="{{ asset('img/events/maiden-consortium-conference.jpg') }}" alt="iamge">
                                     </div>
                                     <div class="content">
                                         <div class="sub-title">
@@ -364,7 +386,7 @@
                 </div>
             </div>
         </div>
-        <!-- End News Area 2 -->
+        <!-- End News and Updates Area 2 -->
 
 
         <!-- Start Scholarship Area 2 -->
@@ -554,11 +576,6 @@
         </div>
         <!-- End Success Area 2 -->
 
-
-
-
-
-
-        
+ 
 
 @endsection
