@@ -160,7 +160,11 @@
                                     </div>
                                 </div>
                             </div>
+<<<<<<< HEAD
                              <div class= "col-lg-4 col-sm-6 col-md-6 mb-4">
+=======
+                             <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+>>>>>>> 06e5837d8b420305a52145f03e9d94d835057093
                                 <div class="course-item">
                                     <div class="image">
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}

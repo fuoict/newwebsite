@@ -18,6 +18,7 @@
     </div>
     <!-- End Section Banner Area -->
 
+<<<<<<< HEAD
     <!-- Start Academics Section Area -->
     <div class="academics-section ptb-100">
         <div class="container">
@@ -34,6 +35,25 @@
                         <div class="ac-contact">
                             <span>Quick Links</span>
                             <a href="{{ route('contact') }}">Contact Us</a>
+=======
+        <!-- Start Academics Section Area -->
+        <div class="academics-section ptb-100">
+            <div class="container">
+                <div class="row">
+                   <div class="col-lg-4">
+                        <div class="academics-left">
+                            <div class="ac-category">
+                                <ul>
+                                    <li><a href="{{ route('undergradute-programme') }}">Overview</a></li>
+                                    <li><a class="active" href="#">Undergraduate</a></li>
+                                    <li><a href="{{ route('subdegree-programme') }}">Sub-Degree Programmes</a></li>
+                                </ul>
+                            </div>
+                            <div class="ac-contact">
+                                <span>Quick Links</span>
+                                <a href="{{ route('contact') }}">Contact Us</a>
+                            </div>
+>>>>>>> 06e5837d8b420305a52145f03e9d94d835057093
                         </div>
                     </div>
                 </div>
