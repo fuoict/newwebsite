@@ -54,7 +54,7 @@
                                     <h4 class="title-anim">Fountain University, Osogbo</h4>
                                     <p class="title-anim">ICT Unit</p>
                                     <div class="author-info">
-                                        <span>Prof. HS. </span>
+                                        <span>Prof Hakeem S. </span>
                                         <h5>Bolarinwa</h5>
                                         <p>Director</p>
                                     </div>

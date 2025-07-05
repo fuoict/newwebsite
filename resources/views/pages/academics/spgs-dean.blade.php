@@ -78,7 +78,7 @@
                     <div class="col-lg-12">
                         <div class="ac-overview">
                             <div class="pera-title">
-                                <h2>Our Departments</h2>
+                                <h2>Our Programmes</h2>
                             </div>
                             <div class="pera-dec">
                                 
@@ -90,7 +90,7 @@
                                         <div class="col-lg-4 col-sm-6 col-md-6">
                                             <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
                                                 <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
-                                                <h4>Department of Biological Sciences</h4>
+                                                <h4>Postgradute diploma (PGD)</h4>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6 col-md-6">

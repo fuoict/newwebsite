@@ -202,7 +202,7 @@
                     <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
                         <img src="{{ asset('img/gallery/ct7.jpg') }}" alt="image">
                         <div class="content">
-                                <h2 class="title-anim">Cars Park</h2>
+                                <h2 class="title-anim">Car Park</h2>
                             <a class="default-btn" href="#">Virtual Tour</a>
                         </div>
                     </div>
