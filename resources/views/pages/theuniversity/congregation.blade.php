@@ -38,18 +38,19 @@
                         <div class="ac-overview">
                             <div class="pera-dec">
                                 <h3>Fountain University Congregation</h3>
-                                <p>The Congregation Ceremony at Clgun University marks a proud and memorable milestone celebrating the academic achievements of our students as they transition from scholars to alumni.</p>
-                                <p>Held annually, this prestigious event brings together graduates, families, faculty, and dignitaries to honor the hard work, dedication, and excellence that define the Clgun experience. It’s more than a graduation—it's a celebration of potential, purpose, and the journey ahead.</p>
+                                <h5>A Celebration of Service, Commitment & Institutional Growth</h5>
+                                <p>Welcome to the Fountain University Staff Congregation Ceremony—a special occasion dedicated to honouring the dedication, service, and professional contributions of our esteemed academic and non-academic staff.</p>
+                                <p>At Fountain University, our strength lies not only in academic excellence but in the people who tirelessly uphold the institution's mission and vision. This congregation provides an opportunity to celebrate achievements, recognize milestones, and renew our collective commitment to the university’s ideals.</p>
                                <div class="program-info mt-4">
-                                <h4>Highlights of the Ceremony:</h4>
+                                <h4>Purpose of the Staff Congregation</h4>
                                 <p>
                                     <ul>
-                                        <li>Award of Degrees, Diplomas, and Certificates</li>
-                                        <li>Cultural Performances and Moments of Reflection</li>
-                                        <li>Inspirational Speeches by Special Guests and Alumni</li>
-                                        <li>Recognition of Outstanding Academic and Leadership Achievements</li>
+                                        <p>A platform for reviewing institutional progress</p>
+                                        <p>An opportunity for professional dialogue and development</p>
+                                        <p>A time to recognize outstanding service and promotions</p>
+                                        <p>A forum to reaffirm the shared goals and values of Fountain University</p>
                                     </ul>
-                                </p>
+                                </p><br>
                                </div>
                                <div class="apply-program">
                                     <div class="row align-items-center">

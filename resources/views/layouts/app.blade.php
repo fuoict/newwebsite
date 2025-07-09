@@ -335,8 +335,8 @@
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <div class="search-box">
+            {{-- <div class="offcanvas-body">
+                {{-- <div class="search-box">
                     <div class="searchwrapper">
                         <div class="searchbox">
                             <div class="row align-items-center">
@@ -348,16 +348,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}} --}}
 
                 <div class="offcanvas-contact-info">
-                    <h4>Contact Info</h4>
+                    <h4>Contact Information</h4>
                     <ul class="contact-info list-style">
                         <li>
                             <i class="bx bxs-time"></i>
                             <p>Mon - Fri: 9:00 - 18:00</p>
                         </li>
-                        <li><i class="bx bxs-phone-call"></i> General Inquiries - <a href="tel:+2348037063960">+(234)
+                        <li><i class="bx bxs-phone-call"></i> General Enquiries - <a href="tel:+2348037063960">+(234)
                                 8037063960</a></li>
                         <li>
                             <i class="bx bxs-envelope"></i>

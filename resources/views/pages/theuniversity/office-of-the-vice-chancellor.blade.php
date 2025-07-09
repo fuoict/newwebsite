@@ -79,7 +79,7 @@
                     <h2>Office of the Vice Chancellor</h2>
                 </div>
 
-                <div class="slider-event owl-carousel owl-theme">
+                {{-- <div class="slider-event owl-carousel owl-theme">
                     <div class="blog-single-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="image">
                             <img src="{{ asset('img/all-img/blog-1.png') }}" alt="image">
@@ -144,7 +144,7 @@
                             
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- End Event Area -->
