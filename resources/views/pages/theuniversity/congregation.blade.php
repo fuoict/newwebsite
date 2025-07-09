@@ -39,7 +39,7 @@
                             <div class="pera-dec">
                                 <h3>Fountain University Congregation</h3>
                                 <h5>A Celebration of Service, Commitment & Institutional Growth</h5>
-                                <p>Welcome to the Fountain University Staff Congregation Ceremony—a special occasion dedicated to honouring the dedication, service, and professional contributions of our esteemed academic and non-academic staff.</p>
+                                <p>Welcome to the Fountain University Staff Congregation Ceremony a special occasion dedicated to honouring the dedication, service, and professional contributions of our esteemed academic and non-academic staff.</p>
                                 <p>At Fountain University, our strength lies not only in academic excellence but in the people who tirelessly uphold the institution's mission and vision. This congregation provides an opportunity to celebrate achievements, recognize milestones, and renew our collective commitment to the university’s ideals.</p>
                                <div class="program-info mt-4">
                                 <h4>Purpose of the Staff Congregation</h4>

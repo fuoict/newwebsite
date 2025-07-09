@@ -335,10 +335,10 @@
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            {{-- <div class="offcanvas-body">
-                {{-- <div class="search-box">
+            <div class="offcanvas-body">
+                <div class="search-box">
                     <div class="searchwrapper">
-                        <div class="searchbox">
+                        {{-- <div class="searchbox">
                             <div class="row align-items-center">
                                 <div class="col-md-9"><input type="text" class="form-control"
                                         placeholder="Fiend Your Course Here!" disabled></div>
@@ -346,9 +346,9 @@
                                     <a class="btn" href="#">Search</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
-                </div> --}} --}}
+                </div>
 
                 <div class="offcanvas-contact-info">
                     <h4>Contact Information</h4>
