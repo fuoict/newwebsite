@@ -7,7 +7,7 @@
                 <div class="banner-spacing">
                     <div class="section-info">
                         <h2 data-aos="fade-up" data-aos-delay="100">Contact Us</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">For further inquiries, please contact us.</p>
+                        {{-- <p data-aos="fade-up" data-aos-delay="200">For further inquiries, please contact us.</p> --}}
                     </div>
                 </div>
             </div>
@@ -43,9 +43,9 @@
 
                         <div class="info-details">
                             <ul>
-                                <li><i class='bx bxs-phone-call'></i> General Inquiries - <a href="tel:+2348160350557">+(234) 8160350557</a></li>
-                                <li><i class='bx bxs-phone-call'></i> Enrollment Inquiries - <a href="tel:+18554750885">+(234) 8037063960</a></li>
                                 <li><i class='bx bxs-map'></i> Oke-Osun, P.M.B. 4491, Osogbo, Osun State, Nigeria</li>
+                                <li><i class='bx bxs-phone-call'></i> General Enquiries - <a href="tel:+2348160350557">+(234) 8160350557</a></li>
+                                <li><i class='bx bxs-phone-call'></i> Admission Enquiries - <a href="tel:+18554750885">+(234) 8037063960</a></li>
                                 <li><i class='bx bxs-envelope'></i><a class="info-mail" href="to:enquiries@fuo.edu.ng">enquiries@fuo.edu.ng</a></li>
                                 <li><i class='bx bxs-envelope'></i><a class="info-mail" href="to:officeoftheregistrar@fuo.edu.ng">officeoftheregistrar@fuo.edu.ng</a></li>
                                 

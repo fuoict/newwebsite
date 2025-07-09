@@ -85,8 +85,8 @@
                             </div>
                             <h2>Information and Communications Technology Unit</h2>
                             <ul>
-                                <li style="list-style-type: none"><i class='bx bxs-phone'></i>  +2348050313501, +2347035373028</li>
-                                <li style="list-style-type: none"><i class='bx bxs-envelope'></i>  ict@fuo.edu.ng</li>
+                                <li style="list-style-type: none"><i class='bx bxs-phone'></i>  +2348165644125, +2348056668594</li>
+                                <li style="list-style-type: none"><i class='bx bxs-envelope'></i>  itsupport@fuo.edu.ng</li>
                             </ul>
                         </div>
                     </div>
