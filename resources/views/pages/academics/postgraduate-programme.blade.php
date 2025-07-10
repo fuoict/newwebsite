@@ -80,7 +80,7 @@
                                         <div class="col-lg-4 col-sm-6 col-md-6">
                                             <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
                                                 <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
-                                                <h4>MPhil PhD</h4>
+                                                <h4>MPhil/PhD</h4>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6 col-md-6">

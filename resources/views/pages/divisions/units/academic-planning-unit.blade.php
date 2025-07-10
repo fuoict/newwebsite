@@ -22,7 +22,7 @@
                     <div class="col-lg-5 col-md-12">
                         <div class="text-content" data-aos="fade-up" data-aos-delay="100">
                             <div class="sub-title">
-                                <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p>
+                                {{-- <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p> --}}
                             </div>
                              <h2 class="title-anim">Academic Planning Unit</h2>
                             <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
@@ -113,7 +113,7 @@
         <!-- End Academics Area -->
        
         <!-- Start Campus Tour Area -->
-        <div class="campus-tour">
+        {{-- <div class="campus-tour">
             <div class="container-fluid p-0">
                 <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
                     <div class="col-lg-6">
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- End Campus Tour Area -->
 
 @endsection

@@ -154,11 +154,11 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item"><a href="{{ route('subdegree-programme') }}"
-                                            class="nav-link">Sub-Degree Programmes</a></li>
+                                            class="nav-link">Sub-Degree</a></li>
                                     <li class="nav-item"><a href="{{ route('undergradute-programme') }}"
-                                            class="nav-link">Undergraduate Programmes</a></li>
+                                            class="nav-link">Undergraduate</a></li>
                                     <li class="nav-item">
-                                        <a href="#!" class="nav-link">Postgraduate School</a>
+                                        <a href="#!" class="nav-link">Postgraduate</a>
                                         <ul class="dropdown-menu">
                                             <li class="nav-item"><a href="{{ route('the-dean-of-spgs') }}"
                                                     class="nav-link">Office of the Dean</a>
@@ -357,7 +357,7 @@
                             <i class="bx bxs-time"></i>
                             <p>Mon - Fri: 9:00 - 18:00</p>
                         </li>
-                        <li><i class="bx bxs-phone-call"></i> General Enquiries - <a href="tel:+2348037063960">+(234)
+                        <li><i class="bx bxs-phone-call"></i> General Enquiries<a href="tel:+2348037063960">+(234)
                                 8037063960</a></li>
                         <li>
                             <i class="bx bxs-envelope"></i>

@@ -18,24 +18,6 @@
     </div>
     <!-- End Section Banner Area -->
 
-<<<<<<< HEAD
-    <!-- Start Academics Section Area -->
-    <div class="academics-section ptb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="academics-left">
-                        <div class="ac-category">
-                            <ul>
-                                <li><a href="{{ route('undergradute-programme') }}">Overview</a></li>
-                                <li><a class="active" href="!#">Undergraduate</a></li>
-                                <li><a href="{{ route('subdegree-programme') }}">Sub-Degree Programmes</a></li>
-                            </ul>
-                        </div>
-                        <div class="ac-contact">
-                            <span>Quick Links</span>
-                            <a href="{{ route('contact') }}">Contact Us</a>
-=======
         <!-- Start Academics Section Area -->
         <div class="academics-section ptb-100">
             <div class="container">
@@ -53,15 +35,12 @@
                                 <span>Quick Links</span>
                                 <a href="{{ route('contact') }}">Contact Us</a>
                             </div>
->>>>>>> 06e5837d8b420305a52145f03e9d94d835057093
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-8">
+                    <div class="col-lg-8">
                     <div class="ac-overview">
                         <div class="pera-title">
-                            <h2>Undergraduate Programs</h2>
+                            <h2>Undergraduate Programmes</h2>
                         </div>
                         <div class="pera-dec">
                             <p>From innovative programs in business, and computer science to dynamic studies in the arts,
@@ -114,7 +93,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Islmaic Studies</a></li>
+                                                    <li><a href="#">B.Sc Islamic Studies</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -159,7 +138,52 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- end of department of Business Administration --}}
+                            {{-- end of department of Bussiness admin--}}
+                               {{-- start of department of Chemical Sciences --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Chemical Sciences</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Biochemistry and Nutrition</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Industrial & Environmental Chemistry</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Chemical Sciences --}}
+                            {{-- start of department of CyberSecurity --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Cybersecurity</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Cybersecurity</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Cybersecurity  --}}
+
 
                             {{-- start of department of Economics --}}
                             <div class="problem-sector py-4">
@@ -198,6 +222,24 @@
                                 </div>
                             </div>
                             {{-- end of department of Environmental Health Sciences --}}
+                              {{-- start of department of Food Science and Technology --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Food Science and Technology</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Food Science and Technology</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Food Science and Technology --}}
 
                             {{-- start of department of History International Studies --}}
                             <div class="problem-sector py-4">
@@ -218,6 +260,25 @@
                             </div>
                             {{-- end of department of History International Studies --}}
 
+                             {{-- start of department of ICT --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Information and Communication Technology</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Information and Communication Technology</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Information and Communication Technology --}}
+
                             {{-- start of department of Islamic Law --}}
                             <div class="problem-sector py-4">
                                 <div class="problem-list">
@@ -237,24 +298,7 @@
                             </div>
                             {{-- end of department of Islamic Law --}}
 
-                            {{-- start of department of Mass Communication --}}
-                            <div class="problem-sector py-4">
-                                <div class="problem-list">
-                                    <div class="title">
-                                        <h3>Department of Mass Communication</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
-                                            <div class="problem-items">
-                                                <ul>
-                                                    <li><a href="#">B.Sc Mass Communication</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- end of department of Mass Communication --}}
+                            
 
                             {{-- start of department of Language & Linguistics --}}
                             <div class="problem-sector py-4">
@@ -282,7 +326,24 @@
                                 </div>
                             </div>
                             {{-- end of department of Language & Linguistics --}}
-
+                            {{-- start of department of Library and Information Science --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Library and Information Science</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Library and Information Science</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Library and Information Science --}}
                             {{-- start of department of Mathematical & Computer Sciences --}}
                             <div class="problem-sector py-4">
                                 <div class="problem-list">
@@ -302,6 +363,25 @@
                             </div>
                             {{-- end of department of Mathematical & Computer Sciences --}}
 
+                            {{-- start of department of Mass Communication --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Mass Communication</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Mass Communication</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Mass Communication --}}
+
                             {{-- start of department of Medical Laboratory Science --}}
                             <div class="problem-sector py-4">
                                 <div class="problem-list">
@@ -320,33 +400,6 @@
                                 </div>
                             </div>
                             {{-- end of department of Medical Laboratory Science --}}
-
-                            {{-- start of department of Chemical Sciences --}}
-                            <div class="problem-sector py-4">
-                                <div class="problem-list">
-                                    <div class="title">
-                                        <h3>Department of Chemical Sciences</h3>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
-                                            <div class="problem-items">
-                                                <ul>
-                                                    <li><a href="#">B.Sc Biochemistry and Nutrition</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
-                                            <div class="problem-items">
-                                                <ul>
-                                                    <li><a href="#">B.Sc Industrial & Environmental Chemistry</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- end of department of Chemical Sciences --}}
 
                             {{-- start of department of Nursing Sciences --}}
                             <div class="problem-sector py-4">
@@ -394,6 +447,24 @@
                                 </div>
                             </div>
                             {{-- end of Physics, Electronic & Earth Science --}}
+                             {{-- start of department of Physiotherapy --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Physiotherapy</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Physiotherapy</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Physiotherapy --}}
 
                             {{-- start of department of Political Science --}}
                             <div class="problem-sector py-4">
@@ -471,7 +542,7 @@
                             </div>
                             {{-- end of department of Public Health --}}
 
-                            {{-- start of Physics, Electronic & Earth Science --}}
+                            {{-- start of Sociology & Criminology --}}
                             <div class="problem-sector py-4">
                                 <div class="problem-list">
                                     <div class="title">
@@ -493,12 +564,30 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-                            {{-- end of Physics, Electronic & Earth Science --}}
+                            {{-- end of Physics, Sociology & Criminology --}}
+                             {{-- start of department of Software Engineering --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Software Engineering</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Sc Software Engineering</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of Software Engineering --}}
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

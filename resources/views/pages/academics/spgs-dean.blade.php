@@ -81,10 +81,57 @@
                                 <h2>Our Programmes</h2>
                             </div>
                             <div class="pera-dec">
+
+                                  {{-- another aspect to use --}}
+
+                            <div class="academics-area bg-color-1 ptb-100">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item" data-aos="fade-up" data-aos-delay="100">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>Postgraduate Diploma</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item active" data-aos="fade-up" data-aos-delay="200">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>Masters Academics</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>Masters Professional</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>MPhil</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>MPhil/PhD</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-md-6">
+                                            <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
+                                                <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
+                                                <h4>PhD</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{-- another aspect to use --}}
                                 
                                {{-- another aspect to use --}}
 
-                               <div class="academics-area bg-color-1 ptb-100" >
+                               {{-- <div class="academics-area bg-color-1 ptb-100" >
                                 <div class="container">
                                     <div class="row justify-content-center">
                                         <div class="col-lg-4 col-sm-6 col-md-6">
@@ -154,8 +201,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                </div>
+                                </div> --}}
+                                {{-- </div> --}}
                                {{-- another aspect to use --}}
                             </div>
                         </div>

@@ -32,18 +32,18 @@
                     <div class="content">
                         <div class="text">
                             <div class="container">
-                                <h1 data-aos="fade-up" data-aos-delay="100">Driven by Innovation</h1>
+                                {{-- <h1 data-aos="fade-up" data-aos-delay="100">Driven by Innovation</h1> --}}
                             </div>
                             <hr>
                         </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <p data-aos="fade-up" data-aos-delay="100">Rooted in Values.</p>
+                                    {{-- <p data-aos="fade-up" data-aos-delay="100">Rooted in Values.</p> --}}
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="short-info">
-                                        <h3 data-aos="fade-up" data-aos-delay="200">Preparing graduates ready to solve tomorrow’s challenges.</h3>
+                                        {{-- <h3 data-aos="fade-up" data-aos-delay="200">Preparing graduates ready to solve tomorrow’s challenges.</h3> --}}
                                     </div>
                                 </div>
                             </div>
