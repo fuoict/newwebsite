@@ -52,7 +52,13 @@
                                     <li>UTME Score Requirement: All candidates must have scored a minimum of 150 in the 2025 JAMB Unified Tertiary Matriculation Examination (UTME).</li>
                                     <li>O'Level Requirements: Candidates must possess a minimum of five (5) credit passes in relevant subjects including English Language and Mathematics, obtained at not more than two sittings in WAEC, NECO, or their equivalent.</li>
                                   </ul>
-
+                                  <h3> Direct Entry Admission</h3>
+                                <p>For Candidates seeking admission into 200 through JAMB Direct Entry, 
+                                    the required points to qualify for admission into any of our Courses 
+                                    from any recognized A-level certification programme is 5 points. 
+                                    However, 7 points apply to Medical Laboratory Science while 9 points apply 
+                                    to both Nursing and Physiotherapy.
+                                </p>
                                 <h3> Programme-Specific UTME Cut-Off Marks</h3>
                                 <p>Some programmes at Fountain University require higher UTME scores due to 
                                     their competitive nature. In addition to the general UTME requirement, 
