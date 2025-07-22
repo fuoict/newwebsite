@@ -65,7 +65,7 @@
                                     the following specific programmes have higher cut-off marks:</p>
                                   <ul>
                                     <li>B.NSc. Nursing Science – Minimum UTME score of 220.</li>
-                                    <li>B.Physiotherapy – Minimum UTME score of 200.</li>
+                                    <li>B.Physiotherapy – Minimum UTME score of 180.</li>
                                     <li>B.MLS. Medical Laboratory Science – Minimum UTME score of 170</li>
                                   </ul>
                                   <i>Candidates applying for any of the above-listed programmes must meet both the 
