@@ -37,7 +37,7 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
-                                <h3>What You Need To Join Us</h3>
+                                <h3>What You Need to Join Us</h3>
                                 <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}">Apply Now</a>
                                <div class="program-info mt-4">
                                 <h3>Things To Know First</h3>
