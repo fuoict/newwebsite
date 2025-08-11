@@ -37,39 +37,54 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
-                                <h3>What You Need to Join Us</h3>
-                                <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}">Apply Now</a>
-                               <div class="program-info mt-4">
-                                <h3>Things To Know First</h3>
-                                <br>
+                                <h3> Admission Requirements – 2025/2026 Academic Session</h3>
+                                <p>Welcome to Fountain University, Osogbo, a centre of academic excellence and moral uprightness. 
+                                    We are delighted that you are considering joining our vibrantcommunity for the 2025/2026 academic session.
+                                </p>
+                                <p> All prospective candidates are advised to carefully read the following 
+                                    admission requirements before proceeding with their application.
+                                </p>
 
-                                <h4>All candidates applying to any of our programmes requre the following. </h4>
-                                            <ul>
-                                                <li>UTME Result printout</li>
-                                                <li>O' level results</li>
-                                                <li>Evidence of online registration with Fountain University</li>
-                                                <li>1 passport size photograph</li>
-                                            </ul>
-                               </div>
+                                <h3> General Admission Requirements</h3>
+                                <p>To be eligible for admission into any undergraduate programme at Fountain University, applicants must meet the following criteria:</p>
+                                  <ul>
+                                    <li>Minimum Age Requirement: Applicants must be at least 16 years old at the time of application.</li>
+                                    <li>UTME Score Requirement: All candidates must have scored a minimum of 150 in the 2025 JAMB Unified Tertiary Matriculation Examination (UTME).</li>
+                                    <li>O'Level Requirements: Candidates must possess a minimum of five (5) credit passes in relevant subjects including English Language and Mathematics, obtained at not more than two sittings in WAEC, NECO, or their equivalent.</li>
+                                  </ul>
+                                  <h3> Direct Entry Admission</h3>
+                                <p>For Candidates seeking admission into 200 through JAMB Direct Entry, 
+                                    the required points to qualify for admission into any of our Courses 
+                                    from any recognized A-level certification programme is 5 points. 
+                                    However, 7 points apply to Medical Laboratory Science while 9 points apply 
+                                    to both Nursing and Physiotherapy.
+                                </p>
+                                <h3> Programme-Specific UTME Cut-Off Marks</h3>
+                                <p>Some programmes at Fountain University require higher UTME scores due to 
+                                    their competitive nature. In addition to the general UTME requirement, 
+                                    the following specific programmes have higher cut-off marks:</p>
+                                  <ul>
+                                    <li>B.NSc. Nursing Science – Minimum UTME score of 220.</li>
+                                    <li>B.Physiotherapy – Minimum UTME score of 180.</li>
+                                    <li>B.MLS. Medical Laboratory Science – Minimum UTME score of 170</li>
+                                  </ul>
+                                  <i>Candidates applying for any of the above-listed programmes must meet both the 
+                                    general admission criteria and the programme-specific UTME score requirement.</i><br><br>
+
+                                <h3> What’s Next?</h3>
+                                <p>If you meet the above requirements, please proceed to the Fountain University 
+                                    Application Portal to begin your admission process by clicking on the button below.</p>
+                                   
+                                <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}">Start My Application</a> <br> <br>
+
+                                <p>For further enquiries, please contact the Admissions Office via<i class='bx bxs-phone-call'></i><a href="tel:+2348160350557">+(234) 8160350557</a></li> or <button class="btn btn-success"> <a href="https://wa.me/8160350557" > Chat with us on WhatsApp</button></p>
+</a>
+                               <div class="program-info mt-4">
                                <div class="apply-program">
                                     <div class="row align-items-center">
-                                        <div class="col-lg-5 col-sm-5 col-md-6">
+                                        <div class="col-lg-12 col-sm-5 col-md-6">
                                             <div class="content">
-                                                <h3>Where to submit necessary documents?</h3>
-                                                <p>Documents not submitted through the online method can be mailed to:</p>
-                                                <p><i class='bx bxs-map'></i> Oke-Osun, P.M.B. 4491, Osogbo, Osun State,Nigeria</p>
-                                                <p><i class='bx bxs-phone-call'></i> +(234) 8031145929</p>
-                                                <p><i class='bx bxs-phone-call'></i> +(234) 8037063960</p>
-                                                <p><i class='bx bxs-envelope'></i> admissions@fuo.edu.ng</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </div>
-                               <div class="apply-program">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-12">
-                                            <div class="image">
-                                                <a class="btn btn-success" href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"> Apply Now</a>
+                                                <h6>We look forward to welcoming you to Fountain University, where character and learning go hand in hand.</h6>
                                             </div>
                                         </div>
                                     </div>

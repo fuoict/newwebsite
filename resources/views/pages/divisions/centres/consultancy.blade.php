@@ -49,15 +49,14 @@
                                     <div class="graduate-events">
                                         <div class="content-items">
                                             <div class="content">
-                                                <h2>Prof BOLARINWA, </h2>
-                                                <p>Hakeem Sanya</p>
+                                                <h2 class="py-3">Dr. T. O. Ayinde</h2>
                                                 <p>Director, Centre for Consultancy Services, Fountain University, Osogbo, Osun State, Nigeria.</p>
                                                 <p></p>
                                                
                                             </div>
-                                            <div class="image">
+                                            {{-- <div class="image">
                                                 <img src="{{ asset('img/all-img/units/prof-bolarinwa.jpg') }}" alt="image">
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
 
@@ -68,53 +67,17 @@
 
                                         <div class="clubs-item">
                                             <span>The Center for Consultancy Service is a vital unit within Fountain University Osogbo, established to offer consultancy services to both internal and external stakeholders. With a focus on excellence and innovation, we strive to address the diverse needs of our clients through tailored solutions and strategic insights.</span>
-                                            <h4>Mission</h4>
-                                            <p>Our mission is to be a trusted partner for our clients, delivering innovative and practical solutions that drive positive outcomes and sustainable impact. We are committed to excellence, integrity, and professionalism in all aspects of our work.</p>
+                                            {{-- <h4>Mission</h4>
+                                            <p>Our mission is to be a trusted partner for our clients, delivering innovative and practical solutions that drive positive outcomes and sustainable impact. We are committed to excellence, integrity, and professionalism in all aspects of our work.</p> --}}
                                         </div>
-                                        <div class="clubs-item">
-                                            <h4>Vision</h4>
-                                            <p>Our vision is to become a leading center of excellence in consultancy services, known for our expertise, reliability, and commitment to client satisfaction. We aspire to make a meaningful difference in the organizations and communities we serve.</p>
-                                        </div>
-                                        <div class="clubs-item">
-                                            {{-- <span>4th Workshop “Advanced Materials”</span> --}}
-                                            <h4>Composition</h4>
-                                            <p>The Center for Consultancy Service is comprised of a multidisciplinary team of experienced consultants, researchers, and industry experts. Our diverse backgrounds and expertise enable us to offer a wide range of consultancy services across various sectors and industries.</p>
-                                            
-                                            <h4>Objective</h4>
-                                            <p>Our primary objective is to leverage our expertise and resources to provide valuable consultancy services that meet the needs of our clients and contribute to their success. We aim to foster collaboration, innovation, and growth through our consultancy engagements.</p>
-                                        </div>
-
-                                        <div class="clubs-items">
-                                            <h4>Our Services</h4>
-                                            <div class="row">
-                                                
-
-                                                <div class="col-lg-4">
-                                                    <h4>Project Management</h4>
-                                                    <p>Our consultants are skilled in project planning, execution, and monitoring to ensure successful project completion within scope, budget, and timeline.</p>
-                                                </div>
-
-                                                <div class="col-lg-4">
-                                                    <h4>Strategic Planning & Policy Development</h4>
-                                                    <p>Our consultants work closely with clients to develop comprehensive strategic plans that align with their mission, vision, and goals.</p>
-                                                </div>
-
-                                                <div class="col-lg-4">
-                                                    <h4>Training and Development</h4>
-                                                    <p>We offer workshops, seminars, and training sessions on a variety of topics to help organizations enhance the skills and knowledge of their staff.</p>
-                                                </div>
-
-                                                <div class="col-lg-4">
-                                                    <h4>Knowledge Transfer & Applied Research</h4>
-                                                    <p>We offer customized problem-solving and technical expertise, backed by cutting-edge research from our renowned faculty.</p>
-                                                </div>
-
-                                                <div class="col-lg-4">
-                                                    <h4>Community Engagement & Outreach</h4>
-                                                    <p>Social impact consulting to assist communities in areas like education, healthcare, and social development.</p>
-                                                </div>                                               
-
-                                                
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-md-6 clubs-item">
+                                                <h4>Mission</h4>
+                                                <p>Our mission is to be a trusted partner for our clients, delivering innovative and practical solutions that drive positive outcomes and sustainable impact. We are committed to excellence, integrity, and professionalism in all aspects of our work.</p>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-md-6 clubs-item">
+                                                <h4>Vision</h4>
+                                                <p>Our vision is to become a leading center of excellence in consultancy services, known for our expertise, reliability, and commitment to client satisfaction. We aspire to make a meaningful difference in the organizations and communities we serve.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,6 +86,226 @@
                             </div>
                         </div>
                     </div>
+                    {{-- prefer to put something here --}}
+                    <div class="py-5">
+                    {{-- start of PGD--}}
+                    <div class="problem-sector">
+                        <div class="problem-list">
+                            <div class="title">
+                                <h3>Certificate Types and Duration</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Modular Certificate (Beginners, Intermediate and Advanced Stages)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Less than one (1) Month</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Programme Certificate – One-off terminal certificate programme</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">1 – 4 months</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Products Training (Training on soap making, bakery and confectionery, etc).</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">3 – 9 months</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- end of PGD --}}
+
+                    {{-- start of Master Academics --}}
+                    <div class="problem-sector py-4">
+                        <div class="problem-list">
+                            <div class="title">
+                                <h3>Diploma Training and Duration</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Research and Investigative Writing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Econometrics and Data Analytics</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Computer Appreciation</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Desktop Publishing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Spreadsheet and Financial Analyses</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Feasibility Report Writing and Entrepreneurial Training</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Data Programming</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Diploma in Web-design</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">[6 – 12 months]</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- end of Master Academics --}}
+                    {{-- start of Master Professional --}}
+                    <div class="problem-sector py-4">
+                        <div class="problem-list">
+                            <div class="title">
+                                <h3>Consultancies and Institutional Trainings</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Consultancies for MDAs, NGOs, CLOs, International Bodies and Agencies</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 py-3">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">As stipulated in the Contract Letter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">Institutional Trainings (Customized and Solicited Training Modules with 
+                                                Banks, Government Parastatals and Foreign Institutions)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-6">
+                                    <div class="problem-items">
+                                        <ul>
+                                            <li><a href="#">As stipulated in the Contract Letter</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- end of Master Professional --}}
+                </div>
                 </div>
             </div>
         </div>
