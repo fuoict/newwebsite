@@ -86,14 +86,14 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Arabic</a></li>
+                                                    <li><a href="#">B.A. Arabic</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Islamic Studies</a></li>
+                                                    <li><a href="#">B.A. Islamic Studies</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -226,13 +226,13 @@
                             <div class="problem-sector py-4">
                                 <div class="problem-list">
                                     <div class="title">
-                                        <h3>Department of Food Science and Technology</h3>
+                                        <h3>Department of Food Science</h3>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Food Science and Technology</a></li>
+                                                    <li><a href="#">B.Sc Food Science</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -251,7 +251,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc History International Studies</a></li>
+                                                    <li><a href="#">B.A. History International Studies</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -310,15 +310,15 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc English Language</a></li>
-                                                    <li><a href="#">B.Sc French Language</a></li>
+                                                    <li><a href="#">B.A. English Language</a></li>
+                                                    <li><a href="#">B.A. French Language</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Linguistics</a></li>
+                                                    <li><a href="#">B.A. Linguistics</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -392,7 +392,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Medical Laboratory Science</a></li>
+                                                    <li><a href="#">B.MLS Medical Laboratory Science</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -411,7 +411,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Nursing Science</a></li>
+                                                    <li><a href="#">B.NSc. Nursing Science</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -457,7 +457,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.Sc Physiotherapy</a></li>
+                                                    <li><a href="#">Doctor of Physiotherapy</a></li>
                                                 </ul>
                                             </div>
                                         </div>

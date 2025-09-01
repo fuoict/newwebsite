@@ -177,98 +177,98 @@
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Computer Science</a></li>
+                                            <li><a href="#">M.Sc. Computer Science</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc Public Administration (M.Sc Pub Admin)</a></li>
+                                            <li><a href="#">M.Sc. Public Administration (M.Sc Pub Admin)</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc Political Science</a></li>
+                                            <li><a href="#">M.Sc. Political Science</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc Accounting</a></li>
+                                            <li><a href="#">M.Sc. Accounting</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc Business Administration</a></li>
+                                            <li><a href="#">M.Sc. Business Administration</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc Sociology</a></li>
+                                            <li><a href="#">M.Sc. Sociology</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">Master of Applied Ecnomics (M.A.E)</a></li>
+                                            <li><a href="#">Masters of Applied Economics (M.A.E)</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">Master Economics</a></li>
+                                            <li><a href="#">M.Sc. Economics</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Mass Communication</a></li>
+                                            <li><a href="#">M.Sc. Mass Communication</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Organic Chemistry</a></li>
+                                            <li><a href="#">M.Sc. Organic Chemistry</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Industrial Chemistry</a></li>
+                                            <li><a href="#">M.Sc. Industrial Chemistry</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Analytical Chemistry</a></li>
+                                            <li><a href="#">M.Sc. Analytical Chemistry</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Biochmistry</a></li>
+                                            <li><a href="#">M.Sc. Biochemistry</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">MSc. Physical Chemistry</a></li>
+                                            <li><a href="#">M.Sc. Physical Chemistry</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -290,43 +290,10 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6">
-                                    <div class="problem-items">
-                                        <ul>
-                                            <li><a href="#">B.Sc Islmaic Studies</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     {{-- end of Master Professional --}}
-
-                    {{-- start of MPhil --}}
-                    <div class="problem-sector py-4">
-                        <div class="problem-list">
-                            <div class="title">
-                                <h3>MPhil</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-6 col-md-6">
-                                    <div class="problem-items">
-                                        <ul>
-                                            <li><a href="#">M.Phil </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6">
-                                    <div class="problem-items">
-                                        <ul>
-                                            <li><a href="#">B.Sc Islmaic Studies</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- end of MPhil --}}
                     {{-- start of MPhil/PhD --}}
                     <div class="problem-sector py-4">
                         <div class="problem-list">
@@ -440,7 +407,7 @@
                                 <div class="col-lg-6 col-sm-6 col-md-6">
                                     <div class="problem-items">
                                         <ul>
-                                            <li><a href="#">Ph.D. Public Admin</a></li>
+                                            <li><a href="#">Ph.D. Public Administration</a></li>
                                         </ul>
                                     </div>
                                 </div>

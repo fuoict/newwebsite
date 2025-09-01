@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\College;
+use App\Models\VcSpeech;
 use App\Models\Department;
 use Illuminate\Http\Request;
 
@@ -12,6 +13,15 @@ class PagesController extends Controller
     public function about()
     {
         return view('pages.about');
+    }
+
+    public function speeches()
+    {
+        $Data = [
+            'Speachs' => VcSpeech::all()
+        ];
+        
+        return view('pages.theuniversity.office-of-the-vice-chancellor', $Data);
     }
 
     // ABOUT THE UNIVERSITY ......................
@@ -67,7 +77,11 @@ class PagesController extends Controller
 
     public function theViceChancellor()
     {
-        return view('pages.theuniversity.office-of-the-vice-chancellor');
+        $Data = [
+            'Records' => VcSpeech::all()
+        ];
+        // dd($Speachs);
+        return view('pages.theuniversity.office-of-the-vice-chancellor', $Data);
     }
 
     public function theRegistrar()

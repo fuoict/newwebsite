@@ -211,7 +211,7 @@
                             {{-- CENTER AND UNITS MENU ............................................. --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    Centers & Units
+                                    Centres & Units
                                 </a>
 
                                 {{-- Colleges Divisions --}}
