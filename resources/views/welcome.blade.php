@@ -393,19 +393,34 @@
         <div class="faculty-area-2 ptb-100">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
+                    <div class="col-lg-6">
                         <div class="heading" data-aos="fade-up" data-aos-delay="100">
                             <h2>Scholarship Programs</h2>
                         </div>
                     </div>
-                    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-6">
+                        <div class="heading" data-aos="fade-up" data-aos-delay="100">
+                            <h2>Approved School Fee (2025-2026)</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="content">
                             <p>"It is a well-known opportunity that Fountain University students of Arabic and Islamic studies can benefit from our scholarship program, designed to support learning with ease and focus."</p>
                         </div>
                     </div>
-                    <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                            <p>"Fountain University management hereby notifies all students, parents, and guardians that the approved school fees schedule for the 2025–2026 academic session has been released."</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="button">
                             <a class="default-btn" href="financial-aid.html">Find Out</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="button">
+                            <a class="default-btn" href="https://shorturl.at/H9Qr8">Find Out</a>
                         </div>
                     </div>
                 </div>

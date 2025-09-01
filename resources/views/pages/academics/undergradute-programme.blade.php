@@ -29,6 +29,7 @@
                                     <li><a href="{{ route('undergradute-programme') }}">Overview</a></li>
                                     <li><a class="active" href="#">Undergraduate</a></li>
                                     <li><a href="{{ route('subdegree-programme') }}">Sub-Degree Programmes</a></li>
+                                    <li><a href="{{ ('https://shorturl.at/7zmXb') }}">2025/2026 Approved School Fee</a></li>
                                 </ul>
                             </div>
                             <div class="ac-contact">
