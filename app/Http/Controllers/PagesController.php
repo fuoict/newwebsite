@@ -154,6 +154,10 @@ class PagesController extends Controller
     {
         return view('pages.academics.our-staff');
     }
+    public function postgraduateStudentDownload()
+    {
+        return view('pages.academics.pg-download');
+    }
 
 
     // ADMISSION ......................................

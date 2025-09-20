@@ -65,7 +65,7 @@
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
                                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                                <li><a href="{{ ('https://shorturl.at/7zmXb') }}">Approved School Fee</a></li>
+                                <li><a href="{{ 'https://shorturl.at/7zmXb' }}">Approved School Fee</a></li>
                             </ul>
                         </div>
                     </div>
@@ -169,6 +169,20 @@
                                             </li>
                                             <li class="nav-item"><a href="{{ route('our-staff') }}"
                                                     class="nav-link">Our Staff</a>
+                                            </li>
+                                            <li class="nav-item"><a href="{{ route('pg-download') }}"
+                                                    class="nav-link">Postgraduate Students' Downloads</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link">Resources</a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item"><a href="{{ route('general-download') }}"
+                                                            class="nav-link">General Downloads</a></li>
+                                                    <li class="nav-item"><a href="{{ route('students-download') }}"
+                                                            class="nav-link">Students' Downloads</a></li>
+                                                    <li class="nav-item"><a href="{{ route('staff-downloads') }}"
+                                                            class="nav-link">Staff Downloads</a></li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </li>
