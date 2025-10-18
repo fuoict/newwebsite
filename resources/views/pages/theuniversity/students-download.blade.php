@@ -116,14 +116,34 @@
                                         <a class="btn btn-success" href="{{ ('https://shorturl.at/PfbTH') }}"> Click here to Download </a>
                                     </div>
                                </div>
+                               <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/dTrni') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>NEW STUDENTS ENTRANCE FORM</h4>
+                                        <p>Please complete all sections of this form carefully and accurately. The information you provide will be used to process your admission and maintain school records. Ensure all required documents are attached before submission. Incomplete forms may result in delays in enrollment.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/dTrni') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
+                                  <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/fsJe0') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>ENTRANCE FORM FOR RETURNING STUDENTS</h4>
+                                        <p>Please update any changes in personal, academic, or contact information. Ensure all sections are completed and submit the form along with any required documents by the specified deadline.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/fsJe0') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
                                 <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/PfbTH') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            <a href="{{ ('https://shorturl.at/Azn8A') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                         </div>
-                                        <h4>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION</h4>
-                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/PfbTH') }}"> Click here to Download </a>
+                                        <h4>EXTRA CURRICULAR ACTIVITIES CLUBS</h4>
+                                        <p>Please indicate any clubs or activities you are currently involved in or would like to join. Participation in extra-curricular programs is encouraged to support personal growth, teamwork, and leadership skills.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/Azn8A') }}"> Click here to Download </a>
                                     </div>
                                </div>
                             </div>
