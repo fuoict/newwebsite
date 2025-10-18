@@ -32,18 +32,18 @@
                     <div class="content">
                         <div class="text">
                             <div class="container">
-                                {{-- <h1 data-aos="fade-up" data-aos-delay="100">Driven by Innovation</h1> --}}
+                                <h1 data-aos="fade-up" data-aos-delay="100">Where Excellence Meet Purpose</h1>
                             </div>
                             <hr>
                         </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    {{-- <p data-aos="fade-up" data-aos-delay="100">Rooted in Values.</p> --}}
+                                    <p data-aos="fade-up" data-aos-delay="100">Your Future Begins Here.</p>
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="short-info">
-                                        {{-- <h3 data-aos="fade-up" data-aos-delay="200">Preparing graduates ready to solve tomorrow’s challenges.</h3> --}}
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Educating Minds. Empowering Generations.</h3>
                                     </div>
                                 </div>
                             </div>
@@ -586,11 +586,48 @@
 
                 <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
                     <p>Inspiring Minds, Shaping Futures. <a href="undergraduate.html">Learn more <i class='bx bx-right-arrow-alt'></i></a></p>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <!-- End Success Area 2 -->
+<button class="hide" style="display:none" id="noticeButton" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ANNOUNCEMENTS!!!</h1>
+                    <button type="button" id="closeNoticeBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        <b>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION<b><br>
+                        Fountain University, Osogbo announces that all 
+                        graduating students and prospective Corps Members are 
+                        required to complete the mandatory Nigeria Education Repository 
+                        and Databank (NERD) Clearance for NYSC Mobilization, as directed by 
+                        the Federal Executive Council (FEC)
+                </div>
+                <div class="modal-footer">
+                    {{-- <button class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}">Read More</button> --}}
+                    <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a>
+                </div>
                 </div>
             </div>
         </div>
-        <!-- End Success Area 2 -->
 
- 
+        <script>
+            $('#noticeButton').click();
 
+            setTimeout(() => {
+                $('#closeNoticeBtn').click();
+            }, 30);
+
+
+            // setInterval(() => {
+            //     $('#closeNoticeBtn').click();
+            // }, 50);
+        </script>
 @endsection

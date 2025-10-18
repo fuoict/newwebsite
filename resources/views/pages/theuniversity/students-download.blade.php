@@ -36,11 +36,22 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
                                 {{-- <h4>INTER-UNIVERSITY TRANSFER FORM</h4>
                                 <p>To be completed in Quadruplicate</p> --}}
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/NQE1O') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION</h4>
+                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
                                  <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
@@ -51,6 +62,7 @@
                                         <a class="btn btn-success" href="{{ ('https://shorturl.at/r1EBb') }}"> Click here to Download </a>
                                     </div>
                                </div>
+                               
                               
                                 {{-- <div class="number-list">
                                     <a href="{{ URL::to('public/resources/INTER-UNIVERSITY-TRANSFER-FORM.pdf') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
@@ -100,6 +112,16 @@
                                             <a href="{{ ('https://shorturl.at/PfbTH') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                         </div>
                                         <h4>STUDENT HANDBOOK</h4>
+                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/PfbTH') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/PfbTH') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION</h4>
                                         <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
                                         <a class="btn btn-success" href="{{ ('https://shorturl.at/PfbTH') }}"> Click here to Download </a>
                                     </div>
