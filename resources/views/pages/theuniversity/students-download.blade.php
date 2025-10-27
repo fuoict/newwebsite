@@ -42,13 +42,23 @@
                             <div class="pera-dec">
                                 {{-- <h4>INTER-UNIVERSITY TRANSFER FORM</h4>
                                 <p>To be completed in Quadruplicate</p> --}}
+                                 <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/NQE1O') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>ADVERTISEMENT OF JOB VACANCY FOR THE POSITION OF LEGAL OFFICER</h4>
+                                        <p>Applications are invited from suitable candidates to fill the position of Legal Officer</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
                                 <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
                                             <a href="{{ ('https://shorturl.at/NQE1O') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                         </div>
                                         <h4>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION</h4>
-                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
+                                        <p>Fountain University, Osogbo announces that all graduating students and prospective Corps Members are required to complete the mandatory Nigeria Education Repository and Databank (NERD) Clearance for NYSC Mobilization, as directed by the Federal Executive Council (FEC)</p>
                                         <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Click here to Download </a>
                                     </div>
                                </div>

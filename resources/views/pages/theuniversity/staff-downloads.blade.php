@@ -37,16 +37,27 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="ac-overview">
+                        {{-- <div class="ac-overview">
                             <div class="pera-dec">
                                 <h4>Standing Orders of SENATE (Approved)</h4>
                                 <p>This standing orders set out the procedures for the conduct of the Senate in discharging its obligation, powers and functions.</p>
                                 <div class="number-list">
                                     <a href="{{ URL::to('public/resources/FUO-Senate-Standing-Order-July-2022.pdf') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                 </div>
-                               
                             </div>
+                        </div> --}}
+                    <div class="program-points mt-4">
+                        <div class="single-point-list">
+                            <div class="number-list">
+                                <a href="{{ 'https://shorturl.at/ON6od' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>ADVERTISEMENT OF JOB VACANCY FOR THE POSITION OF LEGAL OFFICER</h4>
+                            <p>Applications are invited from suitable candidates to fill the position of a Legal Officer</p>
+                            <a class="btn btn-success" href="{{ 'https://shorturl.at/ON6od' }}"> Click here to Download
+                            </a>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

@@ -603,16 +603,16 @@
                     <button type="button" id="closeNoticeBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                        <b>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION<b><br>
-                        Fountain University, Osogbo announces that all 
-                        graduating students and prospective Corps Members are 
-                        required to complete the mandatory Nigeria Education Repository 
-                        and Databank (NERD) Clearance for NYSC Mobilization, as directed by 
-                        the Federal Executive Council (FEC)
+                        <b>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION<b>
+                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a>
+                </div>
+                <div class="modal-body">
+                        <b>ADVERTISEMENT OF JOB VACANCY FOR THE POSITION OF LEGAL OFFICER<b>
+                        <a class="btn btn-success" href="{{ ('https://shorturl.at/ON6od') }}"> Read More </a>
                 </div>
                 <div class="modal-footer">
                     {{-- <button class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}">Read More</button> --}}
-                    <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a>
+                    {{-- <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a> --}}
                 </div>
                 </div>
             </div>
