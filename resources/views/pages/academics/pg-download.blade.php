@@ -108,6 +108,33 @@
                                         <a class="btn btn-success" href="{{ ('https://tinyurl.com/35r5njew') }}"> Click here to Download </a>
                                     </div>
                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/iDzpZ') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>SPGS PhD Conversion Exam Form</h4>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/iDzpZ') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/73Bp2') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>SPGS NUCLEUS A5SIZED Repaged Revised Final Last</h4>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/73Bp2') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/SdxMQ') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>SPGS PhD Qualifying Exam Form</h4>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/SdxMQ') }}"> Click here to Download </a>
+                                    </div>
+                               </div>
                             </div>
                         </div>
                     </div>
