@@ -72,6 +72,120 @@
                         </div>
                     </div>
                 </div>
+                 <div class="slider-content slider-bg-4">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Shaping Tomorrow’s Leaders</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Empowering minds through quality education</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Building skills for a dynamic global future.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="slider-content slider-bg-5">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">A Milestone in Higher Learning</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Honouring our first PhD journey.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Committed to advanced scholarship.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="slider-content slider-bg-6">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Building Minds, Transforming Futures</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Committed to academic excellence.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Focused on innovation and leadership.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="slider-content slider-bg-7">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Where Vision Meets Education</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Driving discovery and creativity.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Developing solutions for tomorrow.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="slider-content slider-bg-8">
+                    <div class="content">
+                        <div class="text">
+                            <div class="container">
+                                <h1 data-aos="fade-up" data-aos-delay="100">Education for a Better World</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p data-aos="fade-up" data-aos-delay="100">Nurturing intellect and integrity.</p>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="short-info">
+                                        <h3 data-aos="fade-up" data-aos-delay="200">Preparing students for global impact.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
         <!-- End Fountain Slider Area -->
@@ -537,14 +651,14 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="success-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="image">
-                                <img src="{{ asset('img/all-img/anniversary-lecture.png') }}" alt="image">
+                                <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="image">
                             </div>
                             <div class="content">
                                 <div class="play">
-                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=0SNFfXZ6u7U"><i class='bx bx-play'></i></a>
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=bNnfoUmIwGw"><i class='bx bx-play'></i></a>
                                 </div>
                                 <ul>
-                                    <li><a href="university-life.html"><h3>14TH CONVOCATION LECTURE </h3></a></li>
+                                    <li><a href="university-life.html"><h3>15TH CONVOCATION LECTURE </h3></a></li>
                                     <li class="link"><a href="university-life.html"><i class='bx bx-link-external'></i></a></li>
                                 </ul>
                             </div>
@@ -569,11 +683,11 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="success-card" data-aos="fade-up" data-aos-delay="300">
                             <div class="image">
-                                <img src="{{ asset('img/all-img/best-graduation-student.png') }}" alt="image">
+                                <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="image">
                             </div>
                             <div class="content">
                                 <div class="play">
-                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=7IPPS1OBjJ0"><i class='bx bx-play'></i></a>
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=bNnfoUmIwGw"><i class='bx bx-play'></i></a>
                                 </div>
                                 <ul>
                                     <li><a href="university-life.html"><h3>BEST GRADUATING STUDENT</h3></a></li>
@@ -594,8 +708,8 @@
         
 
         <!-- End Success Area 2 -->
-<button class="hide" style="display:none" id="noticeButton" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+{{-- <button class="hide" style="display:none" id="noticeButton" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> --}}
+        {{-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -613,12 +727,12 @@
                 <div class="modal-footer">
                     {{-- <button class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}">Read More</button> --}}
                     {{-- <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a> --}}
-                </div>
+                {{-- </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
-        <script>
+        {{-- <script>
             $('#noticeButton').click();
 
             setTimeout(() => {
@@ -629,5 +743,5 @@
             // setInterval(() => {
             //     $('#closeNoticeBtn').click();
             // }, 50);
-        </script>
+        </script> --}}
 @endsection

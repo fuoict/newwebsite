@@ -632,6 +632,101 @@ Slider Banner Area CSS
     background:#120f2d;
 	opacity:0.6;
 }
+.slider-bg-4{
+  background-image: url(../img/banner/convo4.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-4::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-5{
+  background-image: url(../img/banner/phdstudent.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-5::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-6{
+  background-image: url(../img/banner/bot.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-6::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-7{
+  background-image: url(../img/banner/jamb.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-7::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
+.slider-bg-8{
+  background-image: url(../img/banner/bestgrad.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 350px;
+  position:relative;
+  padding-bottom: 100px;
+}
+.slider-bg-8::before {
+	position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background:#120f2d;
+	opacity:0.6;
+}
 /* Zoom Background Animation */
 @-webkit-keyframes zoom-a {
 	0% { background-size: 100% auto; }

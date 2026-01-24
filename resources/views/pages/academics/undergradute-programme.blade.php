@@ -252,7 +252,7 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.A. History International Studies</a></li>
+                                                    <li><a href="#">B.A. History & International Studies</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -311,8 +311,8 @@
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li><a href="#">B.A. English Language</a></li>
-                                                    <li><a href="#">B.A. French Language</a></li>
+                                                    <li><a href="#">B.A. English</a></li>
+                                                    <li><a href="#">B.A. French</a></li>
                                                 </ul>
                                             </div>
                                         </div>
