@@ -73,7 +73,7 @@
                         </div>
 
 
-                        <div class="ac-overview">
+                        {{-- <div class="ac-overview">
                             <div class="faculty-model">
                                 <div class="problem-sector">
                                     <div class="problem-list">
@@ -95,13 +95,13 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="content">
+                                                    {{-- <div class="content">
                                                         <h4>Emma Thompson</h4>
                                                         <p>Assistant Professor of Philosophy</p>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-sm-6 col-md-6">
+                                            {{-- <div class="col-lg-6 col-sm-6 col-md-6">
                                                 <div class="faculty-card">
                                                     <div class="image">
                                                         <img src="{{ asset('img/all-img/faculty-2.png') }}" alt="image">
@@ -119,13 +119,13 @@
                                                         <p>Assistant Professor of History</p>
                                                     </div>
                                                 </div>
-                                            </div>
-
+                                            </div> --}}
+{{-- 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  --}}
 
 
                     </div>
