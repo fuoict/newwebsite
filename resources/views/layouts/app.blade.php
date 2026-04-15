@@ -65,7 +65,7 @@
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
                                 <li><a href="{{ route('gallery') }}">Gallery</a></li>
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                                <li><a href="{{ 'https://shorturl.at/7zmXb' }}">Approved School Fee</a></li>
+                                <li><a href="{{ 'https://tinyurl.com/42zxfstk' }}">Approved School Fee</a></li>
                             </ul>
                         </div>
                     </div>
@@ -170,22 +170,13 @@
                                             <li class="nav-item"><a href="{{ route('our-staff') }}"
                                                     class="nav-link">Our Staff</a>
                                             </li>
-                                            <li class="nav-item"><a href="{{ route('pg-download') }}"
+                                            <li class="nav-item"><a href="/pg-download"
                                                     class="nav-link">Postgraduate Students' Downloads</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#" class="nav-link">Resources</a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="nav-item"><a href="{{ route('general-download') }}"
-                                                            class="nav-link">General Downloads</a></li>
-                                                    <li class="nav-item"><a href="{{ route('students-download') }}"
-                                                            class="nav-link">Students' Downloads</a></li>
-                                                    <li class="nav-item"><a href="{{ route('staff-downloads') }}"
-                                                            class="nav-link">Staff Downloads</a></li>
-                                                </ul>
                                             </li>
                                         </ul>
                                     </li>
+                                    <li class="nav-item"><a target="_blank" href="https://ipss.fuo.edu.ng/"
+                                            class="nav-link">IPSS</a></li>
                                 </ul>
                             </li>
 
@@ -205,24 +196,63 @@
                             </li>
 
                             {{-- DIVISIONS MENU ............................................. --}}
+                            <!--<li class="nav-item">-->
+                            <!--    <a href="javascript:void(0)" class="dropdown-toggle nav-link">-->
+                            <!--        Colleges & Institutes-->
+                            <!--    </a>-->
+
+                            <!--    {{-- Colleges Divisions --}}-->
+                            <!--    <ul class="dropdown-menu">-->
+                            <!--        <li class="nav-item">-->
+                            <!--            @foreach ($Colleges as $College)-->
+                            <!--                <a href="{{ route('colleges.show', $College->id) }}"-->
+                            <!--                    class="nav-link  sub-menu">{{ $College->college_name }}</a>-->
+                            <!--            @endforeach-->
+                            <!--        </li>-->
+
+                            <!--    </ul>-->
+                            <!--     <ul class="dropdown-menu">-->
+                            <!--        <li class="nav-item"><a href="{{ 'https://ipss.fuo.edu.ng/' }}"-->
+                            <!--                class="nav-link">IPSS</a></li>-->
+                            <!--    </ul>-->
+                            <!--</li>-->
+                            {{-- DIVISIONS MENU ............................................. --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    Colleges
+                                    Colleges & Institutes
                                 </a>
-
-                                {{-- Colleges Divisions --}}
+                            
                                 <ul class="dropdown-menu">
+                            
+                                    {{-- Colleges Sub-menu --}}
                                     <li class="nav-item">
-                                        @foreach ($Colleges as $College)
-                                            <a href="{{ route('colleges.show', $College->id) }}"
-                                                class="nav-link  sub-menu">{{ $College->college_name }}</a>
-                                        @endforeach
-
+                                        <a href="#" class="nav-link">Colleges</a>
+                                        <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
+                                            @foreach ($Colleges as $College)
+                                                <li class="nav-item">
+                                                    <a href="{{ route('colleges.show', $College->id) }}" class="nav-link">
+                                                        {{ $College->college_name }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                     </li>
-
-
+                            
+                                    {{-- Institutes Sub-menu --}}
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Institutes</a>
+                                        <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
+                                            <li class="nav-item">
+                                                <a href="https://ipss.fuo.edu.ng/" class="nav-link">IPSS</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            
                                 </ul>
                             </li>
+                            
+                            
+                            
                             {{-- CENTER AND UNITS MENU ............................................. --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
@@ -580,6 +610,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <div class="accordion-item">
+                                        <a target="_blank" href="https://ipss.fuo.edu.ng/" class="accordion-link">
+                                            IPSS Programmes
+                                        </a>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -933,7 +970,6 @@
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
-    
 
 </body>
 
