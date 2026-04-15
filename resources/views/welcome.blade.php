@@ -162,7 +162,7 @@
                         
                     </div>
                 </div>
-                <div class="slider-content slider-bg-8">
+                {{-- <div class="slider-content slider-bg-8">
                     <div class="content">
                         <div class="text">
                             <div class="container">
@@ -184,7 +184,7 @@
                         </div>
                         
                     </div>
-                </div>
+                </div> --}}
                 
             </div>
         </div>
