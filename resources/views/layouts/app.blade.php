@@ -859,6 +859,8 @@
                                     Fountain University was granted an operational license as a
                                     Private University on May 17, 2007, by the Federal Government
                                     on the recommendations of the National Universities Commission.
+                                    <hr>
+                                     <a href="{{ route('dashboard') }}" class="nav-link">Admin Panel</a>
                                 </p>
                             </div>
                         </div>

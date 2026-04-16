@@ -108,7 +108,7 @@ Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.
 // ----------------------------------------------------------------
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     // Dashboard
-    Route::get('/dashboard', function () {
+    Route::get('/admin/dashboard', function () {
         return view('admin.dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
 
