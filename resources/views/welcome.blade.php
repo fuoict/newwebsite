@@ -474,9 +474,9 @@
                             <div class="content-box">
                                 <img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}">
                                 <div class="content">
-                                    <h3>
+                                    <h3 style="margin: 10px">
                                         <a href="{{ route('news.show', $sidebarFeatured->slug) }}">
-                                            {{ Str::limit($sidebarFeatured->title, 80) }}
+                                            {{ Str::limit($sidebarFeatured->title, 50) }}
                                         </a>
                                     </h3>
                                     <a class="btn" href="{{ route('news.show', $sidebarFeatured->slug) }}">Continue Reading...</a>
@@ -490,17 +490,17 @@
                         <div class="news-content-item" data-aos="fade-up" data-aos-delay="100">
                             @foreach($sidebarSmall as $small)
                             <div class="content-box">
-                                <div class="image">
+                                <div class="image mt-4">
                                     <img src="{{ $small->image_url }}" alt="{{ $small->title }}">
                                 </div>
-                                <div class="content">
+                                <div class="content m-3">
                                     <div class="sub-title">
                                         <i class="{{ $small->icon }}"></i>
                                         <p>{{ $small->category }}</p>
                                     </div>
                                     <h3>
                                         <a href="{{ route('news.show', $small->slug) }}">
-                                            {{ Str::limit($small->title, 90) }}
+                                            {{ Str::limit($small->title, 60) }}
                                         </a>
                                     </h3>
                                 </div>
