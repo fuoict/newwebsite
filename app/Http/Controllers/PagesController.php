@@ -15,6 +15,11 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
+    public function appraisal()
+    {
+        return view('pages.theuniversity.appraisal');
+    }
+
     public function speeches()
     {
         $Data = [

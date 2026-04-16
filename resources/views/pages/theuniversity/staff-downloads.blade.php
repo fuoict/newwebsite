@@ -47,7 +47,7 @@
                             </div>
                         </div> --}}
                     <div class="program-points mt-4">
-                        <div class="single-point-list">
+                        {{-- <div class="single-point-list">
                             <div class="number-list">
                                 <a href="{{ 'https://shorturl.at/ON6od' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
                                         class="img-res" style="width: 7%" alt=""></a>
@@ -56,7 +56,43 @@
                             <p>Applications are invited from suitable candidates to fill the position of a Legal Officer</p>
                             <a class="btn btn-success" href="{{ 'https://shorturl.at/ON6od' }}"> Click here to Download
                             </a>
+                        </div> --}}
+
+                        <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/4rah3anw' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>2026 PROMOTION CIRCULAR</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/4rah3anw' }}"> Click here to Download</a>
                         </div>
+
+                        <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/y4asz6vs' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>2026 FUO APPROVED CV FORMAT</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/y4asz6vs' }}"> Click here to Download</a>
+                        </div>
+                        <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/35tmu4z9' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>APER Form for Academic Staff</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/35tmu4z9' }}"> Click here to Download</a>
+                        </div>
+                        <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/2s393cse' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>2026 FUO APPROVED CV Document FORMAT</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/2s393cse' }}"> Click here to Download</a>
+                        </div>
+
+
                     </div>
                     </div>
                 </div>

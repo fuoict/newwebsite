@@ -1,14 +1,30 @@
 <?php
 
+use App\Http\Controllers\Admin\NewsController as AdminNewsController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
+use App\Models\News;
+
+
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    $featuredNews    = News::published()->featured()->latest()->limit(2)->get();
+    $sidebarFeatured = News::published()->featured()->latest()->skip(2)->first();
+    $sidebarSmall    = News::published()->latest()
+                            ->whereNotIn('id',
+                                $featuredNews->pluck('id')
+                                ->push(optional($sidebarFeatured)->id)
+                                ->filter()->toArray()
+                            )->limit(2)->get();
+    return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall'));
 });
 
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
+Route::get('/appraisal', [PagesController::class, 'appraisal'])->name('appraisal');
 // Route::get('/about-board-of-trustee', [PagesControll]);
 
 Route::get('/alumni', [PagesController::class, 'alumni'])->name('alumni');
@@ -76,3 +92,38 @@ Route::get('/sandwich', [PagesController::class, 'sandwich'])->name('sandwich');
 Route::get('/subdegree', [PagesController::class, 'subdegree'])->name('subdegree');
 Route::get('/entrepreneurship', [PagesController::class, 'entrepreneurship'])->name('entrepreneurship');
 
+
+
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
+Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// ----------------------------------------------------------------
+// ADMIN ROUTES — Protected by auth middleware
+// ----------------------------------------------------------------
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+    // Dashboard
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
+
+    // STaff
+    Route::get('staff/create',            [AdminNewsController::class, 'createStaff'])->name('staff.create');
+    Route::get('staff/index',            [AdminNewsController::class, 'createStaff'])->name('staff.index');
+    // News CRUD
+    Route::get('/news',                   [AdminNewsController::class, 'index'])->name('news.index');
+    Route::get('/news/create',            [AdminNewsController::class, 'create'])->name('news.create');
+    Route::post('/news',                  [AdminNewsController::class, 'store'])->name('news.store');
+    Route::get('/news/{news}/edit',       [AdminNewsController::class, 'edit'])->name('news.edit');
+    Route::put('/news/{news}',            [AdminNewsController::class, 'update'])->name('news.update');
+    Route::delete('/news/{news}',         [AdminNewsController::class, 'destroy'])->name('news.destroy');
+    Route::patch('/news/{news}/toggle',   [AdminNewsController::class, 'togglePublish'])->name('news.toggle');
+
+});
+
+require __DIR__.'/auth.php';
