@@ -77,15 +77,23 @@
                         </div>
                         <div class="single-point-list mt-4">
                             <div class="number-list">
-                                <a href="{{ 'https://tinyurl.com/35tmu4z9' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                <a href="{{ 'https://tinyurl.com/3wvukhue' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
                                         class="img-res" style="width: 7%" alt=""></a>
                             </div>
                             <h4>APER Form for Academic Staff</h4>
-                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/35tmu4z9' }}"> Click here to Download</a>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/3wvukhue' }}"> Click here to Download</a>
                         </div>
                         <div class="single-point-list mt-4">
                             <div class="number-list">
-                                <a href="{{ 'https://tinyurl.com/2s393cse' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                <a href="{{ 'https://tinyurl.com/3wvukhue' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>APER Form for Non Academic Staff</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/yxxvd72z' }}"> Click here to Download</a>
+                        </div>
+                        <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/yxxvd72z' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
                                         class="img-res" style="width: 7%" alt=""></a>
                             </div>
                             <h4>2026 FUO APPROVED CV Document FORMAT</h4>
