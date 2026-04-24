@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\NewsController as AdminNewsController;
+use App\Http\Controllers\Admin\StaffController as AdminStaffController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\NewsController;
@@ -18,7 +19,7 @@ Route::get('/', function () {
                                 $featuredNews->pluck('id')
                                 ->push(optional($sidebarFeatured)->id)
                                 ->filter()->toArray()
-                            )->limit(2)->get();
+                            )->limit(3)->get();
     return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall'));
 });
 
@@ -106,23 +107,50 @@ Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.
 // ----------------------------------------------------------------
 // ADMIN ROUTES — Protected by auth middleware
 // ----------------------------------------------------------------
-Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
-    // Dashboard
-    Route::get('/admin/dashboard', function () {
-        return view('admin.dashboard');
-    })->middleware(['auth', 'verified'])->name('dashboard');
+// Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+//     // Dashboard
+//     Route::get('/admin/dashboard', function () {
+//         return view('admin.dashboard');
+//     })->middleware(['auth', 'verified'])->name('dashboard');
 
-    // STaff
-    Route::get('staff/create',            [AdminNewsController::class, 'createStaff'])->name('staff.create');
-    Route::get('staff/index',            [AdminNewsController::class, 'createStaff'])->name('staff.index');
+//     // STaff
+//     Route::get('staff/create',            [AdminNewsController::class, 'createStaff'])->name('staff.create');
+//     Route::get('staff/index',            [AdminNewsController::class, 'createStaff'])->name('staff.index');
+//     // News CRUD
+//     Route::get('/news',                   [AdminNewsController::class, 'index'])->name('news.index');
+//     Route::get('/news/create',            [AdminNewsController::class, 'create'])->name('news.create');
+//     Route::post('/news',                  [AdminNewsController::class, 'store'])->name('news.store');
+//     Route::get('/news/{news}/edit',       [AdminNewsController::class, 'edit'])->name('news.edit');
+//     Route::put('/news/{news}',            [AdminNewsController::class, 'update'])->name('news.update');
+//     Route::delete('/news/{news}',         [AdminNewsController::class, 'destroy'])->name('news.destroy');
+//     Route::patch('/news/{news}/toggle',   [AdminNewsController::class, 'togglePublish'])->name('news.toggle');
+
+// });
+// ----------------------------------------------------------------
+// ADMIN ROUTES — Protected by auth middleware
+// ----------------------------------------------------------------
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
+
+    // Dashboard
+    Route::get('/', fn() => view('admin.dashboard'))->name('dashboard');
+
     // News CRUD
-    Route::get('/news',                   [AdminNewsController::class, 'index'])->name('news.index');
-    Route::get('/news/create',            [AdminNewsController::class, 'create'])->name('news.create');
-    Route::post('/news',                  [AdminNewsController::class, 'store'])->name('news.store');
-    Route::get('/news/{news}/edit',       [AdminNewsController::class, 'edit'])->name('news.edit');
-    Route::put('/news/{news}',            [AdminNewsController::class, 'update'])->name('news.update');
-    Route::delete('/news/{news}',         [AdminNewsController::class, 'destroy'])->name('news.destroy');
-    Route::patch('/news/{news}/toggle',   [AdminNewsController::class, 'togglePublish'])->name('news.toggle');
+    Route::get('/news',                    [AdminNewsController::class, 'index'])->name('news.index');
+    Route::get('/news/create',             [AdminNewsController::class, 'create'])->name('news.create');
+    Route::post('/news',                   [AdminNewsController::class, 'store'])->name('news.store');
+    Route::post('/news/upload-image',      [AdminNewsController::class, 'uploadImage'])->name('news.upload-image');
+    Route::get('/news/{news}/edit',        [AdminNewsController::class, 'edit'])->name('news.edit');
+    Route::put('/news/{news}',             [AdminNewsController::class, 'update'])->name('news.update');
+    Route::delete('/news/{news}',          [AdminNewsController::class, 'destroy'])->name('news.destroy');
+    Route::patch('/news/{news}/toggle',    [AdminNewsController::class, 'togglePublish'])->name('news.toggle');
+
+    // Staff CRUD
+    Route::get('/staff',                   [AdminStaffController::class, 'index'])->name('staff.index');
+    Route::get('/staff/create',            [AdminStaffController::class, 'create'])->name('staff.create');
+    Route::post('/staff',                  [AdminStaffController::class, 'store'])->name('staff.store');
+    Route::get('/staff/{staff}/edit',      [AdminStaffController::class, 'edit'])->name('staff.edit');
+    Route::put('/staff/{staff}',           [AdminStaffController::class, 'update'])->name('staff.update');
+    Route::delete('/staff/{staff}',        [AdminStaffController::class, 'destroy'])->name('staff.destroy');
 
 });
 

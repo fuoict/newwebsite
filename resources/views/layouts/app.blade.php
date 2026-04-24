@@ -59,13 +59,14 @@
                         <div class="top-right-items">
                             <ul>
                                 {{-- <i class='bx bxs-map'></i>  --}}
+                                <li><a href="{{ 'https://transcript.fuo.edu.ng' }}">Transcript Application</a></li>
                                 <li><a href="{{ route('the-university-library') }}">Library</a></li>
                                 <li><a href="{{ 'https://gmail.com' }}">Webmail</a></li>
                                 <li><a href="{{ route('faq') }}">FAQ</a></li>
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
-                                <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                                {{-- <li><a href="{{ route('gallery') }}">Gallery</a></li> --}}
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                                <li><a href="{{ 'https://tinyurl.com/42zxfstk' }}">Approved School Fee</a></li>
+                                {{-- <li><a href="{{ 'https://tinyurl.com/42zxfstk' }}">Approved School Fee</a></li> --}}
                             </ul>
                         </div>
                     </div>
