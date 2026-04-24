@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
-class NewsController extends Controller
+class AdminNewsController extends Controller
 {
     // List all news
     public function index()

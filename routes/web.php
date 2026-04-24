@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Admin\NewsController as AdminNewsController;
+use App\Http\Controllers\Admin\AdminNewsController;
 use App\Http\Controllers\Admin\StaffController as AdminStaffController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
