@@ -99,8 +99,14 @@
                             <h4>2026 FUO APPROVED CV Document FORMAT</h4>
                             <a class="btn btn-success" href="{{ 'https://tinyurl.com/2s393cse' }}"> Click here to Download</a>
                         </div>
-
-
+                         <div class="single-point-list mt-4">
+                            <div class="number-list">
+                                <a href="{{ 'https://tinyurl.com/mr6vva9j' }}"><img src="{{ asset('img/icon/pdf.jpg') }}"
+                                        class="img-res" style="width: 7%" alt=""></a>
+                            </div>
+                            <h4>LIST OF PUBLICATIONS AND METRICS</h4>
+                            <a class="btn btn-success" href="{{ 'https://tinyurl.com/mr6vva9j' }}"> Click here to Download</a>
+                        </div>
                     </div>
                     </div>
                 </div>
