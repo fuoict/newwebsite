@@ -171,8 +171,8 @@
                                             <li class="nav-item"><a href="{{ route('our-staff') }}"
                                                     class="nav-link">Our Staff</a>
                                             </li>
-                                            <li class="nav-item"><a href="/pg-download"
-                                                    class="nav-link">Postgraduate Students' Downloads</a>
+                                            <li class="nav-item"><a href="/pg-download" class="nav-link">Postgraduate
+                                                    Students' Downloads</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -205,10 +205,12 @@
                             <!--    {{-- Colleges Divisions --}}-->
                             <!--    <ul class="dropdown-menu">-->
                             <!--        <li class="nav-item">-->
-                            <!--            @foreach ($Colleges as $College)-->
+                            <!--            @foreach ($Colleges as $College)
+-->
                             <!--                <a href="{{ route('colleges.show', $College->id) }}"-->
                             <!--                    class="nav-link  sub-menu">{{ $College->college_name }}</a>-->
-                            <!--            @endforeach-->
+                            <!--
+@endforeach-->
                             <!--        </li>-->
 
                             <!--    </ul>-->
@@ -222,23 +224,24 @@
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                                     Colleges & Institutes
                                 </a>
-                            
+
                                 <ul class="dropdown-menu">
-                            
+
                                     {{-- Colleges Sub-menu --}}
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Colleges</a>
                                         <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
                                             @foreach ($Colleges as $College)
                                                 <li class="nav-item">
-                                                    <a href="{{ route('colleges.show', $College->id) }}" class="nav-link">
+                                                    <a href="{{ route('colleges.show', $College->id) }}"
+                                                        class="nav-link">
                                                         {{ $College->college_name }}
                                                     </a>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </li>
-                            
+
                                     {{-- Institutes Sub-menu --}}
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Institutes</a>
@@ -248,12 +251,12 @@
                                             </li>
                                         </ul>
                                     </li>
-                            
+
                                 </ul>
                             </li>
-                            
-                            
-                            
+
+
+
                             {{-- CENTER AND UNITS MENU ............................................. --}}
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
@@ -611,13 +614,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="accordion-item">
                                         <a target="_blank" href="https://ipss.fuo.edu.ng/" class="accordion-link">
                                             IPSS Programmes
                                         </a>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -660,10 +663,10 @@
                     </div>
 
                     {{-- DIVISION MENU MANAGEMENT -------------------------------------------------- --}}
-                    <div class="accordion-item">
+                    {{-- <div class="accordion-item">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Divisions
+                            Colleges & Institutes
                         </button>
                         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body">
@@ -770,7 +773,216 @@
                                 </div>
                             </div>
                         </div>
+                    </div> --}}
+                    {{-- COLLEGES & INSTITUTES MENU (MOBILE) --}}
+                    <div class="accordion-item">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Colleges & Institutes
+                        </button>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="navbarAccordionCollegesInstitutes">
+
+                                    {{-- Colleges Sub-menu --}}
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseColleges"
+                                            aria-expanded="false" aria-controls="collapseColleges">
+                                            Colleges
+                                        </button>
+                                        <div id="collapseColleges" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordionCollegesInstitutes">
+                                            <div class="accordion-body">
+                                                <div class="accordion">
+                                                    @foreach ($Colleges as $College)
+                                                        <div class="accordion-item">
+                                                            <a href="{{ route('colleges.show', $College->id) }}"
+                                                                class="accordion-link">
+                                                                {{ $College->college_name }}
+                                                            </a>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Institutes Sub-menu --}}
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseInstitutes"
+                                            aria-expanded="false" aria-controls="collapseInstitutes">
+                                            Institutes
+                                        </button>
+                                        <div id="collapseInstitutes" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordionCollegesInstitutes">
+                                            <div class="accordion-body">
+                                                <div class="accordion">
+                                                    <div class="accordion-item">
+                                                        <a href="https://ipss.fuo.edu.ng/" class="accordion-link">
+                                                            IPSS
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    {{-- CENTRES & UNITS MENU (MOBILE) --}}
+                    <div class="accordion-item">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCentresUnits" aria-expanded="false"
+                            aria-controls="collapseCentresUnits">
+                            Centres & Units
+                        </button>
+                        <div id="collapseCentresUnits" class="accordion-collapse collapse"
+                            data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="navbarAccordionCentresUnits">
+
+                                    {{-- Centres Sub-menu --}}
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseCentres"
+                                            aria-expanded="false" aria-controls="collapseCentres">
+                                            Centres
+                                        </button>
+                                        <div id="collapseCentres" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordionCentresUnits">
+                                            <div class="accordion-body">
+                                                <div class="accordion">
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('consultancy') }}" class="accordion-link">
+                                                            Centre for Consultancy Services
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('fucrit') }}" class="accordion-link">
+                                                            Centre for Research and Innovation and Technology
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('spiritual-growth') }}"
+                                                            class="accordion-link">
+                                                            Centre for Spiritual Growth and Moral Excellence
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('linkages') }}" class="accordion-link">
+                                                            Centre for Linkages and Advancement
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('arabic-islamic-research') }}"
+                                                            class="accordion-link">
+                                                            Centre for Arabic and Islamic Research, Translation and
+                                                            Immersion Programme
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('sandwich') }}" class="accordion-link">
+                                                            Centre for Sandwich Programmes
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('subdegree') }}" class="accordion-link">
+                                                            Centre for Sub-degree and Professional Programmes
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('entrepreneurship') }}"
+                                                            class="accordion-link">
+                                                            Centre for Entrepreneurship and Skill Acquisition
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {{-- Units Sub-menu --}}
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseUnits"
+                                            aria-expanded="false" aria-controls="collapseUnits">
+                                            Units
+                                        </button>
+                                        <div id="collapseUnits" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordionCentresUnits">
+                                            <div class="accordion-body">
+                                                <div class="accordion">
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('academicplanning') }}"
+                                                            class="accordion-link">
+                                                            Academic Planning Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('bursary') }}" class="accordion-link">
+                                                            Bursary Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('counselling') }}" class="accordion-link">
+                                                            Counselling Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('ictunit') }}" class="accordion-link">
+                                                            ICT Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('auditunit') }}" class="accordion-link">
+                                                            Internal Audit Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('prounit') }}" class="accordion-link">
+                                                            Public Relations Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('qassurance') }}" class="accordion-link">
+                                                            Quality Assurance Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('registry') }}" class="accordion-link">
+                                                            Registry Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('siwes') }}" class="accordion-link">
+                                                            SIWES Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('sports') }}" class="accordion-link">
+                                                            Sports Unit
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('student-affairs') }}"
+                                                            class="accordion-link">
+                                                            Student Affairs Unit
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     {{-- PUBLICATIONS MENU MANAGEMENT ---------------------------------------------- --}}
                     <div class="accordion-item">
@@ -861,7 +1073,7 @@
                                     Private University on May 17, 2007, by the Federal Government
                                     on the recommendations of the National Universities Commission.
                                     <hr>
-                                     <a href="{{ route('dashboard') }}" class="nav-link">Admin Panel</a>
+                                    <a href="{{ route('dashboard') }}" class="nav-link">Admin Panel</a>
                                 </p>
                             </div>
                         </div>
