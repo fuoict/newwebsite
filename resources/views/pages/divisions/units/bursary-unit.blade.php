@@ -60,8 +60,8 @@
                                     <h4 class="title-anim">Fountain University, Osogbo</h4>
                                     <p class="title-anim">Bursary Unit</p>
                                     <div class="author-info">
-                                        <span>Mrs. Silifat </span>
-                                        <h5>Alli-Balogun</h5>
+                                        <span>Dr. S.S. </span>
+                                        <h5>Balogun</h5>
                                         <p>Bursar</p>
                                     </div>
                                 </div>

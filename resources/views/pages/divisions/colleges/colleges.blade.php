@@ -89,10 +89,18 @@
                                 </ul>
 
                             </div> --}}
-                            <div class="widget widget-banner">
+                            <div class="widget widget-banner text-center">
+                                <div class="blog-banner-content mb-3">
+                                    
+                                    <div class="title" style="color: #000;">Dean, {{ $Colleges->college_name }}</div>
+                                </div>
+                                @if($Colleges->dean_image)
+                                    <div class="mb-3">
+                                        <img src="{{ asset('storage/'.$Colleges->dean_image) }}" alt="{{ $Colleges->dean_name }}" class="img-fluid rounded" style="max-width: 220px; height: auto; object-fit: cover; display: block; margin: 0 auto;">
+                                    </div>
+                                @endif
                                 <div class="blog-banner-content">
-                                    <div class="title">Dean, {{ $Colleges->college_name }}</div>
-                                    <div class="title">
+                                    <div class="title" style="color: #000; font-size: 1rem; font-weight: 600; margin-top: 8px;">
                                         {{ $Colleges->dean_name }}
                                     </div>
                                 </div>
@@ -132,7 +140,12 @@
                                                 <ul>
                                                     {{-- <li><a href="{{ route('departments', $Colleges->id) }}">Business Media</a></li> --}}
                                                     @foreach ($Departments as $index => $Department)
-                                                        <li><a href="{{ route('department', $Department->id) }}">{{ $Department->department_name }}</a></li>
+                                                        <li class="d-flex align-items-center mb-3">
+                                                            @if($Department->department_image)
+                                                                <img src="{{ asset('storage/'.$Department->department_image) }}" alt="{{ $Department->department_name }}" style="width:56px; height:56px; object-fit:cover; border-radius:8px; margin-right:12px;">
+                                                            @endif
+                                                            <a href="{{ route('department', $Department->id) }}">{{ $Department->department_name }}</a>
+                                                        </li>
                                                     @endforeach
                                                     {{-- <li><a href="#">Corporate Finance</a></li>
                                                     <li><a href="#">Business Administration</a></li> --}}

@@ -103,6 +103,55 @@
                             </div>
                             {{-- end of department of arabic and islamic studies --}}
 
+                             {{-- start of department of arts and social sciences --}}
+                            <div class="problem-sector py-4">
+                                <div class="problem-list">
+                                    <div class="title">
+                                        <h3>Department of Arts and Social Sciences</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Ed. Arabic</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Ed. Computer Science</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Ed. Economics</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Ed. English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                            <div class="problem-items">
+                                                <ul>
+                                                    <li><a href="#">B.Ed. Islamic Studies</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- end of department of arts and social sciences --}}
+
                             {{-- start of department of Biological Sciences --}}
                             <div class="problem-sector py-4">
                                 <div class="problem-list">

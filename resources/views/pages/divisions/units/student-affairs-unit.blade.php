@@ -37,7 +37,7 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="{{ asset('img/all-img/units/student-affairs.jpg') }}" alt="image" class="img-fluid" style="max-height: 370px; height:400px; border:solid 1px #ddd; border-radius: 10px;">
+                                <img src="{{ asset('img/all-img/units/Adekola.jpg') }}" alt="image" class="img-fluid" style="max-height: 370px; height:400px; border:solid 1px #ddd; border-radius: 10px;">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
@@ -46,8 +46,8 @@
                                     <h4 class="title-anim">Fountain University, Osogbo</h4>
                                     <p class="title-anim">Student Affairs Unit</p>
                                     <div class="author-info">
-                                        <span>Dr R.K.</span>
-                                        <h5>ALATISE</h5>
+                                        <span>Professor Bushirat</span>
+                                        <h5>Adekola</h5>
                                         <p>Director</p>
                                     </div>
                                 </div>

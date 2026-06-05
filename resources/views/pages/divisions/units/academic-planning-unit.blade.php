@@ -51,7 +51,7 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="{{ asset('img/all-img/about-image.png') }}" alt="image">
+                                <img src="{{ asset('img/all-img/units/OF_Liadi.jpg') }}" alt="image">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
@@ -60,8 +60,8 @@
                                     <h4 class="title-anim">Fountain University, Osogbo</h4>
                                     <p class="title-anim">Academic Planning Unit</p>
                                     <div class="author-info">
-                                        <span>Prof. Goke Abidemi </span>
-                                        <h5>Lalude</h5>
+                                        <span>Prof. O.F </span>
+                                        <h5>Liadi</h5>
                                         <p>Director</p>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@
                             <img src="{{ asset('img/icon/education-1.png') }}" alt="icon">
                             <h4>Education Services</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            <a href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
@@ -96,7 +96,7 @@
                             <img src="{{ asset('img/icon/education-2.png') }}" alt="icon">
                             <h4>International Hubs</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            <a href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6">
@@ -104,7 +104,7 @@
                             <img src="{{ asset('img/icon/education-3.png') }}" alt="icon">
                             <h4>Bachelor’s and Master’s</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
-                            <a href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                            <a href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                         </div>
                     </div>
                 </div>

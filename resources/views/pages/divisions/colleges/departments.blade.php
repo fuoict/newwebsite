@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="banner-spacing">
                     <div class="section-info">
-                        <h2 data-aos="fade-up" data-aos-delay="100">Department of Arabic and Educations</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100">{{ $Department->department_name }}</h2>
                     </div>
                 </div>
             </div>
@@ -22,6 +22,18 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="academics-left">
+                            <div class="ac-contact text-center mb-4">
+                                <div class="hod-card">
+                                    <img src="{{ $Department->hod_image ? asset('storage/'.$Department->hod_image) : asset('img/logo/fuo-logo.png') }}" alt="{{ $Department->hod_name ?? 'Head of Department' }}" class="img-fluid rounded" style="max-width: 220px; height: auto; object-fit: cover; margin: 0 auto;">
+                                    <h4 class="mt-3" style="color: #000; font-weight: 600;">{{ $Department->hod_name ?? 'Head of Department' }}</h4>
+                                    @if($Department->hod_email)
+                                        <p class="mb-1">{{ $Department->hod_email }}</p>
+                                    @endif
+                                    @if($Department->hod_phone)
+                                        <p>{{ $Department->hod_phone }}</p>
+                                    @endif
+                                </div>
+                            </div>
                             <div class="ac-category">
                                 <ul>
                                     <li><a href="{{ route('department', $Department->id) }}">Overview</a></li>
