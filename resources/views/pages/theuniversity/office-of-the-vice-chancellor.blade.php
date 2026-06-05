@@ -53,7 +53,7 @@
                             Chairman and Member of the National Universities Commission and National Board for Technical
                             Education teams for accreditation and resources verification of programmes. Her services to the
                             community have won her over 35 distinguished awards and honours.</p>
-                        <p>She is happily married to Dr. Adegboyega Karim.</p>
+                        <p>She is happily married to Professor. Adegboyega Karim.</p>
                         <p>Professor Karim assumed duty as the 4th substantive Vice-Chancellor of the institution on the 1st
                             of March, 2023. She is unswervingly committed to supporting, sustaining, and advancing the
                             vision of FUO in the next four years.</p>
@@ -70,6 +70,7 @@
 
         </div>
         <div class="container-fluid px-5 align-items-center">
+            <h2 style="text-align: center;">Vice-Chancellor's Speeches</h2> <br> <hr>
             <div class="row g-0 align-items-center">
                 @foreach ($Records as $Record)
                     <div class="col-lg-4 pb-3">
