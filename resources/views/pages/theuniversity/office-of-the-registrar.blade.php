@@ -19,6 +19,11 @@
         <div class="about-alumni ptb-100">
             <div class="container-fluid p-0">
                 <div class="row g-0 align-items-center">
+                    <div class="col-lg-5">
+                        <img src="{{ asset('img/all-img/adenekan-sheriff.jpeg') }}" alt="The-Registrar" data-aos="fade-zoom-in" data-aos-delay="100">
+                        <div  >
+                        </div>
+                    </div>
                     <div class="col-lg-7">
                         <div class="content" data-aos="fade-up" data-aos-delay="100">
                             
@@ -38,11 +43,6 @@
                             <p>Mr Adenekan is married and blessed with children.</p>
                             <p>He was appointed as the 4th substantive Registrar of Fountain University  by the University Governing Council on 13th December 2022.</p>
                   
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <img src="{{ asset('img/all-img/adenekan-sheriff.jpeg') }}" alt="The-Registrar" data-aos="fade-zoom-in" data-aos-delay="100">
-                        <div  >
                         </div>
                     </div>
                 </div>
@@ -72,86 +72,6 @@
             </div>
         </div>
         <!-- End Global Alumni Events Area -->
-
-        <!-- Start Event Area -->
-        <div class="event-area-3 ptb-100">
-            <div class="container">
-                <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title">
-                        <i class="bx bxs-graduation"></i> <p>Fountain University, Osogbo</p>
-                    </div>
-                    <h2>Office of the Registrar</h2>
-                </div>
-
-                {{-- <div class="slider-event owl-carousel owl-theme">
-                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/blog-1.png') }}" alt="image">
-                        </div>
-                        
-                        <div class="content">
-                            <div class="meta">
-                                <ul>
-                                    <li><a href="#">Owen Christ</a></li>
-                                    <li>Mar, 2025</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
-                            
-                        </div>
-                    </div>
-                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/blog-3.png') }}" alt="image">
-                        </div>
-                        
-                        <div class="content">
-                            <div class="meta">
-                                <ul>
-                                    <li><a href="#">Owen Christ</a></li>
-                                    <li>Mar, 2025</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
-                            
-                        </div>
-                    </div>
-                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/blog-4.png') }}" alt="image">
-                        </div>
-                        
-                        <div class="content">
-                            <div class="meta">
-                                <ul>
-                                    <li><a href="#">Owen Christ</a></li>
-                                    <li>Mar, 2025</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
-                            
-                        </div>
-                    </div>
-                    <div class="blog-single-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/blog-5.png') }}" alt="image">
-                        </div>
-                        
-                        <div class="content">
-                            <div class="meta">
-                                <ul>
-                                    <li><a href="#">Owen Christ</a></li>
-                                    <li>Mar, 2025</li>
-                                </ul>
-                            </div>
-                            <h3><a href="blog-details.html">A Global MBA for The Next Generation of Business Leaders</a></h3>
-                            
-                        </div>
-                    </div>
-                </div> --}}
-            </div>
-        </div>
-        <!-- End Event Area -->
 
 
 @endsection

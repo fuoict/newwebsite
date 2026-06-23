@@ -47,15 +47,12 @@
                                     <div class="graduate-events">
                                         <div class="content-items">
                                             <div class="content">
-                                                <h2>Director Alabi, </h2>
-                                                <p>Kazeem, PhD</p>
+                                                <h2>Professor Kazeem Alabi</h2>
                                                 <p>Director, Center for Sub-Degree Programmes, Fountain University, Osogbo, Osun State, Nigeria.</p>
-                                                <p></p>
-                                               
                                             </div>
-                                            {{-- <div class="image">
-                                                <img src="{{ asset('img/all-img/units/adebiyi.png') }}" alt="image">
-                                            </div> --}}
+                                            <div class="image">
+                                                <img src="{{ asset('img/all-img/units/prof_alabi.jpg') }}" alt="image">
+                                            </div>
                                         </div>
                                     </div>
 

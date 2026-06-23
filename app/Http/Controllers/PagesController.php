@@ -226,7 +226,8 @@ class PagesController extends Controller
 
     public function inauguralLectures()
     {
-        return view('pages.publications.inaugural-lectures');
+        $lectures = \App\Models\InauguralLecture::orderBy('lecture_date', 'desc')->paginate(4);
+        return view('pages.publications.inaugural-lectures', ['lectures' => $lectures]);
     }
 
     public function annualReport()

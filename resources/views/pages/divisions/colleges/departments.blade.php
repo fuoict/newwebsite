@@ -58,14 +58,8 @@
                                 <p>
                                     {{ $Department->department_description }}
                                 </p>
-
-                                
-
                                 <h3>About the Department</h3>
                                 <p>{{ $Department->about_department }}</p>
-
-
-
                                 <ul class="wp-block-gallery columns-2">
                                     <li class="blocks-gallery-item">
                                         <figure>
@@ -73,7 +67,6 @@
                                             <p>{{ $Department->mission }}</p>
                                         </figure>
                                     </li>
-
                                     <li class="blocks-gallery-item">
                                         <figure>
                                             <h4>Vision</h4>

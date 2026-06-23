@@ -38,113 +38,69 @@
                     </div>
                     <div class="col-lg-9">
                         <div class="row">
-
+                            @forelse($lectures as $lecture)
                             <div class="col-lg-6 col-sm-6 col-md-6 mb-4">
                                 <div class="course-item">
                                     <div class="image">
-                                        <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image">
+                                        <img src="{{ asset($lecture->image_path) }}" style="height:250px" alt="image">
                                     </div>
                                     <div class="content">
-                                        <span>June 19,2025</span>
-                                        <h2><a href="#">Physical Chemistry: Winnowing Deep Truths from Profound Beautiful Nonsence</a></h2>
+                                        <span>{{ $lecture->lecture_date->format('M d, Y') }}</span>
+                                        <h2><a href="#">{{ $lecture->title }}</a></h2>
                                         <ul style="border-top: 1px solid #e5e5e5; margin-top: 10px; padding-top: 10px;">
                                             <li>
                                                 <div class="image-circle">
                                                     <img src="{{ asset('img/icon/icon-1.png') }}" alt="image"> 
                                                 </div>
-                                                <span>Prof Moriam Dasola Adeoye</span>
-                                            </li>
-                                            {{-- <li>
-                                                <div class="image-circle">
-                                                    <img src="{{ asset('img/icon/icon-2.png') }}" alt="image"> 
-                                                </div>
-                                                <span>1.2k</span>
-                                            </li>
-                                            <li>
-                                                <div class="image-circle">
-                                                    <img src="{{ asset('img/icon/icon-3.png') }}" alt="image"> 
-                                                </div>
-                                                <span>5.0</span>
-                                            </li> --}}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-6 col-md-6 mb-4">
-                                <div class="course-item">
-                                    <div class="image">
-                                        <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image">
-                                    </div>
-                                    <div class="content">
-                                        <span>June 19,2025</span>
-                                        <h2><a href="#">Physical Chemistry: Winnowing Deep Truths from Profound Beautiful Nonsence</a></h2>
-                                        <ul style="border-top: 1px solid #e5e5e5; margin-top: 10px; padding-top: 10px;">
-                                            <li>
-                                                <div class="image-circle">
-                                                    <img src="{{ asset('img/icon/icon-1.png') }}" alt="image"> 
-                                                </div>
-                                                <span>Prof Moriam Dasola Adeoye</span>
+                                                <span>{{ $lecture->speaker_name }}</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-md-6 mb-4">
-                                <div class="course-item">
-                                    <div class="image">
-                                        <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image">
-                                    </div>
-                                    <div class="content">
-                                        <span>June 19,2025</span>
-                                        <h2><a href="#">Physical Chemistry: Winnowing Deep Truths from Profound Beautiful Nonsence</a></h2>
-                                        <ul style="border-top: 1px solid #e5e5e5; margin-top: 10px; padding-top: 10px;">
-                                            <li>
-                                                <div class="image-circle">
-                                                    <img src="{{ asset('img/icon/icon-1.png') }}" alt="image"> 
-                                                </div>
-                                                <span>Prof Moriam Dasola Adeoye</span>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
+                            @empty
+                            <div class="col-lg-12">
+                                <p>No inaugural lectures available.</p>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-md-6 mb-4">
-                                <div class="course-item">
-                                    <div class="image">
-                                        <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image">
-                                    </div>
-                                    <div class="content">
-                                        <span>June 19,2025</span>
-                                        <h2><a href="#">Physical Chemistry: Winnowing Deep Truths from Profound Beautiful Nonsence</a></h2>
-                                        <ul style="border-top: 1px solid #e5e5e5; margin-top: 10px; padding-top: 10px;">
-                                            <li>
-                                                <div class="image-circle">
-                                                    <img src="{{ asset('img/icon/icon-1.png') }}" alt="image"> 
-                                                </div>
-                                                <span>Prof Moriam Dasola Adeoye</span>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforelse
                         </div>
                         <div class="blog-pagi">
                             <ul class="pagination">
-                                <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true"><i class="bx bx-arrow-back"></i></span>
-                                </a>
+                                @if ($lectures->onFirstPage())
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="bx bx-arrow-back"></i></span>
+                                    </a>
                                 </li>
-                                <li class="page-item"><a class="page-link active" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                @else
                                 <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true"><i class="bx bx-arrow-back bx-rotate-180"></i></span>
-                                </a>
+                                    <a class="page-link" href="{{ $lectures->previousPageUrl() }}" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="bx bx-arrow-back"></i></span>
+                                    </a>
                                 </li>
+                                @endif
+
+                                @foreach ($lectures->getUrlRange(1, $lectures->lastPage()) as $page => $url)
+                                    @if ($page == $lectures->currentPage())
+                                    <li class="page-item"><a class="page-link active" href="#">{{ str_pad($page, 2, '0', STR_PAD_LEFT) }}</a></li>
+                                    @else
+                                    <li class="page-item"><a class="page-link" href="{{ $url }}">{{ str_pad($page, 2, '0', STR_PAD_LEFT) }}</a></li>
+                                    @endif
+                                @endforeach
+
+                                @if ($lectures->hasMorePages())
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ $lectures->nextPageUrl() }}" aria-label="Next">
+                                        <span aria-hidden="true"><i class="bx bx-arrow-back bx-rotate-180"></i></span>
+                                    </a>
+                                </li>
+                                @else
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="bx bx-arrow-back bx-rotate-180"></i></span>
+                                    </a>
+                                </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -154,7 +110,7 @@
         <!-- End Academics Section Area -->
 
         <!-- Start Campus Area -->
-            <div class="campus-area ptb-100">
+            {{-- <div class="campus-area ptb-100">
                 <div class="container-fluaid">
                     <div class="section-title" data-aos="fade-up" data-aos-delay="100">
                         <div class="sub-title">
@@ -187,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         <!-- End Campus Area -->
 
 @endsection
