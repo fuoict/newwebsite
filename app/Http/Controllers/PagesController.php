@@ -89,6 +89,11 @@ class PagesController extends Controller
         return view('pages.theuniversity.office-of-the-vice-chancellor', $Data);
     }
 
+    public function theDVC()
+    {
+        return view('pages.theuniversity.office-of-the-dvc');
+    }
+
     public function theRegistrar()
     {
         return view('pages.theuniversity.office-of-the-registrar');

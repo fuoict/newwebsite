@@ -123,6 +123,8 @@
                                         <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
                                             <li class="nav-item"><a href="{{ route('the-vice-chancellor') }}"
                                                     class="nav-link">The Vice-Chancellor </a></li>
+                                            <li class="nav-item"><a href="{{ route('the-dvc') }}"
+                                                    class="nav-link">The Deputy Vice-Chancellor </a></li>
                                             <li class="nav-item"><a href="{{ route('the-registrar') }}"
                                                     class="nav-link">The Registrar</a></li>
                                             <li class="nav-item"><a href="{{ route('the-bursar') }}"
@@ -499,6 +501,12 @@
                                                         <a href="{{ route('the-vice-chancellor') }}"
                                                             class="accordion-link">
                                                             The Vice-Chancellor
+                                                        </a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('the-dvc') }}"
+                                                            class="accordion-link">
+                                                            The Deputy Vice-Chancellor
                                                         </a>
                                                     </div>
                                                     <div class="accordion-item">

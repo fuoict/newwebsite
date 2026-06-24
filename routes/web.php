@@ -45,6 +45,7 @@ Route::get('/schedule-of-meetings', [PagesController::class, 'scheduleOfMeetings
 Route::get('/the-senate', [PagesController::class, 'theSenate'])->name('the-senate');
 Route::get('/congregation', [PagesController::class, 'congregation'])->name('congregation');
 Route::get('/the-vice-chancellor', [PagesController::class, 'theViceChancellor'])->name('the-vice-chancellor');
+Route::get('/the-dvc', [PagesController::class, 'theDVC'])->name('the-dvc');
 Route::get('/the-registrar', [PagesController::class, 'theRegistrar'])->name('the-registrar');
 Route::get('/the-bursar', [PagesController::class, 'theBursar'])->name('the-bursar');
 Route::get('/the-librarian', [PagesController::class, 'theLibrarian'])->name('the-librarian');
