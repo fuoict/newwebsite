@@ -17,52 +17,29 @@
     <!-- Start About Area -->
     <div class="about-alumni ptb-100">
         <div class="container-fluid p-0">
-            <div class="row g-0 align-items-center">
+            <div class="row g-0 align-items-start">
                 <div class="col-lg-5">
-                    <img src="{{ asset('img/all-img/Professor-Olayinka-Ramota-Karim.jpeg') }}" alt="The-Vice-Chancellor"
-                        data-aos="fade-zoom-in" data-aos-delay="100">
-                    <div>
-                    </div>
+                    <img src="{{ asset('img/all-img/prof_olayinka.jpeg') }}" alt="The-Vice-Chancellor"
+                        class="img-fluid me-3" data-aos="fade-zoom-in" data-aos-delay="100">
                 </div>
                 <div class="col-lg-7">
                     <div class="content" data-aos="fade-up" data-aos-delay="100">
 
-                        <h2>PROF OLAYINKA RAMOTA KARIM</h2>
+                        <h2>PROFESSOR OLAYINKA RAMOTA KARIM</h2>
                         <div class="sub-title">
                             <i class='bx bxs-graduation'></i>
-                            <p>(FNIFST, FCOFP. MIFT) </p>
+                            <p>(FNIFST, FCOFP, FSPSP, FCPA, MIFT, LFICWLS) </p>
                         </div>
                         <h4>Profile</h4>
-                        <p>Olayinka Ramota Karim is a Professor of Food Science and Technology. She obtained B.Sc. (Hons.)
-                            degree in Food Science and Technology in 1992 from the Federal University of Agriculture,
-                            Abeokuta. She later acquired an M.Sc. degree from the University of Ibadan, in 1995; and a Ph.D.
-                            degree from the Federal University of Agriculture, Abeokuta, as the first Ph.D. graduate of the
-                            Department of Food Science and Technology in 2005. In addition, she had a Diploma in
-                            Agribusiness and Post-harvest Management (Israel) in 2015, and Certificates in Inter-religious
-                            Dialogue, Conflict Transformation, and Mediation (Abuja) in 2019.</p>
-                        <p>Professor Karim has proudly offered over 25 years of enviable teaching, research, community
-                            service, and consulting in Food Science and Technology and to humanity. She has reviewed
-                            articles for many reputable journals and served as an external examiner for undergraduate and
-                            postgraduate programmes in several universities. She has also served as the external assessor of
-                            professorial candidates in several universities.</p>
-                        <p>As a versatile researcher, she won several awards for research, training, and attendance of
-                            conferences from different bodies such as the TETFund Institution-Based Research; Unilorin
-                            Laboratory to Product; N.G. Patel, India; Global Affairs Canada; Action Aid Nigeria; African
-                            Union Development Agency-New Partnership for African Development and Dutch Ministry,
-                            Netherlands. Professor Karim has to her credit over 195 publications and presentations. She also
-                            presented 29 keynotes, lead papers, public lectures, and 43 articles at sixty national and
-                            international conferences and workshops in over twelve countries.</p>
-                        <p>As a quintessential woman of great virtues and capacities, she contributed to national cohesion
-                            in different capacities as a religious group leader, sport lady, community developer. She
-                            obliged the nation in many capacities as a Member of the National Call Group and Supervisor
-                            UTME/JAMB Examination and Moderator of test items for JAMB; Supervisor of the JUPEB Examination;
-                            Chairman and Member of the National Universities Commission and National Board for Technical
-                            Education teams for accreditation and resources verification of programmes. Her services to the
-                            community have won her over 35 distinguished awards and honours.</p>
-                        <p>She is happily married to Professor. Adegboyega Karim.</p>
-                        <p>Professor Karim assumed duty as the 4th substantive Vice-Chancellor of the institution on the 1st
-                            of March, 2023. She is unswervingly committed to supporting, sustaining, and advancing the
-                            vision of FUO in the next four years.</p>
+                        <p style="text-align: justify">Professor Olayinka Ramota Karim is an accomplished Food Scientist, academic administrator, researcher, and transformational leader. She is the fourth substantive Vice-Chancellor of
+                             Fountain University, Osogbo, Nigeria, having assumed office on 1 March 2023.</p>
+                        <p style="text-align: justify">She obtained her Bachelor of Science (Hons.) degree in Food Science and Technology from the Federal University of Agriculture, Abeokuta (now Federal University of Agriculture, Abeokuta) in 1992. She subsequently earned a Master of Science degree from the University of Ibadan in 1995 and a Doctor of Philosophy degree in Food Science and Technology from the Federal University of Agriculture, Abeokuta in 2005, becoming the first Ph.D. graduate of the Department of Food Science and Technology. She further broadened her professional expertise with a Diploma in Agribusiness and Post-Harvest Management (Israel) in 2015 and professional certificates in Inter-Religious Dialogue, Conflict Transformation, and Mediation in 2019.</p>
+                        <p style="text-align: justify">With over three decades of distinguished experience in teaching, research, university administration, community service, and consultancy, Professor Karim has made significant contributions to the advancement of Food Science and Technology, higher education, and national development. She has supervised numerous undergraduate and postgraduate research projects, examined doctoral theses across several universities, reviewed manuscripts for reputable international journals, and served as External Examiner and External Assessor for professorial appointments in many Nigerian universities</p>
+                        <p style="text-align: justify">An accomplished researcher and mentor, Professor Karim has attracted several research grants, fellowships, and sponsorships from prestigious national and international organisations, including TETFund, Global Affairs Canada, the African Union Development Agency–NEPAD, ActionAid Nigeria, the Dutch Ministry, the N.G. Patel Foundation (India), and the University of Ilorin Laboratory-to-Product Initiative, among others. She has authored and co-authored over 195 scholarly publications, delivered more than 70 keynote addresses, lead papers, public lectures, and conference presentations, and participated in academic conferences and professional engagements across over twelve countries.</p>
+                        <p style="text-align: justify">Professor Karim has rendered outstanding national service through numerous strategic assignments. She has served as a National Call Group Member, UTME/JAMB Supervisor, Test Item Moderator for JAMB, JUPEB Examination Supervisor, and as Chairperson and Member of accreditation and resource verification panels of the National Universities Commission (NUC) and the National Board for Technical Education (NBTE). Her exemplary service to academia and society has earned her more than 35 prestigious awards and honours.</p>
+                        <p style="text-align: justify">A passionate advocate of ethical leadership, peacebuilding, women's empowerment, youth development, entrepreneurship, and community engagement, Professor Karim combines academic excellence with exceptional administrative competence. Under her leadership, Fountain University continues to strengthen its reputation for academic excellence, research and innovation, digital transformation, entrepreneurship, institutional growth, and global engagement.</p>
+                        <p style="text-align: justify">Professor Karim is a Fellow of the Nigerian Institute of Food Science and Technology (FNIFST), Fellow of the College of Food Processors (FCOFP), Fellow of the Society for Peace Studies and Practice (FSPSP), Fellow of the Chartered Institute of Public Administration of Nigeria (FCPA), Life Fellow of the International Federation of Corporate Women and Leaders of Substance (LFICWLS), and a Member of the Institute of Food Technologists (MIFT).</p>
+                        <p style="text-align: justify">She is happily married to Professor Adegboyega Karim and remains committed to advancing Fountain University's vision of producing competent, innovative, morally upright, and globally competitive graduates while fostering research, innovation, entrepreneurship, and sustainable national development.</p>
 
                     </div>
                 </div>
@@ -94,7 +71,7 @@
 
 
     <!-- Start Global Alumni Events Area -->
-    <div class="global-alumni-events ptb-100" data-aos="fade-up" data-aos-delay="100">
+    {{-- <div class="global-alumni-events ptb-100" data-aos="fade-up" data-aos-delay="100">
         <div class="container">
             <div class="global-content-items">
                 <div class="content">
@@ -112,6 +89,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Global Alumni Events Area -->
 @endsection

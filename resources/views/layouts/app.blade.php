@@ -120,7 +120,7 @@
                                             class="nav-link">Congregation</a></li>
                                     <li class="nav-item">
                                         <a href="#!" class="nav-link">Principal Officers</a>
-                                        <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
+                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height: 100px; overflow-y: auto;">
                                             <li class="nav-item"><a href="{{ route('the-vice-chancellor') }}"
                                                     class="nav-link">The Vice-Chancellor </a></li>
                                             <li class="nav-item"><a href="{{ route('the-dvc') }}"
