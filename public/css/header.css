@@ -121,7 +121,8 @@
     transform: translate3d(0, 0, 0);
 }
 .navbar-area .navbar .navbar-nav .nav-item .dropdown-menu {
-    left: 0;
+    left: auto;
+    right: 0;
     top: 65px;
     opacity: 0;
     z-index: 99;
