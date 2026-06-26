@@ -318,7 +318,7 @@
                                 </div>
 
 
-                                <a class="default-btn" href="admission.html">More on Academics</a>
+                                <a class="default-btn" href="https://fuo.edu.ng/undergradute-programme">More on Academics</a>
 
                                 <div class="arrow-icon">
                                     <img src="{{ asset('img/icon/shape-1.png') }}" alt="image">
@@ -339,7 +339,7 @@
                                             <div class="content">
                                                 <h4>Academic Programmes</h4>
                                                 <p>Fountain University offers an array of academic courses tailored towards students’ satisfaction and employability.</p>
-                                                <a class="btn" href="fitness-athletics.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                                                <a class="btn" href="https://fuo.edu.ng/undergradute-programme">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -354,7 +354,7 @@
                                             <div class="content">
                                                 <h4>Global Ranking & Impacts</h4>
                                                 <p>Times Higher Education Ranks Fountain University Among Top Nigerian Universities in 2024.</p>
-                                                <a class="btn" href="support-guidance.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                                                <a class="btn" href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -371,7 +371,7 @@
                                                 <p>
                                                     For all information that will aid your admission into Fountain University
                                                 </p>
-                                                <a class="btn" href="university-life.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                                                <a class="btn" href="https://fuo.edu.ng/admission-requirement">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -388,7 +388,7 @@
                                                 <p>
                                                     For a glimpse into campus culture, extracurricular activities, hostel and more.
                                                 </p>
-                                                <a class="btn" href="the-campus-experience.html">Learn More <i class='bx bx-right-arrow-alt'></i></a>
+                                                <a class="btn" href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -677,8 +677,8 @@
                                     <a class="popup-youtube" href="https://www.youtube.com/watch?v=bNnfoUmIwGw"><i class='bx bx-play'></i></a>
                                 </div>
                                 <ul>
-                                    <li><a href="university-life.html"><h3>15TH CONVOCATION LECTURE </h3></a></li>
-                                    <li class="link"><a href="university-life.html"><i class='bx bx-link-external'></i></a></li>
+                                    <li><a href="#"><h3>15TH CONVOCATION LECTURE </h3></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -693,8 +693,8 @@
                                     <a class="popup-youtube" href="https://www.youtube.com/watch?v=rAhNrZw4BaA&t=53s"><i class='bx bx-play'></i></a>
                                 </div>
                                 <ul>
-                                    <li><a href="university-life.html"><h3>FIRST ANNIVERSARY DOCUMENTARY</h3></a></li>
-                                    <li class="link"><a href="university-life.html"><i class='bx bx-link-external'></i></a></li>
+                                    <li><a href="#"><h3>FIRST ANNIVERSARY DOCUMENTARY</h3></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -710,7 +710,7 @@
                                 </div>
                                 <ul>
                                     <li><a href="university-life.html"><h3>BEST GRADUATING STUDENT</h3></a></li>
-                                    <li class="link"><a href="university-life.html"><i class='bx bx-link-external'></i></a></li>
+                                    <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -718,7 +718,7 @@
                 </div>
 
                 <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
-                    <p>Inspiring Minds, Shaping Futures. <a href="undergraduate.html">Learn more <i class='bx bx-right-arrow-alt'></i></a></p>
+                    <p>Inspiring Minds, Shaping Futures. <a href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></p>
                     
                 </div>
                 
