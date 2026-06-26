@@ -149,12 +149,12 @@
                         </p>
                         <h2>Our Core Values</h2>
                         <ol>
-                            <li>God-Consciousness (Taqwa): We uphold the fear of Allah as the foundation of our character, leadership, and service.</li>
-                            <li>Excellence: We are committed to the highest standards in teaching, learning, research, innovation, and service.</li>
-                            <li>Integrity: We demonstrate honesty, accountability, transparency, and ethical conduct in all our endeavours.</li>
-                            <li>Innovation: We encourage creativity, critical thinking, entrepreneurship, and the pursuit of transformative solutions.</li>
-                            <li>Leadership: We nurture visionary, responsible, and service-oriented leaders who positively impact society.</li>
-                            <li>Community Service: We are dedicated to serving humanity through compassion, peacebuilding, social responsibility, and sustainable development.</li>
+                            <li><b>God-Consciousness (Taqwa):</b> We uphold the fear of Allah as the foundation of our character, leadership, and service.</li>
+                            <li><b>Excellence:</b> We are committed to the highest standards in teaching, learning, research, innovation, and service.</li>
+                            <li><b>Integrity:</b> We demonstrate honesty, accountability, transparency, and ethical conduct in all our endeavours.</li>
+                            <li><b>Innovation:</b> We encourage creativity, critical thinking, entrepreneurship, and the pursuit of transformative solutions.</li>
+                            <li><b>Leadership:</b> We nurture visionary, responsible, and service-oriented leaders who positively impact society.</li>
+                            <li><b>Community Service:</b> We are dedicated to serving humanity through compassion, peacebuilding, social responsibility, and sustainable development.</li>
                         </ol>
 
                     </div>
