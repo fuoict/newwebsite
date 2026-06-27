@@ -5365,7 +5365,7 @@ VC Spotlight Gallery CSS
   display: flex;
   gap: 24px;
   align-items: stretch;
-  animation: vcSpotlightScroll 28s linear infinite;
+  animation: vcSpotlightScroll 20s linear infinite;
   padding-bottom: 10px;
 }
 
@@ -5458,11 +5458,25 @@ VC Spotlight Gallery CSS
   }
 
   .vc-spotlight-track {
-    gap: 14px;
+    gap: 8px;
   }
 
+  /* Use percentage-based widths so all six cards are visible on small viewports.
+     We subtract the total gaps (5 gaps * 8px = 40px) and divide remaining width by 6. */
   .vc-spotlight-card {
-    min-width: 220px;
+    flex: 0 0 calc((100% - 40px) / 6);
+    max-width: calc((100% - 40px) / 6);
+    min-width: 0;
+    border-radius: 14px;
+  }
+
+  .vc-spotlight-image {
+    height: 100px;
+  }
+
+  .vc-spotlight-image img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 
