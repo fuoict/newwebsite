@@ -10,6 +10,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    @php
+        $styleVersion = file_exists(public_path('css/style.css')) ? filemtime(public_path('css/style.css')) : time();
+        $mainJsVersion = file_exists(public_path('js/main.js')) ? filemtime(public_path('js/main.js')) : time();
+    @endphp
+
     <!-- Links of CSS files -->
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -17,9 +22,9 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
     <title>Fountain University, Osogbo - Welcome to Fountain University</title>
     <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
@@ -1191,7 +1196,7 @@
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}?v={{ $mainJsVersion }}"></script>
 
 
 </body>
