@@ -101,6 +101,69 @@
             </div>
 
         </div>
+
+        @php
+            $spotlightFolder = public_path('img/vc-spotlight');
+            $vcSpotlightImages = [];
+
+            if (is_dir($spotlightFolder)) {
+                $files = glob($spotlightFolder . '/*.{jpg,jpeg,png,webp,gif,JPG,JPEG,PNG,WEBP,GIF}', GLOB_BRACE);
+                sort($files, SORT_NATURAL | SORT_FLAG_CASE);
+
+                foreach ($files as $filePath) {
+                    if (! is_file($filePath)) {
+                        continue;
+                    }
+
+                    $fileName = basename($filePath);
+                    $vcSpotlightImages[] = [
+                        'src' => 'img/vc-spotlight/' . rawurlencode($fileName),
+                        'caption' => '',
+                    ];
+                }
+            }
+
+            if (empty($vcSpotlightImages)) {
+                $vcSpotlightImages = [
+                    ['src' => 'img/vc-spotlight/third aniv.jpeg', 'caption' => ''],
+                    ['src' => 'img/gallery/m2.jpg', 'caption' => 'Leading a student-success roundtable'],
+                    ['src' => 'img/gallery/m3.jpg', 'caption' => 'Speaking at the university convocation'],
+                    ['src' => 'img/gallery/m4.jpg', 'caption' => 'Meeting with staff and guests'],
+                    ['src' => 'img/gallery/m5.jpg', 'caption' => 'Campus tour with visiting dignitaries'],
+                ];
+            }
+        @endphp
+
+        <section class="vc-spotlight-area">
+            <div class="container-fluid">
+                <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="sub-title">
+                        <i class='bx bxs-star'></i> <p>Spotlight</p>
+                    </div>
+                    <h2>VC Spotlight</h2>
+                    <p>Moments from the Office of the Vice-Chancellor captured in motion.</p>
+                    <div class="vc-spotlight-action">
+                        <a href="{{ route('our-gallery') }}" class="default-btn">Explore VC Moments</a>
+                    </div>
+                </div>
+
+                <div class="vc-spotlight-slider" data-aos="fade-up" data-aos-delay="200">
+                    <div class="vc-spotlight-track">
+                        @foreach (array_merge($vcSpotlightImages, $vcSpotlightImages) as $item)
+                            <div class="vc-spotlight-card">
+                                <div class="vc-spotlight-image">
+                                    <img src="{{ asset($item['src']) }}" alt="VC spotlight image">
+                                    @if (!empty($item['caption']))
+                                        <div class="vc-spotlight-caption">{{ $item['caption'] }}</div>
+                                    @endif
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="container-fluid px-5 align-items-center">
             <h2 style="text-align: center;">Vice-Chancellor's Speeches</h2> <br>
             <hr>

@@ -193,7 +193,6 @@
 		]
 	});
 
-	// Animation 
 	AOS.init({
 		once: true,
 		duration: 2000,

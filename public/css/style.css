@@ -5322,3 +5322,162 @@ Go Top CSS
     scale: 1;
  }
 }
+
+/*================================================
+VC Spotlight Gallery CSS
+=================================================*/
+.vc-spotlight-area {
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  padding: 80px 0 60px;
+}
+
+.vc-spotlight-area .section-title {
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+
+.vc-spotlight-area .section-title h2 {
+  font-size: 42px;
+  letter-spacing: 0.25px;
+}
+
+.vc-spotlight-area .section-title p {
+  max-width: 640px;
+  margin: 18px auto 24px;
+  color: #5c5c5c;
+}
+
+.vc-spotlight-action {
+  margin-top: 16px;
+}
+
+.vc-spotlight-action .default-btn {
+  padding: 14px 32px;
+  font-size: 14px;
+}
+
+.vc-spotlight-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.vc-spotlight-track {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  animation: vcSpotlightScroll 28s linear infinite;
+  padding-bottom: 10px;
+}
+
+.vc-spotlight-card {
+  flex: 0 0 320px;
+  max-width: 320px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 25px 60px rgba(14, 42, 71, 0.1);
+}
+
+.vc-spotlight-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+}
+
+.vc-spotlight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.vc-spotlight-card:hover .vc-spotlight-image img {
+  transform: scale(1.05);
+}
+
+.vc-spotlight-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 20px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@keyframes vcSpotlightScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .vc-spotlight-area .section-title h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  .vc-spotlight-track {
+    gap: 18px;
+  }
+
+  .vc-spotlight-card {
+    min-width: 260px;
+  }
+
+  .vc-spotlight-image img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .vc-spotlight-area {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .vc-spotlight-area .section-title h2 {
+    font-size: 30px;
+  }
+
+  .vc-spotlight-area .section-title p {
+    margin-bottom: 18px;
+  }
+
+  .vc-spotlight-action .default-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .vc-spotlight-track {
+    gap: 14px;
+  }
+
+  .vc-spotlight-card {
+    min-width: 220px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .vc-spotlight-area .section-title h2 {
+    font-size: 26px;
+  }
+
+  .vc-spotlight-card {
+    min-width: 180px;
+  }
+
+  .vc-spotlight-caption {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+}
