@@ -221,6 +221,27 @@ preloader: false,
 fixedContentPos: false
 });
 
+// Gallery Image Lightbox
+$('.gallery-carousel').magnificPopup({
+    delegate: 'a.gallery-lightbox',
+    type: 'image',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    fixedContentPos: true,
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+        tPrev: 'Previous',
+        tNext: 'Next',
+        tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
+    },
+    image: {
+        titleSrc: 'title',
+        verticalFit: true
+    }
+});
+
 // Testimonial Slides
 $('.lgun-testimonial-navigator').owlCarousel({
 loop: true,
