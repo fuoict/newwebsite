@@ -13,52 +13,165 @@
             </div>
         </div>
         <!-- End Section Banner Area -->
-
-
-         <!-- Start Courses Area -->
-            <div class="courses-area ptb-100">
+         <!-- Start Gallery Area -->
+            <div class="gallery-area ptb-100">
                 <div class="container">
                     <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                        <div class="sub-title">
-                            <i class='bx bxs-graduation'></i> <p>Latest Event</p>
-                        </div>
-                         <h2 class="title-anim">Fountain University Gallery</h2>
-                         {{-- <p>Welcome to our April Picture Gallery, showcasing the vibrant activities of Fountain University’s esteemed Vice Chancellor. This collection captures her dedicated efforts to strengthen the University’s ties with its surrounding communities and raise its visibility in the media.</p> --}}
-                         <p>We invite you to explore the gallery as our Vice Chancellor interacts with the diverse stakeholders who create the fabric of our campus community. You’ll find heartwarming moments from her familiarization visits to the gracious Ayanlowo Family — our immediate host community — and the spirited Isale Osun Community, meeting the household heads and engaging in warm discussions.</p>
-                         {{-- <p>The gallery further highlights her meetings with respected Osogbo Land figures, including the cherished traditional ruler, the Ataoja of Osogbo land and the esteemed Chief Imam of Osogbo, enriching our University’s relationship with these pillars of the community.</p> --}}
-                         {{-- <p>Lastly, you’ll witness our Vice Chancellor championing the University vision, as she skillfully grants a media interview with Fresh FM, Osogbo, and delivers an inspiring presentation at the media parley organized by NASFAT.</p> --}}
-                         {{-- <p>Join us as we celebrate these important moments that embody the essence of collaboration and unity, which are fundamental to the vibrant growth and evolution of Fountain University.</p> --}}
+                        {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                        <h2 class="title-anim">Second Induction Ceremony of Nursing Students</h2>
+                        <p>Relive the proud and emotional moments from the second induction ceremony of our nursing students, as they officially take the oath of the nursing profession before family, faculty, and friends.</p>
                     </div>
-                    <div class="courses-courser owl-carousel owl-theme">
-                        <div class="course-item" data-aos="fade-up" data-aos-delay="100">
-                            <div class="image">
-                                <img src="{{ asset('img/gallery/1.jpg') }}" alt="image">
+
+                    @php
+                        // Add more images in the array below as needed:
+                        // 'img/gallery/your-file.jpg'
+                        $gallerySlides = [
+                            'img/gallery/induct1.jpeg',
+                            'img/gallery/induct2.jpeg',
+                            'img/gallery/induct3.jpeg',
+                            'img/gallery/induct4.jpeg',
+                            'img/gallery/induct5.jpeg',
+                            'img/gallery/induct6.jpeg',
+                            'img/gallery/induct7.jpeg',
+                            'img/gallery/induct8.jpeg',
+                            'img/gallery/induct9.jpeg',
+                            'img/gallery/induct10.jpeg',
+                            'img/gallery/induct12.jpeg',
+                            'img/gallery/induct13.jpeg',
+                            'img/gallery/induct14.jpeg',
+                            'img/gallery/induct15.jpeg',
+                        ];
+                    @endphp
+
+                    <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-carousel-wrap">
+                            <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                                <i class='bx bx-chevron-left'></i>
+                            </button>
+
+                            <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                                @foreach ($gallerySlides as $index => $slide)
+                                    <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + ($index * 50) }}">
+                                        <div class="gallery-slide-inner">
+                                            <img src="{{ asset($slide) }}" alt="Gallery image">
+                                        </div>
+                                    </div>
+                                @endforeach
                             </div>
+
+                            <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
                         </div>
-                        <div class="course-item" data-aos="fade-up" data-aos-delay="200">
-                            <div class="image">
-                                <img src="{{ asset('img/gallery/2.jpg') }}" alt="image">
-                            </div>
-                        </div>
-                        <div class="course-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="image">
-                                <img src="{{ asset('img/gallery/3.jpg') }}" alt="image">
-                            </div>
-                        </div>
-                        <div class="course-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="image">
-                                <img src="{{ asset('img/gallery/4.jpg') }}" alt="image">
-                            </div>
-                        </div>
-                        <div class="course-item" data-aos="fade-up" data-aos-delay="400">
-                            <div class="image">
-                                <img src="{{ asset('img/gallery/5.jpg') }}" alt="image">
-                            </div>
-                        </div>
+                        <div class="gallery-carousel-dots"></div>
                     </div>
                 </div>
             </div>
-        <!-- End Courses Area -->
+        <!-- End Gallery Area -->
+         <!-- Start Gallery Area -->
+            <div class="gallery-area ptb-100">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                        {{-- <div class="sub-title"> 
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                        <h2 class="title-anim">Celebrating Two Years of Purposeful Leadership</h2>
+                        <p>We invite you to relive the highlights from the colourful ceremony marking two years of impactful leadership by our Vice-Chancellor, as staff, students, and well-wishers gathered to celebrate her achievements and vision for the University.</p>
+                    </div>
+
+                    @php
+                        // Add more images in the array below as needed:
+                        // 'img/gallery/your-file.jpg'
+                        $gallerySlides = [
+                            'img/gallery/2_aniv.jpeg',
+                            'img/gallery/24_aniv.jpeg',
+                            'img/gallery/25_aniv.jpeg',
+                            'img/gallery/26_aniv.jpeg',
+                            'img/gallery/27_aniv.jpeg',
+                            'img/gallery/28_aniv.jpg',
+                            'img/gallery/21_aniv.jpeg',
+                            'img/gallery/22_aniv.jpeg',
+                            'img/gallery/23_aniv.jpeg',
+                        ];
+                    @endphp
+
+                    <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-carousel-wrap">
+                            <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                                <i class='bx bx-chevron-left'></i>
+                            </button>
+
+                            <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                                @foreach ($gallerySlides as $index => $slide)
+                                    <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + ($index * 50) }}">
+                                        <div class="gallery-slide-inner">
+                                            <img src="{{ asset($slide) }}" alt="Gallery image">
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+
+                            <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+                        <div class="gallery-carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Gallery Area -->
+
+
+         <!-- Start Gallery Area -->
+            <div class="gallery-area ptb-100">
+                <div class="container">
+                    <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                        <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div>
+                        <h2 class="title-anim">Explore Our Gallery</h2>
+                        <p>We invite you to explore the gallery as our Vice Chancellor interacts with the diverse stakeholders who create the fabric of our campus community. You’ll find heartwarming moments from her familiarization visits to the gracious Ayanlowo Family and the spirited Isale Osun Community.</p>
+                    </div>
+
+                    @php
+                        // Add more images in the array below as needed:
+                        // 'img/gallery/your-file.jpg'
+                        $gallerySlides = [
+                            'img/gallery/1.jpg',
+                            'img/gallery/2.jpg',
+                            'img/gallery/3.jpg',
+                            'img/gallery/4.jpg',
+                            'img/gallery/5.jpg',
+                        ];
+                    @endphp
+
+                    <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-carousel-wrap">
+                            <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                                <i class='bx bx-chevron-left'></i>
+                            </button>
+
+                            <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                                @foreach ($gallerySlides as $index => $slide)
+                                    <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + ($index * 50) }}">
+                                        <div class="gallery-slide-inner">
+                                            <img src="{{ asset($slide) }}" alt="Gallery image">
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+
+                            <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                                <i class='bx bx-chevron-right'></i>
+                            </button>
+                        </div>
+                        <div class="gallery-carousel-dots"></div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Gallery Area -->
 
 
         <!-- Start Activities Area -->
