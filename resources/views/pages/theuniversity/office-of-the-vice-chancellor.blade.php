@@ -165,24 +165,41 @@
         </section>
 
         <div class="container-fluid px-5 align-items-center">
-            <h2 style="text-align: center;">Vice-Chancellor's Speeches</h2> <br>
+            <h2 class="text-center">Vice-Chancellor's Speeches</h2>
             <hr>
-            <div class="row g-0 align-items-center">
-                @foreach ($Records as $Record)
-                    <div class="col-lg-4 pb-3">
-                        <div class="number-list">
-
-
-                            {{-- <a href="{{ $Record->link }}">{{ $Record->description }}</a> --}}
-
-                            <a href="{{ $Record->link }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res"
-                                    style="width: 17%" alt=""></a>
-                            {{-- <h6>{{ $VcSpeech->title }}</h6> --}}
-                            <h6><a href="{{ $Record->link }}">{{ $Record->title }}</a></h6>
-
-                        </div>
-                    </div>
-                @endforeach
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Speech Title</th>
+                            <th scope="col" class="text-center">Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($Records as $index => $Record)
+                            <tr>
+                                <td>{{ $index + 1 }}</td>
+                                <td>
+                                    <a href="{{ $Record->link }}" target="_blank" rel="noopener noreferrer">
+                                        {{ $Record->title }}
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="{{ $Record->link }}" target="_blank" rel="noopener noreferrer"
+                                        aria-label="Download {{ $Record->title }}">
+                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;"
+                                            alt="PDF icon">
+                                    </a>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="2" class="text-center text-muted">No speeches available at the moment.</td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
