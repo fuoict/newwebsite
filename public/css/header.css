@@ -125,7 +125,7 @@
     right: 0 !important;
     top: 65px;
     opacity: 0;
-    z-index: 99;
+    z-index: 1001;
     border: 1px solid #D6DADE;
     width: 265px;
     margin-top: 0;

@@ -80,7 +80,6 @@
         </div>
         <!-- End Top Navbar Area -->
 
-
         <!-- Start Navbar Area Start -->
         <div class="navbar-area" id="navbar">
             <div class="container">
@@ -380,7 +379,6 @@
             </div>
         </div>
         <!-- End Navbar Area Start -->
-
 
         <!-- Start Clgun Searchbar Area -->
         <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">

@@ -210,6 +210,9 @@
         @endif
         <!-- End Daily Hadith Strip -->
 
+        <!-- Start Prayer Banner -->
+        @include('components.prayer_banner')
+        <!-- End Prayer Banner -->
 
         <!-- Start About Us Area 2 -->
         <div id="about" class="about-us-area-2 ptb-100">
