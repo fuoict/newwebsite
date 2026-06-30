@@ -13,7 +13,384 @@
         </div>
     </div>
     <!-- End Section Banner Area -->
-      <!-- Start Gallery Area -->
+     <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Annual Staff Games</h2>
+                <p> It's all fun and competition as staff across departments take part in the staff games, building camaraderie and team spirit outside the office.</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/sport1.jpeg',
+                    'img/gallery/sport2.jpeg',
+                    'img/gallery/sport3.jpeg',
+                    'img/gallery/sport4.jpeg',
+                    'img/gallery/sport5.jpeg',
+                    'img/gallery/sport6.jpeg',
+                    'img/gallery/sport7.jpeg',
+                    'img/gallery/sport8.jpeg',
+                    'img/gallery/sport9.jpeg',
+                    'img/gallery/sport10.jpeg',
+                    'img/gallery/sport11.jpeg',
+                    'img/gallery/sport12.jpeg',
+                    'img/gallery/sport13.jpeg',
+                    'img/gallery/sport14.jpeg',
+                    'img/gallery/sport15.jpeg',
+                    'img/gallery/sport16.jpeg',
+                    'img/gallery/sport17.jpeg',
+                    'img/gallery/sport18.jpeg',
+                    'img/gallery/sport19.jpeg',
+                    'img/gallery/sport20.jpeg',
+                    'img/gallery/sport21.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Courtesy Visit by CIPM</h2>
+                <p> Representatives of the Chartered Institute of Personnel Management of Nigeria (CIPM) pay a courtesy
+                    visit to Fountain University, fostering partnership and professional engagement.</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/cipm2.jpeg',
+                    'img/gallery/cipm3.jpeg',
+                    'img/gallery/cipm4.jpeg',
+                    'img/gallery/cipm5.jpeg',
+                    'img/gallery/cipm6.jpeg',
+                    'img/gallery/cipm7.jpeg',
+                    'img/gallery/cipm8.jpeg',
+                    'img/gallery/cipm9.jpeg',
+                    'img/gallery/cipm10.jpeg',
+                    'img/gallery/cipm11.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Conferment of Fellowship in Public Administration</h2>
+                <p> Distinguished contributions to Public Administration are honoured as Fountain University confers a
+                    fellowship award, celebrating excellence and dedication to the discipline</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/pub1.jpeg',
+                    'img/gallery/pub2.jpeg',
+                    'img/gallery/pub3.jpeg',
+                    'img/gallery/pub4.jpeg',
+                    'img/gallery/pub5.jpeg',
+                    'img/gallery/pub6.jpeg',
+                    'img/gallery/pub7.jpeg',
+                    'img/gallery/pub8.jpeg',
+                    'img/gallery/pub9.jpeg',
+                    'img/gallery/pub10.jpeg',
+                    'img/gallery/pub11.jpeg',
+                    'img/gallery/pub12.jpeg',
+                    'img/gallery/pub13.jpeg',
+                    'img/gallery/pub14.jpeg',
+                    'img/gallery/pub15.jpeg',
+                    'img/gallery/pub17.jpeg',
+                    'img/gallery/pub18.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Celebrating Three Years of Visionary Leadership</h2>
+                <p> Three years of purposeful leadership call for celebration, as Fountain University honours her
+                    Vice-Chancellor's third anniversary in office with a ceremony marking her continued impact and vision
+                    for the institution</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/vc1.jpeg',
+                    'img/gallery/vc2.jpeg',
+                    'img/gallery/vc3.jpeg',
+                    'img/gallery/vc4.jpeg',
+                    'img/gallery/vc5.jpeg',
+                    'img/gallery/vc6.jpeg',
+                    'img/gallery/vc7.jpeg',
+                    'img/gallery/vc8.jpeg',
+                    'img/gallery/vc9.jpeg',
+                    'img/gallery/vc10.jpeg',
+                    'img/gallery/vc11.jpeg',
+                    'img/gallery/vc12.jpeg',
+                    'img/gallery/vc13.jpeg',
+                    'img/gallery/vc14.jpeg',
+                    'img/gallery/vc15.jpeg',
+                    'img/gallery/vc16.jpeg',
+                    'img/gallery/vc17.jpeg',
+                    'img/gallery/vc18.jpeg',
+                    'img/gallery/vc19.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Military Delegation Visits Fountain University</h2>
+                <p> Fountain University receives a delegation of military officers on a courtesy visit, fostering relations
+                    and dialogue between the institution and the armed forces. This gallery captures the warm reception and
+                    engaging discussions held during the visit.</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/force1.jpeg',
+                    'img/gallery/force2.jpeg',
+                    'img/gallery/force3.jpeg',
+                    'img/gallery/force4.jpeg',
+                    'img/gallery/force5.jpeg',
+                    'img/gallery/force6.jpeg',
+                    'img/gallery/force7.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
+    <div class="gallery-area ptb-100">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+                {{-- <div class="sub-title">
+                            <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
+                        </div> --}}
+                <h2 class="title-anim">Welcoming Our New Students: Matriculation 2026</h2>
+                <p> A new academic journey begins as Fountain University holds its 2026 Matriculation Ceremony, welcoming
+                    and officially admitting its newest students into the university family</p>
+            </div>
+
+            @php
+                // Add more images in the array below as needed:
+                // 'img/gallery/your-file.jpg'
+                $gallerySlides = [
+                    'img/gallery/mat1.jpeg',
+                    'img/gallery/mat2.jpeg',
+                    'img/gallery/mat3.jpeg',
+                    'img/gallery/mat4.jpeg',
+                    'img/gallery/mat5.jpeg',
+                    'img/gallery/mat6.jpeg',
+                    'img/gallery/mat7.jpeg',
+                    'img/gallery/mat8.jpeg',
+                    'img/gallery/mat9.jpeg',
+                    'img/gallery/mat10.jpeg',
+                    'img/gallery/mat11.jpeg',
+                    'img/gallery/mat12.jpeg',
+                    'img/gallery/mat13.jpeg',
+                    'img/gallery/mat14.jpeg',
+                    'img/gallery/mat15.jpeg',
+                    'img/gallery/mat16.jpeg',
+                    'img/gallery/mat17.jpeg',
+                    'img/gallery/mat18.jpeg',
+                    'img/gallery/mat19.jpeg',
+                    'img/gallery/mat20.jpeg',
+                ];
+            @endphp
+
+            <div class="gallery-showcase" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-carousel-wrap">
+                    <button type="button" class="gallery-nav gallery-prev" aria-label="Previous slide">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+
+                    <div class="gallery-carousel custom-gallery-carousel owl-carousel owl-theme">
+                        @foreach ($gallerySlides as $index => $slide)
+                            <div class="gallery-slide" data-aos="zoom-in" data-aos-delay="{{ 100 + $index * 50 }}">
+                                <div class="gallery-slide-inner">
+                                    <a href="{{ asset($slide) }}" class="gallery-lightbox"
+                                        title="Gallery image {{ $index + 1 }}">
+                                        <img src="{{ asset($slide) }}" alt="Gallery image">
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <button type="button" class="gallery-nav gallery-next" aria-label="Next slide">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="gallery-carousel-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery Area -->
+    <!-- Start Gallery Area -->
     <div class="gallery-area ptb-100">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-delay="100">
@@ -21,7 +398,7 @@
                             <i class='bx bxs-graduation'></i> <p>2025 Edition</p>
                         </div> --}}
                 <h2 class="title-anim">2026 Convocation Ceremony</h2>
-                <p> Witness the joy and pride of our graduands as Fountain University holds its 2026 Convocation Ceremony, 
+                <p> Witness the joy and pride of our graduands as Fountain University holds its 2026 Convocation Ceremony,
                     honouring years of hard work, dedication, and academic excellence.</p>
             </div>
 
@@ -263,10 +640,10 @@
     <div class="gallery-area ptb-100">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
+                {{-- <div class="sub-title">
                     <i class='bx bxs-graduation'></i>
                     <p>2025 Edition</p>
-                </div>
+                </div> --}}
                 <h2 class="title-anim">Explore Our Gallery</h2>
                 <p>We invite you to explore the gallery as our Vice Chancellor interacts with the diverse stakeholders who
                     create the fabric of our campus community. You’ll find heartwarming moments from her familiarization
@@ -319,10 +696,10 @@
     <div class="activities-area ptb-100">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
+                {{-- <div class="sub-title">
                     <i class='bx bxs-graduation'></i>
                     <p>Events</p>
-                </div>
+                </div> --}}
                 <h2 class="title-anim">Our Memorable Events</h2>
             </div>
 
@@ -482,7 +859,7 @@
     <!-- End Campus Area -->
 
     <!-- Start Success Area -->
-    <div class="success-area ptb-100">
+    {{-- <div class="success-area ptb-100">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-delay="100">
                 <div class="sub-title">
@@ -553,6 +930,6 @@
                         Program <i class='bx bx-right-arrow-alt'></i></a></p>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- End Success Area -->
 @endsection
