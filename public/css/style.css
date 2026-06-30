@@ -1056,7 +1056,7 @@ About Us Area 2 CSS
 .about-us-area-2 .content-items .image {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   padding: 290px 110px;
   width: 65%;
   border-radius: 5px;

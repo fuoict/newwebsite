@@ -236,7 +236,8 @@
 
   .about-us-area-2 .content-items .image {
     width: 100%;
-    padding: 100px 100px;
+    padding: 160px 90px;
+    background-position: top center;
   }
   .about-us-area-2 .content-items .content span {
     font-size: 16px;

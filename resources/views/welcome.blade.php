@@ -190,6 +190,27 @@
         </div>
         <!-- End Fountain Slider Area -->
 
+        <!-- Start Daily Hadith Strip -->
+        @if(isset($hadith))
+        <div style="background:#e8f5e9; border-left:5px solid #2e7d32; padding:14px 28px; display:flex; align-items:flex-start; gap:14px;">
+            <div style="font-size:28px; flex-shrink:0; margin-top:2px;">📖</div>
+            <div>
+                <p style="font-size:11px; font-weight:700; color:#2e7d32; margin:0 0 4px; text-transform:uppercase; letter-spacing:0.5px;">
+                    Daily Hadith
+                </p>
+                <p style="font-size:14px; color:#333; margin:0 0 4px; line-height:1.7; font-style:italic;">
+                    "{{ Str::limit($hadith['text'], 220) }}"
+                </p>
+                <p style="font-size:11px; color:#888; margin:0;">
+                    {{ $hadith['narrator'] ? '— ' . $hadith['narrator'] . ' · ' : '' }}
+                    {{ $hadith['reference'] }}
+                </p>
+            </div>
+        </div>
+        @endif
+        <!-- End Daily Hadith Strip -->
+
+
         <!-- Start About Us Area 2 -->
         <div id="about" class="about-us-area-2 ptb-100">
             <div class="container">
