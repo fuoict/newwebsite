@@ -14,27 +14,27 @@
 
 <!-- Start Prayer Times Banner -->
 <div id="prayer-banner" style="
-    background: #1a5276;
-    border-bottom: 2px solid rgba(244,196,48,0.3);
-    border-left: 4px solid #f4c430;
-    position: relative;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background: #2e7d32;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+    color: #fff;
 ">
     <div class="container">
         <div style="display:flex; align-items:center; justify-content:space-between;
-                    flex-wrap:wrap; gap:6px; padding:7px 0;">
+                    flex-wrap:wrap; gap:6px; padding:12px 0;">
 
             {{-- Left: mosque icon + next prayer countdown --}}
             <div style="display:flex; align-items:center; gap:10px; flex-shrink:0">
                 <span style="font-size:20px">🕌</span>
                 <div>
-                    <span style="color:rgba(255,255,255,0.6); font-size:10px; text-transform:uppercase;
+                    <span style="color:rgba(255,255,255,0.85); font-size:10px; text-transform:uppercase;
                                  letter-spacing:0.5px; display:block; line-height:1">Next Prayer</span>
                     <span id="next-prayer-name"
-                          style="color:#f4c430; font-size:13px; font-weight:700"></span>
-                    <span style="color:rgba(255,255,255,0.5); font-size:12px; margin:0 4px">in</span>
+                          style="color:#fff; font-size:13px; font-weight:700"></span>
+                    <span style="color:rgba(255,255,255,0.75); font-size:12px; margin:0 4px">in</span>
                     <span id="next-prayer-countdown"
-                          style="color:#f4c430; font-size:13px; font-weight:700"></span>
+                          style="color:#fff; font-size:13px; font-weight:700"></span>
                 </div>
             </div>
 
@@ -47,20 +47,19 @@
 
             {{-- Right: adhan toggle --}}
             <div style="display:flex; align-items:center; gap:8px; flex-shrink:0">
-                <span style="color:rgba(255,255,255,0.6); font-size:11px">Adhan</span>
-                <div id="adhan-toggle"
-                     onclick="toggleAdhan()"
-                     style="width:42px; height:22px; border-radius:11px; background:#f4c430;
-                            cursor:pointer; position:relative; transition:background 0.3s;
-                            border: 1px solid rgba(255,255,255,0.2)">
-                    <div id="adhan-knob"
-                         style="width:18px; height:18px; background:#fff; border-radius:50%;
-                                position:absolute; top:1px; left:21px; transition:left 0.3s;
-                                box-shadow:0 1px 3px rgba(0,0,0,0.3)"></div>
-                </div>
-                <span id="adhan-status"
-                      style="color:#f4c430; font-size:11px; font-weight:600; min-width:24px">ON</span>
-            </div>
+                    <span style="color:rgba(255,255,255,0.85); font-size:11px">Adhan</span>
+                    <div id="adhan-toggle"
+                         onclick="toggleAdhan()"
+                         style="width:42px; height:22px; border-radius:11px; background:#fff;
+                                cursor:pointer; position:relative; transition:background 0.3s;
+                                border: 1px solid rgba(255,255,255,0.25)">
+                        <div id="adhan-knob"
+                             style="width:18px; height:18px; background:#2e7d32; border-radius:50%;
+                                    position:absolute; top:1px; left:21px; transition:left 0.3s;
+                                    box-shadow:0 1px 3px rgba(0,0,0,0.15)"></div>
+                    </div>
+                    <span id="adhan-status"
+                          style="color:#fff; font-size:11px; font-weight:600; min-width:24px">ON</span>
 
         </div>
     </div>
