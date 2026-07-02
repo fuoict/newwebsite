@@ -1072,7 +1072,7 @@
 
         <!-- Start Footer Area -->
         <div class="footer-area">
-            <div class="footer-widget-info ptb-100">
+            <div class="footer-widget-info ptb-100" style="padding-top: 40px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 col-md-6">

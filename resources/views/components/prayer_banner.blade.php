@@ -14,7 +14,7 @@
 
 <!-- Start Prayer Times Banner -->
 <div id="prayer-banner" style="
-    background: #2e7d32;
+    background: var(--mainColor);
     border-radius: 0.75rem;
     border: 1px solid rgba(255,255,255,0.15);
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
