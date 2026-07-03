@@ -7,6 +7,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
+use App\Http\Controllers\Admin\LecturerController as AdminLecturerController;
+use App\Http\Controllers\LecturerController;
 
 
 
@@ -164,6 +166,7 @@ Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplicati
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
 Route::get('/colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
 Route::get('/departments/{id}', [PagesController::class, 'departments'])->name('department');
+Route::get('/lecturers/{lecturer}', [LecturerController::class, 'show'])->name('lecturer.show');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
 Route::get('/annual-report', [PagesController::class, 'annualReport'])->name('annual-report');
@@ -249,6 +252,15 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/staff/{staff}/edit',      [AdminStaffController::class, 'edit'])->name('staff.edit');
     Route::put('/staff/{staff}',           [AdminStaffController::class, 'update'])->name('staff.update');
     Route::delete('/staff/{staff}',        [AdminStaffController::class, 'destroy'])->name('staff.destroy');
+
+
+    // Lecturer CRUD
+    Route::get('/lecturers',                  [AdminLecturerController::class, 'index'])->name('lecturers.index');
+    Route::get('/lecturers/create',           [AdminLecturerController::class, 'create'])->name('lecturers.create');
+    Route::post('/lecturers',                 [AdminLecturerController::class, 'store'])->name('lecturers.store');
+    Route::get('/lecturers/{lecturer}/edit',  [AdminLecturerController::class, 'edit'])->name('lecturers.edit');
+    Route::put('/lecturers/{lecturer}',       [AdminLecturerController::class, 'update'])->name('lecturers.update');
+    Route::delete('/lecturers/{lecturer}',    [AdminLecturerController::class, 'destroy'])->name('lecturers.destroy');
 
 });
 

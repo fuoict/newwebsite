@@ -208,13 +208,25 @@ class PagesController extends Controller
         
         return view('pages.divisions.colleges.colleges', $Data);
     }
-
     public function departments(Request $request)
-    {
-        $id = $request->route('id');
-        $Department = Department::whereId($id)->where('is_active', true)->first();
-        return view('pages.divisions.colleges.departments', compact('Department'));
-    }
+{
+    $id = $request->route('id');
+    $Department = Department::whereId($id)->where('is_active', true)->first();
+
+    $lecturers = \App\Models\Lecturer::published()
+        ->where('department_id', $id)
+        ->ordered()
+        ->get();
+
+    return view('pages.divisions.colleges.departments', compact('Department', 'lecturers'));
+}
+
+    // public function departments(Request $request)
+    // {
+    //     $id = $request->route('id');
+    //     $Department = Department::whereId($id)->where('is_active', true)->first();
+    //     return view('pages.divisions.colleges.departments', compact('Department'));
+    // }
 
     
     public function centres()
