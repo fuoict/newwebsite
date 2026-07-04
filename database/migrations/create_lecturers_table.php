@@ -39,6 +39,10 @@ return new class extends Migration
             $table->string('orcid')->nullable();
             $table->string('academia_edu')->nullable();
             $table->string('linktree')->nullable();
+            $table->string('scopus')->nullable();
+            $table->string('wos')->nullable();
+            $table->string('publons')->nullable();
+            $table->string('ad_scientific')->nullable();
 
             // Photo
             $table->string('photo')->nullable();

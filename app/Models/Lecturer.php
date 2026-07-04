@@ -16,6 +16,7 @@ class Lecturer extends Model
         'biography', 'qualifications', 'research_interest',
         'google_scholar', 'researchgate', 'linkedin', 'twitter',
         'personal_website', 'orcid', 'academia_edu', 'linktree',
+        'scopus', 'wos', 'publons', 'ad_scientific',
         'photo', 'is_hod', 'is_published', 'sort_order',
     ];
 
@@ -68,7 +69,8 @@ class Lecturer extends Model
     {
         return $this->google_scholar || $this->researchgate || $this->linkedin
             || $this->twitter || $this->personal_website || $this->orcid
-            || $this->academia_edu || $this->linktree;
+            || $this->academia_edu || $this->linktree || $this->scopus
+            || $this->wos || $this->publons || $this->ad_scientific;
     }
 
     public static function positions(): array

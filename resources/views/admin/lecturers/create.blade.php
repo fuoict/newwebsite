@@ -193,6 +193,38 @@
                 </div>
             </div>
             <div class="social-row">
+                <div class="icon" style="color:#0A2D75"><i class='bx bx-book-open'></i></div>
+                <div style="flex:1">
+                    <label class="form-label mb-1">Scopus</label>
+                    <input type="text" name="scopus" class="form-control"
+                           value="{{ old('scopus') }}" placeholder="https://www.scopus.com/authid/detail.uri?authorId=...">
+                </div>
+            </div>
+            <div class="social-row">
+                <div class="icon" style="color:#0A2D75"><i class='bx bx-layer'></i></div>
+                <div style="flex:1">
+                    <label class="form-label mb-1">Web of Science</label>
+                    <input type="text" name="wos" class="form-control"
+                           value="{{ old('wos') }}" placeholder="https://www.webofscience.com/wos/author/...">
+                </div>
+            </div>
+            <div class="social-row">
+                <div class="icon" style="color:#1A73E8"><i class='bx bx-award'></i></div>
+                <div style="flex:1">
+                    <label class="form-label mb-1">Publons</label>
+                    <input type="text" name="publons" class="form-control"
+                           value="{{ old('publons') }}" placeholder="https://publons.com/researcher/...">
+                </div>
+            </div>
+            <div class="social-row">
+                <div class="icon" style="color:#006778"><i class='bx bx-shield'></i></div>
+                <div style="flex:1">
+                    <label class="form-label mb-1">AD Scientific</label>
+                    <input type="text" name="ad_scientific" class="form-control"
+                           value="{{ old('ad_scientific') }}" placeholder="https://www.adscientific.com/...">
+                </div>
+            </div>
+            <div class="social-row">
                 <div class="icon" style="color:#A6312D"><i class='bx bxs-graduation'></i></div>
                 <div style="flex:1">
                     <label class="form-label mb-1">Academia.edu</label>

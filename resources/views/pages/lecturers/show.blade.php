@@ -163,6 +163,42 @@
                                     Academia.edu
                                 </a>
                                 @endif
+                                @if($lecturer->scopus)
+                                <a href="{{ $lecturer->scopus }}" target="_blank"
+                                   style="display:flex;align-items:center;gap:8px;padding:8px 12px;
+                                          background:#eef4ff;border-radius:8px;text-decoration:none;
+                                          color:#333;font-size:13px;font-weight:600">
+                                    <i class='bx bx-book-open' style="color:#0A2D75;font-size:18px"></i>
+                                    Scopus
+                                </a>
+                                @endif
+                                @if($lecturer->wos)
+                                <a href="{{ $lecturer->wos }}" target="_blank"
+                                   style="display:flex;align-items:center;gap:8px;padding:8px 12px;
+                                          background:#f8fbff;border-radius:8px;text-decoration:none;
+                                          color:#333;font-size:13px;font-weight:600">
+                                    <i class='bx bx-layer' style="color:#0A2D75;font-size:18px"></i>
+                                    Web of Science
+                                </a>
+                                @endif
+                                @if($lecturer->publons)
+                                <a href="{{ $lecturer->publons }}" target="_blank"
+                                   style="display:flex;align-items:center;gap:8px;padding:8px 12px;
+                                          background:#eff6ff;border-radius:8px;text-decoration:none;
+                                          color:#333;font-size:13px;font-weight:600">
+                                    <i class='bx bx-award' style="color:#1A73E8;font-size:18px"></i>
+                                    Publons
+                                </a>
+                                @endif
+                                @if($lecturer->ad_scientific)
+                                <a href="{{ $lecturer->ad_scientific }}" target="_blank"
+                                   style="display:flex;align-items:center;gap:8px;padding:8px 12px;
+                                          background:#eefafa;border-radius:8px;text-decoration:none;
+                                          color:#333;font-size:13px;font-weight:600">
+                                    <i class='bx bx-shield' style="color:#006778;font-size:18px"></i>
+                                    AD Scientific
+                                </a>
+                                @endif
                                 @if($lecturer->linktree)
                                 <a href="{{ $lecturer->linktree }}" target="_blank"
                                    style="display:flex;align-items:center;gap:8px;padding:8px 12px;
