@@ -172,6 +172,13 @@ Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])
 Route::get('/annual-report', [PagesController::class, 'annualReport'])->name('annual-report');
 Route::get('/fuo-chronicles', [PagesController::class, 'fuoChronicles'])->name('fuo-chronicles');
 
+Route::get('/partnerships', [PagesController::class, 'partnerships'])->name('partnerships');
+Route::get('/donors', [PagesController::class, 'donors'])->name('donors');
+Route::get('/scholarships', [PagesController::class, 'scholarships'])->name('scholarships');
+Route::get('/dignitaries', [PagesController::class, 'dignitaries'])->name('dignitaries');
+Route::get('/honorary-doctorates', [PagesController::class, 'honoraryDoctorates'])->name('honorary-doctorates');
+Route::get('/convocation-lecturers', [PagesController::class, 'convocationLecturers'])->name('convocation-lecturers');
+
 Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('academicplanning');
 Route::get('/bursary-unit', [PagesController::class, 'bursaryUnit'])->name('bursary');
 Route::get('/counselling-unit', [PagesController::class, 'counsellingUnit'])->name('counselling');
@@ -257,6 +264,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     // Lecturer CRUD
     Route::get('/lecturers',                  [AdminLecturerController::class, 'index'])->name('lecturers.index');
     Route::get('/lecturers/create',           [AdminLecturerController::class, 'create'])->name('lecturers.create');
+    Route::get('/lecturers/template',         [AdminLecturerController::class, 'downloadTemplate'])->name('lecturers.template');
+    Route::post('/lecturers/import',          [AdminLecturerController::class, 'import'])->name('lecturers.import');
+    Route::post('/lecturers/bulk-delete',      [AdminLecturerController::class, 'bulkDestroy'])->name('lecturers.bulk-delete');
     Route::post('/lecturers',                 [AdminLecturerController::class, 'store'])->name('lecturers.store');
     Route::get('/lecturers/{lecturer}/edit',  [AdminLecturerController::class, 'edit'])->name('lecturers.edit');
     Route::put('/lecturers/{lecturer}',       [AdminLecturerController::class, 'update'])->name('lecturers.update');

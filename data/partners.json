@@ -1,0 +1,212 @@
+[
+  {
+    "id": "nigerian-navy",
+    "name": "Nigerian Navy",
+    "category": "Government / Security Partnership",
+    "year": "2025",
+    "logoOrPhoto": "",
+    "shortDescription": "Strategic partnership for maritime security and training opportunities.",
+    "fullDescription": "The Nigerian Navy supports Fountain University's maritime security education and provides opportunities for cadet training, research collaboration, and national service awareness.",
+    "externalLink": "https://www.navy.mil.ng/"
+  },
+  {
+    "id": "al-hikmah-university",
+    "name": "Al-Hikmah University",
+    "category": "Academic Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Academic collaboration with a sister Islamic university in Nigeria.",
+    "fullDescription": "Fountain University and Al-Hikmah University share expertise in Islamic scholarship, faculty exchange, and student development programmes that strengthen faith-based higher education.",
+    "externalLink": "https://alhikmahuniversity.edu.ng/"
+  },
+  {
+    "id": "inti-international-university",
+    "name": "INTI International University, Malaysia",
+    "category": "International Academic Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Global academic link supporting student exchange and programme benchmarking.",
+    "fullDescription": "The partnership with INTI International University enables curriculum benchmarking, joint research initiatives, and pathways for Fountain University students to engage with Malaysian higher education.",
+    "externalLink": "https://newinti.edu.my/"
+  },
+  {
+    "id": "awau",
+    "name": "Association of West African Universities (AWAU)",
+    "category": "Academic Consortium",
+    "year": "2022",
+    "logoOrPhoto": "",
+    "shortDescription": "Regional consortium for academic collaboration and capacity building.",
+    "fullDescription": "AWAU membership connects Fountain University to West African higher education colleagues for research collaboration, conferences, and professional development events.",
+    "externalLink": "https://www.awau.org/"
+  },
+  {
+    "id": "association-of-african-universities",
+    "name": "Association of African Universities",
+    "category": "Academic Consortium",
+    "year": "2022",
+    "logoOrPhoto": "",
+    "shortDescription": "Pan-African network advancing university collaboration across the continent.",
+    "fullDescription": "Through the Association of African Universities, Fountain University engages in continent-wide research networks, academic quality initiatives, and scholarly exchange.",
+    "externalLink": "https://www.aau.org/"
+  },
+  {
+    "id": "trend-in-africa",
+    "name": "TReND in Africa",
+    "category": "Research & Training Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Research and training collaboration in science education.",
+    "fullDescription": "This partnership supports Fountain University's research training in STEM, including capacity-building workshops and laboratory-based skill development for students and faculty.",
+    "externalLink": "https://trendinafrica.org/"
+  },
+  {
+    "id": "university-of-cambridge",
+    "name": "University of Cambridge",
+    "category": "International Academic Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Global academic link to a leading research university.",
+    "fullDescription": "Fountain University's collaboration with the University of Cambridge strengthens research exchange, academic mentorship, and global scholarship visibility.",
+    "externalLink": "https://www.cam.ac.uk/"
+  },
+  {
+    "id": "african-alborada",
+    "name": "African Alborada",
+    "category": "Research Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Research collaboration for social impact studies.",
+    "fullDescription": "African Alborada partners with Fountain University on research projects that explore social development, applied science, and community innovation in Nigeria.",
+    "externalLink": ""
+  },
+  {
+    "id": "consortium-of-islamic-faith-based-universities",
+    "name": "Consortium of Islamic Faith-Based Universities",
+    "category": "Academic Consortium",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Network of faith-based universities collaborating on shared values and scholarship.",
+    "fullDescription": "This consortium enables Fountain University to coordinate curriculum development, inter-university events, and research grounded in Islamic ethics and academic excellence.",
+    "externalLink": ""
+  },
+  {
+    "id": "nmi",
+    "name": "NMI",
+    "category": "Institutional Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Institutional partner providing industry-relevant support.",
+    "fullDescription": "NMI supports Fountain University's institutional development through industry-aligned programmes, training resources, and collaborative advisory services.",
+    "externalLink": ""
+  },
+  {
+    "id": "ladoke-akintola-university-teaching-hospital",
+    "name": "Ladoke Akintola University Teaching Hospital",
+    "category": "Medical/Clinical Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Clinical partnership for health sciences training and placements.",
+    "fullDescription": "The hospital provides clinical placement opportunities for Fountain University health science students and supports applied research in healthcare practice.",
+    "externalLink": ""
+  },
+  {
+    "id": "cisco-academy",
+    "name": "Cisco Academy",
+    "category": "Technology & Training Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Technology training partnership with global networking education.",
+    "fullDescription": "Cisco Academy helps Fountain University students gain industry-recognized skills in networking, cybersecurity, and digital technologies.",
+    "externalLink": "https://www.cisco.com/c/en/us/training-events/training-certifications/career-certifications/"
+  },
+  {
+    "id": "rudn-university",
+    "name": "RUDN University",
+    "category": "International Academic Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Research and academic exchange with a global partner in Russia.",
+    "fullDescription": "RUDN University and Fountain University collaborate on academic exchange, research seminars, and comparative studies across international higher education.",
+    "externalLink": "https://en.rudn.ru/"
+  },
+  {
+    "id": "neuropsychiatric-hospital-aro",
+    "name": "Neuropsychiatric Hospital, Aro",
+    "category": "Medical/Clinical Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Mental health partnership for clinical education and care research.",
+    "fullDescription": "This partnership connects Fountain University students to clinical training in psychiatric care and supports research into mental health practice in Nigeria.",
+    "externalLink": ""
+  },
+  {
+    "id": "oyo-state-hospital-management-board",
+    "name": "Oyo State Hospital Management Board",
+    "category": "Government / Health Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Government healthcare partnership for nursing and allied health training.",
+    "fullDescription": "The Oyo State Hospital Management Board provides placement opportunities and collaborative health initiatives for Fountain University's medical and allied health students.",
+    "externalLink": ""
+  },
+  {
+    "id": "osun-state-hospital-management-board",
+    "name": "Osun State Hospital Management Board",
+    "category": "Government / Health Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "State health partnership supporting clinical placements and research.",
+    "fullDescription": "Osun State Hospital Management Board partners with Fountain University on clinical education, community health outreach, and patient care research.",
+    "externalLink": ""
+  },
+  {
+    "id": "npug",
+    "name": "Nigerian Private Universities Games (NPUG)",
+    "category": "Sports Partnership",
+    "year": "2023",
+    "logoOrPhoto": "",
+    "shortDescription": "Sports collaboration that strengthens student athletics and competition.",
+    "fullDescription": "NPUG promotes sport, healthy competition, and student engagement through inter-university games and athletics development for Fountain University.",
+    "externalLink": ""
+  },
+  {
+    "id": "muslim-lecturers-association",
+    "name": "Muslim Lecturers Association",
+    "category": "Academic/Professional Association",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Professional association partnership for academic development and networking.",
+    "fullDescription": "Fountain University partners with the Muslim Lecturers Association to support faculty development, research networks, and community-based scholarship.",
+    "externalLink": ""
+  },
+  {
+    "id": "nitda",
+    "name": "NITDA",
+    "category": "Government / Technology Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Technology partnership to advance digital skills and innovation.",
+    "fullDescription": "The National Information Technology Development Agency helps Fountain University develop ICT curriculum, digital literacy, and innovation programmes.",
+    "externalLink": "https://nitda.gov.ng/"
+  },
+  {
+    "id": "ncc",
+    "name": "NCC",
+    "category": "Government / Regulatory Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Regulatory partnership focused on digital infrastructure and communications education.",
+    "fullDescription": "The Nigerian Communications Commission collaborates with Fountain University on ICT governance, digital skills development, and regulatory awareness.",
+    "externalLink": "https://www.ncc.gov.ng/"
+  },
+  {
+    "id": "ipss",
+    "name": "IPSS",
+    "category": "Institutional Partnership",
+    "year": "2024",
+    "logoOrPhoto": "",
+    "shortDescription": "Institute partnership supporting professional skills and applied learning.",
+    "fullDescription": "IPSS works with Fountain University to deliver professional programmes, training resources, and employment-focused skills development.",
+    "externalLink": "https://ipss.fuo.edu.ng/"
+  }
+]

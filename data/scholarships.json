@@ -1,0 +1,15 @@
+[
+  {
+    "id": "example-scholarship",
+    "name": "Merit & Need Scholarship",
+    "category": "University Scholarship",
+    "year": "2026",
+    "logoOrPhoto": "",
+    "shortDescription": "Support for outstanding and deserving students.",
+    "fullDescription": "This placeholder entry shows the expected scholarship data shape. Add real programmes with sponsor names, eligibility, and beneficiary details.",
+    "externalLink": "",
+    "eligibilityCriteria": "High academic achievement and financial need.",
+    "sponsor": "Fountain University",
+    "numberOfBeneficiaries": "50"
+  }
+]

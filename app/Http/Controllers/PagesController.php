@@ -357,6 +357,89 @@ class PagesController extends Controller
     {
         return view('pages.divisions.centres.linkages');
     }
+
+    private function loadShowcaseData(string $fileName)
+    {
+        $path = base_path("data/{$fileName}");
+        if (!file_exists($path)) {
+            return [];
+        }
+
+        return json_decode(file_get_contents($path), true) ?: [];
+    }
+
+    private function renderShowcasePage(string $title, string $intro, string $dataFile)
+    {
+        $items = $this->loadShowcaseData($dataFile);
+        $filterCategories = collect($items)
+            ->pluck('category')
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+
+        return view('pages.showcase', [
+            'pageTitle' => $title,
+            'pageIntro' => $intro,
+            'items' => $items,
+            'filterCategories' => $filterCategories,
+        ]);
+    }
+
+    public function partnerships()
+    {
+        return $this->renderShowcasePage(
+            'Partnerships & Collaborations',
+            'Fountain University’s growth has been shaped by a network of institutional, corporate, and governmental partners who share our commitment to academic excellence, research, and community impact. From international university consortia to specialized technology and healthcare institutions, these collaborations expand opportunities for our students, faculty, and researchers.',
+            'partners.json'
+        );
+    }
+
+    public function donors()
+    {
+        return $this->renderShowcasePage(
+            'Donors',
+            'The generosity of individuals, corporate bodies, and foundations has been instrumental in building Fountain University’s infrastructure, endowing scholarships, and funding research. This page honours those whose contributions continue to shape opportunities for our students.',
+            'donors.json'
+        );
+    }
+
+    public function scholarships()
+    {
+        return $this->renderShowcasePage(
+            'Scholarships',
+            'Fountain University is committed to ensuring that financial need is never a barrier to academic excellence. Our scholarship programmes — funded by the university, partner organizations, and individual donors — support outstanding and deserving students across all faculties.',
+            'scholarships.json'
+        );
+    }
+
+    public function dignitaries()
+    {
+        return $this->renderShowcasePage(
+            'Distinguished Visitors & Dignitaries',
+            'Over the years, Fountain University has welcomed heads of state, traditional rulers, religious leaders, diplomats, and eminent scholars to its campus in Osogbo. These visits reflect the university’s growing standing as a centre of learning, dialogue, and national engagement.',
+            'dignitaries.json'
+        );
+    }
+
+    public function honoraryDoctorates()
+    {
+        return $this->renderShowcasePage(
+            'Honorary Doctorate Awardees',
+            'Since its inception, Fountain University has conferred honorary doctorate degrees on distinguished individuals whose leadership, scholarship, and public service exemplify the values the university seeks to instill in its graduates. This list honours those recipients from 2012 to the present.',
+            'honoraryDoctorates.json'
+        );
+    }
+
+    public function convocationLecturers()
+    {
+        return $this->renderShowcasePage(
+            'Convocation Lecturers',
+            'Each convocation ceremony at Fountain University features a keynote lecture delivered by a distinguished thinker, technocrat, or public figure, offering graduating students insight and inspiration as they step into the next phase of their lives. This page chronicles convocation lecturers from the university’s first ceremony in 2011 to the present.',
+            'convocationLecturers.json'
+        );
+    }
+
     public function arabicIslamicResearch()
     {
         return view('pages.divisions.centres.arabic-islamic-research');

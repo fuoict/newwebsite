@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
     <title>Fountain University, Osogbo - Welcome to Fountain University</title>
@@ -140,6 +141,17 @@
                                     {{-- <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li> --}}
                                     <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our
                                             Gallery</a></li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Institutional Showcase</a>
+                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height: 220px; overflow-y: auto;">
+                                            <li class="nav-item"><a href="{{ route('partnerships') }}" class="nav-link">Partnerships</a></li>
+                                            <li class="nav-item"><a href="{{ route('donors') }}" class="nav-link">Donors</a></li>
+                                            <li class="nav-item"><a href="{{ route('scholarships') }}" class="nav-link">Scholarships</a></li>
+                                            <li class="nav-item"><a href="{{ route('dignitaries') }}" class="nav-link">Dignitaries</a></li>
+                                            <li class="nav-item"><a href="{{ route('honorary-doctorates') }}" class="nav-link">Honorary Doctorates</a></li>
+                                            <li class="nav-item"><a href="{{ route('convocation-lecturers') }}" class="nav-link">Convocation Lecturers</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Resources</a>
                                         <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
@@ -539,6 +551,39 @@
                                         <a href="{{ route('our-gallery') }}" class="accordion-link">
                                             Our Gallery
                                         </a>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseShowcase"
+                                            aria-expanded="false" aria-controls="collapseShowcase">
+                                            Institutional Showcase
+                                        </button>
+                                        <div id="collapseShowcase" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordion8">
+                                            <div class="accordion-body">
+                                                <div class="accordion" id="navbarAccordionShowcase">
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('partnerships') }}" class="accordion-link">Partnerships</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('donors') }}" class="accordion-link">Donors</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('scholarships') }}" class="accordion-link">Scholarships</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('dignitaries') }}" class="accordion-link">Dignitaries</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('honorary-doctorates') }}" class="accordion-link">Honorary Doctorates</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('convocation-lecturers') }}" class="accordion-link">Convocation Lecturers</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="accordion-item">

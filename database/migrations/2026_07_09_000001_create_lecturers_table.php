@@ -14,27 +14,17 @@ return new class extends Migration
 
         Schema::create('lecturers', function (Blueprint $table) {
             $table->id();
-
-            // Basic Info
-            $table->string('title')->nullable();           // Dr., Prof., Mr., Mrs., Engr.
+            $table->string('title')->nullable();
             $table->string('name');
-            $table->string('position')->nullable();        // Senior Lecturer, HOD, etc.
-            $table->string('specialization')->nullable();  // Area of Specialization
-
-            // Department & College (fetched from existing tables)
+            $table->string('position')->nullable();
+            $table->string('specialization')->nullable();
             $table->foreignId('college_id')->nullable()->constrained('colleges')->onDelete('set null');
             $table->foreignId('department_id')->nullable()->constrained('departments')->onDelete('set null');
-
-            // Contact
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
-
-            // Academic Profile
             $table->text('biography')->nullable();
-            $table->text('qualifications')->nullable();    // Academic qualifications
+            $table->text('qualifications')->nullable();
             $table->text('research_interest')->nullable();
-
-            // Academic & Social Links
             $table->string('google_scholar')->nullable();
             $table->string('researchgate')->nullable();
             $table->string('linkedin')->nullable();
@@ -47,15 +37,10 @@ return new class extends Migration
             $table->string('wos')->nullable();
             $table->string('publons')->nullable();
             $table->string('ad_scientific')->nullable();
-
-            // Photo
             $table->string('photo')->nullable();
-
-            // Settings
             $table->boolean('is_hod')->default(false);
             $table->boolean('is_published')->default(true);
             $table->integer('sort_order')->default(0);
-
             $table->timestamps();
         });
     }
