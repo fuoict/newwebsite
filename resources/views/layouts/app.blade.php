@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-    <title>Fountain University, Osogbo - Welcome to Fountain University</title>
+    <title>@yield('title', 'Fountain University, Osogbo - Welcome to Fountain University')</title>
     <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>

@@ -3,21 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\Models\College;
-use App\Models\VcSpeech;
 use App\Models\Department;
+use App\Models\Page;
+use App\Models\VcSpeech;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    //
+    protected function renderManagedPage(string $slug, string $fallbackView, array $data = [])
+    {
+        $page = Page::where('slug', $slug)
+            ->where('status', 'published')
+            ->first();
+
+        if ($page && trim((string) $page->content) !== '') {
+            $data['page'] = $page;
+
+            return view('pages.show', $data);
+        }
+
+        return view($fallbackView, $data);
+    }
+
     public function about()
     {
-        return view('pages.about');
+        return $this->renderManagedPage('about', 'pages.about');
     }
 
     public function appraisal()
     {
-        return view('pages.theuniversity.appraisal');
+        return $this->renderManagedPage('appraisal', 'pages.theuniversity.appraisal');
     }
 
     public function speeches()
@@ -248,27 +263,38 @@ class PagesController extends Controller
     // SPECIAL PAGES ........................................
     public function contact()
     {
-        return view('pages.contact');
+        return $this->renderManagedPage('contact', 'pages.contact');
     }
 
     public function gallery()
     {
-        return view('pages.gallery');
+        return $this->renderManagedPage('gallery', 'pages.gallery');
     }
 
     public function alumni()
     {
-        return view('pages.alumni');
+        return $this->renderManagedPage('alumni', 'pages.alumni');
     }
 
     public function faq()
     {
-        return view('pages.faq');
+        return $this->renderManagedPage('faq', 'pages.faq');
     }
 
     public function applyForAdmission()
     {
         return view('pages.apply-for-admission');
+    }
+
+    public function showPage(Request $request, $slug)
+    {
+        $page = Page::where('slug', $slug)
+            ->where('status', 'published')
+            ->firstOrFail();
+
+        return view('pages.show', [
+            'page' => $page,
+        ]);
     }
 
     // UNIT METHODS .....................................................

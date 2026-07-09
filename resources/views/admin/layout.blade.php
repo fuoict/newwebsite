@@ -73,6 +73,9 @@
         <a href="{{ route('admin.news.index') }}" class="nav-link {{ request()->routeIs('admin.news.*') ? 'active' : '' }}">
             <i class='bx bxs-news'></i> News & Updates
         </a>
+        <a href="{{ route('admin.pages.index') }}" class="nav-link {{ request()->routeIs('admin.pages.*') ? 'active' : '' }}">
+            <i class='bx bxs-book-content'></i> Pages
+        </a>
         <a href="{{ route('admin.staff.index') }}" class="nav-link {{ request()->routeIs('admin.staff.*') ? 'active' : '' }}">
             <i class='bx bxs-user-detail'></i> Staff Profiles
         </a>

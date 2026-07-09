@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminNewsController;
+use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\StaffController as AdminStaffController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
@@ -98,6 +99,9 @@ Route::get('/entrepreneurship', [PagesController::class, 'entrepreneurship'])->n
 
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
+// Public JSON endpoint returning all pages (useful for testing/debug)
+Route::get('/pages/all-json', [PageController::class, 'all'])->name('pages.all-json');
+Route::get('/pages/{slug}', [PagesController::class, 'showPage'])->name('pages.show');
 Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
@@ -152,6 +156,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/staff/{staff}/edit',      [AdminStaffController::class, 'edit'])->name('staff.edit');
     Route::put('/staff/{staff}',           [AdminStaffController::class, 'update'])->name('staff.update');
     Route::delete('/staff/{staff}',        [AdminStaffController::class, 'destroy'])->name('staff.destroy');
+
+    // Pages CMS
+    Route::resource('/pages', PageController::class)->names('pages');
 
 });
 
