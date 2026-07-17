@@ -193,6 +193,51 @@
     </div>
     <!-- End Fountain Slider Area -->
 
+    <!-- Start News/Announcement Ticker -->
+    @php
+        $announcementItems = collect([
+            $featuredNews,
+            $sidebarFeatured ? collect([$sidebarFeatured]) : collect(),
+            $sidebarSmall,
+        ])
+            ->flatten(1)
+            ->filter(fn ($item) => $item && $item->title && $item->slug)
+            ->take(5);
+    @endphp
+
+    @if ($announcementItems->isNotEmpty())
+        <div class="mb-4" style="margin-top: -8px; width: 100%;">
+            <div style="background: #f7fbf5; border: 1px solid #dcefe0; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                <div style="display: flex; align-items: center; background: #1f6f2e; color: white; padding: 10px 16px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">
+                    <span style="margin-right: 8px;">📢</span> Latest News
+                </div>
+                <div style="padding: 12px 16px;">
+                    <div style="white-space: nowrap; overflow: hidden; position: relative;">
+                        <div style="display: inline-block; padding-left: 100%; animation: ticker-scroll 80s linear infinite;">
+                            @foreach ($announcementItems as $item)
+                                <a href="{{ route('news.show', $item->slug) }}" style="margin-right: 36px; color: #183153; font-weight: 600; text-decoration: none;">
+                                    {{ $item->title }}
+                                </a>
+                            @endforeach
+                            @foreach ($announcementItems as $item)
+                                <a href="{{ route('news.show', $item->slug) }}" style="margin-right: 36px; color: #183153; font-weight: 600; text-decoration: none;">
+                                    {{ $item->title }}
+                                </a>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+    <style>
+        @keyframes ticker-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+    <!-- End News/Announcement Ticker -->
+
     <!-- Start Daily Hadith and Prayer Boxes -->
     @if (isset($hadith))
         <div class="row gx-4 gy-4 mb-5">
