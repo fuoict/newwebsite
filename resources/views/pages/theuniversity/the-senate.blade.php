@@ -109,12 +109,12 @@
                                                 <ul>
                                                     <li>The Vice-Chancellor -Chairman</li>
                                                     <li>Deputy Vice-Chancellor</li>
-                                                    <li>All Professors in the University;</li>
-                                                    <li>The Librarian of the University</li>
+                                                    <li>All Professors in the University</li>
+                                                    <li>University Librarian</li>
                                                     <li>The Deans of Colleges including the Postgraduate School</li>
-                                                    <li>Dean of Student Affairs</li>
+                                                    <li>DeanStudent Affairs</li>
                                                 </ul>
-                                            </div>
+                                            </div> 
                                         </div>
                                         <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">

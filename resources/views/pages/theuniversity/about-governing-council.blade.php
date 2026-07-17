@@ -58,6 +58,17 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
+                                        <p>Prof. Abdullateef Usman</p>
+                                        <p><strong>Deputy Vice-Chancellor/ Member</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
+                                <div class="course-item">
+                                    <div class="image">
+                                        {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
+                                    </div>
+                                    <div class="content">
                                         <p>Oloye Remi I.Babalola</p>
                                         <p><strong>Member, Rep. of the Propreitor</strong></p>
                                     </div>
@@ -69,7 +80,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Prof. Busurat O. Adekola</p>
+                                        <p>Alhaja Nuratallah Oluwatoyin Jolaoso</p>
                                         <p><strong>Member, Rep. of the Propreitor</strong></p>
                                     </div>
                                 </div>
@@ -168,7 +179,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Prof. Abdulazeez T. Lawal</p>
+                                        <p>Prof. Serifat Labo Popoola</p>
                                         <p><strong>Member, Rep. of Senate</strong></p>
                                     </div>
                                 </div>
@@ -190,7 +201,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Dr. Lateef A. Adeleke</p>
+                                        <p>Prof. Kazeem Olajide Olaniyan</p>
                                         <p><strong>Member, Rep. of Senate</strong></p>
                                     </div>
                                 </div>
@@ -201,7 +212,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Dr. Mutiat A. Ogunrinde</p>
+                                        <p>Dr. AbdulFattah Raji</p>
                                         <p><strong>Member, Rep. of Senate</strong></p>
                                     </div>
                                 </div>
