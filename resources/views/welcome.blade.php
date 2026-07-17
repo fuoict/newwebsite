@@ -32,7 +32,7 @@
                 <div class="content">
                     <div class="text">
                         <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Where Excellence Meet Purpose</h1>
+                            <h1 data-aos="fade-up" data-aos-delay="100">Where Excellence Meets Purpose</h1>
                         </div>
                         <hr>
                     </div>
@@ -312,7 +312,7 @@
                 <div class="row">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="sub-title">
-                            <p>Mission and Vission</p>
+                            <p>Mission and Vision</p>
                         </div>
                         <div class="content">
                             <h2></h2>

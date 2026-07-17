@@ -67,7 +67,7 @@
                                 {{-- <i class='bx bxs-map'></i>  --}}
                                 <li><a href="{{ 'https://transcript.fuo.edu.ng' }}">Transcript Application</a></li>
                                 <li><a href="{{ route('the-university-library') }}">Library</a></li>
-                                <li><a href="{{ 'https://gmail.com' }}">Webmail</a></li>
+                                <li><a href="https://repository.fuo.edu.ng" target="_blank" rel="noopener noreferrer">Institutional Repository</a></li>
                                 <li><a href="{{ route('faq') }}">FAQ</a></li>
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
                                 {{-- <li><a href="{{ route('gallery') }}">Gallery</a></li> --}}
@@ -209,7 +209,7 @@
                                             class="nav-link">Postgraduate Application</a></li>
                                     <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"
                                             class="nav-link">Undergraduate Application </a></li>
-                                    <li class="nav-item"><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}"
+                                    <li class="nav-item"><a href="https://eportal.fuo.edu.ng/censap/admissions"
                                             class="nav-link">Sandwich Application</a></li>
                                 </ul>
                             </li>
