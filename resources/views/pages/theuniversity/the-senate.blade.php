@@ -112,11 +112,16 @@
                                                     <li>All Professors in the University</li>
                                                     <li>University Librarian</li>
                                                     <li>The Deans of Colleges including the Postgraduate School</li>
-                                                    <li>DeanStudent Affairs</li>
+                                                    <li>Dean Student Affairs</li>
+                                                    <li>Directors of Academic Institutes/Centres</li>
+                                                    <li>All Heads of Academic Departments</li>
+                                                    <li>Two elected Academic Staff from each College/School</li>
+                                                    <li>The Registrar – Secretary.</li>
+                                                    <li>Bursar – In attendance</li>
                                                 </ul>
                                             </div> 
                                         </div>
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
+                                        {{-- <div class="col-lg-6 col-sm-6 col-md-6">
                                             <div class="problem-items">
                                                 <ul>
                                                     <li>Directors of Academic Institutes/Centres</li>
@@ -127,7 +132,7 @@
 
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                                 <div class="problem-list">
