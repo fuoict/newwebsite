@@ -1,1159 +1,506 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/landing-redesign.css') }}">
 
-    <!-- Start Fountain Slider Area -->
-    <div class="slider-banner-area">
-        <div class="slider-courser owl-carousel owl-theme">
-            <div class="slider-content slider-bg-1">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Fountain University, Osogbo.</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Transforming Communities Through Excellence</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200"> Igniting Minds, Inspiring Change </h3>
-                                    {{-- <a class="default-btn" href="application-form.html" data-aos="fade-zoom-in" data-aos-delay="100">Apply to USD</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-content slider-bg-2">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Where Excellence Meets Purpose</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Your Future Begins Here.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Educating Minds. Empowering Generations.
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-content slider-bg-3">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Driven by Innovation</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Rooted in Values.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Preparing graduates ready to solve
-                                        tomorrow’s challenges.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-content slider-bg-4">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Shaping Tomorrow’s Leaders</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Empowering minds through quality education</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Building skills for a dynamic global future.
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-content slider-bg-5">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">A Milestone in Higher Learning</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Honouring our first PhD journey.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Committed to advanced scholarship.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-content slider-bg-6">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Building Minds, Transforming Futures</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Committed to academic excellence.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Focused on innovation and leadership.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="fuo-redesign">
 
+    {{-- ═══════════════════════════════════════════════
+         ANNOUNCEMENT MODAL
+         ═══════════════════════════════════════════════ --}}
+    <div class="fuo-modal-overlay" id="fuoAnnounceModal">
+        <div class="fuo-announce-modal">
+            <button class="fuo-close-btn" onclick="closeFuoModal()" aria-label="Close"><i class='bx bx-x'></i></button>
+            <div class="fuo-banner">
+                <img src="{{ asset('img/all-img/fu-gate.jpg') }}" alt="Fountain University campus gate">
+                <div class="fuo-banner-tag">
+                    <p class="fuo-kicker">Announcement</p>
+                    <h3>2026/2027 admission is now open</h3>
                 </div>
             </div>
-            <div class="slider-content slider-bg-7">
-                <div class="content">
-                    <div class="text">
-                        <div class="container">
-                            <h1 data-aos="fade-up" data-aos-delay="100">Where Vision Meets Education</h1>
-                        </div>
-                        <hr>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p data-aos="fade-up" data-aos-delay="100">Driving discovery and creativity.</p>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="short-info">
-                                    <h3 data-aos="fade-up" data-aos-delay="200">Developing solutions for tomorrow.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="fuo-modal-body">
+                <p>The 2026/2027 Admission Exercise is Ongoing. Beware of Admission Fraudsters!</p>
+                <p>For all applications and updates, use only Fountain University's official channels: the website fuo.edu.ng and the admissions portal <a href="https://eportal.fuo.edu.ng/" target="_blank">https://eportal.fuo.edu.ng/</a>.</p>
+                <p>Beware of fraudsters; the University will not be responsible for dealings with unauthorised persons.</p>
+                <p>FUO Admission Office</p>
 
+                <div class="fuo-modal-actions">
+                    <a href="https://eportal.fuo.edu.ng/" class="fuo-btn fuo-btn-gold">Apply now</a>
+                    <button class="fuo-btn fuo-btn-ghost" onclick="closeFuoModal()">Maybe later</button>
                 </div>
             </div>
-            {{-- <div class="slider-content slider-bg-8">
-                    <div class="content">
-                        <div class="text">
-                            <div class="container">
-                                <h1 data-aos="fade-up" data-aos-delay="100">Education for a Better World</h1>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <p data-aos="fade-up" data-aos-delay="100">Nurturing intellect and integrity.</p>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="short-info">
-                                        <h3 data-aos="fade-up" data-aos-delay="200">Preparing students for global impact.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div> --}}
-
+            <div class="fuo-modal-dots"><span class="active"></span><span></span></div>
         </div>
     </div>
-    <!-- End Fountain Slider Area -->
+    <script>
+    function openFuoModal() { document.getElementById('fuoAnnounceModal').classList.add('open'); }
+    function closeFuoModal() { document.getElementById('fuoAnnounceModal').classList.remove('open'); }
+    setTimeout(openFuoModal, 2000);
+    </script>
 
-    <!-- Start News/Announcement Ticker -->
+    {{-- HERO --}}
+    <section class="fuo-hero-v2" id="fuoHero">
+        <img class="bg-slide active" src="{{ asset('img/banner/convo4.jpeg') }}" alt="Fountain University campus">
+        <img class="bg-slide" src="{{ asset('img/banner/phdstudent.jpeg') }}" alt="Fountain University campus">
+        <img class="bg-slide" src="{{ asset('img/banner/slid-6.png') }}" alt="Fountain University campus">
+        <div class="hero-content">
+            <div class="fuo-wrap">
+                <div class="fuo-admission-badge"><span class="dot"></span>2026/2027 admission now open</div>
+                <p class="eyebrow" id="fuoEyebrow">Fountain University, Osogbo — founded by NASFAT, 2007</p>
+                <h1 id="fuoHeadline">Rooted in values.<br>Driven by excellence.</h1>
+                <p class="sub" id="fuoSubline">Preparing graduates ready to solve tomorrow's challenges, built on knowledge, character and service.</p>
+                <div class="hero-actions">
+                    <a href="https://eportal.fuo.edu.ng/" class="fuo-btn fuo-btn-gold">Apply now — 2026/2027</a>
+                    <a href="#about" class="fuo-btn fuo-btn-light">Schedule a tour</a>
+                </div>
+                <div class="hero-dots" id="fuoHeroDots"><span class="active"></span><span></span><span></span></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    (function(){
+        var slides = document.querySelectorAll('.fuo-hero-v2 .bg-slide');
+        var dots = document.querySelectorAll('.fuo-hero-v2 .hero-dots span');
+        var headline = document.getElementById('fuoHeadline');
+        var subline = document.getElementById('fuoSubline');
+        var eyebrow = document.getElementById('fuoEyebrow');
+        var current = 0;
+
+        var slideData = [
+            { headline: 'Rooted in values.<br>Driven by excellence.', sub: 'Preparing graduates ready to solve tomorrow\'s challenges, built on knowledge, character and service.', eyebrow: 'Fountain University, Osogbo — founded by NASFAT, 2007' },
+            { headline: 'Where knowledge meets<br>character and service.', sub: 'A values-driven education, from admission to graduation.', eyebrow: '2026/2027 admission cycle' },
+            { headline: 'Ranked among Nigeria\'s<br>top universities.', sub: 'Global recognition built on academic excellence and research.', eyebrow: 'Times Higher Education, 2024' }
+        ];
+
+        function nextSlide() {
+            slides[current].classList.remove('active');
+            dots[current].classList.remove('active');
+
+            headline.style.opacity = '0';
+            subline.style.opacity = '0';
+            eyebrow.style.opacity = '0';
+
+            setTimeout(function() {
+                current = (current + 1) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+                headline.innerHTML = slideData[current].headline;
+                subline.textContent = slideData[current].sub;
+                eyebrow.textContent = slideData[current].eyebrow;
+                headline.style.opacity = '1';
+                subline.style.opacity = '1';
+                eyebrow.style.opacity = '1';
+            }, 400);
+        }
+
+        setInterval(nextSlide, 5000);
+    })();
+    </script>
+
+    {{-- NEWS TICKER --}}
     @php
         $announcementItems = collect([
             $featuredNews,
             $sidebarFeatured ? collect([$sidebarFeatured]) : collect(),
             $sidebarSmall,
-        ])
-            ->flatten(1)
-            ->filter(fn ($item) => $item && $item->title && $item->slug)
-            ->take(5);
+        ])->flatten(1)->filter(fn($item) => $item && $item->title && $item->slug)->take(6);
     @endphp
-
-    @if ($announcementItems->isNotEmpty())
-        <div class="mb-4" style="margin-top: -8px; width: 100%;">
-            <div style="background: #f7fbf5; border: 1px solid #dcefe0; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <div style="display: flex; align-items: center; background: #1f6f2e; color: white; padding: 10px 16px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">
-                    <span style="margin-right: 8px;">📢</span> Latest News
-                </div>
-                <div style="padding: 12px 16px;">
-                    <div style="white-space: nowrap; overflow: hidden; position: relative;">
-                        <div style="display: inline-block; padding-left: 100%; animation: ticker-scroll 80s linear infinite;">
-                            @foreach ($announcementItems as $item)
-                                <a href="{{ route('news.show', $item->slug) }}" style="margin-right: 36px; color: #183153; font-weight: 600; text-decoration: none;">
-                                    {{ $item->title }}
-                                </a>
-                            @endforeach
-                            @foreach ($announcementItems as $item)
-                                <a href="{{ route('news.show', $item->slug) }}" style="margin-right: 36px; color: #183153; font-weight: 600; text-decoration: none;">
-                                    {{ $item->title }}
-                                </a>
-                            @endforeach
-                        </div>
-                    </div>
+    @if($announcementItems->isNotEmpty())
+    <div class="fuo-ticker">
+        <div class="fuo-wrap">
+            <span class="fuo-tag">Latest</span>
+            <div class="fuo-ticker-track-wrap">
+                <div class="fuo-ticker-track">
+                    @foreach($announcementItems as $item)
+                        <a href="{{ route('news.show', $item->slug) }}">{{ $item->title }}</a>
+                    @endforeach
+                    @foreach($announcementItems as $item)
+                        <a href="{{ route('news.show', $item->slug) }}">{{ $item->title }}</a>
+                    @endforeach
                 </div>
             </div>
         </div>
+    </div>
     @endif
-    <style>
-        @keyframes ticker-scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-    </style>
-    <!-- End News/Announcement Ticker -->
 
-    <!-- Start Daily Hadith and Prayer Boxes -->
-    @if (isset($hadith))
-        <div class="row gx-4 gy-4 mb-5">
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100" style="border:1px solid rgba(0,0,0,0.08);">
-                    <div class="card-body p-4">
-                        <div style="display:flex; align-items:flex-start; gap:16px;">
-                            <div style="font-size:32px; flex-shrink:0; margin-top:4px;">📖</div>
-                            <div>
-                                <p
-                                    style="font-size:11px; font-weight:700; color:#2e7d32; margin:0 0 8px; text-transform:uppercase; letter-spacing:0.5px;">
-                                    Daily Hadith
-                                </p>
-                                <p
-                                    style="font-size:14px; color:#333; margin:0 0 8px; line-height:1.75; font-style:italic;">
-                                    "{{ Str::limit($hadith['text'], 220) }}"
-                                </p>
-                                <p style="font-size:11px; color:#888; margin:0;">
-                                    {{ $hadith['narrator'] ? '— ' . $hadith['narrator'] . ' · ' : '' }}
-                                    {{ $hadith['reference'] }}
-                                </p>
+    {{-- HADITH + PRAYER --}}
+    @if(isset($hadith))
+    <div class="fuo-faith-strip">
+        <div class="fuo-wrap">
+            <div class="fuo-faith-grid">
+                <div class="fuo-faith-card">
+                    <div class="fuo-faith-icon"><i class='bx bxs-book-bookmark'></i></div>
+                    <div>
+                        <p class="fuo-kicker">Daily hadith</p>
+                        <p class="fuo-quote">"{{ Str::limit($hadith['text'], 220) }}"</p>
+                        <p class="fuo-ref">{{ $hadith['narrator'] ? '— ' . $hadith['narrator'] . ' · ' : '' }}{{ $hadith['reference'] }}</p>
+                    </div>
+                </div>
+                <div class="fuo-faith-card fuo-prayer-card">
+                    <div class="fuo-faith-icon"><i class='bx bxs-mosque'></i></div>
+                    <div style="flex:1;">
+                        <p class="fuo-kicker">Next prayer</p>
+                        <div class="fuo-prayer-row">
+                            <span class="fuo-next" id="fuoPrayerTime">—</span>
+                            <div class="fuo-adhan-toggle" id="fuoAdhanToggle" onclick="fuoToggleAdhan()">
+                                Adhan <span class="fuo-adhan-pill" id="fuoAdhanPill"></span> <span id="fuoAdhanLabel">On</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="card shadow-sm h-100" style="border:1px solid rgba(0,0,0,0.08);">
-                    <div class="card-body p-0">
-                        @include('components.prayer_banner')
-                    </div>
-                </div>
-            </div>
         </div>
+    </div>
+
+    {{-- Prayer Times + Adhan Script --}}
+    <script>
+    (function(){
+        var PRAYER_NAMES = ['Fajr','Dhuhr','Asr','Maghrib','Isha'];
+        var PRAYER_KEYS  = ['Fajr','Dhuhr','Asr','Maghrib','Isha'];
+        var LAT = 7.7827, LNG = 4.5418;
+        var adhanEnabled = localStorage.getItem('fuo_adhan') !== 'off';
+
+        // Create adhan audio element
+        var adhanAudio = document.createElement('audio');
+        adhanAudio.id = 'fuo-adhan-audio';
+        adhanAudio.preload = 'none';
+        adhanAudio.src = 'https://www.islamcan.com/audio/adhan/azan1.mp3';
+        document.body.appendChild(adhanAudio);
+
+        function fmt12(t) {
+            var p = t.split(':'), h = parseInt(p[0]), m = p[1];
+            return (h > 12 ? h - 12 : h) + ':' + m + (h >= 12 ? ' PM' : ' AM');
+        }
+        function toMin(t) { var p = t.split(':'); return parseInt(p[0])*60 + parseInt(p[1]); }
+
+        function updatePrayer() {
+            var now = new Date();
+            var today = now.getFullYear() + '-' + (now.getMonth()+1) + '-' + now.getDate();
+            var cached = localStorage.getItem('fp_' + today);
+            if (!cached) return;
+            var d = JSON.parse(cached);
+            var nowMin = now.getHours()*60 + now.getMinutes();
+            var nextPrayer = null;
+            var nextIdx = -1;
+            for (var i = 0; i < PRAYER_KEYS.length; i++) {
+                if (toMin(d[PRAYER_KEYS[i]]) > nowMin) {
+                    nextPrayer = PRAYER_NAMES[i];
+                    nextIdx = i;
+                    document.getElementById('fuoPrayerTime').textContent = nextPrayer + ' ' + fmt12(d[PRAYER_KEYS[i]]);
+                    break;
+                }
+            }
+            if (!nextPrayer) {
+                nextPrayer = 'Fajr';
+                document.getElementById('fuoPrayerTime').textContent = 'Fajr ' + fmt12(d['Fajr']);
+            }
+
+            // Auto-trigger adhan when prayer time arrives
+            if (nextIdx >= 0) {
+                var prayerTime = toMin(d[PRAYER_KEYS[nextIdx]]);
+                var diff = prayerTime - nowMin;
+                // If within 1 minute of prayer time, play adhan
+                if (diff >= 0 && diff <= 1 && adhanEnabled) {
+                    var playKey = today + '_' + nextPrayer;
+                    var played = JSON.parse(localStorage.getItem('fuo_adhan_played') || '{}');
+                    if (!played[playKey]) {
+                        played[playKey] = true;
+                        localStorage.setItem('fuo_adhan_played', JSON.stringify(played));
+                        adhanAudio.load();
+                        adhanAudio.play().catch(function() {
+                            // Autoplay blocked — try on next user interaction
+                            document.addEventListener('click', function playOnTap() {
+                                adhanAudio.play();
+                                document.removeEventListener('click', playOnTap);
+                            }, { once: true });
+                        });
+                    }
+                }
+            }
+        }
+
+        function updateToggleUI() {
+            var pill = document.getElementById('fuoAdhanPill');
+            var label = document.getElementById('fuoAdhanLabel');
+            if (adhanEnabled) {
+                pill.style.background = '#035F39';
+                pill.style.setProperty('--pos', '18px');
+                label.textContent = 'On';
+            } else {
+                pill.style.background = '#ccc';
+                pill.style.setProperty('--pos', '2px');
+                label.textContent = 'Off';
+            }
+        }
+
+        window.fuoToggleAdhan = function() {
+            adhanEnabled = !adhanEnabled;
+            localStorage.setItem('fuo_adhan', adhanEnabled ? 'on' : 'off');
+            updateToggleUI();
+        };
+
+        // Fetch prayer times
+        var today = new Date();
+        var dk = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+        if (!localStorage.getItem('fp_' + dk)) {
+            var dy = today.getDate(), mo = today.getMonth()+1, yr = today.getFullYear();
+            fetch('https://api.aladhan.com/v1/timings/'+dy+'-'+mo+'-'+yr+'?latitude='+LAT+'&longitude='+LNG+'&method=3&school=0')
+                .then(function(r){ return r.json(); })
+                .then(function(d){
+                    if (d.code === 200) {
+                        localStorage.setItem('fp_' + dk, JSON.stringify(d.data.timings));
+                        updatePrayer();
+                    }
+                });
+        } else { updatePrayer(); }
+        setInterval(updatePrayer, 60000);
+        updateToggleUI();
+    })();
+    </script>
     @endif
-    <!-- End Daily Hadith and Prayer Boxes -->
 
-    <!-- Start About Us Area 2 -->
-    <div id="about" class="about-us-area-2 ptb-100">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-                <h2>About Our University</h2>
-                <p> </p>
-            </div>
-            <div class="about-content-courser owl-carousel owl-theme">
-                <div class="content-items" data-dot="<button>01</button>">
-                    <div class="image ct-bg-1" data-aos="fade-zoom-in" data-aos-delay="100">
+    {{-- ABOUT --}}
+    <section id="about" class="fuo-section">
+        <div class="fuo-wrap">
+            <div class="fuo-about-grid">
+                <div class="fuo-about-photo-stack">
+                    <div class="fuo-about-photo-main">
+                        <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor">
                     </div>
-                    <div class="content" data-aos="fade-up" data-aos-delay="200">
-                        <span>Welcome to</span>
-                        <h2>Fountain University, Osogbo</h2>
-                        <p>
-                            Fountain University was licensed in 2007, following NASFAT’s vision for quality education
-                            initiated in 2000.
-                            A Strategic Committee was formed to establish the institution’s foundation and infrastructure.
-                            Rooted in values of knowledge, character, and service, it promotes academic and moral
-                            excellence.
-                            The University continues to expand through innovation, research, and community engagement.
-                        </p>
-
-                        <a class="default-btn" href="schedule-tour.html">Read More</a>
+                    <div class="fuo-about-photo-tag">
+                        <p class="fuo-role">Office of the Vice-Chancellor</p>
+                        <p class="fuo-name">Leading Fountain's vision forward</p>
                     </div>
                 </div>
-                <div class="content-items" data-dot="<button>02</button>">
-                    <div class="image ct-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
-                    </div>
-                    <div class="content" data-aos="fade-up" data-aos-delay="200">
-                        <span>Campus Information</span>
-                        <h2>Where Knowledge Meets Innovation</h2>
-                        <p> Following this achievement, a Strategic implementation
-                            Committee was set up to serve as “in loco Council” to actualize
-                            the birth of the University. This Committee worked tirelessly
-                            to put in place the necessary facilities for the University
-                            to take off.
-                        </p>
-                        <a class="default-btn" href="schedule-tour.html">Read More</a>
-                    </div>
-                </div>
-                <div class="content-items" data-dot="<button>03</button>">
-                    <div class="image ct-bg-3" data-aos="fade-zoom-in" data-aos-delay="100">
-                    </div>
-                    <div class="content" data-aos="fade-up" data-aos-delay="200">
-                        <span>Campus Information</span>
-                        <h2>Where Knowledge Meets Innovation</h2>
-                        <p>
-                            The desire of the Nasrul-Lahi-Il-Fatih Society (NASFAT) to establish a
-                            University was borne out of its educational policy and plan enunciated
-                            at its strategic Retreat held at Akodo, Lagos, in the year 2000.
-                        </p>
-                        <a class="default-btn" href="schedule-tour.html">Read More</a>
-                    </div>
-                </div>
-                <div class="content-items" data-dot="<button>04</button>">
-                    <div class="image ct-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
-                    </div>
-                    <div class="content" data-aos="fade-up" data-aos-delay="200">
-                        <span>Campus Information</span>
-                        <h2>Where Knowledge Meets Innovation</h2>
-                        <p>From this humble beginning, the Society started a systematic
-                            process which led to the hosting of an academic summit of 30
-                            Distinguished Academic Personalities from where an 18-person
-                            University Planning Committee emerged in January 2004.
-                        </p>
-                        <a class="default-btn" href="schedule-tour.html">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- End About Us Area 2 -->
-
-    <!-- Start Features, Mission, Vision Area 2 -->
-    <div class="features-area-2">
-        <div class="features-content-2 ptb-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="sub-title">
-                            <p>Mission and Vision</p>
-                        </div>
-                        <div class="content">
-                            <h2></h2>
-                            {{-- <h2>Our students create a vibrant and inclusive community</h2> --}}
-                            <div class="item">
-                                <div class="item-content">
-
-                                    {{-- {{ URL::to('/img/icon/features-icon-2.png') }} --}}
-                                    <div class="icon">
-
-                                        <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="image">
-                                    </div>
-                                    <h3>Our Vision</h3>
-                                    <p>
-                                        To produce competent and resourceful graduates with high moral standards
-                                        irrespective
-                                        of race, tribe, religion, or political inclinations
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-content">
-                                    <div class="icon">
-                                        <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="image">
-                                    </div>
-                                    <h3>Our Mission</h3>
-                                    <p>
-                                        To be a pace-setting institution in terms of learning, character-building and
-                                        service to humanity.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="item-content">
-                                    <div class="icon">
-                                        <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="image">
-                                    </div>
-                                    <h3>Philosophy</h3>
-                                    <p>
-                                        Fountain University is committed to the total development of men and women
-                                        in an enabling environment, through appropriate teaching, research
-                                        and service to humanity, influenced by Islamic ethics and culture.
-                                    </p>
-                                </div>
-                            </div>
-
-
-                            <a class="default-btn" href="https://fuo.edu.ng/undergradute-programme">More on Academics</a>
-
-                            <div class="arrow-icon">
-                                <img src="{{ asset('img/icon/shape-1.png') }}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="academic-content">
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-6 col-md-6 pt-25">
-                                    <div class="academic-item" data-aos="fade-up" data-aos-delay="100">
-                                        <div class="image">
-                                            <img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="image">
-                                            <div class="number">
-                                                <h3>01</h3>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Academic Programmes</h4>
-                                            <p>Fountain University offers an array of academic courses tailored towards
-                                                students’ satisfaction and employability.</p>
-                                            <a class="btn" href="https://fuo.edu.ng/undergradute-programme">Learn More
-                                                <i class='bx bx-right-arrow-alt'></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6">
-                                    <div class="academic-item" data-aos="fade-up" data-aos-delay="200">
-                                        <div class="image">
-                                            <img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}"
-                                                alt="image">
-                                            <div class="number">
-                                                <h3>02</h3>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Global Ranking & Impacts</h4>
-                                            <p>Times Higher Education Ranks Fountain University Among Top Nigerian
-                                                Universities in 2024.</p>
-                                            <a class="btn" href="#">Learn More <i
-                                                    class='bx bx-right-arrow-alt'></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6 pt-25">
-                                    <div class="academic-item" data-aos="fade-up" data-aos-delay="300">
-                                        <div class="image">
-                                            <img src="{{ asset('img/all-img/admission-requirements.jpeg') }}"
-                                                alt="image">
-                                            <div class="number">
-                                                <h3>03</h3>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Admission Requirements</h4>
-                                            <p>
-                                                For all information that will aid your admission into Fountain University
-                                            </p>
-                                            <a class="btn" href="https://fuo.edu.ng/admission-requirement">Learn More
-                                                <i class='bx bx-right-arrow-alt'></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-sm-6 col-md-6">
-                                    <div class="academic-item" data-aos="fade-up" data-aos-delay="400">
-                                        <div class="image">
-                                            <img src="{{ asset('img/all-img/student-life.jpg') }}" alt="image">
-                                            <div class="number">
-                                                <h3>04</h3>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h4>Student Life</h4>
-                                            <p>
-                                                For a glimpse into campus culture, extracurricular activities, hostel and
-                                                more.
-                                            </p>
-                                            <a class="btn" href="#">Learn More <i
-                                                    class='bx bx-right-arrow-alt'></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="fuo-about-text">
+                    <p class="fuo-section-head fuo-kicker" style="margin-bottom:10px;">About the university</p>
+                    <h2 style="font-size:30px; margin-bottom:20px;">Where knowledge meets innovation</h2>
+                    <p>Fountain University was licensed in 2007, following NASFAT's vision for quality education initiated in 2000. A Strategic Committee was formed to establish the institution's foundation and infrastructure, following an academic summit of 30 distinguished academic personalities in Lagos.</p>
+                    <p>Rooted in values of knowledge, character and service, the University promotes academic and moral excellence, and continues to expand through innovation, research and community engagement.</p>
+                    <div class="fuo-about-actions">
+                        <a href="https://fuo.edu.ng/about" class="fuo-btn fuo-btn-ghost">Read more</a>
+                        <a href="#" class="fuo-btn fuo-btn-primary"><i class='bx bx-map-pin'></i>&nbsp;Schedule a campus tour</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Features, Mission, Vision Area 2 -->
+    </section>
 
-    <!-- Start Video Area  -->
-    <div class="video-area">
-        <div class="container">
-            <div class="video-play-btn" data-aos="fade-zoom-in" data-aos-delay="100">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=rAhNrZw4BaA">Play</a>
-                {{-- <a class="popup-youtube" href="{{ asset('video/best-graduating-student-2025.mp4') }}">Play</a> --}}
-            </div>
-        </div>
-    </div>
-    <!-- End Video Area  -->
-
-    <!-- Start News and Updates Area 2 -->
-    <div class="news-area ptb-100">
-        <div class="container">
-            <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
-                    <p>News & Updates</p>
+    {{-- MISSION / VISION + ACADEMIC CARDS --}}
+    <section class="fuo-section fuo-mv-area">
+        <div class="fuo-wrap">
+            <div class="fuo-mv-grid">
+                <div>
+                    <p class="fuo-section-head fuo-kicker">Mission and vision</p>
+                    <div class="fuo-mv-item">
+                        <div class="fuo-icon"><i class='bx bx-target-lock'></i></div>
+                        <div><h3>Our vision</h3><p>To produce competent and resourceful graduates with high moral standards, irrespective of race, tribe, religion or political inclinations.</p></div>
+                    </div>
+                    <div class="fuo-mv-item">
+                        <div class="fuo-icon"><i class='bx bx-compass'></i></div>
+                        <div><h3>Our mission</h3><p>To be a pace-setting institution in terms of learning, character-building and service to humanity.</p></div>
+                    </div>
+                    <div class="fuo-mv-item">
+                        <div class="fuo-icon"><i class='bx bx-book-open'></i></div>
+                        <div><h3>Philosophy</h3><p>Committed to the total development of men and women in an enabling environment, influenced by Islamic ethics and culture.</p></div>
+                    </div>
+                    <a href="https://fuo.edu.ng/undergradute-programme" class="fuo-btn fuo-btn-primary" style="margin-top:6px;">More on academics</a>
                 </div>
-                <h2>Recent News and Events</h2>
-            </div>
-
-            <div class="row">
-                {{-- LEFT: Two main featured news items --}}
-                <div class="col-lg-8">
-                    <div class="news-content">
-                        <ul>
-                            @forelse($featuredNews as $item)
-                                <li class="news-item" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="image">
-                                        <img src="{{ $item->image_url }}" alt="{{ $item->title }}">
-                                    </div>
-                                    <div class="content">
-                                        <div class="sub-title">
-                                            <i class="{{ $item->icon }}"></i>
-                                            {{ $item->category }} <p></p>
-                                        </div>
-                                        <h2>
-                                            <a href="{{ route('news.show', $item->slug) }}">
-                                                {{ $item->title }}
-                                            </a>
-                                        </h2>
-                                        @if ($item->excerpt)
-                                            <p class="mb-1">{{ Str::limit($item->excerpt, 120) }}</p>
-                                        @endif
-                                        @if ($item->event_date_label)
-                                            <p class="m-0">
-                                                <i class='bx bxs-calendar'></i> {{ $item->event_date_label }}
-                                            </p>
-                                        @endif
-                                        <a class="btn" href="{{ route('news.show', $item->slug) }}">Continue
-                                            Reading...</a>
-                                    </div>
-                                </li>
-                            @empty
-                                {{-- Fallback if no news in DB yet --}}
-                                <li class="news-item">
-                                    <div class="content">
-                                        <p class="text-muted">No news published yet. <a
-                                                href="{{ route('admin.news.create') }}">Add your first post.</a></p>
-                                    </div>
-                                </li>
-                            @endforelse
-                        </ul>
+                <div class="fuo-academic-grid">
+                    <div class="fuo-academic-card">
+                        <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes"></div>
+                        <div class="fuo-body"><h4>Academic programmes</h4><p>Courses tailored to students satisfaction and employability.</p><a class="fuo-link" href="https://fuo.edu.ng/undergradute-programme">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                    </div>
+                    <div class="fuo-academic-card">
+                        <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking"></div>
+                        <div class="fuo-body"><h4>Global ranking and impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                    </div>
+                    <div class="fuo-academic-card">
+                        <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements"></div>
+                        <div class="fuo-body"><h4>Admission requirements</h4><p>Everything needed to aid your admission into FUO.</p><a class="fuo-link" href="https://fuo.edu.ng/admission-requirement">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                    </div>
+                    <div class="fuo-academic-card">
+                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Student life"></div>
+                        <div class="fuo-body"><h4>Student life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                {{-- RIGHT: Sidebar --}}
-                <div class="col-lg-4">
+    {{-- VIDEO --}}
+    <div class="fuo-video-area">
+        <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary">
+        <div class="fuo-video-play">
+            <a class="fuo-play-btn" href="https://www.youtube.com/watch?v=rAhNrZw4BaA"><i class='bx bx-play'></i></a>
+            <p class="fuo-video-caption">Watch: FUO first anniversary documentary — building minds, transforming futures</p>
+        </div>
+    </div>
 
-                    {{-- Top featured sidebar item (large card) --}}
-                    @if (isset($sidebarFeatured) && $sidebarFeatured)
-                        <div class="news-content-right" data-aos="fade-up" data-aos-delay="100">
-                            <div class="content-box">
-                                <img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}">
-                                <div class="content">
-                                    <h3 style="margin: 10px">
-                                        <a href="{{ route('news.show', $sidebarFeatured->slug) }}">
-                                            {{ Str::limit($sidebarFeatured->title, 50) }}
-                                        </a>
-                                    </h3>
-                                    <a class="btn" href="{{ route('news.show', $sidebarFeatured->slug) }}">Continue
-                                        Reading...</a>
-                                </div>
+    {{-- NEWS --}}
+    <section id="news" class="fuo-section">
+        <div class="fuo-wrap">
+            <div class="fuo-section-head">
+                <p class="fuo-kicker">News and updates</p>
+                <h2>Recent news and events</h2>
+            </div>
+            <div class="fuo-news-layout">
+                <div>
+                    @forelse($featuredNews as $item)
+                        <a href="{{ route('news.show', $item->slug) }}" class="fuo-news-featured" @if(!$loop->first) style="margin-top:20px;" @endif>
+                            <div class="fuo-img"><img src="{{ $item->image_url }}" alt="{{ $item->title }}"></div>
+                            <div class="fuo-body">
+                                <span class="fuo-tag">{{ $item->category }}</span>
+                                <h3>{{ $item->title }}</h3>
+                                @if($item->excerpt)<p>{{ Str::limit($item->excerpt, 140) }}</p>@endif
+                                @if($item->event_date_label)<span class="fuo-date"><i class='bx bxs-calendar'></i> {{ $item->event_date_label }}</span>@endif
                             </div>
-                        </div>
+                        </a>
+                    @empty
+                        <div class="fuo-news-featured"><div class="fuo-body"><p style="color:var(--fu-muted);">No news published yet.</p></div></div>
+                    @endforelse
+                </div>
+                <div class="fuo-news-side">
+                    @if(isset($sidebarFeatured) && $sidebarFeatured)
+                        <a href="{{ route('news.show', $sidebarFeatured->slug) }}" class="fuo-news-side-item">
+                            <div class="fuo-img"><img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}"></div>
+                            <div><span class="fuo-tag">{{ $sidebarFeatured->category }}</span><h4>{{ Str::limit($sidebarFeatured->title, 60) }}</h4></div>
+                        </a>
                     @endif
-
-                    {{-- Bottom small news items --}}
-                    @if (isset($sidebarSmall) && $sidebarSmall->count())
-                        <div class="news-content-item" data-aos="fade-up" data-aos-delay="100">
-                            @foreach ($sidebarSmall as $small)
-                                <div class="content-box">
-                                    <div class="image mt-4">
-                                        <img src="{{ $small->image_url }}" alt="{{ $small->title }}">
-                                    </div>
-                                    <div class="content m-3">
-                                        <div class="sub-title">
-                                            <i class="{{ $small->icon }}"></i>
-                                            <p>{{ $small->category }}</p>
-                                        </div>
-                                        <h3>
-                                            <a href="{{ route('news.show', $small->slug) }}">
-                                                {{ Str::limit($small->title, 60) }}
-                                            </a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
+                    @if(isset($sidebarSmall) && $sidebarSmall->count())
+                        @foreach($sidebarSmall as $small)
+                            <a href="{{ route('news.show', $small->slug) }}" class="fuo-news-side-item">
+                                <div class="fuo-img"><img src="{{ $small->image_url }}" alt="{{ $small->title }}"></div>
+                                <div><span class="fuo-tag">{{ $small->category }}</span><h4>{{ Str::limit($small->title, 60) }}</h4></div>
+                            </a>
+                        @endforeach
                     @endif
-
                 </div>
             </div>
-
-            <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
-                <p>Fountain University Leads, Others Follow.
-                    <a href="{{ route('news.index') }}">More Campus News <i class='bx bx-right-arrow-alt'></i></a>
-                </p>
-            </div>
+            <p class="fuo-news-more">Fountain University leads, others follow. <a href="{{ route('news.index') }}">More campus news →</a></p>
         </div>
-    </div>
-    <!-- End News and Updates Area 2 -->
+    </section>
 
-
-    <!-- Start Scholarship Area 2 -->
-    <div class="faculty-area-2 ptb-100" style="background: var(--blackColor);">
-        <div class="container">
-            <div class="row gx-4 gy-4">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="heading">
-                        <h2>Scholarship Programs</h2>
-                    </div>
-                    <div class="content">
-                        <p>"It is a well-known opportunity that Fountain University students of Arabic and Islamic studies
-                            can benefit from our scholarship program, designed to support learning with ease and focus."</p>
-                    </div>
-                    <div class="button d-flex justify-content-center justify-content-lg-start mt-4">
-                        <a class="default-btn mx-auto mx-lg-0" href="financial-aid.html">Find Out</a>
-                    </div>
+    {{-- SCHOLARSHIP --}}
+    <section class="fuo-section fuo-scholarship-area">
+        <div class="fuo-wrap">
+            <div class="fuo-scholarship-grid">
+                <div>
+                    <h2>Scholarship programmes</h2>
+                    <p>Fountain University students of Arabic and Islamic studies can benefit from our scholarship programme, designed to support learning with ease and focus.</p>
+                    <a href="#" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="heading">
-                        <h2>Approved School Fee (2025-2026)</h2>
-                    </div>
-                    <div class="content">
-                        <p>"Fountain University management hereby notifies all students, parents, and guardians that the
-                            approved school fees schedule for the 2025–2026 academic session has been released."</p>
-                    </div>
-                    <div class="button d-flex justify-content-center justify-content-lg-start mt-4">
-                        <a class="default-btn mx-auto mx-lg-0" href="https://shorturl.at/H9Qr8">Find Out</a>
-                    </div>
+                <div>
+                    <h2>Approved school fee (2025–2026)</h2>
+                    <p>Management hereby notifies all students, parents and guardians that the approved school fees schedule for the 2025–2026 academic session has been released.</p>
+                    <a href="https://shorturl.at/H9Qr8" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Scholarship Area 2 -->
+    </section>
 
-
-    <!-- Start Campus Area 2 -->
-    <div class="campus-area-2 ptb-100" style="background: var(--blackColor); background-image: url('{{ asset('img/all-img/shape-2.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: -1px;">
-        <div class="container-fluaid">
-            <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
-                    <p>The Campus Experience</p>
-                </div>
-                <h2>One University, Many Places</h2>
+    {{-- CAMPUS --}}
+    <section id="campus" class="fuo-section">
+        <div class="fuo-wrap">
+            <div class="fuo-section-head">
+                <p class="fuo-kicker">The campus experience</p>
+                <h2>One university, many places</h2>
             </div>
-
-            <div class="campus-slider owl-carousel owl-theme">
-                <div class="campus-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="image">
-                    <div class="content">
-                        <h2>E-Library</h2>
-                        <a class="default-btn" href="#!">Virtual Tour</a>
-                    </div>
+            <div class="fuo-campus-grid">
+                <div class="fuo-campus-tile">
+                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library">
+                    <div class="fuo-campus-tile-content"><h3>E-Library</h3><a href="#">Virtual tour →</a></div>
                 </div>
-                <div class="campus-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="image">
-                    <div class="content">
-                        <h2>Nursing Laboratory</h2>
-                        <a class="default-btn" href="#!">Virtual Tour</a>
-                    </div>
+                <div class="fuo-campus-tile">
+                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory">
+                    <div class="fuo-campus-tile-content"><h3>Nursing laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
-                <div class="campus-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="image">
-                    <div class="content">
-                        <h2>Biology Laboratory</h2>
-                        <a class="default-btn" href="#!">Virtual Tour</a>
-                    </div>
+                <div class="fuo-campus-tile">
+                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory">
+                    <div class="fuo-campus-tile-content"><h3>Biology laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Campus Area -->
+    </section>
 
-
-    <!-- Start Activities Area -->
-    {{-- <div class="activities-area ptb-100">
-            <div class="container">
-                <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="sub-title">
-                        <p>Sports and Athletics</p>
-                    </div>
-                    <h2>More Than Academics: Play, Lead, Compete</h2>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="activities-card style-2" data-aos="fade-up" data-aos-delay="100">
-                            <div class="image">
-                                <img src="{{ asset('img/all-img/activities-image-1.png') }}" alt="image">
-                            </div>
-                            <div class="content">
-                                <h2><a href="student-activities.html">Dashboard of Champions</a></h2>
-                                <p>There are many variations of passages of Lorem Ipsum aviable but the majority have suffered alteration in some form.</p>
-                                <a class="btn" href="student-activities.html">National Championships</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6 pt-25">
-                        <div class="activities-card style-2" data-aos="fade-up" data-aos-delay="200">
-                            <div class="image">
-                                <img src="{{ asset('img/all-img/activities-image-2.png') }}" alt="image">
-                            </div>
-                            <div class="content">
-                                <h2><a href="support-guidance.html">Olympic Excellence</a></h2>
-                                <p>There are many variations of passages of Lorem Ipsum aviable but the majority have suffered alteration in some form.</p>
-                                <a class="btn" href="support-guidance.html">Medals</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="activities-card style-2" data-aos="fade-up" data-aos-delay="300">
-                            <div class="image">
-                                <img src="{{ asset('img/all-img/activities-image-3.png') }}" alt="image">
-                            </div>
-                            <div class="content">
-                                <h2><a href="fitness-athletics.html">Multidimensional Impact</a></h2>
-                                <p>There are many variations of passages of Lorem Ipsum aviable but the majority have suffered alteration in some form.</p>
-                                <a class="btn" href="fitness-athletics.html">Athlete Stories</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
-                    <p>Inspiring Minds, Shaping Futures. <a href="fitness-athletics.html">More About Athletics <i class='bx bx-right-arrow-alt'></i></a></p>
-                </div>
+    {{-- SUCCESS --}}
+    <section class="fuo-section">
+        <div class="fuo-wrap">
+            <div class="fuo-section-head">
+                <p class="fuo-kicker">Student, faculty and alumni success</p>
+                <h2>Celebrating the legacy, embracing the future</h2>
             </div>
-        </div> --}}
-    <!-- End Activities Area -->
-
-    <!-- Start Success Area 2 -->
-    <div class="success-area success-area-2 ptb-100">
-        <div class="container">
-            <div class="section-title section-title-2" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
-                    <p>Student, Faculty and Alumni Success</p>
-                </div>
-                <h2>Celebrating the Legacy, Embracing the Future</h2>
+            <div class="fuo-success-grid">
+                <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
+                    <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture">
+                    <div class="fuo-success-play"><i class='bx bx-play'></i></div>
+                    <div class="fuo-success-label">15th convocation lecture</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=rAhNrZw4BaA" class="fuo-success-card">
+                    <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="First anniversary documentary">
+                    <div class="fuo-success-play"><i class='bx bx-play'></i></div>
+                    <div class="fuo-success-label">First anniversary documentary</div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
+                    <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="Best graduating student">
+                    <div class="fuo-success-play"><i class='bx bx-play'></i></div>
+                    <div class="fuo-success-label">Best graduating student</div>
+                </a>
             </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="success-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="play">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=bNnfoUmIwGw"><i
-                                        class='bx bx-play'></i></a>
-                            </div>
-                            <ul>
-                                <li><a href="#">
-                                        <h3>15TH CONVOCATION LECTURE </h3>
-                                    </a></li>
-                                <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="success-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="play">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=rAhNrZw4BaA&t=53s"><i
-                                        class='bx bx-play'></i></a>
-                            </div>
-                            <ul>
-                                <li><a href="#">
-                                        <h3>FIRST ANNIVERSARY DOCUMENTARY</h3>
-                                    </a></li>
-                                <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="success-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="image">
-                            <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="image">
-                        </div>
-                        <div class="content">
-                            <div class="play">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=bNnfoUmIwGw"><i
-                                        class='bx bx-play'></i></a>
-                            </div>
-                            <ul>
-                                <li><a href="university-life.html">
-                                        <h3>BEST GRADUATING STUDENT</h3>
-                                    </a></li>
-                                <li class="link"><a href="#"><i class='bx bx-link-external'></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-btn text-center" data-aos="fade-zoom-in" data-aos-delay="100">
-                <p>Inspiring Minds, Shaping Futures. <a href="#">Learn more <i
-                            class='bx bx-right-arrow-alt'></i></a></p>
-
-            </div>
-
         </div>
-    </div>
+    </section>
 
-
-    <!-- End Success Area 2 --> 
-    {{--
-    ============================================================
-    SOCIAL MEDIA FEEDS SECTION
-    ============================================================
---}}
-
-    <!-- Start Social Media Feeds Area -->
-    <div class="social-feeds-area" style="background: var(--blackColor); padding: 60px 0 30px; margin-top: -1px;">
-        <div class="container">
-
-            {{-- Section Title --}}
-            <div class="section-title section-title-2 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-                <div class="sub-title">
-                    <p style="color:#fff">Connect With Us</p>
-                </div>
-                <h2 style="color:#fff">Social Media & Broadcast</h2>
+    {{-- SOCIAL --}}
+    <section class="fuo-section fuo-social-area">
+        <div class="fuo-wrap">
+            <div class="fuo-section-head">
+                <p class="fuo-kicker">Connect with us</p>
+                <h2>Social media and broadcast</h2>
             </div>
-
-            <div class="row g-4 align-items-start">
-
-                {{-- COL 1: Fountain Radio Box --}}
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div
-                        style="
-                    background: #0b1c36;
-                    border: 1px solid rgba(255,255,255,0.08);
-                    border-radius: 16px;
-                    overflow: hidden;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                ">
-                        {{-- Radio Header --}}
-                        <div
-                            style="background: linear-gradient(135deg, #0f3460, #16213e); padding: 20px 16px; text-align: center;">
-                            <div
-                                style="font-size: 11px; color: #f4c430; font-weight: 700; text-transform: uppercase;
-                                    letter-spacing: 1px; margin-bottom: 8px;">
-                                <span
-                                    style="display: inline-block; width: 8px; height: 8px; background: #f4c430;
-                                         border-radius: 50%; margin-right: 5px; animation: pulse 1.5s infinite;"></span>
-                                On Air
-                            </div>
-                            {{-- Radio Logo / Name --}}
-                            <div style="margin: 10px 0;">
-                                <div
-                                    style="font-family: 'Arial Black', sans-serif; font-size: 32px; font-weight: 900;
-                                        color: #fff; line-height: 1; letter-spacing: -1px;">
-                                    <span style="color: #f4c430;">FUO</span>
-                                </div>
-                                <div style="font-size: 22px; font-weight: 900; color: #fff; letter-spacing: 2px;">
-                                    RADIO
-                                </div>
-                                <div style="font-size: 28px; font-weight: 900; color: #f4c430; line-height: 1;">
-                                    94.9 FM
-                                </div>
-                            </div>
-                            <div style="font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 6px;">
-                                Fountain University, Osogbo
-                            </div>
-                        </div>
-
-                        {{-- Radio Body --}}
-                        <div
-                            style="padding: 20px 16px; flex: 1; display: flex; flex-direction: column;
-                                align-items: center; justify-content: center; text-align: center;">
-                            <div
-                                style="font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 16px; line-height: 1.6;">
-                                Your premier campus radio station. Music, news, Islamic programmes & student talk shows.
-                            </div>
-
-                            {{-- Animated sound waves --}}
-                            <div
-                                style="display: flex; align-items: flex-end; gap: 3px; height: 30px; margin-bottom: 16px;">
-                                @foreach ([0.4, 0.7, 1, 0.8, 0.5, 0.9, 0.6, 0.4, 0.8, 1] as $h)
-                                    <div
-                                        style="width: 4px; background: #f4c430; border-radius: 2px;
-                                        height: {{ $h * 28 }}px;
-                                        animation: wave {{ 0.5 + $loop->index * 0.1 }}s ease-in-out infinite alternate;
-                                        opacity: 0.8;">
-                                    </div>
-                                @endforeach
-                            </div>
-
-                            {{-- Listen Live Button — link to be added later --}}
-                            <a href="#" {{-- replace # with your stream URL when ready --}}
-                                style="
-                               display: inline-flex; align-items: center; gap: 8px;
-                               background: var(--mainColor); color: var(--whiteColor);
-                               font-weight: 700; font-size: 13px;
-                               padding: 10px 24px; border-radius: 30px;
-                               text-decoration: none;
-                               transition: all 0.2s;
-                               width: 100%; justify-content: center;
-                           "
-                                onmouseover="this.style.background='#27b66d'"
-                                onmouseout="this.style.background='var(--mainColor)'">
-                                <i class='bx bx-radio' style="font-size: 18px;"></i>
-                                Listen Live
-                            </a>
-                            <p style="font-size: 10px; color: rgba(255,255,255,0.35); margin-top: 8px; margin-bottom: 0;">
-                                Live stream coming soon
-                            </p>
-                        </div>
+            <div class="fuo-social-grid">
+                <div class="fuo-social-box">
+                    <div class="fuo-radio-head">
+                        <div class="fuo-radio-live"><span class="pulse"></span>On air</div>
+                        <div class="fuo-radio-name">FUO Radio</div>
+                        <div class="fuo-radio-freq">94.9 FM</div>
+                    </div>
+                    <div class="fuo-radio-body">
+                        <p>Your premier campus radio station. Music, news, Islamic programmes and student talk shows.</p>
+                        <a href="#" class="fuo-btn fuo-btn-primary" style="width:100%; justify-content:center;"><i class='bx bx-radio'></i>&nbsp;Listen live</a>
                     </div>
                 </div>
-
-                {{-- COL 2: Facebook Live Feed --}}
-                <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        style="
-                    background: rgba(255,255,255,0.04);
-                    border-radius: 16px;
-                    overflow: hidden;
-                    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-                    border: 1px solid rgba(255,255,255,0.08);
-                ">
-                        {{-- Facebook Header --}}
-                        <div
-                            style="background: #1877F2; padding: 12px 20px; display: flex;
-                                align-items: center; gap: 10px;">
-                            <i class='bx bxl-facebook-circle' style="font-size: 28px; color: #fff;"></i>
-                            <div>
-                                <div style="color: #fff; font-weight: 700; font-size: 14px;">Fountain University Osogbo
-                                </div>
-                                <a href="https://www.facebook.com/fuoweb" target="_blank"
-                                    style="color: rgba(255,255,255,0.8); font-size: 11px; text-decoration: none;">
-                                    facebook.com/fuoweb
-                                </a>
-                            </div>
-                            <a href="https://www.facebook.com/fuoweb" target="_blank"
-                                style="margin-left: auto; background: #fff; color: #1877F2;
-                                  font-size: 12px; font-weight: 700; padding: 5px 14px;
-                                  border-radius: 6px; text-decoration: none;">
-                                Follow Page
-                            </a>
-                        </div>
-
-                        {{-- Facebook Page Plugin --}}
-                        <div style="display: flex; justify-content: center; overflow: hidden; min-height: 400px;">
-                            <iframe
-                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                                width="100%" height="400" style="border: none; overflow: hidden; display: block;"
-                                scrolling="no" frameborder="0" allowfullscreen="true"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
+                <div class="fuo-social-box">
+                    <div class="fuo-fb-head">
+                        <i class='bx bxl-facebook-circle' style="font-size:24px; color:#fff;"></i>
+                        <div><div class="fuo-name" style="color:#fff;">Fountain University Osogbo</div><div class="fuo-handle">facebook.com/fuoweb</div></div>
+                        <a href="https://www.facebook.com/fuoweb" target="_blank" style="margin-left:auto; background:#fff; color:#1877F2; font-size:12px; font-weight:700; padding:5px 14px; border-radius:6px;">Follow Page</a>
+                    </div>
+                    <div style="display:flex; justify-content:center; overflow:hidden; min-height:320px;">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none; overflow:hidden; display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
-
-                {{-- COL 3: YouTube Video Box --}}
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div
-                        style="
-                    background: #0b1c36;
-                    border: 1px solid rgba(255,255,255,0.08);
-                    border-radius: 16px;
-                    overflow: hidden;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                ">
-                        {{-- YouTube Header --}}
-                        <div
-                            style="background: #FF0000; padding: 12px 16px; display: flex;
-                                align-items: center; gap: 8px;">
-                            <i class='bx bxl-youtube' style="font-size: 24px; color: #fff;"></i>
-                            <div>
-                                <div style="color: #fff; font-weight: 700; font-size: 13px;">FUO on YouTube</div>
-                                <div style="color: rgba(255,255,255,0.8); font-size: 10px;">Watch our latest videos</div>
-                            </div>
-                        </div>
-
-                        {{-- Video Title --}}
-                        <div style="padding: 14px 16px 8px;">
-                            <p style="color: #fff; font-size: 13px; font-weight: 600; margin: 0; line-height: 1.4;">
-                                FUO VC's Documentary — Building Minds, Transforming Futures
-                            </p>
-                        </div>
-
-                        {{-- YouTube Embed --}}
-                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; flex: 1;">
-                            <iframe src="https://www.youtube.com/embed/u_iW3X8-X78"
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-
-                        {{-- Watch More Button --}}
-                        <div style="padding: 14px 16px;">
-                            <a href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank"
-                                style="
-                               display: flex; align-items: center; justify-content: center; gap: 6px;
-                               background: #FF0000; color: #fff;
-                               font-weight: 700; font-size: 12px;
-                               padding: 9px 16px; border-radius: 8px;
-                               text-decoration: none; width: 100%;
-                               transition: background 0.2s;
-                           "
-                                onmouseover="this.style.background='#cc0000'"
-                                onmouseout="this.style.background='#FF0000'">
-                                <i class='bx bxl-youtube' style="font-size: 16px;"></i>
-                                Watch More on YouTube
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            {{-- Social Media Links Row --}}
-            <div class="row mt-5" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-12 text-center">
-                    <p style="color: rgba(255,255,255,0.5); font-size: 13px; margin-bottom: 16px;">
-                        Follow us on social media for the latest updates
-                    </p>
-                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-                        <a href="https://www.facebook.com/fuoweb" target="_blank"
-                            style="display:inline-flex;align-items:center;gap:6px;
-                              background:#1877F2;color:#fff;padding:8px 18px;
-                              border-radius:30px;text-decoration:none;font-size:13px;font-weight:600">
-                            <i class='bx bxl-facebook'></i> Facebook
-                        </a>
-                        <a href="https://www.instagram.com/fountain.university/" target="_blank"
-                            style="display:inline-flex;align-items:center;gap:6px;
-                              background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-                              color:#fff;padding:8px 18px;
-                              border-radius:30px;text-decoration:none;font-size:13px;font-weight:600">
-                            <i class='bx bxl-instagram'></i> Instagram
-                        </a>
-                        <a href="https://x.com/fuoweb" target="_blank"
-                            style="display:inline-flex;align-items:center;gap:6px;
-                              background:#000;color:#fff;padding:8px 18px;
-                              border-radius:30px;text-decoration:none;font-size:13px;font-weight:600">
-                            <i class='bx bxl-twitter'></i> Twitter / X
-                        </a>
-                        <a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"
-                            style="display:inline-flex;align-items:center;gap:6px;
-                              background:#0077B5;color:#fff;padding:8px 18px;
-                              border-radius:30px;text-decoration:none;font-size:13px;font-weight:600">
-                            <i class='bx bxl-linkedin'></i> LinkedIn
-                        </a>
-                        <a href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank"
-                            style="display:inline-flex;align-items:center;gap:6px;
-                              background:#FF0000;color:#fff;padding:8px 18px;
-                              border-radius:30px;text-decoration:none;font-size:13px;font-weight:600">
-                            <i class='bx bxl-youtube'></i> YouTube
-                        </a>
+                <div class="fuo-social-box">
+                    <div class="fuo-yt-head"><i class='bx bxl-youtube' style="font-size:22px; color:#fff;"></i><span style="color:#fff; font-size:13px; font-weight:600;">FUO on YouTube</span></div>
+                    <div class="fuo-yt-title">VC's documentary — Building Minds, Transforming Futures</div>
+                    <div class="fuo-yt-embed">
+                        <iframe src="https://www.youtube.com/embed/u_iW3X8-X78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-
+            <div class="fuo-social-links-row">
+                <a class="fuo-social-pill" style="background:#1877F2;" href="https://www.facebook.com/fuoweb" target="_blank"><i class='bx bxl-facebook'></i>Facebook</a>
+                <a class="fuo-social-pill" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);" href="https://www.instagram.com/fountain.university/" target="_blank"><i class='bx bxl-instagram'></i>Instagram</a>
+                <a class="fuo-social-pill" style="background:#000;" href="https://x.com/fuoweb" target="_blank"><i class='bx bxl-twitter'></i>Twitter / X</a>
+                <a class="fuo-social-pill" style="background:#0077B5;" href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                <a class="fuo-social-pill" style="background:#FF0000;" href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank"><i class='bx bxl-youtube'></i>YouTube</a>
+            </div>
         </div>
-    </div>
-    <!-- End Social Media Feeds Area -->
+    </section>
 
-    {{-- Animation CSS --}}
-    <style>
-        @keyframes pulse {
+</div>
 
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.4;
-                transform: scale(0.8);
-            }
-        }
-
-        @keyframes wave {
-            0% {
-                transform: scaleY(0.4);
-            }
-
-            100% {
-                transform: scaleY(1);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .social-feeds-area .col-lg-6 iframe {
-                height: 320px !important;
-            }
-        }
-    </style>
-    {{-- <button class="hide" style="display:none" id="noticeButton" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> --}}
-    {{-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">ANNOUNCEMENTS!!!</h1>
-                    <button type="button" id="closeNoticeBtn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                        <b>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION<b>
-                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a>
-                </div>
-                <div class="modal-body">
-                        <b>ADVERTISEMENT OF JOB VACANCY FOR THE POSITION OF LEGAL OFFICER<b>
-                        <a class="btn btn-success" href="{{ ('https://shorturl.at/ON6od') }}"> Read More </a>
-                </div>
-                <div class="modal-footer">
-                    {{-- <button class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}">Read More</button> --}}
-    {{-- <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Read More </a> --}}
-    {{-- </div>
-                </div>
-            </div>
-        </div> --}}
-
-    {{-- <script>
-            $('#noticeButton').click();
-
-            setTimeout(() => {
-                $('#closeNoticeBtn').click();
-            }, 30);
-
-
-            // setInterval(() => {
-            //     $('#closeNoticeBtn').click();
-            // }, 50);
-        </script> --}}
 @endsection

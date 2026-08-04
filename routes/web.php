@@ -71,34 +71,53 @@ Route::get('/', function () {
 
     $hadith = cache()->remember('daily_hadith', 86400, function () {
         try {
-            $response = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get('https://random-hadith-generator.vercel.app/bukhari/');
+            // Primary: hadeethenc.com API — get a random hadith from category 1 (Oneness of Allah)
+            $listRes = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get('https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id=1&page=1&per_page=1');
 
-            if ($response->successful()) {
-                $data = $response->json();
-                return [
-                    'text'      => $data['data']['hadith_english'] ?? 'Seek knowledge from the cradle to the grave.',
-                    'narrator'  => $data['data']['header'] ?? '',
-                    'reference' => 'Sahih al-Bukhari',
-                ];
+            if ($listRes->successful()) {
+                $listData = $listRes->json();
+                $hadithId = $listData['data'][0]['id'] ?? null;
+
+                if ($hadithId) {
+                    $detailRes = \Illuminate\Support\Facades\Http::timeout(5)
+                        ->get("https://hadeethenc.com/api/v1/hadeeths/one/?language=en&id={$hadithId}");
+
+                    if ($detailRes->successful()) {
+                        $detail = $detailRes->json();
+                        return [
+                            'text'      => $detail['hadeeth'] ?? '',
+                            'narrator'  => $detail['hadeeth_intro'] ?? '',
+                            'reference' => $detail['attribution'] ?? 'Hadeeth Enc',
+                        ];
+                    }
+                }
             }
 
-            $backup = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get('https://hadithapi.com/api/hadiths/?apikey=$2y$10$g7TcfDLnFpZJ0NkJSApUue&book=sahih-bukhari&paginate=1');
+            // Backup: try a random category
+            $categories = [1, 2, 3, 5, 7, 10, 15, 20, 30, 40];
+            $randCat = $categories[array_rand($categories)];
+            $backupList = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat}&page=1&per_page=1");
 
-            if ($backup->successful()) {
-                $data = $backup->json();
-                $item = $data['hadiths']['data'][0] ?? null;
-                if ($item) {
-                    return [
-                        'text'      => $item['hadithEnglish'] ?? '',
-                        'narrator'  => $item['englishNarrator'] ?? '',
-                        'reference' => 'Sahih al-Bukhari',
-                    ];
+            if ($backupList->successful()) {
+                $bData = $backupList->json();
+                $bId = $bData['data'][0]['id'] ?? null;
+                if ($bId) {
+                    $bDetail = \Illuminate\Support\Facades\Http::timeout(5)
+                        ->get("https://hadeethenc.com/api/v1/hadeeths/one/?language=en&id={$bId}");
+                    if ($bDetail->successful()) {
+                        $bd = $bDetail->json();
+                        return [
+                            'text'      => $bd['hadeeth'] ?? '',
+                            'narrator'  => $bd['hadeeth_intro'] ?? '',
+                            'reference' => $bd['attribution'] ?? 'Hadeeth Enc',
+                        ];
+                    }
                 }
             }
         } catch (\Exception $e) {
-            // both APIs failed, use fallback
+            // API failed, use fallback
         }
 
         $fallbacks = [
@@ -164,8 +183,8 @@ Route::get('/school-of-postgraduate-applications', [PagesController::class, 'spg
 Route::get('/undergraduate-applications', [PagesController::class, 'underGraduateApplications'])->name('undergraduate-applications');
 Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
-Route::get('/colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
-Route::get('/departments/{id}', [PagesController::class, 'departments'])->name('department');
+Route::get('/colleges/{slug}', [PagesController::class, 'colleges'])->name('colleges.show');
+Route::get('/departments/{slug}', [PagesController::class, 'departments'])->name('department');
 Route::get('/lecturers/{lecturer}', [LecturerController::class, 'show'])->name('lecturer.show');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');

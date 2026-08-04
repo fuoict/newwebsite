@@ -10,6 +10,7 @@ class College extends Model
     protected $fillable = [
         'college_name',
         'college_abbr',
+        'slug',
         'dean_name',
         'dean_image',
         'dean_speach_title',

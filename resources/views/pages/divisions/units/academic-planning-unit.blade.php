@@ -1,4 +1,4 @@
-
+﻿
 @extends('layouts.app')
 
 @section('content')
@@ -25,11 +25,11 @@
                                 {{-- <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p> --}}
                             </div>
                              <h2 class="title-anim">Academic Planning Unit</h2>
-                            <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
+                            <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with universityâ€™s plans as well as coordinating compliance to guide management in decision-making.</p>
                             <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
                             <ul>
                                 <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>
-                                <li>Compiles and analyze statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
+                                <li>Compiles and analyses statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
                                 <li>Prepares academic brief for internal and external purposes</li>
                                 <li>Monitors resources allocation and utilization in line with the plans of the university</li>
                                 <li>Develops resource allocation parameter</li>
@@ -102,7 +102,7 @@
                     <div class="col-lg-4 col-sm-6 col-md-6">
                         <div class="academics-item" data-aos="fade-up" data-aos-delay="300">
                             <img src="{{ asset('img/icon/education-3.png') }}" alt="icon">
-                            <h4>Bachelor’s and Master’s</h4>
+                            <h4>Bachelorâ€™s and Masterâ€™s</h4>
                             <p>There are many variations of passages Lorem Ipsum avaiable but the majority hav suffered alteration in some form</p>
                             <a href="#">Learn More <i class='bx bx-right-arrow-alt'></i></a>
                         </div>

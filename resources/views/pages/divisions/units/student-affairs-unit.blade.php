@@ -1,4 +1,4 @@
-
+﻿
 @extends('layouts.app')
 
 @section('content')
@@ -61,7 +61,7 @@
 
 
         <!-- Start Objectives Area -->
-        <div class="academics-area ptb-100" style="background-color: #002147">
+        <div class="academics-area ptb-100" style="background-color: #035F39">
             <div class="container">
                 <div class="section-title" data-aos="fade-up" data-aos-delay="100">
                     
@@ -75,12 +75,12 @@
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">
                         <div  class=" academics-item" data-aos="fade-up" data-aos-delay="200">
-                            <p class="text-white">Career Services: The Student Affairs Unit also provides career-related resources to aid students in their preparations for future employment or postgraduate studies. Our team organizes career fairs, workshops, and interview preparation sessions to help students confidently enter the job market or pursue further education.</p>
+                            <p class="text-white">Career Services: The Student Affairs Unit also provides career-related resources to aid students in their preparations for future employment or postgraduate studies. Our team organises career fairs, workshops, and interview preparation sessions to help students confidently enter the job market or pursue further education.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">
                         <div  class=" academics-item" data-aos="fade-up" data-aos-delay="300">
-                            <p class="text-white">Clubs and Organizations: Fountain University boasts a vibrant and diverse array of student clubs and organizations that cater to various interests and passions. Through these clubs, students can immerse themselves in the campus community, develop leadership skills, and form lifelong friendships.</p>
+                            <p class="text-white">Clubs and Organizations: Fountain University boasts a vibrant and diverse array of student clubs and organisations that cater to various interests and passions. Through these clubs, students can immerse themselves in the campus community, develop leadership skills, and form lifelong friendships.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6">

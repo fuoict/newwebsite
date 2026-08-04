@@ -1,4 +1,4 @@
-@php
+﻿@php
     $Colleges = App\Models\College::all();
 @endphp
 
@@ -27,8 +27,45 @@
     <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
-    <title>Fountain University, Osogbo - Welcome to Fountain University</title>
+    <title>Fountain University, Osogbo - Welcome to Fountain University | fuo.edu.ng formely fountainuniversity.edu.ng </title>
     <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
+
+    <style>
+    /* Preloader: force hide after 2s as fallback */
+    .preloader-container { animation: preloader-fade 0.5s 2s forwards; }
+    @keyframes preloader-fade { to { opacity: 0; pointer-events: none; } }
+
+    /* Top bar — green, white text, gold icons (sitewide, including mobile) */
+    .top-area { background: #035F39 !important; display: block !important; }
+    .top-area .top-left-items ul li,
+    .top-area .top-right-items ul li { border: none !important; }
+    .top-area .top-left-items ul li::before,
+    .top-area .top-right-items ul li::before { content: none !important; display: none !important; }
+    .top-area a { color: #fff !important; }
+    .top-area a:hover { color: #B8931F !important; }
+    .top-area i { color: #B8931F !important; }
+
+    /* Footer responsive — applies sitewide */
+    .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap: 32px; }
+
+    /* Kill horizontal scroll on mobile */
+    html, body { overflow-x: hidden; }
+
+    @media (max-width: 991px) {
+        .top-area .container { flex-direction: column; gap: 4px; }
+        .top-left-items, .top-right-items { justify-content: center; }
+        .top-right-items ul { gap: 8px 12px; flex-wrap: wrap; justify-content: center; }
+        .top-left-items ul { border-bottom: none !important; gap: 12px; }
+        .top-right-items ul li { font-size: 11px; }
+        .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+        .top-right-items ul li { font-size: 10px; }
+        .top-right-items ul { gap: 6px 10px; }
+        .top-left-items ul li { font-size: 11px; }
+        .footer-grid { grid-template-columns: 1fr; }
+    }
+    </style>
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -65,9 +102,9 @@
                         <div class="top-right-items">
                             <ul>
                                 {{-- <i class='bx bxs-map'></i>  --}}
-                                <li><a href="{{ 'https://transcript.fuo.edu.ng' }}">Transcript Application</a></li>
+                                <li><a href="{{ 'https://transcript.fuo.edu.ng' }}">e-Transcript</a></li>
                                 <li><a href="{{ route('the-university-library') }}">Library</a></li>
-                                <li><a href="https://repository.fuo.edu.ng" target="_blank" rel="noopener noreferrer">Institutional Repository</a></li>
+                                <li><a href="https://repository.fuo.edu.ng" target="_blank" rel="noopener noreferrer">I-Repository</a></li>
                                 <li><a href="{{ route('faq') }}">FAQ</a></li>
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
                                 {{-- <li><a href="{{ route('gallery') }}">Gallery</a></li> --}}
@@ -135,7 +172,7 @@
                                             <li class="nav-item"><a href="{{ route('the-bursar') }}"
                                                     class="nav-link">The Bursar</a></li>
                                             <li class="nav-item"><a href="{{ route('the-librarian') }}"
-                                                    class="nav-link">The Librarian</a></li>
+                                                    class="nav-link">TheÂ Librarian</a></li>
                                         </ul>
                                     </li>
                                     {{-- <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li> --}}
@@ -225,7 +262,7 @@
                             <!--        <li class="nav-item">-->
                             <!--            @foreach ($Colleges as $College)
 -->
-                            <!--                <a href="{{ route('colleges.show', $College->id) }}"-->
+                            <!--                <a href="{{ route('colleges.show', $College->slug) }}"-->
                             <!--                    class="nav-link  sub-menu">{{ $College->college_name }}</a>-->
                             <!--
 @endforeach-->
@@ -251,7 +288,7 @@
                                         <ul class="dropdown-menu" style="max-height: 300px; overflow-y: auto;">
                                             @foreach ($Colleges as $College)
                                                 <li class="nav-item">
-                                                    <a href="{{ route('colleges.show', $College->id) }}"
+                                                    <a href="{{ route('colleges.show', $College->slug) }}"
                                                         class="nav-link">
                                                         {{ $College->college_name }}
                                                     </a>
@@ -744,7 +781,7 @@
                                                 <div class="accordion" id="navbarAccordionCentres">
                                                     @foreach ($Colleges as $College)
                                                         <div class="accordion-item">
-                                                            <a href="{{ route('colleges.show', $College->id) }}"
+                                                            <a href="{{ route('colleges.show', $College->slug) }}"
                                                                 class="accordion-link">
                                                                 {{ $College->college_name }}
                                                             </a>
@@ -853,7 +890,7 @@
                                                 <div class="accordion">
                                                     @foreach ($Colleges as $College)
                                                         <div class="accordion-item">
-                                                            <a href="{{ route('colleges.show', $College->id) }}"
+                                                            <a href="{{ route('colleges.show', $College->slug) }}"
                                                                 class="accordion-link">
                                                                 {{ $College->college_name }}
                                                             </a>
@@ -1110,120 +1147,57 @@
 
 
 
-
-
         @yield('content')
 
 
-        <!-- Start Footer Area -->
-        <div class="footer-area">
-            <div class="footer-widget-info ptb-100" style="padding-top: 40px;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4><img class="img-fluid w-50" src="{{ asset('img/logo/fuo-logo.png') }}"
-                                        alt=""></h4>
-                                <p class="p-2">
-                                    Fountain University was granted an operational license as a
-                                    Private University on May 17, 2007, by the Federal Government
-                                    on the recommendations of the National Universities Commission.
-                                    <hr>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="{{ route('about') }}"><i class='bx bx-chevron-right'></i> About Us
-                                        </a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng' }}"><i
-                                                class='bx bx-chevron-right'></i> E-Portal </a></li>
-                                    <li><a href="{{ route('the-senate') }}"><i class='bx bx-chevron-right'></i> The
-                                            Senate</a></li>
-                                    <li><a href="{{ route('gallery') }}"><i class='bx bx-chevron-right'></i> Gallery
-                                        </a></li>
-                                    <li><a href="{{ route('general-download') }}"><i
-                                                class='bx bx-chevron-right'></i> Resources</a></li>
-                                    <li><a href="{{ route('congregation') }}"><i class='bx bx-chevron-right'></i>
-                                            Congregations </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Academics</h4>
-                                <ul>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"><i
-                                                class='bx bx-chevron-right'></i> Undergraduate</a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/SPGS' }}"><i
-                                                class='bx bx-chevron-right'></i> Postgraduate</a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/CENSAP' }}"><i
-                                                class='bx bx-chevron-right'></i> Sandwich</a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant/CENSPS' }}"><i
-                                                class='bx bx-chevron-right'></i> Sub-Degree</a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/ug/inter-university-transfer' }}"><i
-                                                class='bx bx-chevron-right'></i> Inter-University</a></li>
-                                    <li><a href="{{ 'https://eportal.fuo.edu.ng/applicant' }}"><i
-                                                class='bx bx-chevron-right'></i> Apply For Admissions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 col-md-6">
-                            <div class="footer-widget">
-                                <h4>Get in Touch</h4>
-                                <ul>
-                                    <li><a href="#"><i class='bx bx-home'></i> Oke-Osun, P.M.B. 4491, Osogbo,
-                                            Osun State, Nigeria</a></li>
-                                    <li><a href="tel:+2348160350557"><i class='bx bx-phone'></i> +(234) 8160350557</a>
-                                    </li>
-                                    <li><a href="tel:+2348037063960"><i class='bx bx-phone'></i> +(234) 8037063960</a>
-                                    </li>
-                                    <li><a href="mailto:enquiries@fuo.edu.ng"><i class='bx bx-envelope'></i>
-                                            enquiries@fuo.edu.ng</a></li>
-                                    <li><a href="mailto:officeoftheregistrar@fuo.edu.ng"><i
-                                                class='bx bx-envelope'></i> officeoftheregistrar@fuo.edu.ng</a></li>
-                                </ul>
-                            </div>
-                        </div>
+        <!-- Start Footer Area â€” redesigned -->
+        <footer class="fuo-footer-v2" style="background:#082B1A; color:rgba(255,255,255,0.68);">
+            <div style="max-width:1160px; margin:0 auto; padding:0 32px;">
+                <div class="footer-grid" style="gap:32px; padding:56px 0 40px;">
+                    <div>
+                        <img src="{{ asset('img/logo/fuo-logo.png') }}" alt="Fountain University" style="width:60px; margin-bottom:14px; object-fit:contain;">
+                        <p style="font-size:13px; line-height:1.7;">Fountain University was granted an operational license as a Private University on May 17, 2007, by the Federal Government on the recommendation of the National Universities Commission.</p>
+                    </div>
+                    <div>
+                        <h4 style="color:#fff; font-size:14.5px; margin-bottom:16px;">Quick links</h4>
+                        <ul style="list-style:none; padding:0;">
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="{{ route('about') }}" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>About us</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>E-Portal</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="{{ route('the-senate') }}" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>The Senate</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="{{ route('gallery') }}" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Gallery</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="{{ route('general-download') }}" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Resources</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color:#fff; font-size:14.5px; margin-bottom:16px;">Academics</h4>
+                        <ul style="list-style:none; padding:0;">
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng/applicant" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Undergraduate</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng/applicant/SPGS" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Postgraduate</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng/applicant/CENSAP" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Sandwich</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng/applicant/CENSPS" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Sub-degree</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="https://eportal.fuo.edu.ng/applicant" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-chevron-right' style="margin-right:6px; color:#C9A227;"></i>Apply for admission</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color:#fff; font-size:14.5px; margin-bottom:16px;">Get in touch</h4>
+                        <ul style="list-style:none; padding:0;">
+                            <li style="margin-bottom:10px; font-size:13px; display:flex; align-items:flex-start;"><i class='bx bx-map' style="margin-right:6px; color:#C9A227; flex-shrink:0; margin-top:2px;"></i><span>Oke-Osun, P.M.B. 4491, Osogbo, Osun State, Nigeria</span></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="tel:+2348037063960" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-phone' style="margin-right:6px; color:#C9A227;"></i>+234 803 706 3960</a></li>
+                            <li style="margin-bottom:10px; font-size:13px;"><a href="mailto:enquiries@fuo.edu.ng" style="color:rgba(255,255,255,0.68); text-decoration:none; display:flex; align-items:center;"><i class='bx bx-envelope' style="margin-right:6px; color:#C9A227;"></i>enquiries@fuo.edu.ng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="border-top:1px solid rgba(255,255,255,0.1); padding:18px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <p style="font-size:13px; margin:0;">Copyright &copy; Fountain University, Osogbo</p>
+                    <div style="display:flex; gap:14px;">
+                        <a href="https://facebook.com/fuoweb" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/fountain.university/" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://x.com/fuoweb" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-linkedin-square'></i></a>
                     </div>
                 </div>
             </div>
-            <div class="copy-right-area style-2">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div class="cpr-left">
-                                <p>Copyright © <a href="{{ 'https://fuo.edu.ng' }}">Fountain University, Osogbo</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="cpr-right">
-                                {{-- <ul>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Cookie Policy</a></li>
-                                    </ul> --}}
-                                <ul class="social-list">
-                                    <li><a href="{{ 'https://facebook.com/fuoweb' }}" target="_blank"><i
-                                                class='bx bxl-facebook'></i></a></li>
-                                    <li><a href="{{ 'https://www.instagram.com/fountain.university/' }}"
-                                            target="_blank"><i class='bx bxl-instagram-alt'></i></a></li>
-                                    <li><a href="{{ 'http://twitter.com/fuoweb' }}" target="_blank"><i
-                                                class='bx bxl-twitter'></i></a></li>
-                                    <li><a href="{{ 'https://www.linkedin.com/company/fountain-university-osogbo/' }}"
-                                            target="_blank"><i class='bx bxl-linkedin-square'></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- <div class="copy-logo">
-                            <img src="{{ asset('img/logo/footer-Logo.png') }}" alt="image">
-                        </div> --}}
-                </div>
-            </div>
-        </div>
+        </footer>
         <!-- End Footer Area -->
 
         <div class="go-top active">
@@ -1244,3 +1218,7 @@
 </body>
 
 </html>
+
+
+
+

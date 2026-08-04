@@ -1,4 +1,4 @@
-
+﻿
 @extends('layouts.app')
 
 @section('content')
@@ -34,7 +34,7 @@
                                 <li>To ensure hardware and software solutions operate optimally</li>
                                 <li>Equipment / Service: PCs, Laptops, Printers, Scanners, Plotters, IP Phones, Servers, and Cloud Solutions</li>
                                 <li>To train staff and students on IT Services and products and promotes the efficient use of the services above.</li>
-                                <li>To equip graduates with modern ICT tools for analyzing and solving Engineering, Scientific and general problems</li>
+                                <li>To equip graduates with modern ICT tools for analysing and solving Engineering, Scientific and general problems</li>
                                 <li>To provide data to enhance the decision-making processes of the university</li>
                                 <li>To provide ICT Laboratory services: provide basic functional computer services for users who may not have access to such technology at home or on campus</li>
                             </ul>
@@ -85,8 +85,9 @@
                             </div>
                             <h2>Information and Communications Technology Unit</h2>
                             <ul>
-                                <li style="list-style-type: none"><i class='bx bxs-phone'></i>  +2348165644125, +2348056668594</li>
+                                <li style="list-style-type: none"><i class='bx bxs-phone'></i>  +2348165644125, +2348056668594</li> 
                                 <li style="list-style-type: none"><i class='bx bxs-envelope'></i>  itsupport@fuo.edu.ng</li>
+                                <li style="list-style-type: none"><p><b>Fountain University's official domain is fuo.edu.ng (formerly fountainuniversity.edu.ng)</b></p></li>
                             </ul>
                         </div>
                     </div>

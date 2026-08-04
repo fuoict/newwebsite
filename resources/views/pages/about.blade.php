@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Clgun Searchbar Area -->
@@ -82,7 +82,7 @@
                         </div> --}}
                         <h2 class="title-anim">OUR HISTORY</h2>
                         <p class="title-anim" style="text-align: justify;">
-                            The formation of Nasrul-Lahi-Il-Fatih Society (NASFAT) – the Proprietor of
+                            The formation of Nasrul-Lahi-Il-Fatih Society (NASFAT) â€“ the Proprietor of
                             Fountain University- was originally focused on prayer meetings for the Muslim elites, with a
                             view to creating necessary opportunity for them to interact and rub minds with Islamic scholars
                             on the one hand; and to enhance their knowledge about the principles and practices of Islam, on
@@ -91,7 +91,7 @@
                             Fountain University was granted an operational licence as a Private University on May 17, 2007 by
                             the Federal Government on the recommendations of the National Universities Commission. Following
                             this achievement, a Fountain Universities Strategic implementation Committee was set up to serve
-                            as “in loco Council” to actualise the birth of the University. This Committee worked tirelessly
+                            as â€œin loco Councilâ€ to actualise the birth of the University. This Committee worked tirelessly
                             to put in place the necessary facilities for the University to take-off. The Committee was
                             dissolved in September 2007 upon the inauguration of the Governing Council led by Professor
                             N.O. Adedipe. The first Governing Council completed its first four Year in September 2011 after
@@ -198,7 +198,7 @@
                         <p style="text-align: justify;">
                             Campus on a tour designed for prospective graduate and professional students. You will see how
                             our university like, facilities, studenst and life in this university. Meet our graduate
-                            admissions representative to learn more about our graduate programs and decide what it the best
+                            admissions representative to learn more about our graduate programmes and decide what it the best
                             for you.</p>
                     </div>
                 </div>
@@ -235,3 +235,4 @@
 
     </html>
 @endsection
+

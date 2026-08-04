@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 
@@ -36,7 +36,7 @@
                             </div>
                             <div class="ac-category">
                                 <ul>
-                                    <li><a href="{{ route('department', $Department->id) }}">Overview</a></li>
+                                    <li><a href="{{ route('department', $Department->slug) }}">Overview</a></li>
                                     <li><a href="{{ route('undergraduate-applications') }}">Undergraduate</a></li>
                                     <li><a href="{{ route('spgs-applications') }}">Graduate</a></li>
                                     <li><a href="{{ route('sandwich-applications') }}">Sandwich</a></li>

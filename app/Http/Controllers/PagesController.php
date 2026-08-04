@@ -195,26 +195,22 @@ class PagesController extends Controller
     // UNIVERSITY DIVISIONS .......................................
     public function colleges(Request $request)
     {
-        // If you want to pass data to the view, you can do it like this:
-        // $colleges = College::all(); // Assuming you have a College model
-        // return view('pages.divisions.colleges.colleges', compact('colleges'));
-        // If you want to show a specific college, you can use route model binding or pass an ID
-        // return view('pages.divisions.colleges.colleges', ['college' =>
-        $id = $request->route('id');
+        $slug = $request->route('slug');
+        $college = College::where('slug', $slug)->firstOrFail();
         $Data = [
-            'Departments' => Department::where('is_active', 1)->where('college_id', $id)->get(),
-            'Colleges' => College::whereId($id)->first()
+            'Departments' => Department::where('is_active', 1)->where('college_id', $college->id)->get(),
+            'Colleges' => $college
         ];
         
         return view('pages.divisions.colleges.colleges', $Data);
     }
     public function departments(Request $request)
 {
-    $id = $request->route('id');
-    $Department = Department::whereId($id)->where('is_active', true)->first();
+    $slug = $request->route('slug');
+    $Department = Department::where('slug', $slug)->where('is_active', true)->firstOrFail();
 
     $lecturers = \App\Models\Lecturer::published()
-        ->where('department_id', $id)
+        ->where('department_id', $Department->id)
         ->ordered()
         ->get();
 

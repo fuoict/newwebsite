@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Clgun Searchbar Area -->
@@ -93,7 +93,7 @@
                                 provision of courses and the approval of their syllabuses, the admission and progress of
                                 students through examinations and otherwise, the award of degrees and such other
                                 qualifications as may be prescribed, the making of recommendations to the Council in respect
-                                of candidates for the award of honorary degrees, the establishment, organization and control
+                                of candidates for the award of honorary degrees, the establishment, organisation and control
                                 of halls of residence in the University, and the granting of fellowships, scholarships,
                                 prizes and similar awards that are within the control of the University provided that funds
                                 are available.</p>
@@ -116,8 +116,8 @@
                                                     <li>Directors of Academic Institutes/Centres</li>
                                                     <li>All Heads of Academic Departments</li>
                                                     <li>Two elected Academic Staff from each College/School</li>
-                                                    <li>The Registrar – Secretary.</li>
-                                                    <li>Bursar – In attendance</li>
+                                                    <li>The Registrar â€“ Secretary.</li>
+                                                    <li>Bursar â€“ In attendance</li>
                                                 </ul>
                                             </div> 
                                         </div>
@@ -127,8 +127,8 @@
                                                     <li>Directors of Academic Institutes/Centres</li>
                                                     <li>All Heads of Academic Departments</li>
                                                     <li>Two elected Academic Staff from each College/School</li>
-                                                    <li>The Registrar – Secretary.</li>
-                                                    <li>Bursar – In attendance</li>
+                                                    <li>The Registrar â€“ Secretary.</li>
+                                                    <li>Bursar â€“ In attendance</li>
 
                                                 </ul>
                                             </div>
@@ -143,11 +143,11 @@
                                         <div class="col-lg-12 col-sm-12 col-md-12">
                                             <div class="problem-items">
                                                 <ul>
-                                                    <li>The establishment, organization and control of Campuses, Colleges,
+                                                    <li>The establishment, organisation and control of Campuses, Colleges,
                                                         Institutes, Schools, Departments, other teaching units and research
                                                         units of the University, and the allocation of responsibility for
                                                         different branches of learning.</li>
-                                                    <li>The organization and control of courses of study at the University
+                                                    <li>The organisation and control of courses of study at the University
                                                         and of the examinations held in conjunction with those courses,
                                                         including the appointment of examiners, both internal and external
                                                     </li>
@@ -158,7 +158,7 @@
                                                         title of Professor Emeritus</li>
                                                     <li>The selection of persons for admission as students of the University
                                                     </li>
-                                                    <li>The establishment, organization and control of halls of residence
+                                                    <li>The establishment, organisation and control of halls of residence
                                                         and similar institutions at the University</li>
                                                     <li>The supervision of the welfare of students at the University and the
                                                         regulation of their conduct including mode of dressing</li>
@@ -225,3 +225,4 @@
     </div>
     <!-- End Academics Section Area -->
 @endsection
+

@@ -44,7 +44,7 @@
                             <h2>Undergraduate Programmes</h2>
                         </div>
                         <div class="pera-dec">
-                            <p>From innovative programs in business, and computer science to dynamic studies in the arts,
+                            <p>From innovative programmes in business, and computer science to dynamic studies in the arts,
                                 humanities, and social sciences, every course is designed to equip students with practical
                                 skills, critical thinking abilities, and global awareness. Whether you are starting your
                                 undergraduate journey or advancing through graduate studies, Fountain University is where

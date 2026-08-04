@@ -60,6 +60,7 @@
                     </div>
                     <span id="adhan-status"
                           style="color:#fff; font-size:11px; font-weight:600; min-width:24px">ON</span>
+            </div>
 
         </div>
     </div>

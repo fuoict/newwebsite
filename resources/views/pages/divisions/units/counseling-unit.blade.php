@@ -1,4 +1,4 @@
-
+﻿
 @extends('layouts.app')
 
 @section('content')
@@ -25,11 +25,11 @@
                                 <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p>
                             </div>
                              <h2 class="title-anim">Counselling Unit</h2>
-                            {{-- <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
+                            {{-- <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with universityâ€™s plans as well as coordinating compliance to guide management in decision-making.</p>
                             <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
                             <ul>
                                 <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>
-                                <li>Compiles and analyze statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
+                                <li>Compiles and analyses statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
                                 <li>Prepares academic brief for internal and external purposes</li>
                                 <li>Monitors resources allocation and utilization in line with the plans of the university</li>
                                 <li>Develops resource allocation parameter</li>

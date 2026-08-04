@@ -128,7 +128,7 @@
         <!-- End Objectives Area -->
 
         <!-- Start Objectives Area -->
-        <div class="academics-area ptb-100" style="background-color: #002147">
+        <div class="academics-area ptb-100" style="background-color: #035F39">
             <div class="container">
                 <div class="section-title" data-aos="fade-up" data-aos-delay="100">
                     
