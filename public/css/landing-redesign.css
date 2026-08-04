@@ -32,6 +32,11 @@
   color: var(--fu-ink);
   background: var(--fu-cream);
   line-height: 1.6;
+  overflow-x: hidden;
+}
+.fuo-redesign * {
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .fuo-redesign h1,
@@ -215,6 +220,8 @@
   background: var(--fu-forest-dark);
   color: #fff;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 .fuo-ticker .fuo-wrap {
   display: flex;
@@ -238,8 +245,9 @@
   display: flex;
   gap: 44px;
   white-space: nowrap;
-  animation: fuo-ticker-scroll 32s linear infinite;
+  animation: fuo-ticker-scroll 20s linear infinite;
   width: max-content;
+  will-change: transform;
 }
 .fuo-ticker-track a {
   font-size: 13px;
@@ -546,7 +554,7 @@
   display: flex;
   flex-direction: column;
 }
-.fuo-news-featured .fuo-img { aspect-ratio: 16/9; }
+.fuo-news-featured .fuo-img { aspect-ratio: 16/9; overflow: hidden; border-radius: 8px 8px 0 0; }
 .fuo-news-featured .fuo-body { padding: 22px 24px; flex: 1; }
 .fuo-news-featured .fuo-tag {
   font-size: 11.5px;
@@ -605,6 +613,19 @@
 
 @media (max-width: 992px) {
   .fuo-news-layout { grid-template-columns: 1fr; }
+  .fuo-news-featured .fuo-img { aspect-ratio: 16/10; }
+}
+
+@media (max-width: 768px) {
+  .fuo-news-featured .fuo-img { aspect-ratio: 16/9; max-height: 200px; }
+  .fuo-news-featured .fuo-body { padding: 14px 16px; }
+  .fuo-news-featured h3 { font-size: 16px; }
+  .fuo-news-featured p { font-size: 12.5px; margin-bottom: 10px; }
+  .fuo-news-side-item { padding: 8px; gap: 10px; }
+  .fuo-news-side-item .fuo-img { width: 64px; height: 64px; }
+  .fuo-news-side-item h4 { font-size: 12px; }
+  .fuo-news-side { gap: 10px; }
+  .fuo-news-more { margin-top: 20px; font-size: 13px; }
 }
 
 /* ═══════════════════════════════════════════════
@@ -909,6 +930,8 @@
 }
 @media (max-width: 560px) {
   .footer-grid, .fuo-footer-grid { grid-template-columns: 1fr; }
+  .fuo-news-featured .fuo-img { aspect-ratio: 16/10; }
+  .fuo-success-card { aspect-ratio: 16/10; }
 }
 
 /* ═══════════════════════════════════════════════
@@ -974,8 +997,8 @@
 @media (max-width: 900px) {
   .fuo-section { padding: 56px 0; }
   .fuo-wrap { padding: 0 20px; }
-  .fuo-hero-v2 { min-height: 480px; }
-  .fuo-hero-v2 h1 { font-size: 32px; }
+  .fuo-hero-v2 { min-height: 400px; height: 70vh; }
+  .fuo-hero-v2 h1 { font-size: 28px; font-weight: 700; }
   .fuo-hero-v2 .sub { font-size: 15px; }
   .fuo-hero-v2 .hero-actions { flex-direction: column; gap: 10px; }
   .fuo-hero-v2 .hero-actions .fuo-btn { width: 100%; justify-content: center; }
@@ -986,23 +1009,31 @@
   .fuo-faith-grid { grid-template-columns: 1fr; }
   .fuo-academic-grid { grid-template-columns: 1fr; }
   .fuo-news-layout { grid-template-columns: 1fr; }
+  .fuo-news-featured .fuo-img { aspect-ratio: 16/10; }
   .fuo-scholarship-grid { grid-template-columns: 1fr; }
   .fuo-campus-grid { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
-  .fuo-campus-tile { height: 220px; }
+  .fuo-campus-tile { height: 200px; }
   .fuo-campus-tile:first-child { grid-row: auto; }
   .fuo-success-grid { grid-template-columns: 1fr; }
+  .fuo-success-card { aspect-ratio: 16/9; }
   .fuo-social-grid { grid-template-columns: 1fr; }
-  .fuo-video-area { height: 280px; }
+  .fuo-video-area { height: 220px; }
   .fuo-section-head h2 { font-size: 24px; }
   .fuo-about-text h2 { font-size: 24px; }
+  .fuo-ticker .fuo-wrap { padding: 8px 16px; }
+  .fuo-faith-strip { padding: 32px 0; }
+  .fuo-hero-v2, .fuo-video-area, .fuo-social-area,
+  .fuo-scholarship-area, .fuo-news-layout,
+  .fuo-success-grid, .fuo-campus-grid { overflow: hidden; }
 }
 
 @media (max-width: 560px) {
-  .fuo-hero-v2 { min-height: 400px; }
-  .fuo-hero-v2 h1 { font-size: 26px; }
+  .fuo-hero-v2 { min-height: 350px; height: 65vh; }
+  .fuo-hero-v2 h1 { font-size: 24px; font-weight: 700; }
   .fuo-admission-badge { font-size: 11px; padding: 5px 12px; }
-  .fuo-about-photo-main img { min-height: 250px; }
+  .fuo-about-photo-main img { min-height: 200px; }
   .fuo-campus-tile { height: 180px; }
+  .fuo-success-card { aspect-ratio: 16/10; }
 }
 
 /* ═══════════════════════════════════════════════

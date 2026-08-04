@@ -28,7 +28,10 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
     <title>Fountain University, Osogbo - Welcome to Fountain University | fuo.edu.ng formely fountainuniversity.edu.ng </title>
-    <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/fuo-logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo/fuo-logo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo/fuo-logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/logo/fuo-logo.png') }}">
 
     <style>
     /* Preloader: force hide after 2s as fallback */
@@ -49,7 +52,9 @@
     .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap: 32px; }
 
     /* Kill horizontal scroll on mobile */
-    html, body { overflow-x: hidden; }
+    html, body { overflow-x: hidden; width: 100%; -webkit-overflow-scrolling: touch; }
+    #scrollsmoother-container { overflow-x: hidden; }
+    .top-area, .navbar-area, footer, .fuo-redesign { overflow-x: hidden; }
 
     @media (max-width: 991px) {
         .top-area .container { flex-direction: column; gap: 4px; }
