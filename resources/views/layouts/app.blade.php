@@ -38,6 +38,14 @@
     .preloader-container { animation: preloader-fade 0.5s 2s forwards; }
     @keyframes preloader-fade { to { opacity: 0; pointer-events: none; } }
 
+    /* Navbar — static on landing page, must sit above hero */
+    .navbar-area { position: relative !important; z-index: 500 !important; }
+    .navbar-area.sticky { position: relative !important; z-index: 500 !important; top: auto !important; }
+    .navbar-area .dropdown-menu { z-index: 1001 !important; }
+
+    /* Modal above everything including navbar */
+    .fuo-modal-overlay { z-index: 10000 !important; }
+
     /* Top bar — green, white text, gold icons (sitewide, including mobile) */
     .top-area { background: #035F39 !important; display: block !important; }
     .top-area .top-left-items ul li,
@@ -53,8 +61,8 @@
 
     /* Kill horizontal scroll on mobile */
     html, body { overflow-x: hidden; width: 100%; -webkit-overflow-scrolling: touch; }
-    #scrollsmoother-container { overflow-x: hidden; }
-    .top-area, .navbar-area, footer, .fuo-redesign { overflow-x: hidden; }
+    #scrollsmoother-container { overflow: visible !important; }
+    .top-area, footer, .fuo-redesign { overflow-x: hidden; }
 
     @media (max-width: 991px) {
         .top-area .container { flex-direction: column; gap: 4px; }
@@ -124,7 +132,7 @@
         <!-- End Top Navbar Area -->
 
         <!-- Start Navbar Area Start -->
-        <div class="navbar-area" id="navbar">
+        <div class="navbar-area" id="navbar" style="position: relative !important; z-index: 500 !important;">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="/">
@@ -1218,6 +1226,21 @@
     <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}?v={{ $mainJsVersion }}"></script>
+    <script>
+    // On landing page, prevent navbar from becoming sticky
+    if (document.querySelector('.fuo-redesign')) {
+        // Remove sticky immediately and keep it off
+        setInterval(function() {
+            var navbar = document.querySelector('.navbar-area');
+            if (navbar) {
+                navbar.classList.remove('sticky');
+                navbar.style.position = 'relative';
+                navbar.style.zIndex = '500';
+                navbar.style.top = 'auto';
+            }
+        }, 100);
+    }
+    </script>
 
 
 </body>
