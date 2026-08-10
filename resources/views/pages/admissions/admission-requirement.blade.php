@@ -40,7 +40,7 @@
                 <div class="col-lg-8">
                     <div class="ac-overview">
                         <div class="pera-dec">
-                            <h3> Admission Requirements â€“ 2026/2027 Academic Session</h3>
+                            <h3> Admission Requirements – 2026/2027 Academic Session</h3>
                             <p>Welcome to Fountain University, Osogbo, a centre of academic excellence and moral
                                 uprightness.
                                 We are delighted that you are considering joining our vibrant community for the 2026/2027
@@ -100,7 +100,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    COMAS â€” College of Management &amp; Social Sciences</td>
+                                                    COMAS — College of Management &amp; Social Sciences</td>
                                             </tr>
                                             <tr>
                                                 <td style="padding:9px 14px; border-bottom:1px solid #f0f0f0;">1</td>
@@ -247,7 +247,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    CONAS â€” College of Natural &amp; Applied Sciences</td>
+                                                    CONAS — College of Natural &amp; Applied Sciences</td>
                                             </tr>
                                             <tr>
                                                 <td style="padding:9px 14px; border-bottom:1px solid #f0f0f0;">11</td>
@@ -352,7 +352,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    COMPUTING â€” College of Computing</td>
+                                                    COMPUTING — College of Computing</td>
                                             </tr>
                                             <tr>
                                                 <td style="padding:9px 14px; border-bottom:1px solid #f0f0f0;">18</td>
@@ -415,7 +415,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    COBMHES â€” College of Basic Medical, Health &amp; Environmental Sciences
+                                                    COBMHES — College of Basic Medical, Health &amp; Environmental Sciences
                                                 </td>
                                             </tr>
                                             <tr>
@@ -493,7 +493,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    COAED â€” College of Arts, Education &amp; Humanities</td>
+                                                    COAED — College of Arts, Education &amp; Humanities</td>
                                             </tr>
                                             <tr>
                                                 <td style="padding:9px 14px; border-bottom:1px solid #f0f0f0;">27</td>
@@ -651,7 +651,7 @@
                                             <tr style="background:#f9f9f9;">
                                                 <td colspan="5"
                                                     style="padding:8px 14px; font-weight:600; font-size:13px; color:#555;">
-                                                    COLAW â€” College of Law</td>
+                                                    COLAW — College of Law</td>
                                             </tr>
                                             <tr>
                                                 <td style="padding:9px 14px; border-bottom:1px solid #f0f0f0;">38</td>
@@ -685,7 +685,7 @@
                                     general admission criteria and the programme-specific UTME score
                                     requirement.</i><br><br>
 
-                                <h3> Whatâ€™s Next?</h3>
+                                <h3> What’s Next?</h3>
                                 <p>If you meet the above requirements, please proceed to the Fountain University
                                     Application Portal to begin your admission process by clicking on the button below.</p>
 

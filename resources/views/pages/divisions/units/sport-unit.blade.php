@@ -27,7 +27,7 @@
                              <h2 class="title-anim">Sport UNIT</h2>
                             <p class="title-anim">Welcome to the Fountain University Sport Unit</p>
                             <p>Sports Units were established to prevent crime among the students and the participants at all levels and to provide mentors and heroes for youth to follow and aspire to. Sports provide avenues for socialization, sharing ideas, beliefs, values, and competition. It gives an opportunity to experience the good, the bad, and the ugly, build relationships, learn to accommodate, dialogue, teamwork, unity, use power, respect and be respected, accountable, escalate, de-escalate, and keep peace among the students, and the community at large.</p>
-                            <p>However, it was observed that studentsâ€™ participation in sports is a matter of convenience and the extent it can be accommodated by academic programmes at the University. Within the last five years of its existence, Fountain University has been part of its effort to achieve its mission of providing total University Education. In which Sports is an integral part has successfully organised and participated in various sporting events and competitions.</p>
+                            <p>However, it was observed that students’ participation in sports is a matter of convenience and the extent it can be accommodated by academic programmes at the University. Within the last five years of its existence, Fountain University has been part of its effort to achieve its mission of providing total University Education. In which Sports is an integral part has successfully organised and participated in various sporting events and competitions.</p>
                            
                             <h4>Mission</h4>
                             <p>The mission is to produce competent and resourceful graduates with high moral standards. Our philosophy is the total development of men and women in an enabling environment through appropriate teaching, research, sports, and service to humanity irrespective of nationality, race, or religion influenced by Islamic ethics and culture.</p>
@@ -93,7 +93,7 @@
                             <p>
                                 The sports unit has recorded numerous successes in sports participation within and outside the university campus between 2012 and date by not letting the factors above weigh the unit down. Some of these include;
                                 <ul>
-                                    <li>Successful hosted and organised various competitions such as Prof., Oloyedeâ€™s inter-departmental soccer competition, Vice-Chancellors inter-collegiate sports competition, Olawoore staff competition, Accenture Intercollegiate sports competition, staff management sports competition, Fountain Premier League to  mention but few.</li>
+                                    <li>Successful hosted and organised various competitions such as Prof., Oloyede’s inter-departmental soccer competition, Vice-Chancellors inter-collegiate sports competition, Olawoore staff competition, Accenture Intercollegiate sports competition, staff management sports competition, Fountain Premier League to mention but few.</li>
                                 </ul>
                             </p>
                         </div>
@@ -104,7 +104,7 @@
                                 <ul>
                                     <li>The University football team had participated in various friendly football matches with neighbouring Universities both public and private in which we had recorded a series of victories, this also extended to the table tennis, volleyball, and basketball teams.</li>
                                     <li>NASGA: This is a sporting competition usually organised by the Youth wing of the NASFAT in collaboration with Fountain University. The games will come up by September, at Fountain University.</li>
-                                    <li>Osun State Tertiary Institution Games (OSTIGA): The university is ready for the forthcoming Speakerâ€™s Cup. A football competition among the tertiary institutions in the State of Osun.</li>
+                                    <li>Osun State Tertiary Institution Games (OSTIGA): The university is ready for the forthcoming Speaker’s Cup. A football competition among the tertiary institutions in the State of Osun.</li>
                                 </ul>
                             </p>
                         </div>

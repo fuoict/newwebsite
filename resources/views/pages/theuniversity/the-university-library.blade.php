@@ -129,7 +129,7 @@
 
                                                 <div class="col-lg-4">
                                                     <h4>INSTITUTIONAL REPOSITORY</h4>
-                                                    <p>The University Library hosts the Institutional Repository. Particularly Fountain University College publications are online and accessible from e-library. Past question papers and studentâ€™s projects are domesticated and placed online for access to library Users.</p>                                                   
+                                                    <p>The University Library hosts the Institutional Repository. Particularly Fountain University College publications are online and accessible from e-library. Past question papers and student’s projects are domesticated and placed online for access to library Users.</p>                                                   
                                                 </div>
 
                                                 <div class="col-lg-4">

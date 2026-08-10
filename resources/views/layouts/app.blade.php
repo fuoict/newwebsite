@@ -185,7 +185,7 @@
                                             <li class="nav-item"><a href="{{ route('the-bursar') }}"
                                                     class="nav-link">The Bursar</a></li>
                                             <li class="nav-item"><a href="{{ route('the-librarian') }}"
-                                                    class="nav-link">TheÂ Librarian</a></li>
+                                                    class="nav-link">The Librarian</a></li>
                                         </ul>
                                     </li>
                                     {{-- <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li> --}}
@@ -1163,7 +1163,7 @@
         @yield('content')
 
 
-        <!-- Start Footer Area â€” redesigned -->
+        <!-- Start Footer Area — redesigned -->
         <footer class="fuo-footer-v2" style="background:#082B1A; color:rgba(255,255,255,0.68);">
             <div style="max-width:1160px; margin:0 auto; padding:0 32px;">
                 <div class="footer-grid" style="gap:32px; padding:56px 0 40px;">

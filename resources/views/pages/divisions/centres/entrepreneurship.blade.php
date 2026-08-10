@@ -44,7 +44,7 @@
                                 <p>It is with immense pleasure and enthusiasm that I extend a warm welcome to every one of you to the Centre for Entrepreneurship and Skill Acquisition. Today marks the commencement of a thrilling journey dedicated to fostering innovation, creativity, and entrepreneurial spirit.</p>
                                 <p>In this dynamic centre, we aspire to cultivate a vibrant ecosystem where individuals from diverse backgrounds can come together to explore their entrepreneurial potential, acquire essential skills, and unleash their creative energies. Whether you are an aspiring entrepreneur, a seasoned business professional, or simply someone with a passion for innovation, this centre is your gateway to limitless possibilities.</p>
                                 <p>As we embark on this journey together, I encourage each of you to embrace curiosity, embrace collaboration, and embrace the spirit of entrepreneurship. Together, let us seize the opportunities that lie ahead and make a lasting impact on our communities and the world at large.</p>
-                                <p>Once again, welcome to the Centre for Entrepreneurship and Skill Acquisition. Hereâ€™s to a future filled with endless possibilities and boundless success.</p>
+                                <p>Once again, welcome to the Centre for Entrepreneurship and Skill Acquisition. Here’s to a future filled with endless possibilities and boundless success.</p>
                                 <p>Thank you.</p>
 
                                 <div class="std-activities">
@@ -84,7 +84,7 @@
                                             <p>To be a leading institution in fostering entrepreneurial intention among our students, equipping them to become job providers and solution providers in a rapidly evolving global economy.</p>
                                         </div>
                                         <div class="clubs-item">
-                                            {{-- <span>4th Workshop â€œAdvanced Materialsâ€</span> --}}
+                                            {{-- <span>4th Workshop “Advanced Materials”</span> --}}
                                             <h4>Composition</h4>
                                             <p>The Centre for Consultancy Service is comprised of a multidisciplinary team of experienced consultants, researchers, and industry experts. Our diverse backgrounds and expertise enable us to offer a wide range of Entrepreneurship and Skill Acquisition across various sectors and industries.</p>
                                             

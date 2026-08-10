@@ -25,7 +25,7 @@
                                 <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p>
                             </div>
                              <h2 class="title-anim">Bursary Unit</h2>
-                            {{-- <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with universityâ€™s plans as well as coordinating compliance to guide management in decision-making.</p>
+                            {{-- <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
                             <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
                             <ul>
                                 <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>

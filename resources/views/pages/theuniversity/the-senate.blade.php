@@ -116,8 +116,8 @@
                                                     <li>Directors of Academic Institutes/Centres</li>
                                                     <li>All Heads of Academic Departments</li>
                                                     <li>Two elected Academic Staff from each College/School</li>
-                                                    <li>The Registrar â€“ Secretary.</li>
-                                                    <li>Bursar â€“ In attendance</li>
+                                                    <li>The Registrar – Secretary.</li>
+                                                    <li>Bursar – In attendance</li>
                                                 </ul>
                                             </div> 
                                         </div>
@@ -127,8 +127,8 @@
                                                     <li>Directors of Academic Institutes/Centres</li>
                                                     <li>All Heads of Academic Departments</li>
                                                     <li>Two elected Academic Staff from each College/School</li>
-                                                    <li>The Registrar â€“ Secretary.</li>
-                                                    <li>Bursar â€“ In attendance</li>
+                                                    <li>The Registrar – Secretary.</li>
+                                                    <li>Bursar – In attendance</li>
 
                                                 </ul>
                                             </div>
