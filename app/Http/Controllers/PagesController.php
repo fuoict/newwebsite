@@ -214,7 +214,17 @@ class PagesController extends Controller
         ->ordered()
         ->get();
 
-    return view('pages.divisions.colleges.departments', compact('Department', 'lecturers'));
+    // Featured links for sidebar
+    $featuredLinks = $Department->featuredLinks()->where('is_active', true)->get();
+
+    // Recent department news for main content
+    $recentNews = \App\Models\DepartmentNews::published()
+        ->where('department_id', $Department->id)
+        ->latest('published_at')
+        ->limit(4)
+        ->get();
+
+    return view('pages.divisions.colleges.departments', compact('Department', 'lecturers', 'featuredLinks', 'recentNews'));
 }
 
     // public function departments(Request $request)

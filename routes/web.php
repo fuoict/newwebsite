@@ -8,7 +8,11 @@ use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
 use App\Http\Controllers\Admin\LecturerController as AdminLecturerController;
+use App\Http\Controllers\Admin\AdminDepartmentNewsController;
+use App\Http\Controllers\Admin\AdminFeaturedLinkController;
+use App\Http\Controllers\Admin\AdminCourseSynopsisController;
 use App\Http\Controllers\LecturerController;
+use App\Http\Controllers\DepartmentPageController;
 
 
 
@@ -190,6 +194,10 @@ Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplicati
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
 Route::get('/colleges/{slug}', [PagesController::class, 'colleges'])->name('colleges.show');
 Route::get('/departments/{slug}', [PagesController::class, 'departments'])->name('department');
+Route::get('/departments/{slug}/page/{link}', [DepartmentPageController::class, 'page'])->name('department.page');
+Route::get('/departments/{slug}/news', [DepartmentPageController::class, 'news'])->name('department.news');
+Route::get('/departments/{slug}/news/{news}', [DepartmentPageController::class, 'newsShow'])->name('department.news.show');
+Route::get('/departments/{slug}/courses', [DepartmentPageController::class, 'courses'])->name('department.courses');
 Route::get('/lecturers/{lecturer}', [LecturerController::class, 'show'])->name('lecturer.show');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
@@ -295,6 +303,38 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/lecturers/{lecturer}/edit',  [AdminLecturerController::class, 'edit'])->name('lecturers.edit');
     Route::put('/lecturers/{lecturer}',       [AdminLecturerController::class, 'update'])->name('lecturers.update');
     Route::delete('/lecturers/{lecturer}',    [AdminLecturerController::class, 'destroy'])->name('lecturers.destroy');
+
+    // Department News CRUD
+    Route::get('/department-news',                     [AdminDepartmentNewsController::class, 'index'])->name('department-news.index');
+    Route::get('/department-news/create',              [AdminDepartmentNewsController::class, 'create'])->name('department-news.create');
+    Route::post('/department-news',                    [AdminDepartmentNewsController::class, 'store'])->name('department-news.store');
+    Route::get('/department-news/{departmentNews}/edit', [AdminDepartmentNewsController::class, 'edit'])->name('department-news.edit');
+    Route::put('/department-news/{departmentNews}',     [AdminDepartmentNewsController::class, 'update'])->name('department-news.update');
+    Route::delete('/department-news/{departmentNews}',  [AdminDepartmentNewsController::class, 'destroy'])->name('department-news.destroy');
+
+    // Featured Links CRUD
+    Route::get('/featured-links',                          [AdminFeaturedLinkController::class, 'index'])->name('featured-links.index');
+    Route::get('/featured-links/create',                   [AdminFeaturedLinkController::class, 'create'])->name('featured-links.create');
+    Route::post('/featured-links',                         [AdminFeaturedLinkController::class, 'store'])->name('featured-links.store');
+    Route::get('/featured-links/{featuredLink}/edit',      [AdminFeaturedLinkController::class, 'edit'])->name('featured-links.edit');
+    Route::put('/featured-links/{featuredLink}',           [AdminFeaturedLinkController::class, 'update'])->name('featured-links.update');
+    Route::delete('/featured-links/{featuredLink}',        [AdminFeaturedLinkController::class, 'destroy'])->name('featured-links.destroy');
+    Route::get('/featured-links/template',                 [AdminFeaturedLinkController::class, 'downloadTemplate'])->name('featured-links.template');
+    Route::post('/featured-links/import',                  [AdminFeaturedLinkController::class, 'import'])->name('featured-links.import');
+    Route::post('/featured-links/bulk-delete',             [AdminFeaturedLinkController::class, 'bulkDelete'])->name('featured-links.bulk-delete');
+    Route::get('/featured-links/content-template',         [AdminFeaturedLinkController::class, 'downloadContentTemplate'])->name('featured-links.content-template');
+    Route::post('/featured-links/import-content',          [AdminFeaturedLinkController::class, 'importContent'])->name('featured-links.import-content');
+
+    // Course Synopsis CRUD
+    Route::get('/course-synopsis',                          [AdminCourseSynopsisController::class, 'index'])->name('course-synopsis.index');
+    Route::get('/course-synopsis/create',                   [AdminCourseSynopsisController::class, 'create'])->name('course-synopsis.create');
+    Route::post('/course-synopsis',                         [AdminCourseSynopsisController::class, 'store'])->name('course-synopsis.store');
+    Route::get('/course-synopsis/{courseSynopsis}/edit',    [AdminCourseSynopsisController::class, 'edit'])->name('course-synopsis.edit');
+    Route::put('/course-synopsis/{courseSynopsis}',         [AdminCourseSynopsisController::class, 'update'])->name('course-synopsis.update');
+    Route::delete('/course-synopsis/{courseSynopsis}',      [AdminCourseSynopsisController::class, 'destroy'])->name('course-synopsis.destroy');
+    Route::get('/course-synopsis/template',                 [AdminCourseSynopsisController::class, 'downloadTemplate'])->name('course-synopsis.template');
+    Route::post('/course-synopsis/import',                  [AdminCourseSynopsisController::class, 'import'])->name('course-synopsis.import');
+    Route::post('/course-synopsis/bulk-delete',             [AdminCourseSynopsisController::class, 'bulkDelete'])->name('course-synopsis.bulk-delete');
 
 });
 
