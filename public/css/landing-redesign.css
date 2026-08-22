@@ -87,14 +87,14 @@
   transition: all .15s ease;
   text-decoration: none;
 }
-.fuo-btn-primary { background: var(--fu-forest); color: #fff; }
-.fuo-btn-primary:hover { background: var(--fu-forest-dark); color: #fff; }
-.fuo-btn-ghost { background: transparent; color: var(--fu-forest); }
+.fuo-btn-primary { background: var(--fu-forest); color: #fff !important; }
+.fuo-btn-primary:hover { background: var(--fu-forest-dark); color: #fff !important; }
+.fuo-btn-ghost { background: transparent; color: var(--fu-forest) !important; }
 .fuo-btn-ghost:hover { background: var(--fu-sage); }
-.fuo-btn-light { border-color: rgba(255,255,255,0.6); color: #fff; }
-.fuo-btn-light:hover { background: rgba(255,255,255,0.12); color: #fff; }
-.fuo-btn-gold { background: var(--fu-gold); border-color: var(--fu-gold); color: var(--fu-forest-darker); font-weight: 600; }
-.fuo-btn-gold:hover { background: #b8931f; color: var(--fu-forest-darker); }
+.fuo-btn-light { border-color: rgba(255,255,255,0.6); color: #fff !important; }
+.fuo-btn-light:hover { background: rgba(255,255,255,0.12); color: #fff !important; }
+.fuo-btn-gold { background: var(--fu-gold); border-color: var(--fu-gold); color: var(--fu-forest-darker) !important; font-weight: 600; }
+.fuo-btn-gold:hover { background: #b8931f; color: var(--fu-forest-darker) !important; }
 
 /* ═══════════════════════════════════════════════
    HERO

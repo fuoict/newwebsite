@@ -82,7 +82,7 @@
         {{-- Pagination --}}
         @if($newsList->hasPages())
         <div class="d-flex justify-content-center mt-4">
-            {{ $newsList->appends(request()->query())->links() }}
+            {{ $newsList->appends(request()->query())->links('pagination::bootstrap-5') }}
         </div>
         @endif
 

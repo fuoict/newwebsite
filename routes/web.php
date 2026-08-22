@@ -69,11 +69,16 @@ Route::get('/', function () {
         ->limit(3)
         ->get();
 
-    $hadith = cache()->remember('daily_hadith', 86400, function () {
+    $hadith = cache()->remember('daily_hadith_' . date('Y-m-d'), 86400, function () {
         try {
-            // Primary: hadeethenc.com API — get a random hadith from category 1 (Oneness of Allah)
+            // Randomize category and page for variety
+            $categories = [1, 2, 3, 5, 7, 10, 15, 20, 30, 40];
+            $randCat = $categories[array_rand($categories)];
+            $randPage = rand(1, 5);
+
+            // Primary: hadeethenc.com API — get a random hadith from a random category
             $listRes = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get('https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id=1&page=1&per_page=1');
+                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat}&page={$randPage}&per_page=1");
 
             if ($listRes->successful()) {
                 $listData = $listRes->json();
@@ -94,11 +99,11 @@ Route::get('/', function () {
                 }
             }
 
-            // Backup: try a random category
-            $categories = [1, 2, 3, 5, 7, 10, 15, 20, 30, 40];
-            $randCat = $categories[array_rand($categories)];
+            // Backup: try another random category
+            $randCat2 = $categories[array_rand($categories)];
+            $randPage2 = rand(1, 3);
             $backupList = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat}&page=1&per_page=1");
+                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat2}&page={$randPage2}&per_page=1");
 
             if ($backupList->successful()) {
                 $bData = $backupList->json();
@@ -130,7 +135,7 @@ Route::get('/', function () {
             ['text' => 'The world is a prison for the believer and a paradise for the disbeliever.', 'reference' => 'Sahih Muslim 2956'],
         ];
 
-        $index = date('N') - 1;
+        $index = array_rand($fallbacks);
 
         return [
             'text'      => $fallbacks[$index]['text'],

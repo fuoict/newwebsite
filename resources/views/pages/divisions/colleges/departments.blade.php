@@ -151,7 +151,7 @@
                             <div class="row g-4">
                                 @foreach($lecturers as $lecturer)
                                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                    <a href="{{ route('lecturer.show', $lecturer->id) }}"
+                                    <a href="{{ route('lecturer.show', $lecturer->slug) }}"
                                        style="text-decoration:none;display:block">
                                         <div style="background:#fff;border-radius:12px;overflow:hidden;
                                                     box-shadow:0 4px 20px rgba(0,0,0,.08);
@@ -161,7 +161,7 @@
                                              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,0,0,.08)'">
 
                                             {{-- Photo + Name --}}
-                                            <div style="background:linear-gradient(135deg,#0f3460,#16213e);
+                                            <div style="background:linear-gradient(135deg,#035F39,#024A2D);
                                                         padding:24px 16px 16px;text-align:center;position:relative">
                                                 @if($lecturer->is_hod)
                                                 <div style="position:absolute;top:8px;right:8px;
@@ -191,7 +191,7 @@
                                             <div style="padding:14px 16px">
                                                 @if($lecturer->specialization)
                                                 <div style="margin-bottom:8px">
-                                                    <span style="font-size:10px;font-weight:700;color:#0f3460;
+                                                        <span style="font-size:10px;font-weight:700;color:#035F39;
                                                                  text-transform:uppercase;letter-spacing:.5px">
                                                         Specialization
                                                     </span>
@@ -202,7 +202,7 @@
                                                 @endif
                                                 @if($lecturer->qualifications)
                                                 <div style="margin-bottom:8px">
-                                                    <span style="font-size:10px;font-weight:700;color:#0f3460;
+                                                        <span style="font-size:10px;font-weight:700;color:#035F39;
                                                                  text-transform:uppercase;letter-spacing:.5px">
                                                         Qualifications
                                                     </span>
