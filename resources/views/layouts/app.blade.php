@@ -401,6 +401,9 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('campus-life') }}" class="nav-link">Campus Life</a>
+                            </li>
 
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link">
