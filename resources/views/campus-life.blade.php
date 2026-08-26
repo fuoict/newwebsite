@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/vc1.jpeg') }}'); background-size: cover; background-position: center; padding: 80px 0;">
+<section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/basketball_court.jpg') }}'); background-size: cover; background-position: center; padding: 80px 0;">
     <div class="container">
         <div class="section-title text-white">
             <h1>Campus Life</h1>
@@ -26,7 +26,7 @@
                 <a href="{{ route('student-affairs') }}" class="default-btn">Student Affairs</a>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="{{ asset('img/gallery/pub1.jpeg') }}" alt="Students on campus" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Students on campus" class="img-fluid rounded">
             </div>
         </div>
 
@@ -68,7 +68,7 @@
                 <a href="{{ route('sports') }}" class="default-btn btn-style-2">Explore sports</a>
             </div>
             <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                <img src="{{ asset('img/all-img/campus-life-2.jpg') }}" alt="Sports on campus" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Sports on campus" class="img-fluid rounded">
             </div>
         </div>
 
