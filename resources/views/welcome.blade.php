@@ -317,7 +317,7 @@
                     </div>
                     <div class="fuo-academic-card">
                         <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking"></div>
-                        <div class="fuo-body"><h4>Global ranking and impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                        <div class="fuo-body"><h4>Global Ranking & Impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
                         <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements"></div>
