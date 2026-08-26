@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/basketball_court.jpg') }}'); background-size: cover; background-position: center; padding: 80px 0;">
+<section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/vc2.jpeg') }}'); background-size: cover; background-position: center; padding: 80px 0;">
     <div class="container">
         <div class="section-title text-white">
             <h1>Global Ranking & Impact</h1>
