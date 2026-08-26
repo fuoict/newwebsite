@@ -144,7 +144,7 @@
                                                             @if($Department->department_image)
                                                                 <img src="{{ asset('storage/'.$Department->department_image) }}" alt="{{ $Department->department_name }}" style="width:56px; height:56px; object-fit:cover; border-radius:8px; margin-right:12px;">
                                                             @endif
-                                                            <a href="{{ route('department', $Department->id) }}">{{ $Department->department_name }}</a>
+                                                            <a href="{{ route('department', $Department->slug) }}">{{ $Department->department_name }}</a>
                                                         </li>
                                                     @endforeach
                                                     {{-- <li><a href="#">Corporate Finance</a></li>

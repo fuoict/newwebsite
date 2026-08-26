@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 
@@ -9,7 +9,7 @@
             <div class="section-info">
                 <h2 data-aos="fade-up" data-aos-delay="100">{{ $lecturer->full_name }}</h2>
                 <p data-aos="fade-up" data-aos-delay="200">
-                    <a href="{{ route('department', $lecturer->department_id) }}"
+                    <a href="{{ route('department', $lecturer->department->slug ?? '') }}"
                        style="color:#fff;text-decoration:underline">
                         {{ $lecturer->department->department_name ?? 'Department' }}
                     </a>
@@ -31,7 +31,7 @@
                 {{-- Profile Card --}}
                 <div style="background:#fff;border-radius:16px;overflow:hidden;
                             box-shadow:0 4px 24px rgba(0,0,0,.1);margin-bottom:24px">
-                    <div style="background:linear-gradient(135deg,#0f3460,#16213e);
+                    <div style="background:linear-gradient(135deg,#035F39,#024A2D);
                                 padding:32px 24px;text-align:center">
                         @if($lecturer->is_hod)
                         <div style="background:#f4c430;color:#333;font-size:11px;font-weight:700;
@@ -232,7 +232,7 @@
                         Other Staff in This Department
                     </h6>
                     @foreach($colleagues as $colleague)
-                    <a href="{{ route('lecturer.show', $colleague->id) }}"
+                    <a href="{{ route('lecturer.show', $colleague->slug) }}"
                        style="display:flex;align-items:center;gap:10px;text-decoration:none;
                               margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #f5f5f5">
                         <img src="{{ $colleague->photo_url }}"
@@ -246,7 +246,7 @@
                         </div>
                     </a>
                     @endforeach
-                    <a href="{{ route('department', $lecturer->department_id) }}"
+                    <a href="{{ route('department', $lecturer->department->slug ?? '') }}"
                        style="font-size:12px;color:#0f3460;text-decoration:none;font-weight:600">
                         View All Department Staff <i class='bx bx-right-arrow-alt'></i>
                     </a>
@@ -302,8 +302,8 @@
 
                 {{-- Back to department --}}
                 <div class="mt-2">
-                    <a href="{{ route('department', $lecturer->department_id) }}"
-                       class="btn" style="background:#0f3460;color:#fff">
+                    <a href="{{ route('department', $lecturer->department->slug ?? '') }}"
+                       class="btn" style="background:#035F39;color:#fff;border:none;padding:10px 20px;border-radius:6px;font-weight:600">
                         <i class='bx bx-arrow-back me-1'></i>
                         Back to {{ $lecturer->department->department_name ?? 'Department' }}
                     </a>
@@ -315,3 +315,5 @@
 </div>
 
 @endsection
+
+

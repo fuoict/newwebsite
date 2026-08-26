@@ -66,7 +66,7 @@
                                         </ul>
 
                                         <div class="clubs-item">
-                                            <span>The Center for Consultancy Service is a vital unit within Fountain University Osogbo, established to offer consultancy services to both internal and external stakeholders. With a focus on excellence and innovation, we strive to address the diverse needs of our clients through tailored solutions and strategic insights.</span>
+                                            <span>The Centre for Consultancy Service is a vital unit within Fountain University Osogbo, established to offer consultancy services to both internal and external stakeholders. With a focus on excellence and innovation, we strive to address the diverse needs of our clients through tailored solutions and strategic insights.</span>
                                             {{-- <h4>Mission</h4>
                                             <p>Our mission is to be a trusted partner for our clients, delivering innovative and practical solutions that drive positive outcomes and sustainable impact. We are committed to excellence, integrity, and professionalism in all aspects of our work.</p> --}}
                                         </div>
@@ -77,7 +77,7 @@
                                             </div>
                                             <div class="col-lg-6 col-sm-6 col-md-6 clubs-item">
                                                 <h4>Vision</h4>
-                                                <p>Our vision is to become a leading center of excellence in consultancy services, known for our expertise, reliability, and commitment to client satisfaction. We aspire to make a meaningful difference in the organizations and communities we serve.</p>
+                                                <p>Our vision is to become a leading centre of excellence in consultancy services, known for our expertise, reliability, and commitment to client satisfaction. We aspire to make a meaningful difference in the organisations and communities we serve.</p>
                                             </div>
                                         </div>
                                     </div>

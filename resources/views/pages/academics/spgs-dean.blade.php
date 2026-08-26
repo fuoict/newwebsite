@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 
@@ -48,14 +48,14 @@
                                     <li class="blocks-gallery-item">
                                         <figure>
                                             <h4>Mission</h4>
-                                            <p>The mission of the School of Postgraduate Studies at Fountain University is to provide a rigorous and intellectually stimulating environment for advanced learning and scholarly research. We are dedicated to cultivating a community of scholars who are committed to academic excellence, ethical conduct, and social responsibility. Through our comprehensive programs, we aim to equip our students with the knowledge, skills, and values needed to excel in their chosen fields and make meaningful contributions to their communities and the world at large.</p>
+                                            <p>The mission of the School of Postgraduate Studies at Fountain University is to provide a rigorous and intellectually stimulating environment for advanced learning and scholarly research. We are dedicated to cultivating a community of scholars who are committed to academic excellence, ethical conduct, and social responsibility. Through our comprehensive programmes, we aim to equip our students with the knowledge, skills, and values needed to excel in their chosen fields and make meaningful contributions to their communities and the world at large.</p>
                                         </figure>
                                     </li>
 
                                     <li class="blocks-gallery-item">
                                         <figure>
                                             <h4>Vision</h4>
-                                            <p>Our vision for the School of Postgraduate Studies is to be a leading center of excellence in advanced education and research, recognized nationally and internationally for its academic quality, innovation, and societal impact. We aspire to foster a vibrant academic community that celebrates diversity, promotes inclusivity, and nurtures the intellectual and personal growth of all its members. With a commitment to continuous improvement and innovation, we seek to empower our students to become lifelong learners, critical thinkers, and ethical leaders who are prepared to address the complex challenges of our rapidly changing world.</p>
+                                            <p>Our vision for the School of Postgraduate Studies is to be a leading centre of excellence in advanced education and research, recognised nationally and internationally for its academic quality, innovation, and societal impact. We aspire to foster a vibrant academic community that celebrates diversity, promotes inclusivity, and nurtures the intellectual and personal growth of all its members. With a commitment to continuous improvement and innovation, we seek to empower our students to become lifelong learners, critical thinkers, and ethical leaders who are prepared to address the complex challenges of our rapidly changing world.</p>
                                         </figure>
                                     </li>
 

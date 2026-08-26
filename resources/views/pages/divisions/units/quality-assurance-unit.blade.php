@@ -1,4 +1,4 @@
-
+﻿
 @extends('layouts.app')
 
 @section('content')
@@ -29,7 +29,7 @@
                             <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
                             <ul>
                                 <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>
-                                <li>Compiles and analyze statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
+                                <li>Compiles and analyses statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
                                 <li>Prepares academic brief for internal and external purposes</li>
                                 <li>Monitors resources allocation and utilization in line with the plans of the university</li>
                                 <li>Develops resource allocation parameter</li>

@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             InauguralLectureSeeder::class,
-            PageSeeder::class,
+            DepartmentFeaturedLinksSeeder::class,
         ]);
     }
 }

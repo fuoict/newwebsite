@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Section Banner Area -->
@@ -65,7 +65,7 @@
                             <h3> Direct Entry Admission</h3>
                             <p>For Candidates seeking admission into 200 Level through JAMB Direct Entry,
                                 the required points to qualify for admission into any of our Courses
-                                from any recognized A-level certification programme is 5 points.
+                                from any recognised A-level certification programme is 5 points.
                                 However, 7 points apply to Medical Laboratory Science while 9 points apply
                                 to both Nursing and Physiotherapy.
                             </p> --}}
@@ -719,3 +719,4 @@
         </div>
         <!-- End Academics Section Area -->
     @endsection
+

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Clgun Searchbar Area -->
@@ -198,7 +198,7 @@
                         <p style="text-align: justify;">
                             Campus on a tour designed for prospective graduate and professional students. You will see how
                             our university like, facilities, studenst and life in this university. Meet our graduate
-                            admissions representative to learn more about our graduate programs and decide what it the best
+                            admissions representative to learn more about our graduate programmes and decide what it the best
                             for you.</p>
                     </div>
                 </div>
@@ -235,3 +235,4 @@
 
     </html>
 @endsection
+

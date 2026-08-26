@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 <!-- Start Section Banner Area -->
@@ -65,7 +65,7 @@
                                         </ul>
 
                                         <div class="clubs-item">
-                                            <span>The Center for Consultancy Service is a vital unit within Fountain University Osogbo, established to offer Research, Innovation and Technology to both internal and external stakeholders. With a focus on excellence and innovation, we strive to address the diverse needs of our clients through tailored solutions and strategic insights.</span>
+                                            <span>The Centre for Consultancy Service is a vital unit within Fountain University Osogbo, established to offer Research, Innovation and Technology to both internal and external stakeholders. With a focus on excellence and innovation, we strive to address the diverse needs of our clients through tailored solutions and strategic insights.</span>
                                             <h4>Mission</h4>
                                             <p>Engaging in innovative, multidisciplinary, and transformative research to solve local, national, and global challenges.</p>
                                         </div>
@@ -76,7 +76,7 @@
                                         <div class="clubs-item">
                                             {{-- <span>4th Workshop “Advanced Materials”</span> --}}                                            
                                             <h4>Objective</h4>
-                                            <p>The objective of the Committee is to monitor, advise and provide assurance to the Academic Board on the quality of the research programs and activities of the University.</p>
+                                            <p>The objective of the Committee is to monitor, advise and provide assurance to the Academic Board on the quality of the research programmes and activities of the University.</p>
 
                                             <h4>Members</h4>
                                             <p>
@@ -93,7 +93,7 @@
                                                 <p>monitor the development of the University’s policies and plans in relation to research</p>
                                                 <p>oversee research performance and advise on the coordination of the University’s research effort</p>
                                                 <p>monitor the quality and integrity of the University’s research activities;</p>
-                                                <p>make recommendations to the Academic Board on accrediting, reaccrediting or disestablishing postgraduate programs. Responsibilities of Members</p>
+                                                <p>make recommendations to the Academic Board on accrediting, reaccrediting or disestablishing postgraduate programmes. Responsibilities of Members</p>
                                             </div>
 
                                             <div class="col-lg-4">
@@ -107,7 +107,7 @@
 
                                             <div class="col-lg-4">
                                                 <h4>Collaborating Institutions</h4>
-                                                <p>The University currently have collaboration with the following Institutions/organizations:</p>
+                                                <p>The University currently have collaboration with the following Institutions/organisations:</p>
                                                 <p>International Islamic University Malaysia</p>
                                                 <p>Nigerian Airforce Institute</p>
                                             </div>

@@ -8,7 +8,11 @@ use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
 use App\Http\Controllers\Admin\LecturerController as AdminLecturerController;
+use App\Http\Controllers\Admin\AdminDepartmentNewsController;
+use App\Http\Controllers\Admin\AdminFeaturedLinkController;
+use App\Http\Controllers\Admin\AdminCourseSynopsisController;
 use App\Http\Controllers\LecturerController;
+use App\Http\Controllers\DepartmentPageController;
 
 
 
@@ -69,36 +73,60 @@ Route::get('/', function () {
         ->limit(3)
         ->get();
 
-    $hadith = cache()->remember('daily_hadith', 86400, function () {
+    $hadith = cache()->remember('daily_hadith_' . date('Y-m-d'), 86400, function () {
         try {
-            $response = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get('https://random-hadith-generator.vercel.app/bukhari/');
+            // Randomize category and page for variety
+            $categories = [1, 2, 3, 5, 7, 10, 15, 20, 30, 40];
+            $randCat = $categories[array_rand($categories)];
+            $randPage = rand(1, 5);
 
-            if ($response->successful()) {
-                $data = $response->json();
-                return [
-                    'text'      => $data['data']['hadith_english'] ?? 'Seek knowledge from the cradle to the grave.',
-                    'narrator'  => $data['data']['header'] ?? '',
-                    'reference' => 'Sahih al-Bukhari',
-                ];
+            // Primary: hadeethenc.com API — get a random hadith from a random category
+            $listRes = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat}&page={$randPage}&per_page=1");
+
+            if ($listRes->successful()) {
+                $listData = $listRes->json();
+                $hadithId = $listData['data'][0]['id'] ?? null;
+
+                if ($hadithId) {
+                    $detailRes = \Illuminate\Support\Facades\Http::timeout(5)
+                        ->get("https://hadeethenc.com/api/v1/hadeeths/one/?language=en&id={$hadithId}");
+
+                    if ($detailRes->successful()) {
+                        $detail = $detailRes->json();
+                        return [
+                            'text'      => $detail['hadeeth'] ?? '',
+                            'narrator'  => $detail['hadeeth_intro'] ?? '',
+                            'reference' => $detail['attribution'] ?? 'Hadeeth Enc',
+                        ];
+                    }
+                }
             }
 
-            $backup = \Illuminate\Support\Facades\Http::timeout(5)
-                ->get('https://hadithapi.com/api/hadiths/?apikey=$2y$10$g7TcfDLnFpZJ0NkJSApUue&book=sahih-bukhari&paginate=1');
+            // Backup: try another random category
+            $randCat2 = $categories[array_rand($categories)];
+            $randPage2 = rand(1, 3);
+            $backupList = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get("https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id={$randCat2}&page={$randPage2}&per_page=1");
 
-            if ($backup->successful()) {
-                $data = $backup->json();
-                $item = $data['hadiths']['data'][0] ?? null;
-                if ($item) {
-                    return [
-                        'text'      => $item['hadithEnglish'] ?? '',
-                        'narrator'  => $item['englishNarrator'] ?? '',
-                        'reference' => 'Sahih al-Bukhari',
-                    ];
+            if ($backupList->successful()) {
+                $bData = $backupList->json();
+                $bId = $bData['data'][0]['id'] ?? null;
+                if ($bId) {
+                    $bDetail = \Illuminate\Support\Facades\Http::timeout(5)
+                        ->get("https://hadeethenc.com/api/v1/hadeeths/one/?language=en&id={$bId}");
+                    if ($bDetail->successful()) {
+                        $bd = $bDetail->json();
+                        return [
+                            'text'      => $bd['hadeeth'] ?? '',
+                            'narrator'  => $bd['hadeeth_intro'] ?? '',
+                            'reference' => $bd['attribution'] ?? 'Hadeeth Enc',
+                        ];
+                    }
                 }
             }
         } catch (\Exception $e) {
-            // both APIs failed, use fallback
+            // API failed, use fallback
         }
 
         $fallbacks = [
@@ -111,7 +139,7 @@ Route::get('/', function () {
             ['text' => 'The world is a prison for the believer and a paradise for the disbeliever.', 'reference' => 'Sahih Muslim 2956'],
         ];
 
-        $index = date('N') - 1;
+        $index = array_rand($fallbacks);
 
         return [
             'text'      => $fallbacks[$index]['text'],
@@ -164,8 +192,12 @@ Route::get('/school-of-postgraduate-applications', [PagesController::class, 'spg
 Route::get('/undergraduate-applications', [PagesController::class, 'underGraduateApplications'])->name('undergraduate-applications');
 Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
-Route::get('/colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
-Route::get('/departments/{id}', [PagesController::class, 'departments'])->name('department');
+Route::get('/colleges/{slug}', [PagesController::class, 'colleges'])->name('colleges.show');
+Route::get('/departments/{slug}', [PagesController::class, 'departments'])->name('department');
+Route::get('/departments/{slug}/page/{link}', [DepartmentPageController::class, 'page'])->name('department.page');
+Route::get('/departments/{slug}/news', [DepartmentPageController::class, 'news'])->name('department.news');
+Route::get('/departments/{slug}/news/{news}', [DepartmentPageController::class, 'newsShow'])->name('department.news.show');
+Route::get('/departments/{slug}/courses', [DepartmentPageController::class, 'courses'])->name('department.courses');
 Route::get('/lecturers/{lecturer}', [LecturerController::class, 'show'])->name('lecturer.show');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
@@ -271,6 +303,38 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/lecturers/{lecturer}/edit',  [AdminLecturerController::class, 'edit'])->name('lecturers.edit');
     Route::put('/lecturers/{lecturer}',       [AdminLecturerController::class, 'update'])->name('lecturers.update');
     Route::delete('/lecturers/{lecturer}',    [AdminLecturerController::class, 'destroy'])->name('lecturers.destroy');
+
+    // Department News CRUD
+    Route::get('/department-news',                     [AdminDepartmentNewsController::class, 'index'])->name('department-news.index');
+    Route::get('/department-news/create',              [AdminDepartmentNewsController::class, 'create'])->name('department-news.create');
+    Route::post('/department-news',                    [AdminDepartmentNewsController::class, 'store'])->name('department-news.store');
+    Route::get('/department-news/{departmentNews}/edit', [AdminDepartmentNewsController::class, 'edit'])->name('department-news.edit');
+    Route::put('/department-news/{departmentNews}',     [AdminDepartmentNewsController::class, 'update'])->name('department-news.update');
+    Route::delete('/department-news/{departmentNews}',  [AdminDepartmentNewsController::class, 'destroy'])->name('department-news.destroy');
+
+    // Featured Links CRUD
+    Route::get('/featured-links',                          [AdminFeaturedLinkController::class, 'index'])->name('featured-links.index');
+    Route::get('/featured-links/create',                   [AdminFeaturedLinkController::class, 'create'])->name('featured-links.create');
+    Route::post('/featured-links',                         [AdminFeaturedLinkController::class, 'store'])->name('featured-links.store');
+    Route::get('/featured-links/{featuredLink}/edit',      [AdminFeaturedLinkController::class, 'edit'])->name('featured-links.edit');
+    Route::put('/featured-links/{featuredLink}',           [AdminFeaturedLinkController::class, 'update'])->name('featured-links.update');
+    Route::delete('/featured-links/{featuredLink}',        [AdminFeaturedLinkController::class, 'destroy'])->name('featured-links.destroy');
+    Route::get('/featured-links/template',                 [AdminFeaturedLinkController::class, 'downloadTemplate'])->name('featured-links.template');
+    Route::post('/featured-links/import',                  [AdminFeaturedLinkController::class, 'import'])->name('featured-links.import');
+    Route::post('/featured-links/bulk-delete',             [AdminFeaturedLinkController::class, 'bulkDelete'])->name('featured-links.bulk-delete');
+    Route::get('/featured-links/content-template',         [AdminFeaturedLinkController::class, 'downloadContentTemplate'])->name('featured-links.content-template');
+    Route::post('/featured-links/import-content',          [AdminFeaturedLinkController::class, 'importContent'])->name('featured-links.import-content');
+
+    // Course Synopsis CRUD
+    Route::get('/course-synopsis',                          [AdminCourseSynopsisController::class, 'index'])->name('course-synopsis.index');
+    Route::get('/course-synopsis/create',                   [AdminCourseSynopsisController::class, 'create'])->name('course-synopsis.create');
+    Route::post('/course-synopsis',                         [AdminCourseSynopsisController::class, 'store'])->name('course-synopsis.store');
+    Route::get('/course-synopsis/{courseSynopsis}/edit',    [AdminCourseSynopsisController::class, 'edit'])->name('course-synopsis.edit');
+    Route::put('/course-synopsis/{courseSynopsis}',         [AdminCourseSynopsisController::class, 'update'])->name('course-synopsis.update');
+    Route::delete('/course-synopsis/{courseSynopsis}',      [AdminCourseSynopsisController::class, 'destroy'])->name('course-synopsis.destroy');
+    Route::get('/course-synopsis/template',                 [AdminCourseSynopsisController::class, 'downloadTemplate'])->name('course-synopsis.template');
+    Route::post('/course-synopsis/import',                  [AdminCourseSynopsisController::class, 'import'])->name('course-synopsis.import');
+    Route::post('/course-synopsis/bulk-delete',             [AdminCourseSynopsisController::class, 'bulkDelete'])->name('course-synopsis.bulk-delete');
 
 });
 

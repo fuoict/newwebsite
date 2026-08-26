@@ -39,7 +39,7 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             {{-- <div class="pera-title">
-                                <h2><span>40</span>Majors, Minors & <br> Graduate Programs</h2>
+                                <h2><span>40</span>Majors, Minors & <br> Graduate Programmes</h2>
                             </div> --}}
                             <div class="pera-dec">
                                 {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore et dolore magna aliqua. Ut enim ad minim ven iam quis nostrud xerci tation ulla mco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem incid idunt ut labore</p>

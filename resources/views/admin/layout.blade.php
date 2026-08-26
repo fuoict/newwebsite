@@ -169,14 +169,25 @@
             <div class="nav-section">Content</div>
             <a href="{{ route('admin.news.index') }}"
                 class="nav-link {{ request()->routeIs('admin.news.*') ? 'active' : '' }}">
-                <i class='bx bxs-news'></i> News & Updates
+                <i class='bx bxs-news'></i> School News
             </a>
-            {{-- <a href="{{ route('admin.staff.index') }}" class="nav-link {{ request()->routeIs('admin.staff.*') ? 'active' : '' }}">
-            <i class='bx bxs-user-detail'></i> Staff Profiles
-        </a> --}}
+            <a href="{{ route('admin.department-news.index') }}"
+                class="nav-link {{ request()->routeIs('admin.department-news.*') ? 'active' : '' }}">
+                <i class='bx bxs-news'></i> Department News
+            </a>
             <a href="{{ route('admin.lecturers.index') }}"
                 class="nav-link {{ request()->routeIs('admin.lecturers.*') ? 'active' : '' }}">
                 <i class='bx bxs-user-detail'></i> Lecturers
+            </a>
+
+            <div class="nav-section">Departments</div>
+            <a href="{{ route('admin.featured-links.index') }}"
+                class="nav-link {{ request()->routeIs('admin.featured-links.*') ? 'active' : '' }}">
+                <i class='bx bx-link'></i> Featured Links
+            </a>
+            <a href="{{ route('admin.course-synopsis.index') }}"
+                class="nav-link {{ request()->routeIs('admin.course-synopsis.*') ? 'active' : '' }}">
+                <i class='bx bx-book'></i> Course Synopsis
             </a>
 
             <div class="nav-section">Website</div>

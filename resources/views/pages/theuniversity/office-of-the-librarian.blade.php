@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Section Banner Area -->
@@ -50,7 +50,7 @@
                             <li>Principal Librarian: Appointed to upper-tier management to drive technological updates
                                 across the library network.</li>
                             <li>Deputy University Librarian: Currently overseeing strategic library development, digital
-                                resource integration, and academic liaison programs.</li>
+                                resource integration, and academic liaison programmes.</li>
                         </ul>
                         <h4> Research and Academic Contributions</h4>
                         <p>Dr Bakrin's research focuses primarily on modernising libraries to survive and thrive in the
@@ -81,3 +81,4 @@
         </div>
     </div>
 @endsection
+

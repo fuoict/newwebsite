@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
     <!-- Start Section Banner Area -->
@@ -39,7 +39,7 @@
                         <div class="pera-dec">
                             <h4>Appointment of Vice-Chancellor</h4>
                             <p>The Position of Vice-Chancellor will be Vacant from 1st March 2023 when the incumbent
-                                Vice-Chancellor would have completed his tenure. To fulfill the vacancy , the Governing
+                                Vice-Chancellor would have completed his tenure. To fulfil the vacancy , the Governing
                                 Council of the University hereby invites applications from interested suitably qualified
                                 candidates who are able to match the requirements of our ideal prospect.</p>
                             <div class="number-list">
@@ -83,3 +83,4 @@
     </div>
     <!-- End Academics Section Area -->
 @endsection
+

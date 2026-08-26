@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 <!-- Start Section Banner Area -->
@@ -36,7 +36,7 @@
                         <div class="ac-overview">
                             <div class="pera-dec">
                                 <h4>Welcome to the University Library</h4>
-                                <p>Fountain University, Osogbo was granted an operational license as a Private University on May 2007 by the Federal Government on the recommendation of the National Universities Commission. The desire of the Nasrul-lahi-il-fathi Society of Nigeria (NASFAT) to establish a university was borne out of its educational policy and plan. Fountain University commenced its academic activities on the 12th march, 2008; the university presently occupied the former Muslim Grammar School, Oke-Osun, and Osogbo. Presently, Fountain University Library, Osogbo operates at its temporary location within the University premises. The University has four Colleges which are College of Natural and Applied Sciences (CONAS), College of Management and Social Science (COMAS), College of Basic Medical and Health Sciences (COBMEHS), College of Law (COLAW). The University has a Central Library and a Law Library that support the programs of the colleges.</p>
+                                <p>Fountain University, Osogbo was granted an operational licence as a Private University on May 2007 by the Federal Government on the recommendation of the National Universities Commission. The desire of the Nasrul-lahi-il-fathi Society of Nigeria (NASFAT) to establish a university was borne out of its educational policy and plan. Fountain University commenced its academic activities on the 12th march, 2008; the university presently occupied the former Muslim Grammar School, Oke-Osun, and Osogbo. Presently, Fountain University Library, Osogbo operates at its temporary location within the University premises. The University has four Colleges which are College of Natural and Applied Sciences (CONAS), College of Management and Social Science (COMAS), College of Basic Medical and Health Sciences (COBMEHS), College of Law (COLAW). The University has a Central Library and a Law Library that support the programmes of the colleges.</p>
 
                                 <div class="std-activities">
                                     <div class="graduate-events">
@@ -102,13 +102,13 @@
 
                                                 <div class="col-lg-6">
                                                     <h4>BROAD COLLECTION BASE</h4>
-                                                    <p>Fountain University, Osogbo has a broad collection base of 4 colleges and Post Graduate School, 16 Departments and 18 Programmes/Subject Specializations. Research4life and Lawpavillon databases with over 3,400 e-journals and peer review business publications capable of servicing the four colleges in the University. The e-library also provides access to a good number of free e-books.</p>
+                                                    <p>Fountain University, Osogbo has a broad collection base of 4 colleges and Post Graduate School, 16 Departments and 18 Programmes/Subject Specialisations. Research4life and Lawpavillon databases with over 3,400 e-journals and peer review business publications capable of servicing the four colleges in the University. The e-library also provides access to a good number of free e-books.</p>
                                                 </div>
 
                                                 
 
                                                 <div class="col-lg-6">
-                                                    <h4>CATALOGUING & CLASSIFICATION: ORGANIZATION OF LIBRARY RESOURCES/MATERIALS</h4>
+                                                    <h4>CATALOGUING & CLASSIFICATION: ORGANISATION OF LIBRARY RESOURCES/MATERIALS</h4>
                                                     <p>The University Library has been automated. The cataloguing and classification of books are carried out using online classification system through the existing internet connectivity in the library. There is provision of OPAC workstation in the library, where staff and students can access the holdings of the library before moving down to the shelf.</p>
                                                 </div>
 
@@ -124,6 +124,7 @@
                                                     <h4>INTERNET & E-RESOURCES</h4>
                                                     <p>The University library has workstations connected to the internet and e-resources. In addition, there are  Computers at the Information and Communication Technology (ICT) Center that are equally connected to the Internet and linked to the Library E-resources. </p>
                                                     <p>The students can connect to the Library E-resources through campus Wi-Fi even while in their hall of residences using their Laptops Computers, Ipads and Androids. The Library provides wide access to e-resources by making available the passwords to all the students and staff.</p>
+                                                    <p><b>Fountain University's official domain is fuo.edu.ng (formerly fountainuniversity.edu.ng)</b></p>
                                                 </div>
 
                                                 <div class="col-lg-4">
@@ -133,7 +134,7 @@
 
                                                 <div class="col-lg-4">
                                                     <h4>ICT TRAINING/ PROFESSIONAL DEVELOPMENT</h4>
-                                                    <p>The University Library appreciates the need to train the staff and students in the act of accessing resources in the e-library databases. Training workshop is organized for both staff and students once in a session.</p>
+                                                    <p>The University Library appreciates the need to train the staff and students in the act of accessing resources in the e-library databases. Training workshop is organised for both staff and students once in a session.</p>
                                                 </div>
 
                                                 <div class="col-lg-4">
@@ -156,3 +157,4 @@
         <!-- End Academics Section Area -->
 
 @endsection
+

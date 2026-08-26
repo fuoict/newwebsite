@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="banner-spacing">
                     <div class="section-info">
-                        <h2 data-aos="fade-up" data-aos-delay="100">Center for Sub-Degree Programmes</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100">Centre for Sub-Degree Programmes</h2>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                                     <li><a href="{{ route('our-campus') }}">The Campus Experience</a></li>
                                     <li><a href="{{ route('sports') }}">Sport</a></li>
                                     <li><a href="{{ route('counselling') }}">Counseling and Guidance</a></li>
-                                    <li><a class="active" href="{{ route('subdegree') }}">Center for Sub-Degree Programmes</a></li>
+                                    <li><a class="active" href="{{ route('subdegree') }}">Centre for Sub-Degree Programmes</a></li>
                                 </ul>
                             </div>
                             <div class="ac-contact">
@@ -39,7 +39,7 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
-                                <h4>Welcome to the Center for Sub-Degree Programmes</h4>
+                                <h4>Welcome to the Centre for Sub-Degree Programmes</h4>
                                 <p>The Academic Board of the Fountain University Osogbo has established the University Research Committee (“the Committee”) in accordance with section 48 of the Academic Board Charter. This Charter sets out the Committee’s objective, authority, composition and tenure, roles and responsibilities, reporting and administrative arrangements.</p>
                                 
 
@@ -48,7 +48,7 @@
                                         <div class="content-items">
                                             <div class="content">
                                                 <h2>Professor Kazeem Alabi</h2>
-                                                <p>Director, Center for Sub-Degree Programmes, Fountain University, Osogbo, Osun State, Nigeria.</p>
+                                                <p>Director, Centre for Sub-Degree Programmes, Fountain University, Osogbo, Osun State, Nigeria.</p>
                                             </div>
                                             <div class="image">
                                                 <img src="{{ asset('img/all-img/units/prof_alabi.jpg') }}" alt="image">
@@ -62,7 +62,7 @@
                                         </ul>
 
                                         <div class="clubs-item">
-                                            <span>The Center for Sub-Degree Programmes at Fountain University offers a variety of associate degrees, diplomas, and certificate programs. These programs are designed to provide foundational knowledge and skills that can lead to further education or immediate employment.</span>
+                                            <span>The Centre for Sub-Degree Programmes at Fountain University offers a variety of associate degrees, diplomas, and certificate programmes. These programmes are designed to provide foundational knowledge and skills that can lead to further education or immediate employment.</span>
                                             <h4>Mission</h4>
                                             <p>Our philosophy centers on the belief that education should be accessible, practical, and transformative</p>
                                         </div>
@@ -73,7 +73,7 @@
                                         <div class="clubs-item">
                                             {{-- <span>4th Workshop “Advanced Materials”</span> --}}                                            
                                             <h4>Philosophy</h4>
-                                            <p>To deliver high-quality sub-degree programs that bridge the gap between secondary education and higher education or employment.</p>
+                                            <p>To deliver high-quality sub-degree programmes that bridge the gap between secondary education and higher education or employment.</p>
 
                                             {{-- <h4>Members</h4>
                                             <p>
@@ -90,7 +90,7 @@
                                                 <p>monitor the development of the University’s policies and plans in relation to research</p>
                                                 <p>oversee research performance and advise on the coordination of the University’s research effort</p>
                                                 <p>monitor the quality and integrity of the University’s research activities;</p>
-                                                <p>make recommendations to the Academic Board on accrediting, reaccrediting or disestablishing postgraduate programs. Responsibilities of Members</p>
+                                                <p>make recommendations to the Academic Board on accrediting, reaccrediting or disestablishing postgraduate programmes. Responsibilities of Members</p>
                                             </div>
 
                                             <div class="col-lg-4">

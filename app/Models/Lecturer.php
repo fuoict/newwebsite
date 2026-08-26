@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Str;
 
 class Lecturer extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title', 'name', 'position', 'specialization',
+        'title', 'name', 'slug', 'position', 'specialization',
         'college_id', 'department_id',
         'email', 'phone',
         'biography', 'qualifications', 'research_interest',
@@ -19,6 +20,30 @@ class Lecturer extends Model
         'scopus', 'wos', 'publons', 'ad_scientific',
         'photo', 'is_hod', 'is_published', 'sort_order',
     ];
+
+    // Use slug for route model binding
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
+
+    // Auto-generate slug from name
+    protected static function boot()
+    {
+        parent::boot();
+        static::creating(function ($lecturer) {
+            if (empty($lecturer->slug)) {
+                $slug = Str::slug($lecturer->name);
+                $base = $slug;
+                $count = 1;
+                while (static::where('slug', $slug)->exists()) {
+                    $slug = $base . '-' . $count;
+                    $count++;
+                }
+                $lecturer->slug = $slug;
+            }
+        });
+    }
 
     protected $casts = [
         'is_hod'       => 'boolean',

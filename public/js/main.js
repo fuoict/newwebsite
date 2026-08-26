@@ -261,6 +261,81 @@ once: true,
 duration: 2000,
 });
 
+(function () {
+  var hero = document.getElementById('fuoHero');
+  if (!hero) {
+    return;
+  }
+
+  var slides = [
+    {
+      eyebrow: 'Fountain University, Osogbo — founded by NASFAT, 2007',
+      headline: 'Rooted in values.<br>Driven by excellence.',
+      sub: "Preparing graduates ready to solve tomorrow's challenges."
+    },
+    {
+      eyebrow: 'Times Higher Education, 2024',
+      headline: "Ranked among Nigeria's<br>top universities.",
+      sub: 'Global recognition built on academic excellence and research.'
+    },
+    {
+      eyebrow: '2026/2027 admission cycle',
+      headline: 'Where knowledge meets<br>character and service.',
+      sub: 'A values-driven education, from admission to graduation.'
+    }
+  ];
+
+  var current = 0;
+  var bgSlides = hero.querySelectorAll('.bg-slide');
+  var eyebrowEl = document.getElementById('fuoEyebrow');
+  var headlineEl = document.getElementById('fuoHeadline');
+  var sublineEl = document.getElementById('fuoSubline');
+  var dotsWrap = document.getElementById('fuoHeroDots');
+
+  if (!eyebrowEl || !headlineEl || !sublineEl || !dotsWrap) {
+    return;
+  }
+
+  slides.forEach(function (_, index) {
+    var dot = document.createElement('button');
+    if (index === 0) {
+      dot.classList.add('active');
+    }
+    dot.addEventListener('click', function () {
+      goTo(index);
+    });
+    dotsWrap.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = index;
+    bgSlides.forEach(function (el, slideIndex) {
+      el.classList.toggle('active', slideIndex === index);
+    });
+
+    dotsWrap.querySelectorAll('button').forEach(function (el, slideIndex) {
+      el.classList.toggle('active', slideIndex === index);
+    });
+
+    [eyebrowEl, headlineEl, sublineEl].forEach(function (el) {
+      el.style.opacity = 0;
+    });
+
+    setTimeout(function () {
+      eyebrowEl.textContent = slides[index].eyebrow;
+      headlineEl.innerHTML = slides[index].headline;
+      sublineEl.textContent = slides[index].sub;
+      [eyebrowEl, headlineEl, sublineEl].forEach(function (el) {
+        el.style.opacity = 1;
+      });
+    }, 350);
+  }
+
+  setInterval(function () {
+    goTo((current + 1) % slides.length);
+  }, 6500);
+})();
+
 // Faq section 
 const faqItems = document.querySelectorAll('.faq-item');
 

@@ -154,7 +154,7 @@
                         @endif
                     </td>
                     <td class="text-end pe-4">
-                        <a href="{{ route('lecturer.show', $lecturer->id) }}" target="_blank"
+                        <a href="{{ route('lecturer.show', $lecturer->slug) }}" target="_blank"
                            class="btn btn-sm btn-outline-secondary me-1" title="View Profile">
                             <i class='bx bx-link-external'></i>
                         </a>

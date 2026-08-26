@@ -77,8 +77,8 @@
         </table>
     </div>
     @if($newsList->hasPages())
-    <div class="card-footer">
-        {{ $newsList->links() }}
+    <div class="card-footer d-flex justify-content-center">
+        {{ $newsList->links('pagination::bootstrap-5') }}
     </div>
     @endif
 </div>

@@ -47,7 +47,7 @@
                                     <div class="graduate-events">
                                         <div class="content-items">
                                             <div class="content">
-                                                <h2>Public Programs</h2>
+                                                <h2>Public Programmes</h2>
                                                 <p>Lorem ipsum dolor sit amet consec teturacmagna aliqua. Ut enim ad minim ven iamqisit amet consectet adipis.</p>
                                                 <p>Lorem ipsum dolor sit amet conse cteturadigna aliqua enim ad minim ven.</p>
                                                 <a href="#">Read More</a>
@@ -60,7 +60,7 @@
 
                                     <div class="featured-clubs">
                                         <ul>
-                                            <li><h3>Featured Clubs & Organizations</h3></li>
+                                            <li><h3>Featured Clubs & Organisations</h3></li>
                                             <li><a href="#">View All</a></li>
                                         </ul>
 
