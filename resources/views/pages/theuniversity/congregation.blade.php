@@ -52,7 +52,7 @@
                                     </ul>
                                 </p><br>
                                </div>
-                               <div class="apply-program">
+                               {{-- <div class="apply-program">
                                     <div class="row align-items-center">
                                         <div class="col-md-12">
                                             <!-- Congregation Galley Area -->
@@ -140,7 +140,7 @@
                                             <!-- Congregation Galley Area -->
                                         </div>
                                     </div>
-                               </div>
+                               </div> --}}
                             </div>
                         </div>
                     </div>

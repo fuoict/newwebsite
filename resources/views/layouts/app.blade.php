@@ -10,6 +10,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    @php
+        $styleVersion = file_exists(public_path('css/style.css')) ? filemtime(public_path('css/style.css')) : time();
+        $mainJsVersion = file_exists(public_path('js/main.js')) ? filemtime(public_path('js/main.js')) : time();
+    @endphp
+
     <!-- Links of CSS files -->
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -17,9 +22,10 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
     <title>@yield('title', 'Fountain University, Osogbo - Welcome to Fountain University')</title>
     <link rel="icon" type="image/png" href="{{ asset('img/logo/fuo-logo.png') }}">
@@ -74,7 +80,6 @@
             </div>
         </div>
         <!-- End Top Navbar Area -->
-
 
         <!-- Start Navbar Area Start -->
         <div class="navbar-area" id="navbar">
@@ -136,6 +141,17 @@
                                     {{-- <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li> --}}
                                     <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our
                                             Gallery</a></li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Institutional Showcase</a>
+                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height: 220px; overflow-y: auto;">
+                                            <li class="nav-item"><a href="{{ route('partnerships') }}" class="nav-link">Partnerships</a></li>
+                                            <li class="nav-item"><a href="{{ route('donors') }}" class="nav-link">Donors</a></li>
+                                            <li class="nav-item"><a href="{{ route('scholarships') }}" class="nav-link">Scholarships</a></li>
+                                            <li class="nav-item"><a href="{{ route('dignitaries') }}" class="nav-link">Dignitaries</a></li>
+                                            <li class="nav-item"><a href="{{ route('honorary-doctorates') }}" class="nav-link">Honorary Doctorates</a></li>
+                                            <li class="nav-item"><a href="{{ route('convocation-lecturers') }}" class="nav-link">Convocation Lecturers</a></li>
+                                        </ul>
+                                    </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Resources</a>
                                         <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
@@ -376,7 +392,6 @@
         </div>
         <!-- End Navbar Area Start -->
 
-
         <!-- Start Clgun Searchbar Area -->
         <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
             <div class="offcanvas-header">
@@ -536,6 +551,39 @@
                                         <a href="{{ route('our-gallery') }}" class="accordion-link">
                                             Our Gallery
                                         </a>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseShowcase"
+                                            aria-expanded="false" aria-controls="collapseShowcase">
+                                            Institutional Showcase
+                                        </button>
+                                        <div id="collapseShowcase" class="accordion-collapse collapse"
+                                            data-bs-parent="#navbarAccordion8">
+                                            <div class="accordion-body">
+                                                <div class="accordion" id="navbarAccordionShowcase">
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('partnerships') }}" class="accordion-link">Partnerships</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('donors') }}" class="accordion-link">Donors</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('scholarships') }}" class="accordion-link">Scholarships</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('dignitaries') }}" class="accordion-link">Dignitaries</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('honorary-doctorates') }}" class="accordion-link">Honorary Doctorates</a>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <a href="{{ route('convocation-lecturers') }}" class="accordion-link">Convocation Lecturers</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="accordion-item">
@@ -1069,7 +1117,7 @@
 
         <!-- Start Footer Area -->
         <div class="footer-area">
-            <div class="footer-widget-info ptb-100">
+            <div class="footer-widget-info ptb-100" style="padding-top: 40px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 col-md-6">
@@ -1191,7 +1239,7 @@
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}?v={{ $mainJsVersion }}"></script>
 
 
 </body>

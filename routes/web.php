@@ -1,29 +1,127 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminNewsController;
-use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\StaffController as AdminStaffController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
+use App\Http\Controllers\Admin\LecturerController as AdminLecturerController;
+use App\Http\Controllers\LecturerController;
 
 
 
+// Route::get('/', function () {
+//     // return view('welcome');
+//     $featuredNews    = News::published()->featured()->latest()->limit(2)->get();
+//     $sidebarFeatured = News::published()->featured()->latest()->skip(2)->first();
+//     $sidebarSmall    = News::published()->latest()
+//                             ->whereNotIn('id',
+//                                 $featuredNews->pluck('id')
+//                                 ->push(optional($sidebarFeatured)->id)
+//                                 ->filter()->toArray()
+//                             )->limit(3)->get();
+//     return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall'));
+// });
+// Route::get('/', function () {
+//     $featuredNews    = News::published()->featured()->latest()->limit(2)->get();
+//     $sidebarFeatured = News::published()->featured()->latest()->skip(2)->first();
+//     $sidebarSmall    = News::published()->latest()
+//                             ->whereNotIn('id',
+//                                 $featuredNews->pluck('id')
+//                                 ->push(optional($sidebarFeatured)->id)
+//                                 ->filter()->toArray()
+//                             )->limit(3)->get();
+
+//     // Daily Hadith — cached for 24 hours, fetched from API once per day
+//     $hadith = cache()->remember('daily_hadith', 86400, function () {
+//         try {
+//             $response = file_get_contents('https://random-hadith-generator.vercel.app/bukhari/');
+//             $data = json_decode($response, true);
+//             return [
+//                 'text'      => $data['data']['hadith_english'] ?? 'Seek knowledge from the cradle to the grave.',
+//                 'narrator'  => $data['data']['header'] ?? '',
+//                 'reference' => 'Sahih al-Bukhari',
+//             ];
+//         } catch (\Exception $e) {
+//             return [
+//                 'text'      => 'The best of you are those who learn the Quran and teach it.',
+//                 'narrator'  => '',
+//                 'reference' => 'Sahih al-Bukhari 5027', 
+//             ];
+//         }
+//     });
+
+//     return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall', 'hadith'));
+// });
 Route::get('/', function () {
-    // return view('welcome');
     $featuredNews    = News::published()->featured()->latest()->limit(2)->get();
     $sidebarFeatured = News::published()->featured()->latest()->skip(2)->first();
     $sidebarSmall    = News::published()->latest()
-                            ->whereNotIn('id',
-                                $featuredNews->pluck('id')
-                                ->push(optional($sidebarFeatured)->id)
-                                ->filter()->toArray()
-                            )->limit(3)->get();
-    return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall'));
-});
+        ->whereNotIn(
+            'id',
+            $featuredNews->pluck('id')
+                ->push(optional($sidebarFeatured)->id)
+                ->filter()
+                ->toArray()
+        )
+        ->limit(3)
+        ->get();
 
+    $hadith = cache()->remember('daily_hadith', 86400, function () {
+        try {
+            $response = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get('https://random-hadith-generator.vercel.app/bukhari/');
+
+            if ($response->successful()) {
+                $data = $response->json();
+                return [
+                    'text'      => $data['data']['hadith_english'] ?? 'Seek knowledge from the cradle to the grave.',
+                    'narrator'  => $data['data']['header'] ?? '',
+                    'reference' => 'Sahih al-Bukhari',
+                ];
+            }
+
+            $backup = \Illuminate\Support\Facades\Http::timeout(5)
+                ->get('https://hadithapi.com/api/hadiths/?apikey=$2y$10$g7TcfDLnFpZJ0NkJSApUue&book=sahih-bukhari&paginate=1');
+
+            if ($backup->successful()) {
+                $data = $backup->json();
+                $item = $data['hadiths']['data'][0] ?? null;
+                if ($item) {
+                    return [
+                        'text'      => $item['hadithEnglish'] ?? '',
+                        'narrator'  => $item['englishNarrator'] ?? '',
+                        'reference' => 'Sahih al-Bukhari',
+                    ];
+                }
+            }
+        } catch (\Exception $e) {
+            // both APIs failed, use fallback
+        }
+
+        $fallbacks = [
+            ['text' => 'The best of you are those who learn the Quran and teach it.', 'reference' => 'Sahih al-Bukhari 5027'],
+            ['text' => 'Actions are judged by intentions, and every person will get the reward according to what he has intended.', 'reference' => 'Sahih al-Bukhari 1'],
+            ['text' => 'Whoever believes in Allah and the Last Day should speak good or remain silent.', 'reference' => 'Sahih al-Bukhari 6018'],
+            ['text' => 'Make things easy and do not make them difficult, cheer people up and do not drive them away.', 'reference' => 'Sahih al-Bukhari 69'],
+            ['text' => 'The strong person is not the one who can wrestle someone else down. The strong person is the one who can control himself when he is angry.', 'reference' => 'Sahih al-Bukhari 6114'],
+            ['text' => 'Seeking knowledge is an obligation upon every Muslim.', 'reference' => 'Ibn Majah 224'],
+            ['text' => 'The world is a prison for the believer and a paradise for the disbeliever.', 'reference' => 'Sahih Muslim 2956'],
+        ];
+
+        $index = date('N') - 1;
+
+        return [
+            'text'      => $fallbacks[$index]['text'],
+            'narrator'  => '',
+            'reference' => $fallbacks[$index]['reference'],
+        ];
+    });
+
+    return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall', 'hadith'));
+});
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/appraisal', [PagesController::class, 'appraisal'])->name('appraisal');
@@ -68,10 +166,18 @@ Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplicati
 Route::get('/colleges', [PagesController::class, 'colleges'])->name('colleges');
 Route::get('/colleges/{id}', [PagesController::class, 'colleges'])->name('colleges.show');
 Route::get('/departments/{id}', [PagesController::class, 'departments'])->name('department');
+Route::get('/lecturers/{lecturer}', [LecturerController::class, 'show'])->name('lecturer.show');
 Route::get('/scentres', [PagesController::class, 'units'])->name('scentres');
 Route::get('/inaugural-lectures', [PagesController::class, 'inauguralLectures'])->name('inaugural-lectures');
 Route::get('/annual-report', [PagesController::class, 'annualReport'])->name('annual-report');
 Route::get('/fuo-chronicles', [PagesController::class, 'fuoChronicles'])->name('fuo-chronicles');
+
+Route::get('/partnerships', [PagesController::class, 'partnerships'])->name('partnerships');
+Route::get('/donors', [PagesController::class, 'donors'])->name('donors');
+Route::get('/scholarships', [PagesController::class, 'scholarships'])->name('scholarships');
+Route::get('/dignitaries', [PagesController::class, 'dignitaries'])->name('dignitaries');
+Route::get('/honorary-doctorates', [PagesController::class, 'honoraryDoctorates'])->name('honorary-doctorates');
+Route::get('/convocation-lecturers', [PagesController::class, 'convocationLecturers'])->name('convocation-lecturers');
 
 Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('academicplanning');
 Route::get('/bursary-unit', [PagesController::class, 'bursaryUnit'])->name('bursary');
@@ -99,9 +205,6 @@ Route::get('/entrepreneurship', [PagesController::class, 'entrepreneurship'])->n
 
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
-// Public JSON endpoint returning all pages (useful for testing/debug)
-Route::get('/pages/all-json', [PageController::class, 'all'])->name('pages.all-json');
-Route::get('/pages/{slug}', [PagesController::class, 'showPage'])->name('pages.show');
 Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
@@ -157,8 +260,17 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::put('/staff/{staff}',           [AdminStaffController::class, 'update'])->name('staff.update');
     Route::delete('/staff/{staff}',        [AdminStaffController::class, 'destroy'])->name('staff.destroy');
 
-    // Pages CMS
-    Route::resource('/pages', PageController::class)->names('pages');
+
+    // Lecturer CRUD
+    Route::get('/lecturers',                  [AdminLecturerController::class, 'index'])->name('lecturers.index');
+    Route::get('/lecturers/create',           [AdminLecturerController::class, 'create'])->name('lecturers.create');
+    Route::get('/lecturers/template',         [AdminLecturerController::class, 'downloadTemplate'])->name('lecturers.template');
+    Route::post('/lecturers/import',          [AdminLecturerController::class, 'import'])->name('lecturers.import');
+    Route::post('/lecturers/bulk-delete',      [AdminLecturerController::class, 'bulkDestroy'])->name('lecturers.bulk-delete');
+    Route::post('/lecturers',                 [AdminLecturerController::class, 'store'])->name('lecturers.store');
+    Route::get('/lecturers/{lecturer}/edit',  [AdminLecturerController::class, 'edit'])->name('lecturers.edit');
+    Route::put('/lecturers/{lecturer}',       [AdminLecturerController::class, 'update'])->name('lecturers.update');
+    Route::delete('/lecturers/{lecturer}',    [AdminLecturerController::class, 'destroy'])->name('lecturers.destroy');
 
 });
 

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "example-donor",
+    "name": "Example Foundation",
+    "category": "Education Grant",
+    "year": "2026",
+    "logoOrPhoto": "",
+    "shortDescription": "Supports scholarships and teaching resources.",
+    "fullDescription": "This placeholder entry shows the expected donor data shape. Replace this record with actual donor names, gift purpose, and recognition details.",
+    "externalLink": ""
+  }
+]

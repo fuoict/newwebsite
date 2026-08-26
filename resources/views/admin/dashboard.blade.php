@@ -31,8 +31,8 @@
                 <i class='bx bxs-user-detail'></i>
             </div>
             <div>
-                <div style="font-size:28px; font-weight:700">{{ \App\Models\Staff::count() }}</div>
-                <div class="text-muted" style="font-size:13px">Staff Profiles</div>
+                <div style="font-size:28px; font-weight:700">{{ \App\Models\Lecturer::count() }}</div>
+                <div class="text-muted" style="font-size:13px">Lecturer Profiles</div>
             </div>
         </div>
     </div>
@@ -93,18 +93,18 @@
         </div>
     </div>
 
-    {{-- Recent Staff --}}
+    {{-- Recent Lecturers --}}
     <div class="col-lg-5">
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center py-3 px-4">
-                <span><i class='bx bxs-user-detail me-2'></i>Recent Staff</span>
-                <a href="{{ route('admin.staff.create') }}" class="btn btn-sm btn-fuo">
-                    <i class='bx bx-plus'></i> Add Staff
+                <span><i class='bx bxs-user-detail me-2'></i>Recent Lecturers</span>
+                <a href="{{ route('admin.lecturers.create') }}" class="btn btn-sm btn-fuo">
+                    <i class='bx bx-plus'></i> Add Lecturer
                 </a>
             </div>
             <div class="card-body p-0">
                 <ul class="list-group list-group-flush">
-                    @forelse(\App\Models\Staff::ordered()->with('college')->limit(6)->get() as $member)
+                    @forelse(\App\Models\Lecturer::ordered()->with('college')->limit(6)->get() as $member)
                     <li class="list-group-item d-flex align-items-center gap-3 px-4">
                         <img src="{{ $member->photo_url }}"
                              style="width:36px;height:36px;border-radius:50%;object-fit:cover"
@@ -114,17 +114,17 @@
                             <div style="font-size:13px; font-weight:600">{{ $member->full_name }}</div>
                             <small class="text-muted">{{ $member->position }} — {{ $member->college->college_name ?? '—' }}</small>
                         </div>
-                        <a href="{{ route('admin.staff.edit', $member) }}" class="btn btn-sm btn-outline-secondary">
+                        <a href="{{ route('admin.lecturers.edit', $member) }}" class="btn btn-sm btn-outline-secondary">
                             <i class='bx bx-edit'></i>
                         </a>
                     </li>
                     @empty
-                    <li class="list-group-item text-center text-muted py-4">No staff added yet.</li>
+                    <li class="list-group-item text-center text-muted py-4">No lecturers added yet.</li>
                     @endforelse
                 </ul>
             </div>
             <div class="card-footer text-end">
-                <a href="{{ route('admin.staff.index') }}" class="btn btn-sm btn-fuo">View All Staff</a>
+                <a href="{{ route('admin.lecturers.index') }}" class="btn btn-sm btn-fuo">View All Lecturers</a>
             </div>
         </div>
     </div>

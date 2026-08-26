@@ -1,0 +1,14 @@
+[
+  {
+    "id": "example-dignitary",
+    "name": "Distinguished Guest",
+    "category": "State Visit",
+    "year": "2026",
+    "logoOrPhoto": "",
+    "shortDescription": "Honoured visitor to campus for a keynote address.",
+    "fullDescription": "This placeholder entry shows the expected dignitary data shape. Replace it with actual visitor name, visit purpose, and date details.",
+    "externalLink": "",
+    "dateOfVisit": "2026-01-01",
+    "purposeOfVisit": "Keynote address and campus tour."
+  }
+]

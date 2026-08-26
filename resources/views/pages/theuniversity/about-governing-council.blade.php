@@ -135,7 +135,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Alhaja Bashirat Odenewu</p>
+                                        <p>Alhaja Bashirat Odunewu</p>
                                         <p><strong>Member, Rep. of Ext. Comm. Female</strong></p>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                                         {{-- <img src="{{ asset('img/events/sixt-inaugural-lecture.jpg') }}" style="height:250px" alt="image"> --}}
                                     </div>
                                     <div class="content">
-                                        <p>Dr. Kazeem A. Alabi</p>
+                                        <p>Prof. Kazeem A. Alabi</p>
                                         <p><strong>Member, Rep. of Senate</strong></p>
                                     </div>
                                 </div>
