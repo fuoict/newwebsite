@@ -324,8 +324,8 @@
                         <div class="fuo-body"><h4>Admission requirements</h4><p>Everything needed to aid your admission into FUO.</p><a class="fuo-link" href="https://fuo.edu.ng/admission-requirement">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Student life"></div>
-                        <div class="fuo-body"><h4>Student life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Campus Life"></div>
+                        <div class="fuo-body"><h4>Campus Life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="/campus-life">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                 </div>
             </div>

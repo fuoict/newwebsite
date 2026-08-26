@@ -177,6 +177,7 @@ Route::get('/the-registrar', [PagesController::class, 'theRegistrar'])->name('th
 Route::get('/the-bursar', [PagesController::class, 'theBursar'])->name('the-bursar');
 Route::get('/the-librarian', [PagesController::class, 'theLibrarian'])->name('the-librarian');
 Route::get('/our-campus', [PagesController::class, 'ourCampus'])->name('our-campus');
+Route::get('/campus-life', function () { return view('campus-life'); })->name('campus-life');
 Route::get('/our-gallery', [PagesController::class, 'ourGallery'])->name('our-gallery');
 Route::get('/staff-downloads', [PagesController::class, 'staffDownloads'])->name('staff-downloads');
 Route::get('/students-download', [PagesController::class, 'studentDownloads'])->name('students-download');
