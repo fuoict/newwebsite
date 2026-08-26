@@ -3,7 +3,7 @@
 @endphp
 
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -85,6 +85,9 @@
 </head>
 
 <body>
+
+    <!-- Skip to main content — accessibility -->
+    <a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip to main content</a>
 
     <!-- preloader -->
     <div class="preloader-container" id="preloader">
