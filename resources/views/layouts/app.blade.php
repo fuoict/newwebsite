@@ -34,6 +34,36 @@
     <link rel="apple-touch-icon" href="{{ asset('img/logo/fuo-logo.png') }}">
 
     <style>
+    /* Accessibility: skip-to-content link */
+    .skip-link {
+        position: absolute;
+        left: -9999px;
+        z-index: 999999;
+        padding: 8px 16px;
+        background: #035F39;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 4px 0;
+    }
+    .skip-link:focus,
+    .skip-link.sr-only-focusable:focus {
+        left: 0;
+        top: 0;
+    }
+    /* Screen-reader only — hidden until focused */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
     /* Preloader: force hide after 2s as fallback */
     .preloader-container { animation: preloader-fade 0.5s 2s forwards; }
     @keyframes preloader-fade { to { opacity: 0; pointer-events: none; } }
@@ -448,8 +478,7 @@
         <div class="clgun offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
             <div class="offcanvas-header">
                 <a href="/" class="logo">
-                    {{-- {{ asset('img/logo/fuo-logo.png') }} --}}
-                    <img src="{{ asset('img/logo/fuo-logo.png') }}" alt="image" class="img-fluid w-50">
+                    <img src="{{ asset('img/logo/fuo-logo.png') }}" alt="Fountain University — home" class="img-fluid w-50">
                 </a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -487,12 +516,12 @@
                         </li>
                     </ul>
                     <ul class="social-profile list-style">
-                        <li><a href="https://www.facebook.com/fuoweb" target="_blank"><i
+                        <li><a href="https://www.facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Facebook"><i
                                     class='bx bxl-facebook'></i></a></li>
-                        <li><a href="https://www.instagram.com/fountain.university/" target="_blank"><i
+                        <li><a href="https://www.instagram.com/fountain.university/" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Instagram"><i
                                     class='bx bxl-instagram'></i></a></li>
-                        <li><a href="https://x.com/fuoweb" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                        <li><a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"><i
+                        <li><a href="https://x.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on X (Twitter)"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on LinkedIn"><i
                                     class='bx bxl-linkedin'></i></a></li>
                     </ul>
                 </div>
@@ -1159,10 +1188,9 @@
         </div>
         <!-- End Responsive Navbar Area -->
 
-
-
-
-        @yield('content')
+        <main id="main-content" tabindex="-1">
+            @yield('content')
+        </main>
 
 
         <!-- Start Footer Area — redesigned -->
