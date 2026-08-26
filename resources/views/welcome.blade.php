@@ -23,7 +23,7 @@
             </div>
             <div class="fuo-modal-body">
                 <p>The 2026/2027 Admission Exercise is Ongoing. Beware of Admission Fraudsters!</p>
-                <p>For all applications and updates, use only Fountain University's official channels: the website fuo.edu.ng and the admissions portal <a href="https://eportal.fuo.edu.ng/" target="_blank">https://eportal.fuo.edu.ng/</a>.</p>
+                <p>For all applications and updates, use only Fountain University's official channels: the website fuo.edu.ng and the admissions portal <a href="https://eportal.fuo.edu.ng/" target="_blank" rel="noopener noreferrer">https://eportal.fuo.edu.ng/</a>.</p>
                 <p>Beware of fraudsters; the University will not be responsible for dealings with unauthorised persons.</p>
                 <p>FUO Admission Office</p>
 
@@ -477,26 +477,26 @@
                     <div class="fuo-fb-head">
                         <i class='bx bxl-facebook-circle' style="font-size:24px; color:#fff;"></i>
                         <div><div class="fuo-name" style="color:#fff;">Fountain University Osogbo</div><div class="fuo-handle">facebook.com/fuoweb</div></div>
-                        <a href="https://www.facebook.com/fuoweb" target="_blank" style="margin-left:auto; background:#fff; color:#1877F2; font-size:12px; font-weight:700; padding:5px 14px; border-radius:6px;">Follow Page</a>
+                        <a href="https://www.facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Facebook" style="margin-left:auto; background:#fff; color:#1877F2; font-size:12px; font-weight:700; padding:5px 14px; border-radius:6px;">Follow Page</a>
                     </div>
                     <div style="display:flex; justify-content:center; overflow:hidden; min-height:320px;">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none; overflow:hidden; display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none; overflow:hidden; display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Fountain University Facebook feed"></iframe>
                     </div>
                 </div>
                 <div class="fuo-social-box">
                     <div class="fuo-yt-head"><i class='bx bxl-youtube' style="font-size:22px; color:#fff;"></i><span style="color:#fff; font-size:13px; font-weight:600;">FUO on YouTube</span></div>
                     <div class="fuo-yt-title">VC's documentary — Building Minds, Transforming Futures</div>
                     <div class="fuo-yt-embed">
-                        <iframe src="https://www.youtube.com/embed/u_iW3X8-X78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/u_iW3X8-X78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="VC's documentary — Building Minds, Transforming Futures"></iframe>
                     </div>
                 </div>
             </div>
             <div class="fuo-social-links-row">
-                <a class="fuo-social-pill" style="background:#1877F2;" href="https://www.facebook.com/fuoweb" target="_blank"><i class='bx bxl-facebook'></i>Facebook</a>
-                <a class="fuo-social-pill" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);" href="https://www.instagram.com/fountain.university/" target="_blank"><i class='bx bxl-instagram'></i>Instagram</a>
-                <a class="fuo-social-pill" style="background:#000;" href="https://x.com/fuoweb" target="_blank"><i class='bx bxl-twitter'></i>Twitter / X</a>
-                <a class="fuo-social-pill" style="background:#0077B5;" href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                <a class="fuo-social-pill" style="background:#FF0000;" href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank"><i class='bx bxl-youtube'></i>YouTube</a>
+                <a class="fuo-social-pill" style="background:#1877F2;" href="https://www.facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Facebook"><i class='bx bxl-facebook'></i>Facebook</a>
+                <a class="fuo-social-pill" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);" href="https://www.instagram.com/fountain.university/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Instagram"><i class='bx bxl-instagram'></i>Instagram</a>
+                <a class="fuo-social-pill" style="background:#000;" href="https://x.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on X (Twitter)"><i class='bx bxl-twitter'></i>Twitter / X</a>
+                <a class="fuo-social-pill" style="background:#0077B5;" href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on LinkedIn"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                <a class="fuo-social-pill" style="background:#FF0000;" href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank" rel="noopener noreferrer" aria-label="Watch Fountain University on YouTube"><i class='bx bxl-youtube'></i>YouTube</a>
             </div>
         </div>
     </section>

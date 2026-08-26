@@ -174,13 +174,13 @@
                     <div class="other-option d-lg-none">
                         <div class="option-item">
                             <button type="button" class="search-btn" data-bs-toggle="offcanvas"
-                                data-bs-target="#staticBackdrop">
+                                data-bs-target="#staticBackdrop" aria-label="Open search panel">
                                 <i class='bx bx-search'></i>
                             </button>
                         </div>
                     </div>
                     <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
-                        aria-controls="navbarOffcanvas">
+                        aria-controls="navbarOffcanvas" aria-label="Open navigation menu">
                         <i class='bx bx-menu'></i>
                     </a>
                     <div class="collapse navbar-collapse justify-content-between">
@@ -277,7 +277,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a target="_blank" href="https://ipss.fuo.edu.ng/"
+                                    <li class="nav-item"><a target="_blank" rel="noopener noreferrer" href="https://ipss.fuo.edu.ng/"
                                             class="nav-link">IPSS</a></li>
                                 </ul>
                             </li>
@@ -457,13 +457,13 @@
                             <div class="option-item">
                                 <div class="nav-btn">
                                     <a href="{{ 'https://eportal.fuo.edu.ng' }}" class="default-btn"
-                                        target="_blank">PORTALS</a>
+                                        target="_blank" rel="noopener noreferrer">PORTALS</a>
                                 </div>
                             </div>
                             <div class="option-item">
                                 <div class="nav-search">
                                     <a href="#" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                                        aria-controls="staticBackdrop" class="search-button"><i
+                                        aria-controls="staticBackdrop" aria-label="Open search panel" class="search-button"><i
                                             class='bx bx-search'></i></a>
                                 </div>
                             </div>
@@ -753,7 +753,7 @@
                                     </div>
 
                                     <div class="accordion-item">
-                                        <a target="_blank" href="https://ipss.fuo.edu.ng/" class="accordion-link">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://ipss.fuo.edu.ng/" class="accordion-link">
                                             IPSS Programmes
                                         </a>
                                     </div>
@@ -1169,12 +1169,12 @@
                         </li>
                     </ul>
                     <ul class="social-profile list-style">
-                        <li><a href="{{ 'https://www.facebook.com/fuoweb' }}" target="_blank"><i
+                        <li><a href="{{ 'https://www.facebook.com/fuoweb' }}" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Facebook"><i
                                     class='bx bxl-facebook'></i></a></li>
-                        <li><a href="{{ 'https://www.instagram.com/fountain.university/' }}" target="_blank"><i
+                        <li><a href="{{ 'https://www.instagram.com/fountain.university/' }}" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Instagram"><i
                                     class='bx bxl-instagram'></i></a></li>
                         <li><a href="{{ 'https://ng.linkedin.com/school/fountain-university-osogbo/' }}"
-                                target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                target="_blank" rel="noopener noreferrer" aria-label="Fountain University on LinkedIn"><i class='bx bxl-linkedin'></i></a></li>
                     </ul>
                 </div>
 
@@ -1233,10 +1233,10 @@
                 <div style="border-top:1px solid rgba(255,255,255,0.1); padding:18px 0; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
                     <p style="font-size:13px; margin:0;">Copyright &copy; Fountain University, Osogbo</p>
                     <div style="display:flex; gap:14px;">
-                        <a href="https://facebook.com/fuoweb" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.instagram.com/fountain.university/" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-instagram-alt'></i></a>
-                        <a href="https://x.com/fuoweb" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Facebook" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/fountain.university/" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on Instagram" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://x.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on X (Twitter)" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" rel="noopener noreferrer" aria-label="Fountain University on LinkedIn" style="width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,0.68); text-decoration:none;"><i class='bx bxl-linkedin-square'></i></a>
                     </div>
                 </div>
             </div>

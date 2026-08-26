@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-md-4" data-aos="fade-up">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="" style="width:48px;">
+                    <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="" role="presentation" style="width:48px;">
                     <h4>Student Life</h4>
                     <p>Clubs, societies and faith groups that create connection and leadership opportunities.</p>
                     <a href="{{ route('student-affairs') }}" class="read-more">Learn more</a>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="" style="width:48px;">
+                    <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="" role="presentation" style="width:48px;">
                     <h4>Housing & Residences</h4>
                     <p>Safe, supervised halls with programming that supports academic and personal growth.</p>
                     <a href="#" class="read-more">Housing options</a>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/reading-2.png') }}" alt="" style="width:48px;">
+                    <img src="{{ asset('img/icon/reading-2.png') }}" alt="" role="presentation" style="width:48px;">
                     <h4>Dining & Food</h4>
                     <p>Multiple dining outlets offering affordable meals and special-diet options.</p>
                     <a href="#" class="read-more">Dining services</a>
