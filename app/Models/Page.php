@@ -11,6 +11,10 @@ class Page extends Model
 
     protected $fillable = [
         'title',
+        'hero_title',
+        'hero_subtitle',
+        'hero_image',
+        'images',
         'slug',
         'status',
         'template',
@@ -22,5 +26,6 @@ class Page extends Model
 
     protected $casts = [
         'published_at' => 'datetime',
+        'images' => 'array',
     ];
 }

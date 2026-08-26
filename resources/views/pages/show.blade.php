@@ -2,10 +2,17 @@
 @section('title', $page->meta_title ?? $page->title)
 
 @section('content')
-    <div class="page-title-area item-bg2 jarallax" style="background-image: url('{{ asset('img/banner/fuo-campus.jpg') }}');">
+    @php
+        $heroImage = $page->hero_image ?: 'img/banner/fuo-campus.jpg';
+    @endphp
+
+    <div class="page-title-area item-bg2 jarallax" style="background-image: url('{{ asset($heroImage) }}');">
         <div class="container">
             <div class="page-title-content">
-                <h2>{{ $page->title }}</h2>
+                <h2>{{ $page->hero_title ?? $page->title }}</h2>
+                @if($page->hero_subtitle)
+                    <p class="text-white-50 mb-0">{{ $page->hero_subtitle }}</p>
+                @endif
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li>{{ $page->title }}</li>
@@ -25,6 +32,18 @@
                             @endif
 
                             {!! $page->content !!}
+
+                            @if(!empty($page->images))
+                                <div class="mt-4 row g-3">
+                                    @foreach($page->images as $image)
+                                        @if(!empty($image['path']))
+                                            <div class="col-md-4">
+                                                <img src="{{ asset($image['path']) }}" alt="" class="img-fluid rounded shadow-sm">
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            @endif
                         </div>
                     </article>
                 </div>

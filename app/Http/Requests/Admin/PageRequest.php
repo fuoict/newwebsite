@@ -25,6 +25,10 @@ class PageRequest extends FormRequest
 
         return [
             'title' => ['required', 'string', 'max:191'],
+            'hero_title' => ['nullable', 'string', 'max:191'],
+            'hero_subtitle' => ['nullable', 'string', 'max:255'],
+            'hero_image' => ['nullable', 'string', 'max:255'],
+            'images' => ['nullable'],
             'slug' => ['required', 'string', 'max:191', 
                 \Illuminate\Validation\Rule::unique('pages', 'slug')->ignore($pageId),
             ],

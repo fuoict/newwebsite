@@ -13,8 +13,8 @@
     @csrf
     @method('PUT')
 
-    <div class="row g-4">
-        <div class="col-lg-8">
+    <div class="row g-4 page-editor-grid">
+        <div class="col-lg-8 col-xl-8">
             <div class="card p-4">
                 <div class="mb-3">
                     <label class="form-label">Page Title <span class="text-danger">*</span></label>
@@ -30,14 +30,51 @@
                     <small class="text-muted">Used in the page URL and must be unique.</small>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Page Content</label>
-                    <textarea name="content" rows="10" class="form-control @error('content') is-invalid @enderror">{{ old('content', $page->content) }}</textarea>
-                    @error('content')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                    <label class="form-label">Hero Title</label>
+                    <input type="text" name="hero_title" value="{{ old('hero_title', $page->hero_title) }}"
+                           class="form-control @error('hero_title') is-invalid @enderror" placeholder="Optional hero heading">
+                    @error('hero_title')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Hero Subtitle</label>
+                    <input type="text" name="hero_subtitle" value="{{ old('hero_subtitle', $page->hero_subtitle) }}"
+                           class="form-control @error('hero_subtitle') is-invalid @enderror" placeholder="Optional hero description">
+                    @error('hero_subtitle')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Hero Image</label>
+                    <input type="text" name="hero_image" value="{{ old('hero_image', $page->hero_image) }}"
+                           class="form-control @error('hero_image') is-invalid @enderror" placeholder="/img/example.jpg">
+                    @error('hero_image')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Intro Paragraph</label>
+                    <textarea name="intro_content" rows="4" class="form-control @error('intro_content') is-invalid @enderror" placeholder="Welcome text or intro paragraph">{{ old('intro_content', $editorData['intro'] ?? '') }}</textarea>
+                    @error('intro_content')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                    <small class="text-muted">This is the opening paragraph that appears near the top of the page.</small>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Content Sections</label>
+                    <div id="content-blocks"></div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm mt-2" onclick="addContentBlock()">
+                        <i class='bx bx-plus'></i> Add Section
+                    </button>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Additional Images</label>
+                    <textarea name="images" rows="4" class="form-control @error('images') is-invalid @enderror" placeholder="One image path or URL per line">{{ old('images', collect($page->images ?? [])->pluck('path')->implode("\n")) }}</textarea>
+                    @error('images')<div class="invalid-feedback">{{ $message }}</div>@enderror
+                    <small class="text-muted">Add or remove image paths/URLs here. Each line becomes a selectable image entry.</small>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-xl-4">
             <div class="card p-4 mb-4">
                 <h6 class="mb-3" style="font-weight:700">Publish Settings</h6>
                 <div class="mb-3">
@@ -82,4 +119,50 @@
         </div>
     </div>
 </form>
-@endsection
+
+@push('scripts')
+<script>
+function escapeHtml(value) {
+    return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function createContentBlock(heading = '', body = '') {
+    const container = document.getElementById('content-blocks');
+    const index = container.children.length;
+    const row = document.createElement('div');
+    row.className = 'border rounded p-3 mb-2';
+    row.innerHTML = `
+        <div class="mb-2">
+            <label class="form-label">Section Heading</label>
+            <input type="text" name="content_blocks[${index}][heading]" class="form-control" placeholder="e.g. Mission" value="${escapeHtml(heading)}">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Section Body</label>
+            <textarea name="content_blocks[${index}][body]" rows="4" class="form-control" placeholder="Add the section text here">${escapeHtml(body)}</textarea>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-danger" onclick="this.parentElement.remove()">Remove</button>
+    `;
+    container.appendChild(row);
+}
+
+function addContentBlock() {
+    createContentBlock();
+}
+
+function initializeContentBlocks() {
+    const initialBlocks = @json(old('content_blocks', $editorData['blocks'] ?? []));
+    if (Array.isArray(initialBlocks) && initialBlocks.length > 0) {
+        initialBlocks.forEach(block => {
+            createContentBlock(block.heading || '', block.body || '');
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', initializeContentBlocks);
+</script>
+@endpush

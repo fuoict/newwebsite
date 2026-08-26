@@ -26,6 +26,7 @@
                     <td class="ps-4">
                         <div style="font-weight:600;font-size:13px">{{ $page->title }}</div>
                         <small class="text-muted">{{ $page->meta_title ?? 'No meta title set' }}</small>
+                        <div class="small text-muted">{{ $page->hero_title ?? 'No hero title set' }}</div>
                     </td>
                     <td>
                         <span class="badge {{ $page->status === 'published' ? 'badge-published' : 'badge-draft' }}">
@@ -57,7 +58,7 @@
     </div>
     @if($pages->hasPages())
     <div class="card-footer">
-        {{ $pages->links() }}
+        {{ $pages->links('pagination::bootstrap-5') }}
     </div>
     @endif
 </div>
