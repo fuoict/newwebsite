@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta_title', 'Global Ranking & Impact — Fountain University, Osogbo')
+@section('meta_description', 'Fountain University global rankings — Times Higher Education, Nigerian rankings, faculty recognition — and our impact on the UN Sustainable Development Goals (SDGs).')
+@section('meta_image', asset('img/gallery/vc2.jpeg'))
+
 @section('content')
 
 <section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/vc2.jpeg') }}'); background-size: cover; background-position: center; padding: 80px 0;">

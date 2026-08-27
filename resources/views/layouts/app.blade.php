@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
 
-    <title>Fountain University, Osogbo - Welcome to Fountain University | fuo.edu.ng formely fountainuniversity.edu.ng </title>
+    @include('partials.seo')
+
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/fuo-logo.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo/fuo-logo.png') }}">
     <link rel="shortcut icon" href="{{ asset('img/logo/fuo-logo.png') }}">

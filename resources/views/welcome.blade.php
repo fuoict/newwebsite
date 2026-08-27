@@ -1,5 +1,9 @@
 ﻿@extends('layouts.app')
 
+@section('meta_title', 'Fountain University, Osogbo — Knowledge, Character and Service')
+@section('meta_description', 'Welcome to Fountain University, Osogbo — a private university founded in 2007 by NASFAT. Explore undergraduate, postgraduate and sandwich programmes.')
+@section('meta_image', asset('img/banner/convo4.jpeg'))
+
 @section('content')
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

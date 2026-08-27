@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('meta_title', 'Campus Life — Fountain University, Osogbo')
+@section('meta_description', 'Discover campus life at Fountain University — student clubs, housing, sports, recreation, events and community. A vibrant community learning, living and growing together.')
+@section('meta_image', asset('img/gallery/basketball_court.jpg'))
+
 @section('content')
 
 <section class="page-hero small-hero" style="background-image: url('{{ asset('img/gallery/basketball_court.jpg') }}'); background-size: cover; background-position: center; padding: 80px 0;">
