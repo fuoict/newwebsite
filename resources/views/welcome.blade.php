@@ -15,7 +15,7 @@
         <div class="fuo-announce-modal">
             <button class="fuo-close-btn" onclick="closeFuoModal()" aria-label="Close"><i class='bx bx-x'></i></button>
             <div class="fuo-banner">
-                <img src="{{ asset('img/all-img/fu-gate.jpg') }}" alt="Fountain University campus gate">
+                <img src="{{ asset('img/all-img/fu-gate.jpg') }}" alt="Fountain University campus gate" width="600" height="300">
                 <div class="fuo-banner-tag">
                     <p class="fuo-kicker">Announcement</p>
                     <h3>2026/2027 admission is now open</h3>
@@ -43,9 +43,9 @@
 
     {{-- HERO --}}
     <section class="fuo-hero-v2" id="fuoHero">
-        <img class="bg-slide active" src="{{ asset('img/banner/convo4.jpeg') }}" alt="Fountain University campus">
-        <img class="bg-slide" src="{{ asset('img/banner/phdstudent.jpeg') }}" alt="Fountain University campus">
-        <img class="bg-slide" src="{{ asset('img/banner/slid-6.png') }}" alt="Fountain University campus">
+        <img class="bg-slide active" src="{{ asset('img/banner/convo4.jpeg') }}" alt="Fountain University campus" fetchpriority="high" width="1920" height="1080">
+        <img class="bg-slide" src="{{ asset('img/banner/phdstudent.jpeg') }}" alt="Fountain University campus" loading="eager" width="1920" height="1080">
+        <img class="bg-slide" src="{{ asset('img/banner/slid-6.png') }}" alt="Fountain University campus" loading="eager" width="1920" height="1080">
         <div class="hero-content">
             <div class="fuo-wrap">
                 <div class="fuo-admission-badge"><span class="dot"></span>2026/2027 admission now open</div>
@@ -269,7 +269,7 @@
             <div class="fuo-about-grid">
                 <div class="fuo-about-photo-stack">
                     <div class="fuo-about-photo-main">
-                        <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor">
+                        <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor" loading="lazy" width="400" height="500">
                     </div>
                     <div class="fuo-about-photo-tag">
                         <p class="fuo-role">Office of the Vice-Chancellor</p>
@@ -312,19 +312,19 @@
                 </div>
                 <div class="fuo-academic-grid">
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes"></div>
+                        <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Academic programmes</h4><p>Courses tailored to students satisfaction and employability.</p><a class="fuo-link" href="https://fuo.edu.ng/undergradute-programme">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking"></div>
+                        <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Global Ranking & Impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="/global-ranking-impact">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements"></div>
+                        <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Admission requirements</h4><p>Everything needed to aid your admission into FUO.</p><a class="fuo-link" href="https://fuo.edu.ng/admission-requirement">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Campus Life"></div>
+                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Campus Life" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Campus Life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="/campus-life">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                 </div>
@@ -334,7 +334,7 @@
 
     {{-- VIDEO --}}
     <div class="fuo-video-area">
-        <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary">
+        <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary" loading="lazy" width="800" height="450">
         <div class="fuo-video-play">
             <a class="fuo-play-btn" href="https://www.youtube.com/watch?v=rAhNrZw4BaA"><i class='bx bx-play'></i></a>
             <p class="fuo-video-caption">Watch: FUO first anniversary documentary — building minds, transforming futures</p>
@@ -352,7 +352,7 @@
                 <div>
                     @forelse($featuredNews as $item)
                         <a href="{{ route('news.show', $item->slug) }}" class="fuo-news-featured" @if(!$loop->first) style="margin-top:20px;" @endif>
-                            <div class="fuo-img"><img src="{{ $item->image_url }}" alt="{{ $item->title }}"></div>
+                            <div class="fuo-img"><img src="{{ $item->image_url }}" alt="{{ $item->title }}" loading="lazy" width="400" height="250"></div>
                             <div class="fuo-body">
                                 <span class="fuo-tag">{{ $item->category }}</span>
                                 <h3>{{ $item->title }}</h3>
@@ -367,14 +367,14 @@
                 <div class="fuo-news-side">
                     @if(isset($sidebarFeatured) && $sidebarFeatured)
                         <a href="{{ route('news.show', $sidebarFeatured->slug) }}" class="fuo-news-side-item">
-                            <div class="fuo-img"><img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}"></div>
+                            <div class="fuo-img"><img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}" loading="lazy" width="120" height="80"></div>
                             <div><span class="fuo-tag">{{ $sidebarFeatured->category }}</span><h4>{{ Str::limit($sidebarFeatured->title, 60) }}</h4></div>
                         </a>
                     @endif
                     @if(isset($sidebarSmall) && $sidebarSmall->count())
                         @foreach($sidebarSmall as $small)
                             <a href="{{ route('news.show', $small->slug) }}" class="fuo-news-side-item">
-                                <div class="fuo-img"><img src="{{ $small->image_url }}" alt="{{ $small->title }}"></div>
+                                <div class="fuo-img"><img src="{{ $small->image_url }}" alt="{{ $small->title }}" loading="lazy" width="120" height="80"></div>
                                 <div><span class="fuo-tag">{{ $small->category }}</span><h4>{{ Str::limit($small->title, 60) }}</h4></div>
                             </a>
                         @endforeach
@@ -412,15 +412,15 @@
             </div>
             <div class="fuo-campus-grid">
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library">
+                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>E-Library</h3><a href="#">Virtual tour →</a></div>
                 </div>
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory">
+                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Nursing laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory">
+                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Biology laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
             </div>
@@ -436,17 +436,17 @@
             </div>
             <div class="fuo-success-grid">
                 <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture">
+                    <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">15th convocation lecture</div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=rAhNrZw4BaA" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="First anniversary documentary">
+                    <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="First anniversary documentary" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">First anniversary documentary</div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="Best graduating student">
+                    <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="Best graduating student" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">Best graduating student</div>
                 </a>

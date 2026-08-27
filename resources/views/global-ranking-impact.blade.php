@@ -26,7 +26,7 @@
                 <a href="{{ route('news.index') }}" class="default-btn">Read latest recognition</a>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="University recognition" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="University recognition" class="img-fluid rounded" loading="lazy" width="516" height="387">
             </div>
         </div>
 
@@ -61,7 +61,7 @@
                 <a href="{{ route('partnerships') }}" class="default-btn btn-style-2">Our partnerships</a>
             </div>
             <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                <img src="{{ asset('img/gallery/vc2.jpeg') }}" alt="National ranking" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/vc2.jpeg') }}" alt="National ranking" class="img-fluid rounded" loading="lazy" width="516" height="387">
             </div>
         </div>
 

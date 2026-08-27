@@ -26,7 +26,7 @@
                 <a href="{{ route('student-affairs') }}" class="default-btn">Student Affairs</a>
             </div>
             <div class="col-lg-6" data-aos="fade-left">
-                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Students on campus" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Students on campus" class="img-fluid rounded" loading="lazy" width="516" height="387">
             </div>
         </div>
 
@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-md-4" data-aos="fade-up">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="" role="presentation" style="width:48px;">
+                    <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Student Life</h4>
                     <p>Clubs, societies and faith groups that create connection and leadership opportunities.</p>
                     <a href="{{ route('student-affairs') }}" class="read-more">Learn more</a>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="" role="presentation" style="width:48px;">
+                    <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Housing & Residences</h4>
                     <p>Safe, supervised halls with programming that supports academic and personal growth.</p>
                     <a href="#" class="read-more">Housing options</a>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-box">
-                    <img src="{{ asset('img/icon/reading-2.png') }}" alt="" role="presentation" style="width:48px;">
+                    <img src="{{ asset('img/icon/reading-2.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Dining & Food</h4>
                     <p>Multiple dining outlets offering affordable meals and special-diet options.</p>
                     <a href="#" class="read-more">Dining services</a>
@@ -68,7 +68,7 @@
                 <a href="{{ route('sports') }}" class="default-btn btn-style-2">Explore sports</a>
             </div>
             <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Sports on campus" class="img-fluid rounded">
+                <img src="{{ asset('img/gallery/basketball_court.jpg') }}" alt="Sports on campus" class="img-fluid rounded" loading="lazy" width="516" height="387">
             </div>
         </div>
 
@@ -108,7 +108,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Campus Map</h5>
                         <p class="small">Quick map showing main teaching blocks, library and student services.</p>
-                        <img src="{{ asset('img/gallery/vc2.jpeg') }}" alt="Campus map" class="img-fluid rounded mb-2">
+                        <img src="{{ asset('img/gallery/vc2.jpeg') }}" alt="Campus map" class="img-fluid rounded mb-2" loading="lazy" width="400" height="300">
                         <a href="{{ route('our-campus') }}" class="read-more">View campus map</a>
                     </div>
                 </div>
