@@ -505,6 +505,31 @@
         </div>
     </section>
 
+    {{-- ── Still wondering where to begin? ── --}}
+    <div class="wonder-bar__wrapper" role="region" aria-label="Still wondering where to begin?" style="background:#035F39; padding:32px 0; margin-top:0;">
+        <div class="fuo-wrap" style="max-width:960px; margin:0 auto; padding:0 24px;">
+            <div class="wonder-bar" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+                <div class="wonder-bar__header" style="flex-shrink:0;">
+                    <span class="wonder-bar__header--text" style="color:#fff; font-size:20px; font-weight:700; letter-spacing:-0.3px;">Still wondering where to begin?</span>
+                </div>
+                <ul class="wonder-bar__list" style="display:flex; gap:12px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('undergradute-programme') }}" style="display:inline-block; background:#C9A227; color:#035F39; font-weight:700; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; transition:background .2s;">Explore programmes</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('admission-requirement') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Admissions</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('contact') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Contact us</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('campus-life') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Campus life</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 @endsection

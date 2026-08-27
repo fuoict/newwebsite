@@ -17,6 +17,9 @@
     @endphp
 
     <!-- Links of CSS files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/boxicons.min.css') }}">
@@ -36,6 +39,14 @@
     <link rel="apple-touch-icon" href="{{ asset('img/logo/fuo-logo.png') }}">
 
     <style>
+    /* ── Font override: Montserrat sitewide ── */
+    :root {
+        --fontFamily: 'Montserrat', sans-serif !important;
+    }
+    body, body *, body::before, body::after {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
     /* Accessibility: skip-to-content link */
     .skip-link {
         position: absolute;
