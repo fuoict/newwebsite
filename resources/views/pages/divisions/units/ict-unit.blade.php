@@ -45,7 +45,7 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="{{ asset('img/all-img/about-image.png') }}" alt="image">
+                                <img src="{{ asset('img/all-img/units/prof-bolarinwa.jpg') }}" alt="Prof Hakeem S. Bolarinwa" class="img-fluid" style="max-height: 370px; border:solid 1px #ddd; border-radius: 10px;">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">

@@ -4,9 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use App\Traits\Auditable;
 
 class DepartmentNews extends Model
 {
+    use Auditable;
     protected $fillable = [
         'department_id', 'title', 'slug', 'excerpt', 'body',
         'image', 'is_published', 'published_at',

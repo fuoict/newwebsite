@@ -1,5 +1,8 @@
 ﻿@php
     $Colleges = App\Models\College::all();
+    // Fetch pages grouped by section for dynamic navbar
+    $uniPages = \App\Models\Page::where('section', 'university')->where('is_active', true)->orderBy('sort_order')->get();
+    $officerPages = \App\Models\Page::where('section', 'officers')->where('is_active', true)->orderBy('sort_order')->get();
 @endphp
 
 <!doctype html>
@@ -153,47 +156,35 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <ul class="navbar-nav ms-auto">
 
-                            {{-- THE-UNIVERSITY MENU ------------------------------------------------------ --}}
+                            {{-- THE-UNIVERSITY MENU — Dynamic from database --}}
                             <li class="nav-item">
-                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                                    The University
-                                </a>
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">The University</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About Fountain
-                                            University</a></li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('about-bot') }}" class="nav-link sub-menu">Board of
-                                            Trustees</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="{{ route('about-governing-council') }}" class="nav-link">Governing
-                                            Council</a>
-                                    </li>
-                                    <li class="nav-item"><a href="{{ route('the-senate') }}" class="nav-link">The
-                                            Senate</a></li>
-                                    <li class="nav-item"><a href="{{ route('congregation') }}"
-                                            class="nav-link">Congregation</a></li>
+                                    @foreach($uniPages as $page)
+                                        @if($page->slug === 'board-of-trustees' || $page->slug === 'governing-council')
+                                            <li class="nav-item">
+                                                <a href="{{ url('/university/'.$page->slug) }}" class="nav-link sub-menu">{{ $page->title }}</a>
+                                            </li>
+                                        @else
+                                            <li class="nav-item">
+                                                <a href="{{ url('/university/'.$page->slug) }}" class="nav-link">{{ $page->title }}</a>
+                                            </li>
+                                        @endif
+                                    @endforeach
                                     <li class="nav-item">
                                         <a href="#!" class="nav-link">Principal Officers</a>
-                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height: 100px; overflow-y: auto;">
-                                            <li class="nav-item"><a href="{{ route('the-vice-chancellor') }}"
-                                                    class="nav-link">The Vice-Chancellor </a></li>
-                                            <li class="nav-item"><a href="{{ route('the-dvc') }}"
-                                                    class="nav-link">The Deputy Vice-Chancellor </a></li>
-                                            <li class="nav-item"><a href="{{ route('the-registrar') }}"
-                                                    class="nav-link">The Registrar</a></li>
-                                            <li class="nav-item"><a href="{{ route('the-bursar') }}"
-                                                    class="nav-link">The Bursar</a></li>
-                                            <li class="nav-item"><a href="{{ route('the-librarian') }}"
-                                                    class="nav-link">The Librarian</a></li>
+                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height:100px;overflow-y:auto">
+                                            @foreach($officerPages as $op)
+                                            <li class="nav-item">
+                                                <a href="{{ url('/university/'.$op->slug) }}" class="nav-link">{{ $op->title }}</a>
+                                            </li>
+                                            @endforeach
                                         </ul>
                                     </li>
-                                    {{-- <li class="nav-item"><a href="{{ route('our-campus') }}" class="nav-link">Our Campus</a></li> --}}
-                                    <li class="nav-item"><a href="{{ route('our-gallery') }}" class="nav-link">Our
-                                            Gallery</a></li>
+                                    <li class="nav-item"><a href="{{ url('/university/our-gallery') }}" class="nav-link">Our Gallery</a></li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Institutional Showcase</a>
-                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height: 220px; overflow-y: auto;">
+                                        <ul class="dropdown-menu dropdown-menu-end" style="max-height:220px;overflow-y:auto">
                                             <li class="nav-item"><a href="{{ route('partnerships') }}" class="nav-link">Partnerships</a></li>
                                             <li class="nav-item"><a href="{{ route('donors') }}" class="nav-link">Donors</a></li>
                                             <li class="nav-item"><a href="{{ route('scholarships') }}" class="nav-link">Scholarships</a></li>
@@ -204,13 +195,10 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Resources</a>
-                                        <ul class="dropdown-menu" style="max-height: 100px; overflow-y: auto;">
-                                            <li class="nav-item"><a href="{{ route('general-download') }}"
-                                                    class="nav-link">General Downloads</a></li>
-                                            <li class="nav-item"><a href="{{ route('students-download') }}"
-                                                    class="nav-link">Students' Downloads</a></li>
-                                            <li class="nav-item"><a href="{{ route('staff-downloads') }}"
-                                                    class="nav-link">Staff Downloads</a></li>
+                                        <ul class="dropdown-menu" style="max-height:100px;overflow-y:auto">
+                                            <li class="nav-item"><a href="{{ route('general-download') }}" class="nav-link">General Downloads</a></li>
+                                            <li class="nav-item"><a href="{{ route('students-download') }}" class="nav-link">Students' Downloads</a></li>
+                                            <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -517,153 +505,55 @@
                         </a>
                     </div>
 
-                    {{-- THE UNIVERSITY MENU MANAGEMENT -------------------------------------------- --}}
+                    {{-- THE UNIVERSITY MENU — Dynamic from database --}}
                     <div class="accordion-item">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            The University
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">The University</button>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
                             <div class="accordion-body">
                                 <div class="accordion" id="navbarAccordion8">
+                                    @foreach($uniPages as $page)
                                     <div class="accordion-item">
-                                        <a href="{{ route('about') }}" class="accordion-link">
-                                            About the University
-                                        </a>
+                                        <a href="{{ url('/university/'.$page->slug) }}" class="accordion-link">{{ $page->title }}</a>
                                     </div>
+                                    @endforeach
                                     <div class="accordion-item">
-                                        <a href="{{ route('about-bot') }}" class="accordion-link">
-                                            University Board of Trustees
-                                        </a>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <a href="{{ route('about-governing-council') }}" class="accordion-link">
-                                            Governing Council
-                                        </a>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <a href="{{ route('the-senate') }}" class="accordion-link">
-                                            The Senate
-                                        </a>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <a href="{{ route('congregation') }}" class="accordion-link">
-                                            Congregation
-                                        </a>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseAdmin"
-                                            aria-expanded="false" aria-controls="collapseAdmin">
-                                            Principal Officers
-                                        </button>
-                                        <div id="collapseAdmin" class="accordion-collapse collapse"
-                                            data-bs-parent="#navbarAccordionAdmin">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">Principal Officers</button>
+                                        <div id="collapseAdmin" class="accordion-collapse collapse" data-bs-parent="#navbarAccordionAdmin">
                                             <div class="accordion-body">
                                                 <div class="accordion" id="navbarAccordionAdmin">
+                                                    @foreach($officerPages as $op)
                                                     <div class="accordion-item">
-                                                        <a href="{{ route('the-vice-chancellor') }}"
-                                                            class="accordion-link">
-                                                            The Vice-Chancellor
-                                                        </a>
+                                                        <a href="{{ url('/university/'.$op->slug) }}" class="accordion-link">{{ $op->title }}</a>
                                                     </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('the-dvc') }}"
-                                                            class="accordion-link">
-                                                            The Deputy Vice-Chancellor
-                                                        </a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('the-registrar') }}"
-                                                            class="accordion-link">
-                                                            The Registrar
-                                                        </a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('the-bursar') }}" class="accordion-link">
-                                                            The Bursar
-                                                        </a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('the-librarian') }}"
-                                                            class="accordion-link">
-                                                            The Librarian
-                                                        </a>
-                                                    </div>
+                                                    @endforeach
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-
+                                    <div class="accordion-item"><a href="{{ url('/university/our-gallery') }}" class="accordion-link">Our Gallery</a></div>
                                     <div class="accordion-item">
-                                        <a href="{{ route('our-gallery') }}" class="accordion-link">
-                                            Our Gallery
-                                        </a>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseShowcase"
-                                            aria-expanded="false" aria-controls="collapseShowcase">
-                                            Institutional Showcase
-                                        </button>
-                                        <div id="collapseShowcase" class="accordion-collapse collapse"
-                                            data-bs-parent="#navbarAccordion8">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShowcase" aria-expanded="false">Institutional Showcase</button>
+                                        <div id="collapseShowcase" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion8">
                                             <div class="accordion-body">
                                                 <div class="accordion" id="navbarAccordionShowcase">
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('partnerships') }}" class="accordion-link">Partnerships</a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('donors') }}" class="accordion-link">Donors</a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('scholarships') }}" class="accordion-link">Scholarships</a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('dignitaries') }}" class="accordion-link">Dignitaries</a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('honorary-doctorates') }}" class="accordion-link">Honorary Doctorates</a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('convocation-lecturers') }}" class="accordion-link">Convocation Lecturers</a>
-                                                    </div>
+                                                    <div class="accordion-item"><a href="{{ route('partnerships') }}" class="accordion-link">Partnerships</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('donors') }}" class="accordion-link">Donors</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('scholarships') }}" class="accordion-link">Scholarships</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('dignitaries') }}" class="accordion-link">Dignitaries</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('honorary-doctorates') }}" class="accordion-link">Honorary Doctorates</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('convocation-lecturers') }}" class="accordion-link">Convocation Lecturers</a></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseResources"
-                                            aria-expanded="false" aria-controls="collapseResources">
-                                            Resources
-                                        </button>
-                                        <div id="collapseResources" class="accordion-collapse collapse"
-                                            data-bs-parent="#navbarAccordionResources">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResources" aria-expanded="false">Resources</button>
+                                        <div id="collapseResources" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion8">
                                             <div class="accordion-body">
                                                 <div class="accordion" id="navbarAccordionResources">
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('general-download') }}"
-                                                            class="accordion-link">
-                                                            General Downloads
-                                                        </a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('students-download') }}"
-                                                            class="accordion-link">
-                                                            Students' Downloads
-                                                        </a>
-                                                    </div>
-                                                    <div class="accordion-item">
-                                                        <a href="{{ route('staff-downloads') }}"
-                                                            class="accordion-link">
-                                                            Staff Downloads
-                                                        </a>
-                                                    </div>
+                                                    <div class="accordion-item"><a href="{{ route('general-download') }}" class="accordion-link">General Downloads</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('students-download') }}" class="accordion-link">Students' Downloads</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('staff-downloads') }}" class="accordion-link">Staff Downloads</a></div>
                                                 </div>
                                             </div>
                                         </div>

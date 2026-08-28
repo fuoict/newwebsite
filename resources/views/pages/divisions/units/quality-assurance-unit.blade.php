@@ -1,4 +1,3 @@
-﻿
 @extends('layouts.app')
 
 @section('content')
@@ -8,7 +7,7 @@
             <div class="container">
                 <div class="banner-spacing">
                     <div class="section-info">
-                        <h2 data-aos="fade-up" data-aos-delay="100">Quality Assuarance Unit</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100">Quality Assurance Unit</h2>
                     </div>
                 </div>
             </div>
@@ -22,28 +21,22 @@
                     <div class="col-lg-5 col-md-12">
                         <div class="text-content" data-aos="fade-up" data-aos-delay="100">
                             <div class="sub-title">
-                                <i class='bx bxs-graduation'></i> <p>PHILOSOPHY</p>
+                                <i class='bx bxs-graduation'></i> <p>Welcome to</p>
                             </div>
-                             <h2 class="title-anim">Quality Assuarance Unit</h2>
-                            {{-- <p class="title-anim">Our philosophy is providing timely and accurate information, rendering services in tandem with university’s plans as well as coordinating compliance to guide management in decision-making.</p>
-                            <p>In carrying out its responsibilities, the Academic Planning Unit:</p>
+                             <h2 class="title-anim">Quality Assurance Unit</h2>
+                            <p class="title-anim">Welcome to the Quality Assurance Unit of Fountain University, Osogbo. We are committed to maintaining and enhancing the quality of academic programmes, administrative processes, and service delivery across the University.</p>
+                            <p>The Quality Assurance Unit serves as the custodian of academic standards, ensuring that all programmes and activities meet regulatory requirements and best practices in higher education. We work collaboratively with departments, faculties, and administrative units to promote a culture of continuous improvement and excellence.</p>
+                            <p>In carrying out its responsibilities, the Quality Assurance Unit:</p>
                             <ul>
-                                <li>Produces a range of institutional statistics and undertakes data manipulation, analysis and interpretation to convert raw data into useful management information.</li>
-                                <li>Compiles and analyses statistical data for use in general planning, strategic and analysis planning, budgeting, sundry management requirement and repository.</li>
-                                <li>Prepares academic brief for internal and external purposes</li>
-                                <li>Monitors resources allocation and utilization in line with the plans of the university</li>
-                                <li>Develops resource allocation parameter</li>
-                                <li>Determines manpower needs, control and staff development</li>
-                                <li>Prepares annual plans of the university for submission to government</li>
-                                <li>Provision of data-based information on various aspect of the university operations</li>
-                                <li>Coordinates defrosting of positions and recruitment exercise</li>
-                                <li>Coordinates teaching and research equipment grants</li>
-                                <li>Computes excess workload for academics and technologists in the university</li>
-                                <li>Coordinates accreditation programmes of the university</li>
-                                <li>Determines allocation parameter of Direct Teaching Laboratory Cost (DTLC) to academic departments and units</li>
-                                <li>Undertakes planning-related investigations and studies.</li>
-                                <li>Provides close monitoring of the university programmes so as to maintain the quality of our programmes and effective service delivery.</li>
-                            </ul> --}}
+                                <li>Develops and implements quality assurance frameworks and policies for academic and administrative operations.</li>
+                                <li>Conducts regular internal quality audits and evaluations of academic programmes and services.</li>
+                                <li>Coordinates accreditation processes and prepares documentation for regulatory bodies including the National Universities Commission (NUC) and other relevant agencies.</li>
+                                <li>Monitors compliance with established academic standards, guidelines, and benchmarks.</li>
+                                <li>Gathers and analyses feedback from students, staff, and other stakeholders to identify areas for improvement.</li>
+                                <li>Organises training workshops and seminars on quality management for staff and faculty members.</li>
+                                <li>Prepares periodic quality assurance reports for management decision-making.</li>
+                                <li>Recommends best practices and innovative strategies to enhance the overall quality of education and services at Fountain University.</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -51,7 +44,7 @@
                         <div class="row justify-content-end">
                             <div class="col-lg-6 col-sm-6 col-md-6">
                                 <div class="content" data-aos="fade-right" data-aos-delay="100">
-                                <img src="{{ asset('img/all-img/about-image.png') }}" alt="image">
+                                <img src="{{ asset('img/all-img/about-image.png') }}" alt="image" class="img-fluid" style="max-height: 370px; border:solid 1px #ddd; border-radius: 10px;">
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-md-6">
@@ -61,7 +54,7 @@
                                     <p class="title-anim">Quality Assurance Unit</p>
                                     <div class="author-info">
                                         <span>Dr. Razak Omokeji </span>
-                                        <h5>Ganiy</h5>
+                                        <h5>Ganiyu</h5>
                                         <p>Director</p>
                                     </div>
                                 </div>
@@ -73,5 +66,31 @@
         </div>
         <!-- End About Us Area -->
 
+        <!-- Start Campus Tour Area -->
+        <div class="campus-tour">
+            <div class="container-fluid p-0">
+                
+                <div class="row g-0 align-items-center">
+                    
+                    <div class="col-lg-6">
+                        <div class="image cp-bg-2" data-aos="fade-zoom-in" data-aos-delay="100">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content" data-aos="fade-up" data-aos-delay="100">
+                            <div class="sub-title">
+                                <i class='bx bxs-graduation'></i> <p>Contact For Enquiries</p>
+                            </div>
+                            <h2>Quality Assurance Unit</h2>
+                            <ul>
+                                <li style="list-style-type: none"><i class='bx bxs-phone'></i>  +234 (0) 803 706 3960</li>
+                                <li style="list-style-type: none"><i class='bx bxs-envelope'></i>  Email: qualityassurance@fuo.edu.ng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Campus Tour Area -->
   
 @endsection

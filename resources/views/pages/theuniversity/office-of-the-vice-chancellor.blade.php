@@ -122,7 +122,6 @@
                     ];
                 }
             }
-
             if (empty($vcSpotlightImages)) {
                 $vcSpotlightImages = [
                     ['src' => 'img/vc-spotlight/third aniv.jpeg', 'caption' => ''],

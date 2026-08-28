@@ -42,7 +42,7 @@ class AdminFeaturedLinkController extends Controller
             'is_active'     => 'nullable|boolean',
         ]);
 
-        $validated['is_active'] = $request->boolean('is_active', true);
+        $validated['is_active'] = $request->boolean('is_active', false);
         $validated['sort_order'] = $validated['sort_order'] ?? 0;
 
         if ($request->hasFile('image')) {
@@ -73,7 +73,7 @@ class AdminFeaturedLinkController extends Controller
             'is_active'     => 'nullable|boolean',
         ]);
 
-        $validated['is_active'] = $request->boolean('is_active', true);
+        $validated['is_active'] = $request->boolean('is_active', false);
 
         if ($request->hasFile('image')) {
             if ($featuredLink->image) {
