@@ -263,19 +263,22 @@
 /* ═══════════════════════════════════════════════
    FAITH STRIP (Hadith + Prayer)
    ═══════════════════════════════════════════════ */
-.fuo-faith-strip { padding: 56px 0; }
+.fuo-faith-strip { padding: 40px 0; }
 .fuo-faith-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .fuo-faith-card {
   background: var(--fu-paper);
   border: 2px solid var(--fu-forest);
   border-radius: 12px;
-  padding: 26px 28px;
+  padding: 20px 22px;
   display: flex;
-  gap: 16px;
+  gap: 14px;
+  overflow: hidden;
 }
 .fuo-faith-card .fuo-faith-icon {
   font-size: 26px;
@@ -293,10 +296,10 @@
 }
 .fuo-faith-card .fuo-quote {
   font-style: italic;
-  font-size: 14.5px;
+  font-size: 13.5px;
   color: var(--fu-ink);
-  margin-bottom: 8px;
-  line-height: 1.7;
+  margin-bottom: 6px;
+  line-height: 1.6;
 }
 .fuo-faith-card .fuo-ref {
   font-size: 12px;
@@ -420,8 +423,13 @@
 }
 @keyframes lightning { 0%,92%,96%,100% { opacity: 0; } 93%,95% { opacity: .5; } 94% { opacity: 0; } }
 
+@media (max-width: 992px) {
+  .fuo-faith-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .fuo-faith-card { padding: 18px 20px; }
+}
 @media (max-width: 768px) {
   .fuo-faith-grid { grid-template-columns: 1fr; }
+  .fuo-faith-card { padding: 16px; }
 }
 
 /* ═══════════════════════════════════════════════

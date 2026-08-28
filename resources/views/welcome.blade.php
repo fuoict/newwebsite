@@ -159,7 +159,7 @@
                         <div class="fuo-faith-icon"><i class='bx bxs-mosque'></i></div>
                         <div style="flex:1;">
                             {{-- Top row: Weather | Next Prayer | Adhan Toggle --}}
-                            <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:12px;margin-bottom:16px">
+                            <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:8px;margin-bottom:12px">
                                 {{-- Weather --}}
                                 <div>
                                     <p class="fuo-kicker"><i class='bx bx-sun' style="margin-right:4px"></i>Weather in Osogbo</p>
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             {{-- All prayer times --}}
-                            <div id="fuoAllPrayers" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding-top:14px;border-top:1px solid rgba(255,255,255,.2)">
+                            <div id="fuoAllPrayers" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding-top:10px;border-top:1px solid rgba(255,255,255,.2)">
                                 <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
                                     <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Fajr</span>
                                     <span id="fpFajr" style="font-size:13px;font-weight:700;color:#fff">—</span>
