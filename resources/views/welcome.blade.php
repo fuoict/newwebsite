@@ -1,5 +1,9 @@
 ﻿@extends('layouts.app')
 
+@section('meta_title', 'Fountain University, Osogbo — Knowledge, Character and Service')
+@section('meta_description', 'Welcome to Fountain University, Osogbo — a private university founded in 2007 by NASFAT. Explore undergraduate, postgraduate and sandwich programmes.')
+@section('meta_image', asset('img/banner/convo4.jpeg'))
+
 @section('content')
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +19,7 @@
         <div class="fuo-announce-modal">
             <button class="fuo-close-btn" onclick="closeFuoModal()" aria-label="Close"><i class='bx bx-x'></i></button>
             <div class="fuo-banner">
-                <img src="{{ asset('img/all-img/fu-gate.jpg') }}" alt="Fountain University campus gate">
+                <img src="{{ asset('img/all-img/fu-gate.jpg') }}" alt="Fountain University campus gate" width="600" height="300">
                 <div class="fuo-banner-tag">
                     <p class="fuo-kicker">Announcement</p>
                     <h3>2026/2027 admission is now open</h3>
@@ -23,7 +27,7 @@
             </div>
             <div class="fuo-modal-body">
                 <p>The 2026/2027 Admission Exercise is Ongoing. Beware of Admission Fraudsters!</p>
-                <p>For all applications and updates, use only Fountain University's official channels: the website fuo.edu.ng and the admissions portal <a href="https://eportal.fuo.edu.ng/" target="_blank">https://eportal.fuo.edu.ng/</a>.</p>
+                <p>For all applications and updates, use only Fountain University's official channels: the website fuo.edu.ng and the admissions portal <a href="https://eportal.fuo.edu.ng/" target="_blank" rel="noopener noreferrer">https://eportal.fuo.edu.ng/</a>.</p>
                 <p>Beware of fraudsters; the University will not be responsible for dealings with unauthorised persons.</p>
                 <p>FUO Admission Office</p>
 
@@ -43,9 +47,9 @@
 
     {{-- HERO --}}
     <section class="fuo-hero-v2" id="fuoHero">
-        <img class="bg-slide active" src="{{ asset('img/banner/convo4.jpeg') }}" alt="Fountain University campus">
-        <img class="bg-slide" src="{{ asset('img/banner/phdstudent.jpeg') }}" alt="Fountain University campus">
-        <img class="bg-slide" src="{{ asset('img/banner/slid-6.png') }}" alt="Fountain University campus">
+        <img class="bg-slide active" src="{{ asset('img/banner/convo4.jpeg') }}" alt="Fountain University campus" fetchpriority="high" width="1920" height="1080">
+        <img class="bg-slide" src="{{ asset('img/banner/phdstudent.jpeg') }}" alt="Fountain University campus" loading="eager" width="1920" height="1080">
+        <img class="bg-slide" src="{{ asset('img/banner/slid-6.png') }}" alt="Fountain University campus" loading="eager" width="1920" height="1080">
         <div class="hero-content">
             <div class="fuo-wrap">
                 <div class="fuo-admission-badge"><span class="dot"></span>2026/2027 admission now open</div>
@@ -467,7 +471,7 @@
             <div class="fuo-about-grid">
                 <div class="fuo-about-photo-stack">
                     <div class="fuo-about-photo-main">
-                        <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor">
+                        <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor" loading="lazy" width="400" height="500">
                     </div>
                     <div class="fuo-about-photo-tag">
                         <p class="fuo-role">Office of the Vice-Chancellor</p>
@@ -510,20 +514,20 @@
                 </div>
                 <div class="fuo-academic-grid">
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes"></div>
+                        <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Academic programmes</h4><p>Courses tailored to students satisfaction and employability.</p><a class="fuo-link" href="https://fuo.edu.ng/undergradute-programme">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking"></div>
-                        <div class="fuo-body"><h4>Global ranking and impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                        <div class="fuo-img"><span class="fuo-num">02</span><img src="{{ asset('img/all-img/global-ranking-impacts.jpg') }}" alt="Global ranking" loading="lazy" width="400" height="260"></div>
+                        <div class="fuo-body"><h4>Global Ranking & Impact</h4><p>THE ranks Fountain among top Nigerian universities, 2024.</p><a class="fuo-link" href="/global-ranking-impact">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements"></div>
+                        <div class="fuo-img"><span class="fuo-num">03</span><img src="{{ asset('img/all-img/admission-requirements.jpeg') }}" alt="Admission requirements" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Admission requirements</h4><p>Everything needed to aid your admission into FUO.</p><a class="fuo-link" href="https://fuo.edu.ng/admission-requirement">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                     <div class="fuo-academic-card">
-                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Student life"></div>
-                        <div class="fuo-body"><h4>Student life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="#">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
+                        <div class="fuo-img"><span class="fuo-num">04</span><img src="{{ asset('img/all-img/student-life.jpg') }}" alt="Campus Life" loading="lazy" width="400" height="260"></div>
+                        <div class="fuo-body"><h4>Campus Life</h4><p>Campus culture, extracurriculars and hostel life.</p><a class="fuo-link" href="/campus-life">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
                     </div>
                 </div>
             </div>
@@ -532,7 +536,7 @@
 
     {{-- VIDEO --}}
     <div class="fuo-video-area">
-        <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary">
+        <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary" loading="lazy" width="800" height="450">
         <div class="fuo-video-play">
             <a class="fuo-play-btn" href="https://www.youtube.com/watch?v=rAhNrZw4BaA"><i class='bx bx-play'></i></a>
             <p class="fuo-video-caption">Watch: FUO first anniversary documentary — building minds, transforming futures</p>
@@ -550,7 +554,7 @@
                 <div>
                     @forelse($featuredNews as $item)
                         <a href="{{ route('news.show', $item->slug) }}" class="fuo-news-featured" @if(!$loop->first) style="margin-top:20px;" @endif>
-                            <div class="fuo-img"><img src="{{ $item->image_url }}" alt="{{ $item->title }}"></div>
+                            <div class="fuo-img"><img src="{{ $item->image_url }}" alt="{{ $item->title }}" loading="lazy" width="400" height="250"></div>
                             <div class="fuo-body">
                                 <span class="fuo-tag">{{ $item->category }}</span>
                                 <h3>{{ $item->title }}</h3>
@@ -565,14 +569,14 @@
                 <div class="fuo-news-side">
                     @if(isset($sidebarFeatured) && $sidebarFeatured)
                         <a href="{{ route('news.show', $sidebarFeatured->slug) }}" class="fuo-news-side-item">
-                            <div class="fuo-img"><img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}"></div>
+                            <div class="fuo-img"><img src="{{ $sidebarFeatured->image_url }}" alt="{{ $sidebarFeatured->title }}" loading="lazy" width="120" height="80"></div>
                             <div><span class="fuo-tag">{{ $sidebarFeatured->category }}</span><h4>{{ Str::limit($sidebarFeatured->title, 60) }}</h4></div>
                         </a>
                     @endif
                     @if(isset($sidebarSmall) && $sidebarSmall->count())
                         @foreach($sidebarSmall as $small)
                             <a href="{{ route('news.show', $small->slug) }}" class="fuo-news-side-item">
-                                <div class="fuo-img"><img src="{{ $small->image_url }}" alt="{{ $small->title }}"></div>
+                                <div class="fuo-img"><img src="{{ $small->image_url }}" alt="{{ $small->title }}" loading="lazy" width="120" height="80"></div>
                                 <div><span class="fuo-tag">{{ $small->category }}</span><h4>{{ Str::limit($small->title, 60) }}</h4></div>
                             </a>
                         @endforeach
@@ -610,15 +614,15 @@
             </div>
             <div class="fuo-campus-grid">
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library">
+                    <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>E-Library</h3><a href="#">Virtual tour →</a></div>
                 </div>
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory">
+                    <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Nursing laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
                 <div class="fuo-campus-tile">
-                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory">
+                    <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Biology laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
             </div>
@@ -634,17 +638,17 @@
             </div>
             <div class="fuo-success-grid">
                 <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture">
+                    <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">15th convocation lecture</div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=rAhNrZw4BaA" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="First anniversary documentary">
+                    <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="First anniversary documentary" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">First anniversary documentary</div>
                 </a>
                 <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
-                    <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="Best graduating student">
+                    <img src="{{ asset('img/all-img/bgs.jpg') }}" alt="Best graduating student" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
                     <div class="fuo-success-label">Best graduating student</div>
                 </a>
@@ -675,29 +679,54 @@
                     <div class="fuo-fb-head">
                         <i class='bx bxl-facebook-circle' style="font-size:24px; color:#fff;"></i>
                         <div><div class="fuo-name" style="color:#fff;">Fountain University Osogbo</div><div class="fuo-handle">facebook.com/fuoweb</div></div>
-                        <a href="https://www.facebook.com/fuoweb" target="_blank" style="margin-left:auto; background:#fff; color:#1877F2; font-size:12px; font-weight:700; padding:5px 14px; border-radius:6px;">Follow Page</a>
+                        <a href="https://www.facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Facebook" style="margin-left:auto; background:#fff; color:#1877F2; font-size:12px; font-weight:700; padding:5px 14px; border-radius:6px;">Follow Page</a>
                     </div>
                     <div style="display:flex; justify-content:center; overflow:hidden; min-height:320px;">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none; overflow:hidden; display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffuoweb&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none; overflow:hidden; display:block;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Fountain University Facebook feed"></iframe>
                     </div>
                 </div>
                 <div class="fuo-social-box">
                     <div class="fuo-yt-head"><i class='bx bxl-youtube' style="font-size:22px; color:#fff;"></i><span style="color:#fff; font-size:13px; font-weight:600;">FUO on YouTube</span></div>
                     <div class="fuo-yt-title">VC's documentary — Building Minds, Transforming Futures</div>
                     <div class="fuo-yt-embed">
-                        <iframe src="https://www.youtube.com/embed/u_iW3X8-X78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/u_iW3X8-X78" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="VC's documentary — Building Minds, Transforming Futures"></iframe>
                     </div>
                 </div>
             </div>
             <div class="fuo-social-links-row">
-                <a class="fuo-social-pill" style="background:#1877F2;" href="https://www.facebook.com/fuoweb" target="_blank"><i class='bx bxl-facebook'></i>Facebook</a>
-                <a class="fuo-social-pill" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);" href="https://www.instagram.com/fountain.university/" target="_blank"><i class='bx bxl-instagram'></i>Instagram</a>
-                <a class="fuo-social-pill" style="background:#000;" href="https://x.com/fuoweb" target="_blank"><i class='bx bxl-twitter'></i>Twitter / X</a>
-                <a class="fuo-social-pill" style="background:#0077B5;" href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                <a class="fuo-social-pill" style="background:#FF0000;" href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank"><i class='bx bxl-youtube'></i>YouTube</a>
+                <a class="fuo-social-pill" style="background:#1877F2;" href="https://www.facebook.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Facebook"><i class='bx bxl-facebook'></i>Facebook</a>
+                <a class="fuo-social-pill" style="background:linear-gradient(45deg,#f09433,#dc2743,#bc1888);" href="https://www.instagram.com/fountain.university/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on Instagram"><i class='bx bxl-instagram'></i>Instagram</a>
+                <a class="fuo-social-pill" style="background:#000;" href="https://x.com/fuoweb" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on X (Twitter)"><i class='bx bxl-twitter'></i>Twitter / X</a>
+                <a class="fuo-social-pill" style="background:#0077B5;" href="https://ng.linkedin.com/school/fountain-university-osogbo/" target="_blank" rel="noopener noreferrer" aria-label="Follow Fountain University on LinkedIn"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                <a class="fuo-social-pill" style="background:#FF0000;" href="https://www.youtube.com/@FountainUniversityOsogbo" target="_blank" rel="noopener noreferrer" aria-label="Watch Fountain University on YouTube"><i class='bx bxl-youtube'></i>YouTube</a>
             </div>
         </div>
     </section>
+
+    {{-- ── Still wondering where to begin? ── --}}
+    <div class="wonder-bar__wrapper" role="region" aria-label="Still wondering where to begin?" style="background:#035F39; padding:32px 0; margin-top:0;">
+        <div class="fuo-wrap" style="max-width:960px; margin:0 auto; padding:0 24px;">
+            <div class="wonder-bar" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+                <div class="wonder-bar__header" style="flex-shrink:0;">
+                    <span class="wonder-bar__header--text" style="color:#fff; font-size:20px; font-weight:700; letter-spacing:-0.3px;">Still wondering where to begin?</span>
+                </div>
+                <ul class="wonder-bar__list" style="display:flex; gap:12px; list-style:none; margin:0; padding:0; flex-wrap:wrap;">
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('undergradute-programme') }}" style="display:inline-block; background:#C9A227; color:#035F39; font-weight:700; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; transition:background .2s;">Explore programmes</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('admission-requirement') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Admissions</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('contact') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Contact us</a>
+                    </li>
+                    <li class="wonder-bar__list--item">
+                        <a class="wonder-bar__list--link" href="{{ route('campus-life') }}" style="display:inline-block; background:rgba(255,255,255,0.15); color:#fff; font-weight:600; font-size:14px; padding:10px 22px; border-radius:6px; text-decoration:none; border:1px solid rgba(255,255,255,0.3); transition:background .2s;">Campus life</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </div>
 

@@ -1,2 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /storage/
+
+Sitemap: https://fuo.edu.ng/sitemap.xml

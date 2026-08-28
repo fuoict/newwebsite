@@ -218,7 +218,7 @@
                 // Add more images in the array below as needed:
                 // 'img/gallery/your-file.jpg'
                 $gallerySlides = [
-                    'img/gallery/vc1.jpeg',
+                    'img/gallery/basketball_court.jpg',
                     'img/gallery/vc2.jpeg',
                     'img/gallery/vc3.jpeg',
                     'img/gallery/vc4.jpeg',

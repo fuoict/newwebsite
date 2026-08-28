@@ -192,6 +192,64 @@ Route::get('/the-registrar', [PagesController::class, 'theRegistrar'])->name('th
 Route::get('/the-bursar', [PagesController::class, 'theBursar'])->name('the-bursar');
 Route::get('/the-librarian', [PagesController::class, 'theLibrarian'])->name('the-librarian');
 Route::get('/our-campus', [PagesController::class, 'ourCampus'])->name('our-campus');
+Route::get('/campus-life', function () { return view('campus-life'); })->name('campus-life');
+Route::get('/global-ranking-impact', function () { return view('global-ranking-impact'); })->name('global-ranking-impact');
+
+// ── Sitemap ──────────────────────────────────────────────────────────────
+Route::get('/sitemap.xml', function () {
+    $url         = config('app.url', 'https://fuo.edu.ng');
+    $lastMod     = date('Y-m-d');
+
+    // Static pages
+    $staticPages = [
+        '/'                        => '2025-08-27',
+        '/about'                   => '2025-08-27',
+        '/campus-life'             => '2025-08-27',
+        '/global-ranking-impact'   => '2025-08-27',
+        '/admission-requirement'   => '2025-08-27',
+        '/contact'                 => '2025-08-27',
+        '/gallery'                 => '2025-08-27',
+        '/faq'                     => '2025-08-27',
+        '/colleges'                => '2025-08-27',
+        '/undergradute-programme'  => '2025-08-27',
+        '/postgraduate-programme'  => '2025-08-27',
+        '/our-campus'              => '2025-08-27',
+        '/inaugural-lectures'      => '2025-08-27',
+        '/annual-report'           => '2025-08-27',
+        '/news'                    => '2025-08-27',
+    ];
+
+    // Dynamic news
+    $newsItems = \App\Models\News::published()->latest()->limit(100)->get(['slug', 'updated_at']);
+
+    $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+
+    foreach ($staticPages as $path => $mod) {
+        $xml .= '  <url>' . "\n";
+        $xml .= '    <loc>' . $url . $path . '</loc>' . "\n";
+        $xml .= '    <lastmod>' . $mod . '</lastmod>' . "\n";
+        $xml .= '    <changefreq>' . ($path === '/' ? 'daily' : 'weekly') . '</changefreq>' . "\n";
+        $xml .= '    <priority>' . ($path === '/' ? '1.0' : '0.8') . '</priority>' . "\n";
+        $xml .= '  </url>' . "\n";
+    }
+
+    foreach ($newsItems as $item) {
+        $xml .= '  <url>' . "\n";
+        $xml .= '    <loc>' . $url . '/news/' . $item->slug . '</loc>' . "\n";
+        $xml .= '    <lastmod>' . $item->updated_at->format('Y-m-d') . '</lastmod>' . "\n";
+        $xml .= '    <changefreq>weekly</changefreq>' . "\n";
+        $xml .= '    <priority>0.6</priority>' . "\n";
+        $xml .= '  </url>' . "\n";
+    }
+
+    $xml .= '</urlset>';
+
+    return response($xml, 200)
+        ->header('Content-Type', 'application/xml')
+        ->header('Cache-Control', 'public, max-age=86400');
+})->name('sitemap');
+
 Route::get('/our-gallery', [PagesController::class, 'ourGallery'])->name('our-gallery');
 Route::get('/staff-downloads', [PagesController::class, 'staffDownloads'])->name('staff-downloads');
 Route::get('/students-download', [PagesController::class, 'studentDownloads'])->name('students-download');
