@@ -261,6 +261,7 @@ Route::get('/postgraduate-programme', [PagesController::class, 'postGraduate'])-
 Route::get('/the-dean-of-postgraduate-schools', [PagesController::class, 'spgsDean'])->name('the-dean-of-spgs');
 Route::get('/our-staff', [PagesController::class, 'ourStaff'])->name('our-staff');
 Route::get('/admission-requirement', [PagesController::class, 'admissionRequirement'])->name('admission-requirement');
+Route::get('/school-fees', function () { return view('pages.admissions.school-fees'); })->name('school-fees');
 Route::get('/school-of-postgraduate-applications', [PagesController::class, 'spgsApplications'])->name('spgs-applications');
 Route::get('/undergraduate-applications', [PagesController::class, 'underGraduateApplications'])->name('undergraduate-applications');
 Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');

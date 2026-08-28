@@ -597,9 +597,9 @@
                     <a href="#" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
                 <div>
-                    <h2>Approved school fee (2025–2026)</h2>
-                    <p>Management hereby notifies all students, parents and guardians that the approved school fees schedule for the 2025–2026 academic session has been released.</p>
-                    <a href="https://shorturl.at/H9Qr8" class="fuo-btn fuo-btn-gold">Find out</a>
+                    <h2>Approved school fee (2026–2027)</h2>
+                    <p>Management hereby notifies all students, parents and guardians that the approved school fees schedule for the 2026–2027 academic session has been released.</p>
+                    <a href="{{ route('school-fees') }}" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
             </div>
         </div>

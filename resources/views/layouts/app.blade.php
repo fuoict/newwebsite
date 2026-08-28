@@ -125,7 +125,7 @@
                                 {{-- <li><a href="{{ route('alumni') }}">Alumni</a></li> --}}
                                 {{-- <li><a href="{{ route('gallery') }}">Gallery</a></li> --}}
                                 <li><a href="{{ route('contact') }}">Contact</a></li>
-                                {{-- <li><a href="{{ 'https://tinyurl.com/42zxfstk' }}">Approved School Fee</a></li> --}}
+                                <li><a href="{{ route('school-fees') }}">Approved School Fee</a></li>
                             </ul>
                         </div>
                     </div>
