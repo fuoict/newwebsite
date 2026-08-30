@@ -25,6 +25,7 @@
 .fee-table td{padding:11px 14px;border-bottom:1px solid #f0f0f0;font-size:13.5px;color:#444}
 .fee-table tbody tr:hover{background:#f8faf8}
 .fee-table .amount{text-align:right;font-weight:700;color:#035F39;white-space:nowrap}
+.fee-table thead .amount{color:#fff}
 .fee-table .group-row{background:#e8f5e9;font-weight:700;color:#035F39}
 .fee-table .group-row td{padding:10px 14px;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid #c8e6c9}
 .fee-subtitle{font-weight:700;color:#1a1a2e;font-size:17px;margin:28px 0 12px;padding:8px 16px;border-left:4px solid #035F39;background:#f8faf8;border-radius:0 8px 8px 0}
@@ -241,23 +242,19 @@
             <table class="fee-table">
                 <thead><tr><th style="width:40px">#</th><th>Description</th><th class="amount">Amount (₦)</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>Laboratory Fee — CONAS Students (100–300 Level)</td><td class="amount">40,000</td></tr>
-                    <tr><td>2</td><td>Laboratory Fee — Computer Science (400 Level)</td><td class="amount">50,000</td></tr>
-                    <tr><td>3</td><td>Laboratory Fee — Others (400 Level)</td><td class="amount">80,000</td></tr>
-                    <tr><td>4</td><td>Clinical Fee — Public Health 200 Level</td><td class="amount">150,000</td></tr>
-                    <tr><td>5</td><td>Clinical Fee — Nursing 200L</td><td class="amount">100,000</td></tr>
-                    <tr><td>6</td><td>Clinical Fee — Nursing 300L–500L</td><td class="amount">200,000</td></tr>
-                    <tr><td>7</td><td>Practicum — Public Health 300L</td><td class="amount">75,000</td></tr>
-                    <tr><td>8</td><td>Clinical Posting Fee — MLS 300L–500L</td><td class="amount">200,000</td></tr>
-                    <tr><td>9</td><td>Nursing Science — Induction Fees</td><td class="amount">220,000</td></tr>
-                    <tr><td>10</td><td>Medical Laboratory Science — Induction Fees</td><td class="amount">150,000</td></tr>
-                    <tr><td>11</td><td>Psychiatric/Mental Health Clinical Posting</td><td class="amount">120,000</td></tr>
-                    <tr><td>12</td><td>Nursing Science Indexing — Basic</td><td class="amount">15,000</td></tr>
-                    <tr><td>13</td><td>Nursing Science Indexing — Midwifery</td><td class="amount">20,000</td></tr>
-                    <tr><td>14</td><td>MLSCN Indexing — One Sitting</td><td class="amount">55,000</td></tr>
-                    <tr><td>15</td><td>MLSCN Indexing — Two Sittings</td><td class="amount">60,000</td></tr>
-                    <tr><td>16</td><td>Studio Fee — Mass Communication (Regular)</td><td class="amount">50,000</td></tr>
-                    <tr><td>17</td><td>Studio Fee — Mass Communication (Conversion)</td><td class="amount">50,000</td></tr>
+                    <tr><td>1</td><td>Laboratory Fee — COBMEHS &amp; CONAS (100 Level)</td><td class="amount">40,000</td></tr>
+                    <tr><td>2</td><td>Laboratory Fee — COBMEHS &amp; CONAS (200–300 Level)</td><td class="amount">50,000</td></tr>
+                    <tr><td>3</td><td>Laboratory Fee — CONAS &amp; COBMEHS (400L: Computer Science, Nursing &amp; MLS)</td><td class="amount">50,000</td></tr>
+                    <tr><td>4</td><td>Laboratory Fee — CONAS &amp; COBMEHS (500L: Nursing, MLS &amp; EHS)</td><td class="amount">80,000</td></tr>
+                    <tr><td>5</td><td>Psychiatric/Mental Health Clinical Posting</td><td class="amount">120,000</td></tr>
+                    <tr><td>6</td><td>Nursing Science — Induction Fees</td><td class="amount">220,000</td></tr>
+                    <tr><td>7</td><td>Medical Laboratory Science — Induction Fees</td><td class="amount">150,000</td></tr>
+                    <tr><td>8</td><td>Nursing Science Indexing — Basic</td><td class="amount">15,000</td></tr>
+                    <tr><td>9</td><td>Nursing Science Indexing — Midwifery</td><td class="amount">20,000</td></tr>
+                    <tr><td>10</td><td>MLSCN Indexing — One Sitting</td><td class="amount">55,000</td></tr>
+                    <tr><td>11</td><td>MLSCN Indexing — Two Sittings</td><td class="amount">60,000</td></tr>
+                    <tr><td>12</td><td>Studio Fee — Mass Communication (Regular)</td><td class="amount">50,000</td></tr>
+                    <tr><td>13</td><td>Studio Fee — Mass Communication (Conversion)</td><td class="amount">50,000</td></tr>
                 </tbody>
             </table>
 
