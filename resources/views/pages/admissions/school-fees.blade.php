@@ -54,10 +54,10 @@
             </div>
 
             <table class="fee-table">
-                <thead><tr><th style="width:50px">S/N</th><th>Programme</th><th class="amount">Application Fee (₦)</th><th class="amount">Acceptance Fee (₦)</th><th class="amount">Accommodation (₦)</th><th class="amount">Exam Fee (₦)</th><th class="amount">Tuition Fee (₦)</th><th class="amount">Lab Manual (₦)</th><th class="amount">Lab Coat (₦)</th><th class="amount">Mattress (₦)</th><th class="amount">Portal (₦)</th></tr></thead>
+                <thead><tr><th style="width:50px">S/N</th><th>Programme</th><th class="amount">Application Fee (₦)</th><th class="amount">Acceptance Fee (₦)</th><th class="amount">Exam Fee (₦)</th><th class="amount">Tuition Fee (₦)</th><th class="amount">Lab Manual (₦)</th><th class="amount">Lab Coat (₦)</th><th class="amount">Portal (₦)</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>Non-Science</td><td class="amount">15,000</td><td class="amount">20,000</td><td class="amount">170,000</td><td class="amount">100,000</td><td class="amount">300,000</td><td class="amount">—</td><td class="amount">—</td><td class="amount">39,000</td><td class="amount">8,000</td></tr>
-                    <tr><td>2</td><td>Science</td><td class="amount">15,000</td><td class="amount">20,000</td><td class="amount">170,000</td><td class="amount">100,000</td><td class="amount">300,000</td><td class="amount">20,000</td><td class="amount">10,000</td><td class="amount">39,000</td><td class="amount">8,000</td></tr>
+                    <tr><td>1</td><td>Non-Science</td><td class="amount">15,000</td><td class="amount">20,000</td><td class="amount">100,000</td><td class="amount">300,000</td><td class="amount">—</td><td class="amount">—</td><td class="amount">8,000</td></tr>
+                    <tr><td>2</td><td>Science</td><td class="amount">15,000</td><td class="amount">20,000</td><td class="amount">100,000</td><td class="amount">300,000</td><td class="amount">20,000</td><td class="amount">10,000</td><td class="amount">8,000</td></tr>
                 </tbody>
             </table>
         </div>
@@ -214,19 +214,6 @@
                     <tr><td>7</td><td>Acceptance Fee — Top-Up / Conversion</td><td class="amount">75,000</td></tr>
                     <tr><td>8</td><td>Acceptance Fee — Postgraduate</td><td class="amount">100,000</td></tr>
                     <tr><td>9</td><td>Acceptance Fee — Diploma DAIS</td><td class="amount">10,000</td></tr>
-                </tbody>
-            </table>
-
-            <h4 class="fee-subtitle">Accommodation Fees</h4>
-            <table class="fee-table">
-                <thead><tr><th></th><th>Hostel / Room Type</th><th class="amount">Amount (₦)</th></tr></thead>
-                <tbody>
-                    <tr class="group-row"><td colspan="3">Female — 4 in a Room</td></tr>
-                    <tr><td></td><td>Adeola / F.K. Lawal / Yusuf Alli / Nimot Liadi / Olalekan Saliu</td><td class="amount">200,000</td></tr>
-                    <tr class="group-row"><td colspan="3">Female &amp; Male — 6 in a Room</td></tr>
-                    <tr><td></td><td>Awa Ibraheem / Akewusola / Jubrila Ayinla / Nimbe Adedipe / Ishaq Oloyede</td><td class="amount">180,000</td></tr>
-                    <tr class="group-row"><td colspan="3">Male — 6 in a Room</td></tr>
-                    <tr><td></td><td>Adegunwa Hostel</td><td class="amount">170,000</td></tr>
                 </tbody>
             </table>
 
