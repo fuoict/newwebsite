@@ -18,7 +18,7 @@
 <section class="ptb-100">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-up">
+            <div class="col-lg-6 fu-reveal-left" data-aos="fade-up">
                 <h2>Life on Campus</h2>
                 <p>Fountain University offers a welcoming campus with facilities that support academic success, faith formation, and student wellbeing. From organised student groups to sports and cultural activities, there are many ways to get involved and belong.</p>
                 <ul class="list-style">
@@ -37,7 +37,7 @@
         <hr class="my-5">
 
         <div class="row">
-            <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4 fu-reveal-scale" style="--i:0" data-aos="fade-up">
                 <div class="feature-box">
                     <img src="{{ asset('img/icon/features-icon-1.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Student Life</h4>
@@ -45,7 +45,7 @@
                     <a href="{{ route('student-affairs') }}" class="read-more">Learn more</a>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-4 fu-reveal-scale" style="--i:1" data-aos="fade-up" data-aos-delay="100">
                 <div class="feature-box">
                     <img src="{{ asset('img/icon/features-icon-2.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Housing & Residences</h4>
@@ -53,7 +53,7 @@
                     <a href="#" class="read-more">Housing options</a>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-4 fu-reveal-scale" style="--i:2" data-aos="fade-up" data-aos-delay="200">
                 <div class="feature-box">
                     <img src="{{ asset('img/icon/reading-2.png') }}" alt="" role="presentation" style="width:48px;" loading="lazy" width="48" height="48">
                     <h4>Dining & Food</h4>
@@ -65,7 +65,7 @@
 
         <hr class="my-5">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center fu-reveal">
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                 <h3>Sports & Recreation</h3>
                 <p>Our sports unit organises competitive teams and recreational activities — from football to athletics and fitness classes.</p>
@@ -78,7 +78,7 @@
 
         <hr class="my-5">
 
-        <div class="row">
+        <div class="row fu-reveal">
             <div class="col-lg-7" data-aos="fade-up">
                 <h3>Events & Calendar</h3>
                 <p>From convocation to guest lectures and cultural nights, our events calendar is full. Subscribe to campus updates to never miss an opportunity.</p>
@@ -121,7 +121,7 @@
 
         <hr class="my-5">
 
-        <div class="row">
+        <div class="row fu-reveal">
             <div class="col-12 text-center" data-aos="fade-up">
                 <h3>Get Involved</h3>
                 <p>Find a club, volunteer for an event, or join a leadership programme — campus life is what you make it.</p>

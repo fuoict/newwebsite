@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
+    <link rel="stylesheet" href="{{ asset('css/design-system.css') }}?v={{ $styleVersion }}">
 
     <title>Fountain University, Osogbo - Welcome to Fountain University | fuo.edu.ng formely fountainuniversity.edu.ng </title>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/fuo-logo.png') }}">
@@ -1130,6 +1131,63 @@
             }
         }, 100);
     }
+    </script>
+
+    {{-- Scroll progress bar + reveal animations --}}
+    <div class="fu-scroll-progress" id="fuScrollProgress"></div>
+    <script>
+    (function(){
+        // ── Scroll progress bar ──
+        var bar = document.getElementById('fuScrollProgress');
+        if (bar) {
+            window.addEventListener('scroll', function() {
+                var h = document.documentElement.scrollHeight - window.innerHeight;
+                var pct = h > 0 ? (window.scrollY / h) * 100 : 0;
+                bar.style.width = pct + '%';
+            }, { passive: true });
+        }
+
+        // ── Intersection Observer for reveal animations ──
+        var reveals = document.querySelectorAll('.fu-reveal, .fu-reveal-left, .fu-reveal-right, .fu-reveal-scale');
+        if (reveals.length && 'IntersectionObserver' in window) {
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            reveals.forEach(function(el) { obs.observe(el); });
+        }
+
+        // ── Smooth number counter for stats ──
+        var counters = document.querySelectorAll('[data-fu-count]');
+        if (counters.length && 'IntersectionObserver' in window) {
+            var cObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting) {
+                        var el = e.target;
+                        var target = parseInt(el.getAttribute('data-fu-count'), 10);
+                        var suffix = el.getAttribute('data-fu-suffix') || '';
+                        var duration = 1200;
+                        var start = 0;
+                        var startTime = null;
+                        function step(ts) {
+                            if (!startTime) startTime = ts;
+                            var progress = Math.min((ts - startTime) / duration, 1);
+                            var eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+                            el.textContent = Math.floor(eased * target) + suffix;
+                            if (progress < 1) requestAnimationFrame(step);
+                        }
+                        requestAnimationFrame(step);
+                        cObs.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(function(el) { cObs.observe(el); });
+        }
+    })();
     </script>
 
 
