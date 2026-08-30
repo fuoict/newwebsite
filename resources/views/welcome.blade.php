@@ -138,20 +138,74 @@
             <div class="fuo-faith-grid">
                 <div class="fuo-faith-card">
                     <div class="fuo-faith-icon"><i class='bx bxs-book-bookmark'></i></div>
-                    <div>
+                    <div style="flex:1">
                         <p class="fuo-kicker">Daily hadith</p>
-                        <p class="fuo-quote">"{{ Str::limit($hadith['text'], 220) }}"</p>
+                        <div>
+                            <p class="fuo-quote" id="hadithShort">"{{ Str::limit($hadith['text'], 220) }}"</p>
+                            <p class="fuo-quote" id="hadithFull" style="display:none">"{{ $hadith['text'] }}"</p>
+                            @if(strlen($hadith['text']) > 220)
+                            <button onclick="toggleHadith()" id="hadithToggle" style="background:none;border:none;color:var(--fu-forest);font-size:12px;font-weight:600;cursor:pointer;padding:0;margin-bottom:8px">
+                                Read more <i class='bx bx-chevron-down' id="hadithArrow"></i>
+                            </button>
+                            @endif
+                        </div>
                         <p class="fuo-ref">{{ $hadith['narrator'] ? '— ' . $hadith['narrator'] . ' · ' : '' }}{{ $hadith['reference'] }}</p>
                     </div>
                 </div>
-                <div class="fuo-faith-card fuo-prayer-card">
-                    <div class="fuo-faith-icon"><i class='bx bxs-mosque'></i></div>
-                    <div style="flex:1;">
-                        <p class="fuo-kicker">Next prayer</p>
-                        <div class="fuo-prayer-row">
-                            <span class="fuo-next" id="fuoPrayerTime">—</span>
-                            <div class="fuo-adhan-toggle" id="fuoAdhanToggle" onclick="fuoToggleAdhan()">
-                                Adhan <span class="fuo-adhan-pill" id="fuoAdhanPill"></span> <span id="fuoAdhanLabel">On</span>
+                <div class="fuo-faith-card fuo-prayer-card" id="fuoPrayerCard">
+                    {{-- Animated weather layers --}}
+                    <div class="weather-anim" id="weatherAnim"></div>
+                    <div style="position:relative;z-index:1;display:flex;gap:16px;flex:1">
+                        <div class="fuo-faith-icon"><i class='bx bxs-mosque'></i></div>
+                        <div style="flex:1;">
+                            {{-- Top row: Weather | Next Prayer | Adhan Toggle --}}
+                            <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:8px;margin-bottom:12px">
+                                {{-- Weather --}}
+                                <div>
+                                    <p class="fuo-kicker"><i class='bx bx-sun' style="margin-right:4px"></i>Weather in Osogbo</p>
+                                    <div style="display:flex;align-items:center;gap:10px">
+                                        <span id="fuoWeatherTemp" style="font-size:24px;font-weight:800;font-family:'Fraunces',serif;color:#fff;line-height:1">--°C</span>
+                                        <span id="fuoWeatherIcon" style="font-size:30px;line-height:1">🌤️</span>
+                                    </div>
+                                    <p id="fuoWeatherDesc" style="font-size:13px;color:#fff;margin:6px 0 0;font-weight:600;transition:opacity .3s">Loading weather...</p>
+                                    <p id="fuoWeatherUpdate" style="font-size:10px;color:rgba(255,255,255,.45);margin:3px 0 0">Auto-updates every 10 minutes</p>
+                                </div>
+                                {{-- Next Prayer — centered --}}
+                                <div style="text-align:center">
+                                    <p class="fuo-kicker"><i class='bx bxs-mosque' style="margin-right:4px"></i>Next Prayer</p>
+                                    <span class="fuo-next" id="fuoPrayerTime" style="display:block;font-size:22px;margin-top:4px">—</span>
+                                </div>
+                                {{-- Adhan Toggle — centered --}}
+                                <div style="text-align:right">
+                                    <p class="fuo-kicker">Adhan</p>
+                                    <div class="fuo-adhan-toggle" id="fuoAdhanToggle" onclick="fuoToggleAdhan()" style="margin-top:4px">
+                                        <span class="fuo-adhan-pill" id="fuoAdhanPill"></span>
+                                        <span id="fuoAdhanLabel" style="font-weight:700;font-size:13px">On</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- All prayer times --}}
+                            <div id="fuoAllPrayers" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;padding-top:10px;border-top:1px solid rgba(255,255,255,.2)">
+                                <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
+                                    <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Fajr</span>
+                                    <span id="fpFajr" style="font-size:13px;font-weight:700;color:#fff">—</span>
+                                </div>
+                                <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
+                                    <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Dhuhr</span>
+                                    <span id="fpDhuhr" style="font-size:13px;font-weight:700;color:#fff">—</span>
+                                </div>
+                                <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
+                                    <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Asr</span>
+                                    <span id="fpAsr" style="font-size:13px;font-weight:700;color:#fff">—</span>
+                                </div>
+                                <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
+                                    <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Maghrib</span>
+                                    <span id="fpMaghrib" style="font-size:13px;font-weight:700;color:#fff">—</span>
+                                </div>
+                                <div style="text-align:center;padding:8px 4px;border-radius:8px;background:rgba(255,255,255,.08)">
+                                    <span style="font-size:9px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px">Isha</span>
+                                    <span id="fpIsha" style="font-size:13px;font-weight:700;color:#fff">—</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,11 +285,11 @@
             var pill = document.getElementById('fuoAdhanPill');
             var label = document.getElementById('fuoAdhanLabel');
             if (adhanEnabled) {
-                pill.style.background = '#035F39';
+                pill.style.background = '#8be3ad';
                 pill.style.setProperty('--pos', '18px');
                 label.textContent = 'On';
             } else {
-                pill.style.background = '#ccc';
+                pill.style.background = '#6b8177';
                 pill.style.setProperty('--pos', '2px');
                 label.textContent = 'Off';
             }
@@ -246,6 +300,14 @@
             localStorage.setItem('fuo_adhan', adhanEnabled ? 'on' : 'off');
             updateToggleUI();
         };
+
+        // Populate all prayer times
+        function showAllPrayers(d) {
+            ['Fajr','Dhuhr','Asr','Maghrib','Isha'].forEach(function(p) {
+                var el = document.getElementById('fp' + p);
+                if (el && d[p]) el.textContent = fmt12(d[p]);
+            });
+        }
 
         // Fetch prayer times
         var today = new Date();
@@ -258,12 +320,148 @@
                     if (d.code === 200) {
                         localStorage.setItem('fp_' + dk, JSON.stringify(d.data.timings));
                         updatePrayer();
+                        showAllPrayers(d.data.timings);
                     }
                 });
-        } else { updatePrayer(); }
+        } else { updatePrayer(); showAllPrayers(JSON.parse(localStorage.getItem('fp_' + dk))); }
         setInterval(updatePrayer, 60000);
+
+        // Fetch weather
+        // Fetch weather + apply dynamic animated background
+        function applyWeatherAnim(code) {
+            var el = document.getElementById('weatherAnim');
+            var card = document.getElementById('fuoPrayerCard');
+            el.innerHTML = '';
+            el.className = 'weather-anim';
+
+            // Default: forest green
+            card.style.background = 'linear-gradient(135deg,#035F39,#082B1A)';
+
+            if (code <= 1) {
+                // SUNNY — gold / warm green
+                card.style.background = 'linear-gradient(135deg,#C9A227,#035F39)';
+                el.classList.add('weather-sunny');
+                for (var i = 0; i < 6; i++) {
+                    var ray = document.createElement('div');
+                    ray.className = 'sun-ray';
+                    ray.style.left = (15 + i * 15) + '%';
+                    ray.style.animationDelay = (i * 0.7) + 's';
+                    el.appendChild(ray);
+                }
+                var sun = document.createElement('div');
+                sun.className = 'sun-orb';
+                el.appendChild(sun);
+            } else if (code <= 3) {
+                // CLOUDY — sage / muted forest
+                card.style.background = 'linear-gradient(135deg,#082B1A,#5C6B62)';
+                for (var c = 0; c < 5; c++) {
+                    var cloud = document.createElement('div');
+                    cloud.className = 'anim-cloud';
+                    cloud.style.width = (60 + Math.random() * 80) + 'px';
+                    cloud.style.height = (20 + Math.random() * 15) + 'px';
+                    cloud.style.top = (10 + Math.random() * 60) + '%';
+                    cloud.style.animationDelay = (Math.random() * 8) + 's';
+                    cloud.style.animationDuration = (12 + Math.random() * 8) + 's';
+                    el.appendChild(cloud);
+                }
+            } else if (code >= 51 && code <= 67) {
+                // RAIN — deep forest / dark sage
+                card.style.background = 'linear-gradient(135deg,#035F39,#082B1A,#035F39)';
+                for (var r = 0; r < 40; r++) {
+                    var drop = document.createElement('div');
+                    drop.className = 'rain-drop';
+                    drop.style.left = Math.random() * 100 + '%';
+                    drop.style.animationDelay = (Math.random() * 2) + 's';
+                    drop.style.animationDuration = (0.5 + Math.random() * 0.5) + 's';
+                    el.appendChild(drop);
+                }
+            } else if (code >= 71 && code <= 77) {
+                // SNOW — sage / cream
+                card.style.background = 'linear-gradient(135deg,#5C6B62,#E7EFE6,#082B1A)';
+                for (var s = 0; s < 30; s++) {
+                    var flake = document.createElement('div');
+                    flake.className = 'snow-flake';
+                    flake.style.left = Math.random() * 100 + '%';
+                    flake.style.animationDelay = (Math.random() * 4) + 's';
+                    flake.style.animationDuration = (2 + Math.random() * 3) + 's';
+                    flake.textContent = '•';
+                    el.appendChild(flake);
+                }
+            } else if (code >= 95) {
+                // STORM — forest-darker / ink
+                card.style.background = 'linear-gradient(135deg,#082B1A,#182B22,#035F39)';
+                var flash = document.createElement('div');
+                flash.className = 'storm-flash';
+                el.appendChild(flash);
+                for (var r = 0; r < 50; r++) {
+                    var drop = document.createElement('div');
+                    drop.className = 'rain-drop';
+                    drop.style.left = Math.random() * 100 + '%';
+                    drop.style.animationDelay = (Math.random() * 1.5) + 's';
+                    drop.style.animationDuration = (0.3 + Math.random() * 0.4) + 's';
+                    el.appendChild(drop);
+                }
+            } else if (code >= 45) {
+                // FOG — cream / sage
+                card.style.background = 'linear-gradient(135deg,#082B1A,#5C6B62,#E7EFE6)';
+                for (var f = 0; f < 4; f++) {
+                    var fog = document.createElement('div');
+                    fog.className = 'fog-layer';
+                    fog.style.top = (20 + f * 18) + '%';
+                    fog.style.animationDelay = (f * 2) + 's';
+                    el.appendChild(fog);
+                }
+            } else {
+                // Default clear — forest
+                card.style.background = 'linear-gradient(135deg,#035F39,#082B1A)';
+            }
+        }
+
+        function fetchWeather() {
+            fetch('https://api.open-meteo.com/v1/forecast?latitude=7.77&longitude=4.56&current=temperature_2m,weather_code&timezone=Africa/Lagos')
+                .then(function(r){ return r.json(); })
+                .then(function(d){
+                    var temp = Math.round(d.current.temperature_2m);
+                    var code = d.current.weather_code;
+                    var icons = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌧️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'❄️',80:'🌦️',95:'⛈️'};
+                    var descs = {0:'Sunny & clear',1:'Mostly sunny',2:'Sunny with clouds',3:'Cloudy skies',45:'Misty outside',48:'Misty outside',51:'Light rain shower',53:'Light rain',55:'Heavy rain shower',61:'Raining now',63:'Steady rain',65:'Heavy rain',71:'Snowfall',80:'Intermittent showers',95:'Thunderstorm nearby'};
+                    document.getElementById('fuoWeatherTemp').textContent = temp + '°C';
+                    document.getElementById('fuoWeatherIcon').textContent = icons[code] || '🌤️';
+                    var descEl = document.getElementById('fuoWeatherDesc');
+                    descEl.style.opacity = '0';
+                    setTimeout(function(){ descEl.textContent = descs[code] || 'Osogbo'; descEl.style.opacity = '1'; }, 200);
+                    document.getElementById('fuoWeatherUpdate').textContent = 'Updated just now';
+                    applyWeatherAnim(code);
+                })
+                .catch(function(){
+                    document.getElementById('fuoWeatherTemp').textContent = '28°C';
+                    applyWeatherAnim(0);
+                });
+        }
+        fetchWeather();
+        // Refresh weather every 10 minutes for real-time updates
+        setInterval(fetchWeather, 600000);
         updateToggleUI();
     })();
+    </script>
+
+    {{-- Hadith Read More Toggle --}}
+    <script>
+    function toggleHadith() {
+        var short = document.getElementById('hadithShort');
+        var full = document.getElementById('hadithFull');
+        var btn = document.getElementById('hadithToggle');
+        var arrow = document.getElementById('hadithArrow');
+        if (full.style.display === 'none') {
+            short.style.display = 'none';
+            full.style.display = 'block';
+            btn.innerHTML = 'Read less <i class="bx bx-chevron-up" id="hadithArrow"></i>';
+        } else {
+            short.style.display = 'block';
+            full.style.display = 'none';
+            btn.innerHTML = 'Read more <i class="bx bx-chevron-down" id="hadithArrow"></i>';
+        }
+    }
     </script>
     @endif
 
@@ -399,9 +597,9 @@
                     <a href="#" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
                 <div>
-                    <h2>Approved school fee (2025–2026)</h2>
-                    <p>Management hereby notifies all students, parents and guardians that the approved school fees schedule for the 2025–2026 academic session has been released.</p>
-                    <a href="https://shorturl.at/H9Qr8" class="fuo-btn fuo-btn-gold">Find out</a>
+                    <h2>Approved school fee (2026–2027)</h2>
+                    <p>Management hereby notifies all students, parents and guardians that the approved school fees schedule for the 2026–2027 academic session has been released.</p>
+                    <a href="{{ route('school-fees') }}" class="fuo-btn fuo-btn-gold">Find out</a>
                 </div>
             </div>
         </div>

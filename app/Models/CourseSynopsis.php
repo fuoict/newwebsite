@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\Auditable;
 
 class CourseSynopsis extends Model
 {
+    use Auditable;
     protected $fillable = [
         'department_id', 'course_code', 'course_title',
         'description', 'unit', 'level', 'type', 'is_published',

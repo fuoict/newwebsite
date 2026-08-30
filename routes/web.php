@@ -11,8 +11,18 @@ use App\Http\Controllers\Admin\LecturerController as AdminLecturerController;
 use App\Http\Controllers\Admin\AdminDepartmentNewsController;
 use App\Http\Controllers\Admin\AdminFeaturedLinkController;
 use App\Http\Controllers\Admin\AdminCourseSynopsisController;
+use App\Http\Controllers\Admin\AdminCentreController;
+use App\Http\Controllers\Admin\AdminUnitController;
+use App\Http\Controllers\Admin\AdminCollegeController;
+use App\Http\Controllers\Admin\AdminDepartmentController;
+use App\Http\Controllers\Admin\AdminNavigationController;
+use App\Http\Controllers\Admin\AdminAuditController;
+use App\Http\Controllers\Admin\AdminPageController;
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\DepartmentPageController;
+use App\Http\Controllers\CentrePageController;
+use App\Http\Controllers\UnitPageController;
+use App\Http\Controllers\DynamicPageController;
 
 
 
@@ -151,6 +161,11 @@ Route::get('/', function () {
     return view('welcome', compact('featuredNews', 'sidebarFeatured', 'sidebarSmall', 'hadith'));
 });
 
+Route::get('/centres', [CentrePageController::class, 'index'])->name('centres');
+Route::get('/centres/{slug}', [CentrePageController::class, 'show'])->name('centres.show');
+Route::get('/university/{slug}', [DynamicPageController::class, 'show'])->name('pages.show');
+Route::get('/units', [UnitPageController::class, 'index'])->name('units');
+Route::get('/units/{slug}', [UnitPageController::class, 'show'])->name('units.show');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 Route::get('/appraisal', [PagesController::class, 'appraisal'])->name('appraisal');
 // Route::get('/about-board-of-trustee', [PagesControll]);
@@ -246,6 +261,7 @@ Route::get('/postgraduate-programme', [PagesController::class, 'postGraduate'])-
 Route::get('/the-dean-of-postgraduate-schools', [PagesController::class, 'spgsDean'])->name('the-dean-of-spgs');
 Route::get('/our-staff', [PagesController::class, 'ourStaff'])->name('our-staff');
 Route::get('/admission-requirement', [PagesController::class, 'admissionRequirement'])->name('admission-requirement');
+Route::get('/school-fees', function () { return view('pages.admissions.school-fees'); })->name('school-fees');
 Route::get('/school-of-postgraduate-applications', [PagesController::class, 'spgsApplications'])->name('spgs-applications');
 Route::get('/undergraduate-applications', [PagesController::class, 'underGraduateApplications'])->name('undergraduate-applications');
 Route::get('/sandwich-applications', [PagesController::class, 'sandWichApplications'])->name('sandwich-applications');
@@ -269,34 +285,36 @@ Route::get('/dignitaries', [PagesController::class, 'dignitaries'])->name('digni
 Route::get('/honorary-doctorates', [PagesController::class, 'honoraryDoctorates'])->name('honorary-doctorates');
 Route::get('/convocation-lecturers', [PagesController::class, 'convocationLecturers'])->name('convocation-lecturers');
 
-Route::get('/academic-planning-unit', [PagesController::class, 'academicPlanningUnit'])->name('academicplanning');
-Route::get('/bursary-unit', [PagesController::class, 'bursaryUnit'])->name('bursary');
-Route::get('/counselling-unit', [PagesController::class, 'counsellingUnit'])->name('counselling');
-Route::get('/ict-unit', [PagesController::class, 'ictUnit'])->name('ictunit');
-Route::get('/internal-audit-unit', [PagesController::class, 'internalAuditUnit'])->name('auditunit');
-Route::get('/public-relation-unit', [PagesController::class, 'publicRelationUnit'])->name('prounit');
-Route::get('/quality-assurance-unit', [PagesController::class, 'qualityAssuranceUnit'])->name('qassurance');
-Route::get('/registry-unit', [PagesController::class, 'registryUnit'])->name('registry');
-Route::get('/siwes-unit', [PagesController::class, 'siwesUnit'])->name('siwes');
-Route::get('/sport-unit', [PagesController::class, 'sportUnit'])->name('sports');
-Route::get('/student-affairs-unit', [PagesController::class, 'studentAffairsUnit'])->name('student-affairs');
+// Old unit routes → redirect to database-driven pages
+Route::get('/academic-planning-unit', fn () => redirect()->route('units.show', 'academic-planning-unit', 301))->name('academicplanning');
+Route::get('/bursary-unit', fn () => redirect()->route('units.show', 'bursary-unit', 301))->name('bursary');
+Route::get('/counselling-unit', fn () => redirect()->route('units.show', 'counselling-unit', 301))->name('counselling');
+Route::get('/ict-unit', fn () => redirect()->route('units.show', 'ict-unit', 301))->name('ictunit');
+Route::get('/internal-audit-unit', fn () => redirect()->route('units.show', 'internal-audit-unit', 301))->name('auditunit');
+Route::get('/public-relation-unit', fn () => redirect()->route('units.show', 'public-relations-unit', 301))->name('prounit');
+Route::get('/quality-assurance-unit', fn () => redirect()->route('units.show', 'quality-assurance-unit', 301))->name('qassurance');
+Route::get('/registry-unit', fn () => redirect()->route('units.show', 'registry', 301))->name('registry');
+Route::get('/siwes-unit', fn () => redirect()->route('units.show', 'siwes-unit', 301))->name('siwes');
+Route::get('/sport-unit', fn () => redirect()->route('units.show', 'sports-unit', 301))->name('sports');
+Route::get('/student-affairs-unit', fn () => redirect()->route('units.show', 'student-affairs-unit', 301))->name('student-affairs');
 
 
-Route::get('/consultancy', [PagesController::class, 'consultancy'])->name('consultancy');
-Route::get('/fucrit', [PagesController::class, 'fucrit'])->name('fucrit');
-Route::get('/spiritual-growth', [PagesController::class, 'spiritualGrowth'])->name('spiritual-growth');
-Route::get('/linkages', [PagesController::class, 'linkages'])->name('linkages');
-Route::get('/arabic-islamic-research', [PagesController::class, 'arabicIslamicResearch'])->name('arabic-islamic-research');
-Route::get('/sandwich', [PagesController::class, 'sandwich'])->name('sandwich');
-Route::get('/subdegree', [PagesController::class, 'subdegree'])->name('subdegree');
-Route::get('/entrepreneurship', [PagesController::class, 'entrepreneurship'])->name('entrepreneurship');
+// Old centre routes → redirect to database-driven pages
+Route::get('/consultancy', fn () => redirect()->route('centres.show', 'centre-for-consultancy-services', 301))->name('consultancy');
+Route::get('/fucrit', fn () => redirect()->route('centres.show', 'centre-for-research-innovation-and-technology', 301))->name('fucrit');
+Route::get('/spiritual-growth', fn () => redirect()->route('centres.show', 'centre-for-spiritual-growth-and-moral-excellence', 301))->name('spiritual-growth');
+Route::get('/linkages', fn () => redirect()->route('centres.show', 'centre-for-linkages-and-advancement', 301))->name('linkages');
+Route::get('/arabic-islamic-research', fn () => redirect()->route('centres.show', 'centre-for-arabic-and-islamic-research-translation-and-immersion-programme', 301))->name('arabic-islamic-research');
+Route::get('/sandwich', fn () => redirect()->route('centres.show', 'centre-for-sandwich-programmes', 301))->name('sandwich');
+Route::get('/subdegree', fn () => redirect()->route('centres.show', 'centre-for-sub-degree-and-professional-programmes', 301))->name('subdegree');
+Route::get('/entrepreneurship', fn () => redirect()->route('centres.show', 'centre-for-entrepreneurship-and-skill-acquisition', 301))->name('entrepreneurship');
 
 
 
 Route::get('/news', [NewsController::class, 'index'])->name('news.index');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
 Route::get('/dashboard', function () {
-        return view('dashboard');
+        return redirect()->route('admin.dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -382,6 +400,66 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::post('/featured-links/bulk-delete',             [AdminFeaturedLinkController::class, 'bulkDelete'])->name('featured-links.bulk-delete');
     Route::get('/featured-links/content-template',         [AdminFeaturedLinkController::class, 'downloadContentTemplate'])->name('featured-links.content-template');
     Route::post('/featured-links/import-content',          [AdminFeaturedLinkController::class, 'importContent'])->name('featured-links.import-content');
+
+    // Centres CRUD
+    Route::get('/centres',                          [AdminCentreController::class, 'index'])->name('centres.index');
+    Route::get('/centres/create',                   [AdminCentreController::class, 'create'])->name('centres.create');
+    Route::post('/centres',                         [AdminCentreController::class, 'store'])->name('centres.store');
+    Route::get('/centres/{centre}/edit',            [AdminCentreController::class, 'edit'])->name('centres.edit');
+    Route::put('/centres/{centre}',                 [AdminCentreController::class, 'update'])->name('centres.update');
+    Route::delete('/centres/{centre}',              [AdminCentreController::class, 'destroy'])->name('centres.destroy');
+    Route::get('/centres/template',                 [AdminCentreController::class, 'downloadTemplate'])->name('centres.template');
+    Route::post('/centres/import',                  [AdminCentreController::class, 'import'])->name('centres.import');
+    Route::post('/centres/bulk-delete',             [AdminCentreController::class, 'bulkDelete'])->name('centres.bulk-delete');
+
+    // Units CRUD
+    Route::get('/units',                          [AdminUnitController::class, 'index'])->name('units.index');
+    Route::get('/units/create',                   [AdminUnitController::class, 'create'])->name('units.create');
+    Route::post('/units',                         [AdminUnitController::class, 'store'])->name('units.store');
+    Route::get('/units/{unit}/edit',              [AdminUnitController::class, 'edit'])->name('units.edit');
+    Route::put('/units/{unit}',                   [AdminUnitController::class, 'update'])->name('units.update');
+    Route::delete('/units/{unit}',                [AdminUnitController::class, 'destroy'])->name('units.destroy');
+    Route::get('/units/template',                 [AdminUnitController::class, 'downloadTemplate'])->name('units.template');
+    Route::post('/units/import',                  [AdminUnitController::class, 'import'])->name('units.import');
+    Route::post('/units/bulk-delete',             [AdminUnitController::class, 'bulkDelete'])->name('units.bulk-delete');
+
+    // Colleges CRUD
+    Route::get('/colleges',                     [AdminCollegeController::class, 'index'])->name('colleges.index');
+    Route::get('/colleges/create',              [AdminCollegeController::class, 'create'])->name('colleges.create');
+    Route::post('/colleges',                    [AdminCollegeController::class, 'store'])->name('colleges.store');
+    Route::get('/colleges/{college}/edit',      [AdminCollegeController::class, 'edit'])->name('colleges.edit');
+    Route::put('/colleges/{college}',           [AdminCollegeController::class, 'update'])->name('colleges.update');
+    Route::delete('/colleges/{college}',        [AdminCollegeController::class, 'destroy'])->name('colleges.destroy');
+
+    // Departments CRUD
+    Route::get('/departments',                      [AdminDepartmentController::class, 'index'])->name('departments.index');
+    Route::get('/departments/create',               [AdminDepartmentController::class, 'create'])->name('departments.create');
+    Route::post('/departments',                     [AdminDepartmentController::class, 'store'])->name('departments.store');
+    Route::get('/departments/{department}/edit',    [AdminDepartmentController::class, 'edit'])->name('departments.edit');
+    Route::put('/departments/{department}',         [AdminDepartmentController::class, 'update'])->name('departments.update');
+    Route::delete('/departments/{department}',      [AdminDepartmentController::class, 'destroy'])->name('departments.destroy');
+    Route::get('/departments/template',             [AdminDepartmentController::class, 'downloadTemplate'])->name('departments.template');
+    Route::post('/departments/import',              [AdminDepartmentController::class, 'import'])->name('departments.import');
+
+    // Navigation CRUD
+    Route::get('/navigation',                         [AdminNavigationController::class, 'index'])->name('navigation.index');
+    Route::get('/navigation/create',                  [AdminNavigationController::class, 'create'])->name('navigation.create');
+    Route::post('/navigation',                        [AdminNavigationController::class, 'store'])->name('navigation.store');
+    Route::get('/navigation/{navigationItem}/edit',   [AdminNavigationController::class, 'edit'])->name('navigation.edit');
+    Route::put('/navigation/{navigationItem}',        [AdminNavigationController::class, 'update'])->name('navigation.update');
+    Route::delete('/navigation/{navigationItem}',     [AdminNavigationController::class, 'destroy'])->name('navigation.destroy');
+
+    // Audit Log
+    Route::get('/audit',                              [AdminAuditController::class, 'index'])->name('audit.index');
+
+    // Pages CRUD
+    Route::get('/pages',                              [AdminPageController::class, 'index'])->name('pages.index');
+    Route::get('/pages/create',                       [AdminPageController::class, 'create'])->name('pages.create');
+    Route::post('/pages',                             [AdminPageController::class, 'store'])->name('pages.store');
+    Route::get('/pages/{page}/edit',                  [AdminPageController::class, 'edit'])->name('pages.edit');
+    Route::put('/pages/{page}',                       [AdminPageController::class, 'update'])->name('pages.update');
+    Route::delete('/pages/{page}',                    [AdminPageController::class, 'destroy'])->name('pages.destroy');
+    Route::post('/pages/upload-block-image',          [AdminPageController::class, 'uploadBlockImage'])->name('pages.upload-block-image');
 
     // Course Synopsis CRUD
     Route::get('/course-synopsis',                          [AdminCourseSynopsisController::class, 'index'])->name('course-synopsis.index');

@@ -50,7 +50,7 @@
                                     <div class="author-info">
                                         <span>Adedokun Ganiyu</span>
                                         <h5>ADEKUNLE</h5>
-                                        <p>Registrar</p>
+                                        <p>Head Coach</p>
                                     </div>
                                 </div>
                             </div>

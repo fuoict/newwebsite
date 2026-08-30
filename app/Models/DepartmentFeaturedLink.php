@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\Auditable;
 
 class DepartmentFeaturedLink extends Model
 {
+    use Auditable;
     protected $fillable = [
         'department_id', 'title', 'url', 'icon', 'image',
         'content', 'body', 'sort_order', 'is_active',

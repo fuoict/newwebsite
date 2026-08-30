@@ -45,9 +45,9 @@
                                     <h4 class="title-anim">Fountain University, Osogbo</h4>
                                     <p class="title-anim">Internal Audit Unit</p>
                                     <div class="author-info">
-                                        <span>Prof. . </span>
-                                        <h5>Adenarinwo</h5>
-                                        <p>Director</p>
+                                        <span>Mr. Isiaka Yomi </span>
+                                        <h5>ADENARIWO</h5>
+                                        <p>Director of Internal Audit</p>
                                     </div>
                                 </div>
                             </div>

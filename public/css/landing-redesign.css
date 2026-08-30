@@ -263,19 +263,22 @@
 /* ═══════════════════════════════════════════════
    FAITH STRIP (Hadith + Prayer)
    ═══════════════════════════════════════════════ */
-.fuo-faith-strip { padding: 56px 0; }
+.fuo-faith-strip { padding: 40px 0; }
 .fuo-faith-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .fuo-faith-card {
   background: var(--fu-paper);
-  border: 1px solid var(--fu-line);
-  border-radius: 10px;
-  padding: 26px 28px;
+  border: 2px solid var(--fu-forest);
+  border-radius: 12px;
+  padding: 20px 22px;
   display: flex;
-  gap: 16px;
+  gap: 14px;
+  overflow: hidden;
 }
 .fuo-faith-card .fuo-faith-icon {
   font-size: 26px;
@@ -293,10 +296,10 @@
 }
 .fuo-faith-card .fuo-quote {
   font-style: italic;
-  font-size: 14.5px;
+  font-size: 13.5px;
   color: var(--fu-ink);
-  margin-bottom: 8px;
-  line-height: 1.7;
+  margin-bottom: 6px;
+  line-height: 1.6;
 }
 .fuo-faith-card .fuo-ref {
   font-size: 12px;
@@ -307,7 +310,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: var(--fu-forest);
+  border-color: var(--fu-forest);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
+.fuo-prayer-card .fuo-faith-icon { color: var(--fu-gold); }
+.fuo-prayer-card .fuo-kicker { color: rgba(255,255,255,.7); }
+.fuo-prayer-card .fuo-next { color: #fff; }
+.fuo-prayer-card .fuo-adhan-toggle { color: rgba(255,255,255,.7); }
+.fuo-prayer-card .fuo-adhan-pill { background: #8be3ad; border: 2px solid #fff; box-shadow: 0 0 0 2px rgba(255,255,255,.18); }
+.fuo-prayer-card .fuo-adhan-toggle { cursor: pointer; padding: 6px 9px; border: 1px solid rgba(255,255,255,.35); border-radius: 8px; color: #fff; font-weight: 600; }
+.fuo-prayer-card .fuo-adhan-toggle:hover { background: rgba(255,255,255,.12); }
+.fuo-prayer-card #fuoAdhanLabel { min-width: 22px; color: #fff; font-weight: 700; }
+.fuo-prayer-card .fuo-ref { color: rgba(255,255,255,.6); }
+.fuo-prayer-card #fuoWeatherTemp, .fuo-prayer-card #fuoWeatherDesc { color: #fff; }
+.fuo-prayer-card #fuoPrayerTime { color: #fff; }
+.fuo-prayer-card .fuo-adhan-pill { background: rgba(255,255,255,.3); }
 .fuo-prayer-row {
   display: flex;
   justify-content: space-between;
@@ -347,8 +367,69 @@
   left: var(--pos, 18px);
 }
 
+/* ── Weather Animation Layer ── */
+.weather-anim {
+  position: absolute; inset: 0; border-radius: 10px; overflow: hidden; z-index: 0; pointer-events: none;
+}
+
+/* ── Sunny ── */
+.sun-ray {
+  position: absolute; bottom: -20%; width: 3px; height: 60%;
+  background: linear-gradient(to top, rgba(201,162,39,.25), transparent);
+  transform-origin: bottom center; animation: rayPulse 4s ease-in-out infinite;
+}
+@keyframes rayPulse { 0%,100% { opacity: .2; transform: scaleY(1); } 50% { opacity: .5; transform: scaleY(1.1); } }
+.sun-orb {
+  position: absolute; top: 12%; right: 12%; width: 40px; height: 40px;
+  background: radial-gradient(circle, #C9A227 30%, rgba(201,162,39,.3) 70%, transparent);
+  border-radius: 50%; animation: sunGlow 3s ease-in-out infinite;
+}
+@keyframes sunGlow { 0%,100% { transform: scale(1); opacity: .7; } 50% { transform: scale(1.15); opacity: 1; } }
+
+/* ── Clouds ── */
+.anim-cloud {
+  position: absolute; background: rgba(231,239,230,.2); border-radius: 50px;
+  animation: cloudDrift linear infinite;
+}
+@keyframes cloudDrift { from { transform: translateX(-120px); opacity: 0; } 10% { opacity: .35; } 90% { opacity: .35; } to { transform: translateX(calc(100vw + 120px)); opacity: 0; } }
+
+/* ── Rain ── */
+.rain-drop {
+  position: absolute; top: -8px; width: 2px; height: 18px;
+  background: linear-gradient(to bottom, transparent, rgba(231,239,230,.45));
+  border-radius: 0 0 2px 2px; animation: rainFall linear infinite;
+}
+@keyframes rainFall { from { transform: translateY(-10px); opacity: 0; } 10% { opacity: 1; } to { transform: translateY(300px); opacity: 0; } }
+
+/* ── Snow ── */
+.snow-flake {
+  position: absolute; top: -10px; color: rgba(250,247,240,.6); font-size: 10px;
+  animation: snowFall linear infinite;
+}
+@keyframes snowFall { from { transform: translateY(-10px) rotate(0deg); opacity: 0; } 10% { opacity: 1; } to { transform: translateY(300px) rotate(360deg); opacity: 0; } }
+
+/* ── Fog ── */
+.fog-layer {
+  position: absolute; left: -10%; width: 120%; height: 30%;
+  background: linear-gradient(90deg, transparent, rgba(250,247,240,.12), transparent);
+  animation: fogDrift 10s ease-in-out infinite;
+}
+@keyframes fogDrift { from { transform: translateX(-30%); } to { transform: translateX(30%); } }
+
+/* ── Storm ── */
+.storm-flash {
+  position: absolute; inset: 0; background: rgba(201,162,39,.12);
+  animation: lightning 4s ease-in-out infinite;
+}
+@keyframes lightning { 0%,92%,96%,100% { opacity: 0; } 93%,95% { opacity: .5; } 94% { opacity: 0; } }
+
+@media (max-width: 992px) {
+  .fuo-faith-grid { grid-template-columns: 1fr; max-width: 100%; }
+  .fuo-faith-card { padding: 18px 20px; }
+}
 @media (max-width: 768px) {
   .fuo-faith-grid { grid-template-columns: 1fr; }
+  .fuo-faith-card { padding: 16px; }
 }
 
 /* ═══════════════════════════════════════════════
@@ -1147,4 +1228,6 @@
    FOOTER RESPONSIVE
    ═══════════════════════════════════════════════ */
 @media (max-width: 900px) {
+
+}
 
