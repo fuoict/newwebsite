@@ -17,7 +17,7 @@
 
 <section class="ptb-100">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center fu-reveal">
             <div class="col-lg-6" data-aos="fade-up">
                 <h2>Rankings & Recognition</h2>
                 <p>Fountain University is building international visibility through research excellence, graduate outcomes and institutional partnerships. Major recognition streams include:</p>
@@ -36,7 +36,7 @@
 
         <hr class="my-5">
 
-        <div class="row">
+        <div class="row fu-reveal">
             <div class="col-md-6" data-aos="fade-up">
                 <h3>Times Higher Education</h3>
                 <p>We monitor THE indicators — research influence, teaching environment, international outlook and industry income — and target steady year-on-year improvement.</p>
@@ -58,7 +58,7 @@
 
         <hr class="my-5">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center fu-reveal">
             <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                 <h3>National & Regional Rankings</h3>
                 <p>Local accreditation, graduate outcomes and community relevance inform our standing in national rankings, with continuous improvement plans aligned to benchmarks.</p>
@@ -71,7 +71,7 @@
 
         <hr class="my-5">
 
-        <div class="row">
+        <div class="row fu-reveal">
             <div class="col-lg-7" data-aos="fade-up">
                 <h3>Impact — Sustainable Development Goals (SDGs)</h3>
                 <p>Our research and community programmes are mapped to the SDGs. Key impact areas include:</p>
@@ -107,7 +107,7 @@
 
         <hr class="my-5">
 
-        <div class="row">
+        <div class="row fu-reveal">
             <div class="col-12 text-center" data-aos="fade-up">
                 <h3>Recognition roadmap</h3>
                 <p>We publish an annual report summarising ranking progress, SDG impact and strategic priorities — download the latest report from our resources page.</p>

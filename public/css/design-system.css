@@ -1,0 +1,403 @@
+/* ═══════════════════════════════════════════════════════════
+   FUO Design System — Modern UI Layer
+   Pure CSS additions — no HTML/Blade changes required
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── 1. Design Tokens ─────────────────────────────────── */
+:root {
+  /* Colors */
+  --fu-green:        #035F39;
+  --fu-green-dark:   #024A2C;
+  --fu-green-light:  #0A7A4D;
+  --fu-gold:         #C9A227;
+  --fu-gold-light:   #E0BC4A;
+  --fu-red:          #B71C1C;
+  --fu-cream:        #F8F6F0;
+  --fu-sand:         #F2EDE4;
+  --fu-dark:         #1A1A2E;
+  --fu-muted:        #6B7280;
+  --fu-text:         #1F2937;
+  --fu-white:        #FFFFFF;
+  --fu-border:       #E5E7EB;
+  --fu-shadow-sm:    0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --fu-shadow-md:    0 4px 12px rgba(0,0,0,0.08);
+  --fu-shadow-lg:    0 12px 32px rgba(0,0,0,0.12);
+  --fu-shadow-xl:    0 20px 48px rgba(0,0,0,0.16);
+  --fu-radius-sm:    6px;
+  --fu-radius-md:    12px;
+  --fu-radius-lg:    16px;
+  --fu-radius-xl:    24px;
+
+  /* Spacing scale (4px grid) */
+  --sp-1: 4px;   --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;
+  --sp-5: 20px;  --sp-6: 24px;  --sp-8: 32px;  --sp-10: 40px;
+  --sp-12: 48px; --sp-16: 64px; --sp-20: 80px; --sp-24: 96px;
+
+  /* Type scale */
+  --fs-xs:   0.75rem;   /* 12px */
+  --fs-sm:   0.875rem;  /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md:   1.125rem;  /* 18px */
+  --fs-lg:   1.25rem;   /* 20px */
+  --fs-xl:   1.5rem;    /* 24px */
+  --fs-2xl:  2rem;      /* 32px */
+  --fs-3xl:  2.5rem;    /* 40px */
+  --fs-4xl:  3rem;      /* 48px */
+  --fs-5xl:  3.5rem;    /* 56px */
+
+  /* Transitions */
+  --ease-out:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:  150ms;
+  --dur-base:  250ms;
+  --dur-slow:  400ms;
+}
+
+/* ── 2. Scroll Reveal Animations ──────────────────────── */
+@keyframes fu-fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fu-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fu-scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes fu-slideRight {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fu-slideLeft {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fu-countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fu-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes fu-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.6; }
+}
+@keyframes fu-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+/* Intersection Observer reveal classes */
+.fu-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+}
+.fu-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fu-reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+}
+.fu-reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fu-reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+}
+.fu-reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fu-reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-spring);
+}
+.fu-reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered children */
+.fu-stagger > * { transition-delay: calc(var(--i, 0) * 80ms); }
+
+/* ── 3. Modern Button Styles ──────────────────────────── */
+.default-btn,
+.btn-style-2,
+.fuo-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--dur-base) var(--ease-out) !important;
+}
+.default-btn::after,
+.btn-style-2::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.5s var(--ease-out);
+}
+.default-btn:hover::after,
+.btn-style-2:hover::after {
+  transform: translateX(100%);
+}
+.default-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--fu-shadow-md);
+}
+.default-btn:active {
+  transform: translateY(0);
+  box-shadow: var(--fu-shadow-sm);
+}
+
+/* ── 4. Modern Card Styles ────────────────────────────── */
+.card,
+.feature-box,
+.content-items,
+.fuo-academic-card,
+.fuo-social-box,
+.fuo-success-card {
+  transition: transform var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out) !important;
+}
+.card:hover,
+.feature-box:hover,
+.content-items:hover,
+.fuo-academic-card:hover,
+.fuo-social-box:hover,
+.fuo-success-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--fu-shadow-lg) !important;
+}
+
+/* Feature boxes — remove hard borders, use shadow instead */
+.feature-box {
+  border: none !important;
+  box-shadow: var(--fu-shadow-sm);
+  border-radius: var(--fu-radius-md) !important;
+  background: var(--fu-white);
+}
+.feature-box img {
+  transition: transform var(--dur-base) var(--ease-spring);
+}
+.feature-box:hover img {
+  transform: scale(1.08);
+}
+
+/* ── 5. Section Headings — Modern Style ───────────────── */
+.section-title h2,
+.fuo-section-head h2 {
+  position: relative;
+  display: inline-block;
+}
+.section-title h2::after,
+.fuo-section-head h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--fu-gold);
+  border-radius: 2px;
+  margin-top: 12px;
+  transition: width var(--dur-slow) var(--ease-out);
+}
+.section-title:hover h2::after,
+.fuo-section-head:hover h2::after {
+  width: 80px;
+}
+
+/* ── 6. Image Hover Effects ───────────────────────────── */
+.img-fluid.rounded {
+  transition: transform var(--dur-slow) var(--ease-out),
+              box-shadow var(--dur-slow) var(--ease-out);
+}
+.img-fluid.rounded:hover {
+  transform: scale(1.02);
+  box-shadow: var(--fu-shadow-lg);
+}
+
+/* Campus tiles */
+.fuo-campus-tile img {
+  transition: transform 0.6s var(--ease-out), filter 0.4s var(--ease-out);
+}
+.fuo-campus-tile:hover img {
+  transform: scale(1.06);
+  filter: brightness(0.85);
+}
+.fuo-campus-tile-content {
+  transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-out);
+}
+
+/* ── 7. Navigation Polish ─────────────────────────────── */
+.navbar-area {
+  transition: background var(--dur-base) var(--ease-out),
+              box-shadow var(--dur-base) var(--ease-out);
+}
+.navbar-area.sticky {
+  box-shadow: var(--fu-shadow-md);
+}
+.nav-link,
+.accordion-link {
+  transition: color var(--dur-fast) var(--ease-out),
+              padding-left var(--dur-fast) var(--ease-out);
+}
+.nav-link:hover,
+.accordion-link:hover {
+  color: var(--fu-gold) !important;
+  padding-left: 4px;
+}
+
+/* ── 8. Hero Improvements ─────────────────────────────── */
+.fuo-hero-v2 .hero-content h1 {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.fuo-hero-v2 .bg-slide {
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* ── 9. Page Hero (inner pages) — Modern ──────────────── */
+.page-hero.small-hero {
+  position: relative;
+  overflow: hidden;
+}
+.page-hero.small-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(3,95,57,0.85) 0%, rgba(3,95,57,0.6) 100%);
+  z-index: 1;
+}
+.page-hero.small-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+.page-hero.small-hero .section-title h1 {
+  animation: fu-fadeUp 0.6s var(--ease-out) both;
+}
+.page-hero.small-hero .section-title p {
+  animation: fu-fadeUp 0.6s 0.15s var(--ease-out) both;
+}
+
+/* ── 10. Wonder Bar — hover effects ───────────────────── */
+.wonder-bar__list--link {
+  transition: all var(--dur-base) var(--ease-out) !important;
+}
+.wonder-bar__list--link:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.wonder-bar__list--item:first-child .wonder-bar__list--link:hover {
+  background: var(--fu-gold-light) !important;
+}
+
+/* ── 11. Social Pills — hover ─────────────────────────── */
+.fuo-social-pill {
+  transition: all var(--dur-base) var(--ease-out) !important;
+}
+.fuo-social-pill:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* ── 12. Ticker — smoother ────────────────────────────── */
+.fuo-ticker {
+  border-bottom: 1px solid var(--fu-border);
+}
+.fuo-ticker-track a {
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.fuo-ticker-track a:hover {
+  color: var(--fu-gold);
+}
+
+/* ── 13. News Cards — Modern ──────────────────────────── */
+.fuo-news-featured {
+  border-radius: var(--fu-radius-md);
+  overflow: hidden;
+  transition: all var(--dur-base) var(--ease-out);
+}
+.fuo-news-featured:hover {
+  box-shadow: var(--fu-shadow-md);
+  transform: translateY(-3px);
+}
+.fuo-news-featured .fuo-img img {
+  transition: transform 0.5s var(--ease-out);
+}
+.fuo-news-featured:hover .fuo-img img {
+  transform: scale(1.04);
+}
+.fuo-news-side-item {
+  transition: all var(--dur-base) var(--ease-out);
+}
+.fuo-news-side-item:hover {
+  transform: translateX(4px);
+  background: var(--fu-sand);
+}
+
+/* ── 14. Footer — cleaner spacing ─────────────────────── */
+.fuo-footer-v2 a {
+  transition: color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+}
+.fuo-footer-v2 a:hover {
+  color: var(--fu-gold) !important;
+  transform: translateX(3px);
+}
+
+/* ── 15. Scroll Progress Bar ──────────────────────────── */
+.fu-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--fu-green), var(--fu-gold));
+  z-index: 10000;
+  width: 0%;
+  transition: width 50ms linear;
+}
+
+/* ── 16. Loading Skeleton ─────────────────────────────── */
+.fu-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: fu-shimmer 1.5s infinite;
+  border-radius: var(--fu-radius-sm);
+}
+
+/* ── 17. Responsive Refinements ───────────────────────── */
+@media (max-width: 991px) {
+  .page-hero.small-hero .section-title h1 {
+    font-size: var(--fs-2xl);
+  }
+  .wonder-bar {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .wonder-bar__list {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 576px) {
+  .page-hero.small-hero {
+    padding: 48px 0 !important;
+  }
+  .wonder-bar__list {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .wonder-bar__list--link {
+    display: block !important;
+    text-align: center !important;
+  }
+}

@@ -271,7 +271,7 @@
     <section id="about" class="fuo-section">
         <div class="fuo-wrap">
             <div class="fuo-about-grid">
-                <div class="fuo-about-photo-stack">
+                <div class="fuo-about-photo-stack fu-reveal-left">
                     <div class="fuo-about-photo-main">
                         <img src="{{ asset('img/all-img/vcspeech.jpeg') }}" alt="Vice-Chancellor" loading="lazy" width="400" height="500">
                     </div>
@@ -280,7 +280,7 @@
                         <p class="fuo-name">Leading Fountain's vision forward</p>
                     </div>
                 </div>
-                <div class="fuo-about-text">
+                <div class="fuo-about-text fu-reveal-right">
                     <p class="fuo-section-head fuo-kicker" style="margin-bottom:10px;">About the university</p>
                     <h2 style="font-size:30px; margin-bottom:20px;">Where knowledge meets innovation</h2>
                     <p>Fountain University was licensed in 2007, following NASFAT's vision for quality education initiated in 2000. A Strategic Committee was formed to establish the institution's foundation and infrastructure, following an academic summit of 30 distinguished academic personalities in Lagos.</p>
@@ -298,7 +298,7 @@
     <section class="fuo-section fuo-mv-area">
         <div class="fuo-wrap">
             <div class="fuo-mv-grid">
-                <div>
+                <div class="fu-reveal">
                     <p class="fuo-section-head fuo-kicker">Mission and vision</p>
                     <div class="fuo-mv-item">
                         <div class="fuo-icon"><i class='bx bx-target-lock'></i></div>
@@ -314,7 +314,7 @@
                     </div>
                     <a href="https://fuo.edu.ng/undergradute-programme" class="fuo-btn fuo-btn-primary" style="margin-top:6px;">More on academics</a>
                 </div>
-                <div class="fuo-academic-grid">
+                <div class="fuo-academic-grid fu-reveal-right">
                     <div class="fuo-academic-card">
                         <div class="fuo-img"><span class="fuo-num">01</span><img src="{{ asset('img/all-img/academic-programmes.jpg') }}" alt="Academic programmes" loading="lazy" width="400" height="260"></div>
                         <div class="fuo-body"><h4>Academic programmes</h4><p>Courses tailored to students satisfaction and employability.</p><a class="fuo-link" href="https://fuo.edu.ng/undergradute-programme">Learn more <i class='bx bx-right-arrow-alt'></i></a></div>
@@ -337,7 +337,7 @@
     </section>
 
     {{-- VIDEO --}}
-    <div class="fuo-video-area">
+    <div class="fuo-video-area fu-reveal-scale">
         <img src="{{ asset('img/all-img/anniversary-documentation.png') }}" alt="Fountain University documentary" loading="lazy" width="800" height="450">
         <div class="fuo-video-play">
             <a class="fuo-play-btn" href="https://www.youtube.com/watch?v=rAhNrZw4BaA"><i class='bx bx-play'></i></a>
@@ -348,7 +348,7 @@
     {{-- NEWS --}}
     <section id="news" class="fuo-section">
         <div class="fuo-wrap">
-            <div class="fuo-section-head">
+            <div class="fuo-section-head fu-reveal">
                 <p class="fuo-kicker">News and updates</p>
                 <h2>Recent news and events</h2>
             </div>
@@ -392,7 +392,7 @@
     {{-- SCHOLARSHIP --}}
     <section class="fuo-section fuo-scholarship-area">
         <div class="fuo-wrap">
-            <div class="fuo-scholarship-grid">
+            <div class="fuo-scholarship-grid fu-reveal"
                 <div>
                     <h2>Scholarship programmes</h2>
                     <p>Fountain University students of Arabic and Islamic studies can benefit from our scholarship programme, designed to support learning with ease and focus.</p>
@@ -410,20 +410,20 @@
     {{-- CAMPUS --}}
     <section id="campus" class="fuo-section">
         <div class="fuo-wrap">
-            <div class="fuo-section-head">
+            <div class="fuo-section-head fu-reveal">
                 <p class="fuo-kicker">The campus experience</p>
                 <h2>One university, many places</h2>
             </div>
-            <div class="fuo-campus-grid">
-                <div class="fuo-campus-tile">
+            <div class="fuo-campus-grid fu-stagger">
+                <div class="fuo-campus-tile fu-reveal-scale" style="--i:0">
                     <img src="{{ asset('img/all-img/fountain-library.jpg') }}" alt="E-Library" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>E-Library</h3><a href="#">Virtual tour →</a></div>
                 </div>
-                <div class="fuo-campus-tile">
+                <div class="fuo-campus-tile fu-reveal-scale" style="--i:1">
                     <img src="{{ asset('img/all-img/nursing-laboratory.jpg') }}" alt="Nursing laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Nursing laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
-                <div class="fuo-campus-tile">
+                <div class="fuo-campus-tile fu-reveal-scale" style="--i:2">
                     <img src="{{ asset('img/all-img/biology-laboratory.jpg') }}" alt="Biology laboratory" loading="lazy" width="400" height="280">
                     <div class="fuo-campus-tile-content"><h3>Biology laboratory</h3><a href="#">Virtual tour →</a></div>
                 </div>
@@ -438,7 +438,7 @@
                 <p class="fuo-kicker">Student, faculty and alumni success</p>
                 <h2>Celebrating the legacy, embracing the future</h2>
             </div>
-            <div class="fuo-success-grid">
+            <div class="fuo-success-grid fu-reveal">
                 <a href="https://www.youtube.com/watch?v=bNnfoUmIwGw" class="fuo-success-card">
                     <img src="{{ asset('img/all-img/convolecturer1.jpg') }}" alt="15th convocation lecture" loading="lazy" width="400" height="225">
                     <div class="fuo-success-play"><i class='bx bx-play'></i></div>
@@ -461,7 +461,7 @@
     {{-- SOCIAL --}}
     <section class="fuo-section fuo-social-area">
         <div class="fuo-wrap">
-            <div class="fuo-section-head">
+            <div class="fuo-section-head fu-reveal">
                 <p class="fuo-kicker">Connect with us</p>
                 <h2>Social media and broadcast</h2>
             </div>
@@ -508,7 +508,7 @@
     {{-- ── Still wondering where to begin? ── --}}
     <div class="wonder-bar__wrapper" role="region" aria-label="Still wondering where to begin?" style="background:#035F39; padding:32px 0; margin-top:0;">
         <div class="fuo-wrap" style="max-width:960px; margin:0 auto; padding:0 24px;">
-            <div class="wonder-bar" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+            <div class="wonder-bar fu-reveal-scale" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
                 <div class="wonder-bar__header" style="flex-shrink:0;">
                     <span class="wonder-bar__header--text" style="color:#fff; font-size:20px; font-weight:700; letter-spacing:-0.3px;">Still wondering where to begin?</span>
                 </div>
