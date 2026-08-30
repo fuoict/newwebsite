@@ -590,7 +590,7 @@
     {{-- SCHOLARSHIP --}}
     <section class="fuo-section fuo-scholarship-area">
         <div class="fuo-wrap">
-            <div class="fuo-scholarship-grid fu-reveal"
+            <div class="fuo-scholarship-grid fu-reveal">
                 <div>
                     <h2>Scholarship programmes</h2>
                     <p>Fountain University students of Arabic and Islamic studies can benefit from our scholarship programme, designed to support learning with ease and focus.</p>
