@@ -42,6 +42,7 @@
             <a href="#undergraduate" class="active" onclick="showTab('undergraduate',this)">Undergraduate (Fresh)</a>
             <a href="#returning" onclick="showTab('returning',this)">Undergraduate (Returning)</a>
             <a href="#otherfees" onclick="showTab('otherfees',this)">Other Fees & Charges</a>
+            <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a>
             <a href="#topup" onclick="showTab('topup',this)">Top-Up / Part-Time</a>
             <a href="#postgraduate" onclick="showTab('postgraduate',this)">Postgraduate</a>
             <a href="#sandwich" onclick="showTab('sandwich',this)">Sandwich</a>
@@ -246,15 +247,20 @@
                     <tr><td>2</td><td>Laboratory Fee — COBMEHS &amp; CONAS (200–300 Level)</td><td class="amount">50,000</td></tr>
                     <tr><td>3</td><td>Laboratory Fee — CONAS &amp; COBMEHS (400L: Computer Science, Nursing &amp; MLS)</td><td class="amount">50,000</td></tr>
                     <tr><td>4</td><td>Laboratory Fee — CONAS &amp; COBMEHS (500L: Nursing, MLS &amp; EHS)</td><td class="amount">80,000</td></tr>
-                    <tr><td>5</td><td>Psychiatric/Mental Health Clinical Posting</td><td class="amount">120,000</td></tr>
-                    <tr><td>6</td><td>Nursing Science — Induction Fees</td><td class="amount">220,000</td></tr>
-                    <tr><td>7</td><td>Medical Laboratory Science — Induction Fees</td><td class="amount">150,000</td></tr>
-                    <tr><td>8</td><td>Nursing Science Indexing — Basic</td><td class="amount">15,000</td></tr>
-                    <tr><td>9</td><td>Nursing Science Indexing — Midwifery</td><td class="amount">20,000</td></tr>
-                    <tr><td>10</td><td>MLSCN Indexing — One Sitting</td><td class="amount">55,000</td></tr>
-                    <tr><td>11</td><td>MLSCN Indexing — Two Sittings</td><td class="amount">60,000</td></tr>
-                    <tr><td>12</td><td>Studio Fee — Mass Communication (Regular)</td><td class="amount">50,000</td></tr>
-                    <tr><td>13</td><td>Studio Fee — Mass Communication (Conversion)</td><td class="amount">50,000</td></tr>
+                    <tr><td>5</td><td>Clinical Fee — Nursing (200 Level)</td><td class="amount">100,000</td></tr>
+                    <tr><td>6</td><td>Clinical Fee — Nursing (300L–500L)</td><td class="amount">200,000</td></tr>
+                    <tr><td>7</td><td>Clinical Fee — Public Health (200 Level)</td><td class="amount">150,000</td></tr>
+                    <tr><td>8</td><td>Clinical Posting Fee — MLS (300L–500L)</td><td class="amount">200,000</td></tr>
+                    <tr><td>9</td><td>Practicum — Public Health (300 Level)</td><td class="amount">75,000</td></tr>
+                    <tr><td>10</td><td>Psychiatric/Mental Health Clinical Posting</td><td class="amount">120,000</td></tr>
+                    <tr><td>11</td><td>Nursing Science — Induction Fees</td><td class="amount">220,000</td></tr>
+                    <tr><td>12</td><td>Medical Laboratory Science — Induction Fees</td><td class="amount">150,000</td></tr>
+                    <tr><td>13</td><td>Nursing Science Indexing — Basic</td><td class="amount">15,000</td></tr>
+                    <tr><td>14</td><td>Nursing Science Indexing — Midwifery</td><td class="amount">20,000</td></tr>
+                    <tr><td>15</td><td>MLSCN Indexing — One Sitting</td><td class="amount">55,000</td></tr>
+                    <tr><td>16</td><td>MLSCN Indexing — Two Sittings</td><td class="amount">60,000</td></tr>
+                    <tr><td>17</td><td>Studio Fee — Mass Communication (Regular)</td><td class="amount">50,000</td></tr>
+                    <tr><td>18</td><td>Studio Fee — Mass Communication (Conversion)</td><td class="amount">50,000</td></tr>
                 </tbody>
             </table>
 
@@ -314,6 +320,45 @@
             </table>
 
             <div class="fee-note"><strong>Note:</strong> All fees are as approved by the University Management for the 2026/2027 academic session. For enquiries, contact the Bursary Unit.</div>
+        </div>
+
+        {{-- ═══════════════ ACCOMMODATION ═══════════════ --}}
+        <div class="fee-section" id="accommodation">
+            <div class="fee-card">
+                <h3>Accommodation Fees</h3>
+                <p>Approved hostel accommodation fees for the 2026/2027 academic session, organised by category.</p>
+            </div>
+
+            <table class="fee-table">
+                <thead><tr><th style="width:40px">#</th><th>Hostel</th><th>Category</th><th class="amount">Amount (₦)</th></tr></thead>
+                <tbody>
+                    {{-- Female 4-in-a-room --}}
+                    <tr class="group-row"><td colspan="4">Female — 4 in a Room</td></tr>
+                    <tr><td>1</td><td>Adeola Hostel</td><td>Female (4 in a room)</td><td class="amount">250,000</td></tr>
+                    <tr><td>2</td><td>F. K. Lawal Hostel</td><td>Female (4 in a room)</td><td class="amount">250,000</td></tr>
+                    <tr><td>3</td><td>Yusuf Alli Hostel</td><td>Female (4 in a room)</td><td class="amount">250,000</td></tr>
+                    <tr><td>4</td><td>Nimot Liadi Hostel</td><td>Female (4 in a room)</td><td class="amount">250,000</td></tr>
+                    <tr><td>5</td><td>Olalekan Saliu Hostel</td><td>Female (4 in a room)</td><td class="amount">250,000</td></tr>
+
+                    {{-- Female & Male 6-in-a-room (separate toilet & bathroom) --}}
+                    <tr class="group-row"><td colspan="4">Female &amp; Male — 6 in a Room (Separate Toilet &amp; Bathroom)</td></tr>
+                    <tr><td>6</td><td>Awa Ibraheem Hostel</td><td>Female &amp; Male (6 in a room)</td><td class="amount">200,000</td></tr>
+                    <tr><td>7</td><td>Akewusola Hostel</td><td>Female &amp; Male (6 in a room)</td><td class="amount">200,000</td></tr>
+                    <tr><td>8</td><td>Jubrila Ayinla</td><td>Female &amp; Male (6 in a room)</td><td class="amount">200,000</td></tr>
+                    <tr><td>9</td><td>Nimbe Adedipe</td><td>Female &amp; Male (6 in a room)</td><td class="amount">200,000</td></tr>
+                    <tr><td>10</td><td>Ish'aq Oloyede</td><td>Female &amp; Male (6 in a room)</td><td class="amount">200,000</td></tr>
+
+                    {{-- Male 6-in-a-room --}}
+                    <tr class="group-row"><td colspan="4">Male — 6 in a Room</td></tr>
+                    <tr><td>11</td><td>Adegunwa Hostel</td><td>Male (6 in a room)</td><td class="amount">170,000</td></tr>
+
+                    {{-- New Hostels 6-in-a-room --}}
+                    <tr class="group-row"><td colspan="4">New Hostels — 6 in a Room</td></tr>
+                    <tr><td>12</td><td>Nimbe Extension 1</td><td>New Hostel (6 in a room)</td><td class="amount">240,000</td></tr>
+                    <tr><td>13</td><td>Nimbe Extension 2</td><td>New Hostel (6 in a room)</td><td class="amount">240,000</td></tr>
+                    <tr><td>14</td><td>Akewusola Extension</td><td>New Hostel (6 in a room)</td><td class="amount">240,000</td></tr>
+                </tbody>
+            </table>
         </div>
 
         {{-- ═══════════════ TOP-UP / PART-TIME ═══════════════ --}}

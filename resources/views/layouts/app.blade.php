@@ -177,7 +177,7 @@
                                         <ul class="dropdown-menu dropdown-menu-end" style="max-height:100px;overflow-y:auto">
                                             @foreach($officerPages as $op)
                                             <li class="nav-item">
-                                                <a href="{{ url('/university/'.$op->slug) }}" class="nav-link">{{ $op->title }}</a>
+                                                <a href="{{ $op->route_name ? route($op->route_name) : url('/university/'.$op->slug) }}" class="nav-link">{{ $op->title }}</a>
                                             </li>
                                             @endforeach
                                         </ul>
@@ -524,7 +524,7 @@
                                                 <div class="accordion" id="navbarAccordionAdmin">
                                                     @foreach($officerPages as $op)
                                                     <div class="accordion-item">
-                                                        <a href="{{ url('/university/'.$op->slug) }}" class="accordion-link">{{ $op->title }}</a>
+                                                        <a href="{{ $op->route_name ? route($op->route_name) : url('/university/'.$op->slug) }}" class="accordion-link">{{ $op->title }}</a>
                                                     </div>
                                                     @endforeach
                                                 </div>
