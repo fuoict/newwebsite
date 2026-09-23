@@ -332,16 +332,17 @@
             <table class="fee-table">
                 <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>Adeola Hostel</td><td class="amount">250,000</td></tr>
-                    <tr><td>2</td><td>F. K. Lawal Hostel 1</td><td class="amount">250,000</td></tr>
-                    <tr><td>3</td><td>F. K. Lawal Hostel 2</td><td class="amount">250,000</td></tr>
-                    <tr><td>4</td><td>Yusuf Ali Hostel</td><td class="amount">250,000</td></tr>
-                    <tr><td>5</td><td>Nimot Liadi Hostel</td><td class="amount">250,000</td></tr>
-                    <tr><td>6</td><td>Olalekan Saliu Hostel</td><td class="amount">250,000</td></tr>
-                    <tr><td>7</td><td>Awa Ibrahim Hostel</td><td class="amount">200,000</td></tr>
-                    <tr><td>8</td><td>Nimbe Hostel</td><td class="amount">200,000</td></tr>
-                    <tr><td>9</td><td>Ish'aq Oloyede Hostel</td><td class="amount">200,000</td></tr>
-                    <tr><td>10</td><td>Nimbe Annex &amp; Extension</td><td class="amount">240,000</td></tr>
+                    <tr><td>1</td><td>Adeola</td><td class="amount">250,000</td></tr>
+                    <tr><td>2</td><td>F. K. Lawal I</td><td class="amount">250,000</td></tr>
+                    <tr><td>3</td><td>F. K. Lawal II</td><td class="amount">250,000</td></tr>
+                    <tr><td>4</td><td>Yusuf Ali</td><td class="amount">250,000</td></tr>
+                    <tr><td>5</td><td>Nimot Liadi</td><td class="amount">250,000</td></tr>
+                    <tr><td>6</td><td>Olalekan Saliu</td><td class="amount">250,000</td></tr>
+                    <tr><td>7</td><td>Awa Ibraheem</td><td class="amount">200,000</td></tr>
+                    <tr><td>8</td><td>Nimbe Adedipe</td><td class="amount">200,000</td></tr>
+                    <tr><td>9</td><td>Ish'aq Oloyede</td><td class="amount">200,000</td></tr>
+                    <tr><td>10</td><td>Nimbe Adedipe Extension I</td><td class="amount">240,000</td></tr>
+                    <tr><td>11</td><td>Nimbe Adedipe Extension II</td><td class="amount">240,000</td></tr>
                 </tbody>
             </table>
 
@@ -349,9 +350,10 @@
             <table class="fee-table">
                 <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>Adegunwa Hostel</td><td class="amount">170,000</td></tr>
-                    <tr><td>2</td><td>Jubrila Ayinla Hostel</td><td class="amount">200,000</td></tr>
-                    <tr><td>3</td><td>Akewusola Hostel</td><td class="amount">240,000</td></tr>
+                    <tr><td>1</td><td>Adegunwa</td><td class="amount">170,000</td></tr>
+                    <tr><td>2</td><td>Jubrila Ayinla</td><td class="amount">200,000</td></tr>
+                    <tr><td>3</td><td>Akewusola</td><td class="amount">200,000</td></tr>
+                    <tr><td>4</td><td>Akewusola Extension</td><td class="amount">240,000</td></tr>
                 </tbody>
             </table>
 
