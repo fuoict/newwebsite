@@ -13,10 +13,10 @@ class PagesController extends Controller
     protected function renderManagedPage(string $slug, string $fallbackView, array $data = [])
     {
         $page = Page::where('slug', $slug)
-            ->where('status', 'published')
+            ->where('is_active', true)
             ->first();
 
-        if ($page && trim((string) $page->content) !== '') {
+        if ($page && trim((string) $page->body) !== '') {
             $data['page'] = $page;
 
             return view('pages.show', $data);
