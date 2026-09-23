@@ -164,11 +164,11 @@
                                     @foreach($uniPages as $page)
                                         @if($page->slug === 'board-of-trustees' || $page->slug === 'governing-council')
                                             <li class="nav-item">
-                                                <a href="{{ url('/university/'.$page->slug) }}" class="nav-link sub-menu">{{ $page->title }}</a>
+                                                <a href="{{ $page->route_name ? route($page->route_name) : url('/university/'.$page->slug) }}" class="nav-link sub-menu">{{ $page->title }}</a>
                                             </li>
                                         @else
                                             <li class="nav-item">
-                                                <a href="{{ url('/university/'.$page->slug) }}" class="nav-link">{{ $page->title }}</a>
+                                                <a href="{{ $page->route_name ? route($page->route_name) : url('/university/'.$page->slug) }}" class="nav-link">{{ $page->title }}</a>
                                             </li>
                                         @endif
                                     @endforeach
@@ -514,7 +514,7 @@
                                 <div class="accordion" id="navbarAccordion8">
                                     @foreach($uniPages as $page)
                                     <div class="accordion-item">
-                                        <a href="{{ url('/university/'.$page->slug) }}" class="accordion-link">{{ $page->title }}</a>
+                                        <a href="{{ $page->route_name ? route($page->route_name) : url('/university/'.$page->slug) }}" class="accordion-link">{{ $page->title }}</a>
                                     </div>
                                     @endforeach
                                     <div class="accordion-item">
