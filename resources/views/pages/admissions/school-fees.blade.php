@@ -42,6 +42,7 @@
             <a href="#undergraduate" class="active" onclick="showTab('undergraduate',this)">Undergraduate (Fresh)</a>
             <a href="#returning" onclick="showTab('returning',this)">Undergraduate (Returning)</a>
             <a href="#otherfees" onclick="showTab('otherfees',this)">Other Fees & Charges</a>
+            <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a>
             <a href="#topup" onclick="showTab('topup',this)">Top-Up / Part-Time</a>
             <a href="#postgraduate" onclick="showTab('postgraduate',this)">Postgraduate</a>
             <a href="#sandwich" onclick="showTab('sandwich',this)">Sandwich</a>
@@ -314,6 +315,43 @@
                 <tbody>
                     <tr><td></td><td>Fresher</td><td class="amount">30,000</td></tr>
                     <tr><td></td><td>Returning</td><td class="amount">20,000</td></tr>
+                </tbody>
+            </table>
+
+            <div class="fee-note"><strong>Note:</strong> All fees are as approved by the University Management for the 2026/2027 academic session. For enquiries, contact the Bursary Unit.</div>
+        </div>
+
+        {{-- ═══════════════ ACCOMMODATION ═══════════════ --}}
+        <div class="fee-section" id="accommodation">
+            <div class="fee-card">
+                <h3>Accommodation Fees</h3>
+                <p>Approved hostel accommodation fees for the 2026/2027 academic session, separated by gender.</p>
+            </div>
+
+            <h4 class="fee-subtitle">Female Hostels</h4>
+            <table class="fee-table">
+                <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Adeola Hostel</td><td class="amount">250,000</td></tr>
+                    <tr><td>2</td><td>F. K. Lawal Hostel 1</td><td class="amount">250,000</td></tr>
+                    <tr><td>3</td><td>F. K. Lawal Hostel 2</td><td class="amount">250,000</td></tr>
+                    <tr><td>4</td><td>Yusuf Ali Hostel</td><td class="amount">250,000</td></tr>
+                    <tr><td>5</td><td>Nimot Liadi Hostel</td><td class="amount">250,000</td></tr>
+                    <tr><td>6</td><td>Olalekan Saliu Hostel</td><td class="amount">250,000</td></tr>
+                    <tr><td>7</td><td>Awa Ibrahim Hostel</td><td class="amount">200,000</td></tr>
+                    <tr><td>8</td><td>Nimbe Hostel</td><td class="amount">200,000</td></tr>
+                    <tr><td>9</td><td>Ish'aq Oloyede Hostel</td><td class="amount">200,000</td></tr>
+                    <tr><td>10</td><td>Nimbe Annex &amp; Extension</td><td class="amount">240,000</td></tr>
+                </tbody>
+            </table>
+
+            <h4 class="fee-subtitle">Male Hostels</h4>
+            <table class="fee-table">
+                <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td>Adegunwa Hostel</td><td class="amount">170,000</td></tr>
+                    <tr><td>2</td><td>Jubrila Ayinla Hostel</td><td class="amount">200,000</td></tr>
+                    <tr><td>3</td><td>Akewusola Hostel</td><td class="amount">240,000</td></tr>
                 </tbody>
             </table>
 

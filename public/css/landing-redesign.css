@@ -709,6 +709,47 @@
 }
 
 /* ═══════════════════════════════════════════════
+   UPCOMING EVENTS
+   ═══════════════════════════════════════════════ */
+.fuo-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.fuo-event-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 16px rgba(3,95,57,0.06);
+  transition: transform .25s, box-shadow .25s;
+}
+.fuo-event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(3,95,57,0.12);
+}
+.fuo-event-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--fu-forest), #0a7a47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.fuo-event-icon i { font-size: 26px; color: #fff; }
+.fuo-event-body h3 { font-size: 18px; font-weight: 700; color: var(--fu-ink); margin: 0 0 6px; }
+.fuo-event-body p { font-size: 14px; color: var(--fu-muted); margin: 0; display: flex; align-items: center; gap: 6px; }
+.fuo-event-body p i { color: var(--fu-forest); font-size: 16px; }
+
+@media (max-width: 576px) {
+  .fuo-events-grid { grid-template-columns: 1fr; }
+}
+
+/* ═══════════════════════════════════════════════
    SCHOLARSHIP
    ═══════════════════════════════════════════════ */
 .fuo-scholarship-area {

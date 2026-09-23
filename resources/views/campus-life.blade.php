@@ -102,9 +102,7 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Upcoming</h5>
-                        <p class="mb-1"><strong>Convocation</strong><br><small>10 December 2026</small></p>
-                        <p class="mb-1"><strong>Career Fair</strong><br><small>18 November 2026</small></p>
-                        <a href="{{ route('news.index') }}" class="default-btn mt-3">See all events</a>
+                        <a href="{{ route('news.index') }}" class="default-btn">See all events</a>
                     </div>
                 </div>
 
