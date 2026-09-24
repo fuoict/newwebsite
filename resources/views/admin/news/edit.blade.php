@@ -212,7 +212,12 @@ if (existingBody) {
     quill.root.innerHTML = existingBody;
 }
 
-// Sync Quill content to hidden textarea before form submit
+// Sync Quill content to hidden textarea on every text change
+quill.on('text-change', function() {
+    document.getElementById('body-content').value = quill.root.innerHTML;
+});
+
+// Also sync right before form submit (safety net)
 document.getElementById('update-form').addEventListener('submit', function() {
     document.getElementById('body-content').value = quill.root.innerHTML;
 });

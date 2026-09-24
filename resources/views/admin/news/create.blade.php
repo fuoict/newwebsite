@@ -185,8 +185,14 @@ var quill = new Quill('#editor-container', {
     }
 });
 
-// Sync Quill content to hidden textarea before form submit
-document.querySelector('form').addEventListener('submit', function() {
+// Sync Quill content to hidden textarea on every text change
+quill.on('text-change', function() {
+    document.getElementById('body-content').value = quill.root.innerHTML;
+});
+
+// Also sync right before form submit (safety net)
+var form = document.querySelector('form');
+form.addEventListener('submit', function() {
     document.getElementById('body-content').value = quill.root.innerHTML;
 });
 

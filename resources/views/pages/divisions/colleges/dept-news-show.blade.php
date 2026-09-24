@@ -1,5 +1,16 @@
 @extends('layouts.app')
 
+@push('styles')
+<style>
+    .news-body p { margin-bottom: 12px; }
+    .news-body p:last-child { margin-bottom: 0; }
+    .news-body ul, .news-body ol { margin: 12px 0; padding-left: 24px; }
+    .news-body li { margin-bottom: 6px; }
+    .news-body h1, .news-body h2, .news-body h3, .news-body h4 { margin-top: 20px; margin-bottom: 10px; }
+    .news-body blockquote { border-left: 4px solid #035F39; padding-left: 16px; margin: 16px 0; color: #555; font-style: italic; }
+</style>
+@endpush
+
 @section('content')
 
 <!-- Banner -->
@@ -41,8 +52,8 @@
                         {{ $news->published_at ? $news->published_at->format('d M Y') : $news->created_at->format('d M Y') }}
                     </p>
 
-                    <div style="line-height:1.9;color:#444;font-size:15px">
-                        {!! nl2br(e($news->body)) !!}
+                    <div class="news-body" style="line-height:1.8;color:#444;font-size:15px">
+                        {!! $news->body !!}
                     </div>
                 </article>
             </div>
