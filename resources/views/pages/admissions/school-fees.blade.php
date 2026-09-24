@@ -350,7 +350,7 @@
             <table class="fee-table">
                 <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
                 <tbody>
-                    <tr><td>1</td><td>Adegunwa</td><td class="amount">170,000</td></tr>
+                    <tr><td>1</td><td>Adegunwa</td><td class="amount">180,000</td></tr>
                     <tr><td>2</td><td>Jubrila Ayinla</td><td class="amount">220,000</td></tr>
                     <tr><td>3</td><td>Akewusola</td><td class="amount">220,000</td></tr>
                     <tr><td>4</td><td>Akewusola Extension</td><td class="amount">240,000</td></tr>
