@@ -42,7 +42,7 @@
             <a href="#undergraduate" class="active" onclick="showTab('undergraduate',this)">Undergraduate (Fresh)</a>
             <a href="#returning" onclick="showTab('returning',this)">Undergraduate (Returning)</a>
             <a href="#otherfees" onclick="showTab('otherfees',this)">Other Fees & Charges</a>
-            <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a>
+            {{-- <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a> --}}
             <a href="#topup" onclick="showTab('topup',this)">Top-Up / Part-Time</a>
             <a href="#postgraduate" onclick="showTab('postgraduate',this)">Postgraduate</a>
             <a href="#sandwich" onclick="showTab('sandwich',this)">Sandwich</a>
@@ -322,6 +322,7 @@
         </div>
 
         {{-- ═══════════════ ACCOMMODATION ═══════════════ --}}
+        {{--
         <div class="fee-section" id="accommodation">
             <div class="fee-card">
                 <h3>Accommodation Fees</h3>
@@ -338,7 +339,7 @@
                     <tr><td>4</td><td>Yusuf Ali</td><td class="amount">250,000</td></tr>
                     <tr><td>5</td><td>Nimot Liadi</td><td class="amount">250,000</td></tr>
                     <tr><td>6</td><td>Olalekan Saliu</td><td class="amount">250,000</td></tr>
-                    <tr><td>7</td><td>Awa Ibraheem</td><td class="amount">200,000</td></tr>
+                    <tr><td>7</td><td>Awa Ibraheem</td><td class="amount">220,000</td></tr>
                     <tr><td>8</td><td>Nimbe Adedipe</td><td class="amount">200,000</td></tr>
                     <tr><td>9</td><td>Ish'aq Oloyede</td><td class="amount">200,000</td></tr>
                     <tr><td>10</td><td>Nimbe Adedipe Extension I</td><td class="amount">240,000</td></tr>
@@ -351,8 +352,8 @@
                 <thead><tr><th style="width:40px">#</th><th>Hostel</th><th class="amount">Amount (₦)</th></tr></thead>
                 <tbody>
                     <tr><td>1</td><td>Adegunwa</td><td class="amount">170,000</td></tr>
-                    <tr><td>2</td><td>Jubrila Ayinla</td><td class="amount">200,000</td></tr>
-                    <tr><td>3</td><td>Akewusola</td><td class="amount">200,000</td></tr>
+                    <tr><td>2</td><td>Jubrila Ayinla</td><td class="amount">220,000</td></tr>
+                    <tr><td>3</td><td>Akewusola</td><td class="amount">220,000</td></tr>
                     <tr><td>4</td><td>Akewusola Extension</td><td class="amount">240,000</td></tr>
                 </tbody>
             </table>
@@ -360,6 +361,7 @@
             <div class="fee-note"><strong>Note:</strong> All fees are as approved by the University Management for the 2026/2027 academic session. For enquiries, contact the Bursary Unit.</div>
         </div>
 
+        --}}
         {{-- ═══════════════ TOP-UP / PART-TIME ═══════════════ --}}
         <div class="fee-section" id="topup">
             <div class="fee-card">
