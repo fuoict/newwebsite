@@ -48,7 +48,8 @@
                 <label class="form-label">Full Article Body
                     <span class="text-muted fw-normal">(supports text formatting & inline images)</span>
                 </label>
-                <textarea name="body" id="body" class="form-control" rows="14">{{ old('body', $news->body) }}</textarea>
+                <textarea name="body" id="body-content" class="d-none">{{ old('body', $news->body) }}</textarea>
+                <div id="editor-container" style="min-height:300px"></div>
             </div>
 
             <div class="mb-3">
@@ -108,6 +109,31 @@
             </div>
         </div>
 
+        {{-- Department Tagging --}}
+        @if(isset($departments) && $departments->count())
+        <div class="card p-4 mb-4">
+            <h6 class="mb-3" style="font-weight:700">
+                <i class='bx bx-buildings'></i> Department Tagging
+            </h6>
+            <p class="text-muted" style="font-size:11px; margin-bottom:10px">
+                Tag this news to specific departments. It will also appear on those department pages.
+            </p>
+            @php $currentDepts = old('departments', $news->departments ?? []); @endphp
+            <div style="max-height:200px; overflow-y:auto; border:1px solid #eee; border-radius:6px; padding:10px;">
+                @foreach($departments as $id => $name)
+                <div class="form-check" style="margin-bottom:4px">
+                    <input class="form-check-input" type="checkbox" name="departments[]"
+                           value="{{ $name }}" id="dept-{{ $id }}"
+                           {{ in_array($name, $currentDepts) ? 'checked' : '' }}>
+                    <label class="form-check-label" for="dept-{{ $id }}" style="font-size:12px">
+                        {{ $name }}
+                    </label>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        @endif
+
         <div class="card p-4 mb-4">
             <h6 class="mb-3" style="font-weight:700">Featured Image</h6>
             @if($news->image)
@@ -159,44 +185,36 @@
 @endsection
 
 @push('scripts')
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+<link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
 <script>
-tinymce.init({
-    selector: '#body',
-    height: 450,
-    menubar: true,
-    plugins: [
-        'advlist', 'autolink', 'lists', 'link', 'image', 'charmap',
-        'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
-        'insertdatetime', 'media', 'table', 'preview', 'help', 'wordcount'
-    ],
-    toolbar:
-        'undo redo | blocks | bold italic underline | ' +
-        'alignleft aligncenter alignright alignjustify | ' +
-        'bullist numlist outdent indent | link image media | ' +
-        'forecolor backcolor | removeformat | fullscreen | code | help',
-    images_upload_url: '{{ route("admin.news.upload-image") }}',
-    images_upload_handler: function(blobInfo, progress) {
-        return new Promise((resolve, reject) => {
-            const formData = new FormData();
-            formData.append('file', blobInfo.blob(), blobInfo.filename());
-            formData.append('_token', '{{ csrf_token() }}');
-            fetch('{{ route("admin.news.upload-image") }}', {
-                method: 'POST',
-                body: formData
-            })
-            .then(res => res.json())
-            .then(data => {
-                if (data.location) resolve(data.location);
-                else reject('Upload failed: ' + JSON.stringify(data));
-            })
-            .catch(err => reject('Upload error: ' + err));
-        });
-    },
-    automatic_uploads: true,
-    file_picker_types: 'image',
-    content_style: 'body { font-family: Segoe UI, Arial, sans-serif; font-size: 15px; line-height: 1.8; color: #333; }',
-    branding: false
+var quill = new Quill('#editor-container', {
+    theme: 'snow',
+    placeholder: 'Write the full news article here...',
+    modules: {
+        toolbar: [
+            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ 'color': [] }, { 'background': [] }],
+            [{ 'align': [] }],
+            ['blockquote', 'code-block'],
+            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+            [{ 'indent': '-1'}, { 'indent': '+1' }],
+            ['link', 'image'],
+            ['clean']
+        ]
+    }
+});
+
+// Load existing content
+var existingBody = @json($news->body);
+if (existingBody) {
+    quill.root.innerHTML = existingBody;
+}
+
+// Sync Quill content to hidden textarea before form submit
+document.getElementById('update-form').addEventListener('submit', function() {
+    document.getElementById('body-content').value = quill.root.innerHTML;
 });
 
 document.getElementById('image-input').addEventListener('change', function(e) {

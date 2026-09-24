@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use App\Models\Department;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -21,7 +22,8 @@ class AdminNewsController extends Controller
     public function create()
     {
         $categories = News::categories();
-        return view('admin.news.create', compact('categories'));
+        $departments = Department::orderBy('department_name')->pluck('department_name', 'id');
+        return view('admin.news.create', compact('categories', 'departments'));
     }
 
     // Store new news
@@ -49,6 +51,7 @@ class AdminNewsController extends Controller
         $validated['is_featured']  = $request->boolean('is_featured');
         $validated['is_published'] = $request->boolean('is_published');
         $validated['published_at'] = $validated['is_published'] ? now() : null;
+        $validated['departments']  = $request->input('departments');
 
         News::create($validated);
 
@@ -60,7 +63,8 @@ class AdminNewsController extends Controller
     public function edit(News $news)
     {
         $categories = News::categories();
-        return view('admin.news.edit', compact('news', 'categories'));
+        $departments = Department::orderBy('department_name')->pluck('department_name', 'id');
+        return view('admin.news.edit', compact('news', 'categories', 'departments'));
     }
 
     // Update news
@@ -89,6 +93,7 @@ class AdminNewsController extends Controller
 
         $validated['is_featured']  = $request->boolean('is_featured');
         $validated['is_published'] = $request->boolean('is_published');
+        $validated['departments']  = $request->input('departments');
 
         // Set published_at only when first publishing
         if ($validated['is_published'] && !$news->published_at) {

@@ -48,8 +48,8 @@
                 <label class="form-label">Full Article Body
                     <span class="text-muted fw-normal">(shown on the news detail page)</span>
                 </label>
-                <textarea name="body" id="body" class="form-control" rows="10"
-                          placeholder="Write the full news article here...">{{ old('body') }}</textarea>
+                <textarea name="body" id="body-content" class="d-none">{{ old('body') }}</textarea>
+                <div id="editor-container" style="min-height:300px"></div>
             </div>
 
             {{-- Event Date Label --}}
@@ -119,6 +119,30 @@
             </div>
         </div>
 
+        {{-- Department Tagging --}}
+        @if(isset($departments) && $departments->count())
+        <div class="card p-4 mb-4">
+            <h6 class="mb-3" style="font-weight:700">
+                <i class='bx bx-buildings'></i> Department Tagging
+            </h6>
+            <p class="text-muted" style="font-size:11px; margin-bottom:10px">
+                Tag this news to specific departments. It will also appear on those department pages.
+            </p>
+            <div style="max-height:200px; overflow-y:auto; border:1px solid #eee; border-radius:6px; padding:10px;">
+                @foreach($departments as $id => $name)
+                <div class="form-check" style="margin-bottom:4px">
+                    <input class="form-check-input" type="checkbox" name="departments[]"
+                           value="{{ $name }}" id="dept-{{ $id }}"
+                           {{ in_array($name, old('departments', [])) ? 'checked' : '' }}>
+                    <label class="form-check-label" for="dept-{{ $id }}" style="font-size:12px">
+                        {{ $name }}
+                    </label>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        @endif
+
         {{-- Image Upload --}}
         <div class="card p-4">
             <h6 class="mb-3" style="font-weight:700">News Image</h6>
@@ -140,7 +164,32 @@
 @endsection
 
 @push('scripts')
+<script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+<link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet">
 <script>
+var quill = new Quill('#editor-container', {
+    theme: 'snow',
+    placeholder: 'Write the full news article here...',
+    modules: {
+        toolbar: [
+            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ 'color': [] }, { 'background': [] }],
+            [{ 'align': [] }],
+            ['blockquote', 'code-block'],
+            [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+            [{ 'indent': '-1'}, { 'indent': '+1' }],
+            ['link', 'image'],
+            ['clean']
+        ]
+    }
+});
+
+// Sync Quill content to hidden textarea before form submit
+document.querySelector('form').addEventListener('submit', function() {
+    document.getElementById('body-content').value = quill.root.innerHTML;
+});
+
 // Image preview
 document.getElementById('image-input').addEventListener('change', function(e) {
     const file = e.target.files[0];

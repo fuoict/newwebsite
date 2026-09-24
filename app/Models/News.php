@@ -12,7 +12,7 @@ class News extends Model
     use HasFactory, Auditable;
 
     protected $fillable = [
-        'title', 'slug', 'category', 'icon', 'image',
+        'title', 'slug', 'category', 'departments', 'icon', 'image',
         'excerpt', 'body', 'event_date_label',
         'is_featured', 'is_published', 'published_at',
     ];
@@ -21,6 +21,7 @@ class News extends Model
         'is_featured'  => 'boolean',
         'is_published' => 'boolean',
         'published_at' => 'datetime',
+        'departments'  => 'array',
     ];
 
     // Auto-generate slug from title
