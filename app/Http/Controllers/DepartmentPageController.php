@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Department;
 use App\Models\DepartmentNews;
+use App\Models\News;
 use App\Models\DepartmentFeaturedLink;
 use App\Models\CourseSynopsis;
 use Illuminate\Http\Request;
@@ -47,10 +48,28 @@ class DepartmentPageController extends Controller
     {
         $department = Department::where('slug', $slug)->where('is_active', true)->firstOrFail();
 
-        $newsList = DepartmentNews::published()
+        // Department-specific news
+        $deptNews = DepartmentNews::published()
             ->where('department_id', $department->id)
-            ->latest('published_at')
-            ->paginate(9);
+            ->get();
+
+        // Main news tagged to this department
+        $taggedNews = News::published()
+            ->whereJsonContains('departments', $department->department_name)
+            ->get();
+
+        // Merge, sort by date, and paginate
+        $newsList = $deptNews->concat($taggedNews)
+            ->sortByDesc('published_at')
+            ->values();
+
+        $newsList = new \Illuminate\Pagination\LengthAwarePaginator(
+            $newsList->forPage(request()->get('page', 1), 9),
+            $newsList->count(),
+            9,
+            request()->get('page', 1),
+            ['path' => request()->url()]
+        );
 
         return view('pages.divisions.colleges.dept-news', compact('department', 'newsList'));
     }
@@ -61,17 +80,31 @@ class DepartmentPageController extends Controller
     public function newsShow(string $deptSlug, string $newsSlug)
     {
         $department = Department::where('slug', $deptSlug)->where('is_active', true)->firstOrFail();
+        // Find news in either table
         $news = DepartmentNews::published()
             ->where('department_id', $department->id)
             ->where('slug', $newsSlug)
-            ->firstOrFail();
+            ->first();
 
-        $related = DepartmentNews::published()
+        if (!$news) {
+            $news = News::published()
+                ->where('slug', $newsSlug)
+                ->whereJsonContains('departments', $department->department_name)
+                ->firstOrFail();
+        }
+
+        $relatedDept = DepartmentNews::published()
             ->where('department_id', $department->id)
             ->where('id', '!=', $news->id)
-            ->latest('published_at')
-            ->limit(3)
             ->get();
+        $relatedTagged = News::published()
+            ->where('id', '!=', $news->id)
+            ->whereJsonContains('departments', $department->department_name)
+            ->get();
+        $related = $relatedDept->concat($relatedTagged)
+            ->sortByDesc('published_at')
+            ->take(3)
+            ->values();
 
         return view('pages.divisions.colleges.dept-news-show', compact('department', 'news', 'related'));
     }

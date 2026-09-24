@@ -232,12 +232,17 @@ class PagesController extends Controller
     // Featured links for sidebar
     $featuredLinks = $Department->featuredLinks()->where('is_active', true)->get();
 
-    // Recent department news for main content
-    $recentNews = \App\Models\DepartmentNews::published()
+    // Recent department news — combine department_news + main news tagged to this department
+    $recentDeptNews = \App\Models\DepartmentNews::published()
         ->where('department_id', $Department->id)
-        ->latest('published_at')
-        ->limit(4)
         ->get();
+    $recentTaggedNews = \App\Models\News::published()
+        ->whereJsonContains('departments', $Department->department_name)
+        ->get();
+    $recentNews = $recentDeptNews->concat($recentTaggedNews)
+        ->sortByDesc('published_at')
+        ->take(4)
+        ->values();
 
     return view('pages.divisions.colleges.departments', compact('Department', 'lecturers', 'featuredLinks', 'recentNews'));
 }
