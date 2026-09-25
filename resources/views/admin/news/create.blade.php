@@ -180,7 +180,7 @@
             <h5 style="margin:0; font-weight:700"><i class='bx bx-show me-1'></i> News Preview</h5>
             <button onclick="closePreview()" style="background:none; border:none; font-size:24px; cursor:pointer; color:#666">&times;</button>
         </div>
-        <div id="previewContent" style="padding:30px"></div>
+        <div id="previewContent" style="padding:30px; line-height:1.6; font-family:Segoe UI,Arial,sans-serif; color:#444"></div>
     </div>
 </div>
 
@@ -246,16 +246,19 @@ function previewNews() {
     var eventDate = document.querySelector('[name="event_date_label"]').value || '';
     var category = document.querySelector('[name="category"]').value || 'General';
 
-    var html = '<div style="font-family:Segoe UI,Arial,sans-serif">';
+    // Clean up empty paragraphs from Quill
+    body = body.replace(/<p><br><\/p>/g, '').replace(/<p><\/p>/g, '');
+
+    var html = '<div style="font-family:Segoe UI,Arial,sans-serif; line-height:1.6">';
     html += '<p style="font-size:12px;color:#035F39;font-weight:600;text-transform:uppercase;margin-bottom:8px"><i class="bx bxs-news"></i> ' + category + '</p>';
     html += '<h1 style="font-size:24px;font-weight:800;margin-bottom:16px;color:#1a1a2e">' + title + '</h1>';
     if (eventDate) {
         html += '<p style="font-size:13px;color:#888;margin-bottom:16px"><i class="bx bxs-calendar"></i> ' + eventDate + '</p>';
     }
     if (excerpt) {
-        html += '<p style="color:#555;font-style:italic;border-left:4px solid #0f3460;padding-left:16px;margin:20px 0">' + excerpt + '</p>';
+        html += '<p style="color:#555;font-style:italic;border-left:4px solid #0f3460;padding-left:16px;margin:16px 0">' + excerpt + '</p>';
     }
-    html += '<div class="news-body" style="line-height:1.8;color:#444">' + body + '</div>';
+    html += '<div class="news-body" style="line-height:1.6;color:#444">' + body + '</div>';
     html += '</div>';
 
     document.getElementById('previewContent').innerHTML = html;
