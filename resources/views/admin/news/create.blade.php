@@ -85,8 +85,19 @@
                 </label>
             </div>
 
-            <button type="submit" class="btn btn-fuo w-100">
+            <div class="mb-3">
+                <label class="form-label">Publish Date & Time
+                    <span class="text-muted fw-normal" style="font-weight:normal">(leave empty for auto)</span>
+                </label>
+                <input type="datetime-local" name="published_at" class="form-control"
+                       value="{{ old('published_at') }}">
+            </div>
+
+            <button type="submit" class="btn btn-fuo w-100 mb-2">
                 <i class='bx bx-save me-1'></i> Save Post
+            </button>
+            <button type="button" class="btn btn-outline-primary w-100" onclick="previewNews()">
+                <i class='bx bx-show me-1'></i> Preview
             </button>
         </div>
 
@@ -161,6 +172,18 @@
 
 </div>
 </form>
+
+{{-- Preview Modal --}}
+<div id="previewModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.7); z-index:9999; overflow-y:auto; padding:20px">
+    <div style="max-width:800px; margin:0 auto; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,.3)">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid #eee">
+            <h5 style="margin:0; font-weight:700"><i class='bx bx-show me-1'></i> News Preview</h5>
+            <button onclick="closePreview()" style="background:none; border:none; font-size:24px; cursor:pointer; color:#666">&times;</button>
+        </div>
+        <div id="previewContent" style="padding:30px"></div>
+    </div>
+</div>
+
 @endsection
 
 @push('scripts')
@@ -214,5 +237,33 @@ document.getElementById('image-input').addEventListener('change', function(e) {
 document.querySelector('[name="icon"]').addEventListener('input', function() {
     document.getElementById('icon-preview').className = this.value;
 });
+
+// Preview function
+function previewNews() {
+    var title = document.querySelector('[name="title"]').value || 'Untitled';
+    var excerpt = document.querySelector('[name="excerpt"]').value || '';
+    var body = quill.root.innerHTML || '';
+    var eventDate = document.querySelector('[name="event_date_label"]').value || '';
+    var category = document.querySelector('[name="category"]').value || 'General';
+
+    var html = '<div style="font-family:Segoe UI,Arial,sans-serif">';
+    html += '<p style="font-size:12px;color:#035F39;font-weight:600;text-transform:uppercase;margin-bottom:8px"><i class="bx bxs-news"></i> ' + category + '</p>';
+    html += '<h1 style="font-size:24px;font-weight:800;margin-bottom:16px;color:#1a1a2e">' + title + '</h1>';
+    if (eventDate) {
+        html += '<p style="font-size:13px;color:#888;margin-bottom:16px"><i class="bx bxs-calendar"></i> ' + eventDate + '</p>';
+    }
+    if (excerpt) {
+        html += '<p style="color:#555;font-style:italic;border-left:4px solid #0f3460;padding-left:16px;margin:20px 0">' + excerpt + '</p>';
+    }
+    html += '<div class="news-body" style="line-height:1.8;color:#444">' + body + '</div>';
+    html += '</div>';
+
+    document.getElementById('previewContent').innerHTML = html;
+    document.getElementById('previewModal').style.display = 'block';
+}
+
+function closePreview() {
+    document.getElementById('previewModal').style.display = 'none';
+}
 </script>
 @endpush

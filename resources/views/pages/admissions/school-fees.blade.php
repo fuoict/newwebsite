@@ -42,7 +42,7 @@
             <a href="#undergraduate" class="active" onclick="showTab('undergraduate',this)">Undergraduate (Fresh)</a>
             <a href="#returning" onclick="showTab('returning',this)">Undergraduate (Returning)</a>
             <a href="#otherfees" onclick="showTab('otherfees',this)">Other Fees & Charges</a>
-            {{-- <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a> --}}
+            <a href="#accommodation" onclick="showTab('accommodation',this)">Accommodation</a>
             <a href="#topup" onclick="showTab('topup',this)">Top-Up / Part-Time</a>
             <a href="#postgraduate" onclick="showTab('postgraduate',this)">Postgraduate</a>
             <a href="#sandwich" onclick="showTab('sandwich',this)">Sandwich</a>
@@ -322,7 +322,6 @@
         </div>
 
         {{-- ═══════════════ ACCOMMODATION ═══════════════ --}}
-        {{--
         <div class="fee-section" id="accommodation">
             <div class="fee-card">
                 <h3>Accommodation Fees</h3>
@@ -361,7 +360,6 @@
             <div class="fee-note"><strong>Note:</strong> All fees are as approved by the University Management for the 2026/2027 academic session. For enquiries, contact the Bursary Unit.</div>
         </div>
 
-        --}}
         {{-- ═══════════════ TOP-UP / PART-TIME ═══════════════ --}}
         <div class="fee-section" id="topup">
             <div class="fee-card">

@@ -50,8 +50,14 @@ class AdminNewsController extends Controller
         $validated['slug']         = Str::slug($validated['title']) . '-' . time();
         $validated['is_featured']  = $request->boolean('is_featured');
         $validated['is_published'] = $request->boolean('is_published');
-        $validated['published_at'] = $validated['is_published'] ? now() : null;
         $validated['departments']  = $request->input('departments');
+
+        // Use custom date if provided, otherwise auto-set when publishing
+        if ($validated['is_published']) {
+            $validated['published_at'] = $request->filled('published_at')
+                ? $request->input('published_at')
+                : now();
+        }
 
         News::create($validated);
 
@@ -80,6 +86,7 @@ class AdminNewsController extends Controller
             'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
             'is_featured'      => 'nullable|boolean',
             'is_published'     => 'nullable|boolean',
+            'published_at'     => 'nullable|date',
         ]);
 
         // Handle new image upload
@@ -95,8 +102,10 @@ class AdminNewsController extends Controller
         $validated['is_published'] = $request->boolean('is_published');
         $validated['departments']  = $request->input('departments');
 
-        // Set published_at only when first publishing
-        if ($validated['is_published'] && !$news->published_at) {
+        // Handle published_at — use custom date if provided, else auto-set when first publishing
+        if ($request->filled('published_at')) {
+            $validated['published_at'] = $request->input('published_at');
+        } elseif ($validated['is_published'] && !$news->published_at) {
             $validated['published_at'] = now();
         }
 
