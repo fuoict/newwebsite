@@ -2,13 +2,14 @@
 
 @section('content')
 <style>
-    .news-body p { margin-bottom: 4px; }
-    .news-body p:empty { display: none; margin: 0; }
-    .news-body p:last-child { margin-bottom: 0; }
-    .news-body ul, .news-body ol { margin: 4px 0; padding-left: 24px; }
-    .news-body li { margin-bottom: 2px; }
-    .news-body h1, .news-body h2, .news-body h3, .news-body h4 { margin-top: 12px; margin-bottom: 4px; }
-    .news-body blockquote { border-left: 4px solid #035F39; padding-left: 16px; margin: 8px 0; color: #555; font-style: italic; }
+    .news-body p { margin-bottom: 4px !important; margin-top: 0 !important; line-height: 1.6 !important; }
+    .news-body p:empty, .news-body p:has(> br:only-child) { display: none !important; margin: 0 !important; height: 0 !important; padding: 0 !important; }
+    .news-body p:last-child { margin-bottom: 0 !important; }
+    .news-body ul, .news-body ol { margin: 4px 0 !important; padding-left: 24px !important; }
+    .news-body li { margin-bottom: 2px !important; }
+    .news-body h1, .news-body h2, .news-body h3, .news-body h4 { margin-top: 12px !important; margin-bottom: 4px !important; }
+    .news-body blockquote { border-left: 4px solid #035F39 !important; padding-left: 16px !important; margin: 8px 0 !important; color: #555 !important; font-style: italic !important; }
+    .news-body br { display: block !important; content: '' !important; margin-top: 2px !important; }
 </style>
 
 <!-- Start Section Banner Area -->
