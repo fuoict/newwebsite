@@ -42,16 +42,56 @@
                             <div class="pera-dec">
                                 {{-- <h4>INTER-UNIVERSITY TRANSFER FORM</h4>
                                 <p>To be completed in Quadruplicate</p> --}}
-                                 <div class="program-points mt-4">
+                                <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/NQE1O') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            <a href="{{ ('https://shorturl.at/UjjdM') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                         </div>
-                                        <h4>ADVERTISEMENT OF JOB VACANCY FOR THE POSITION OF LEGAL OFFICER</h4>
-                                        <p>Applications are invited from suitable candidates to fill the position of Legal Officer</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Click here to Download </a>
+                                        <h4>STUDENT HANDBOOK</h4>
+                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/UjjdM') }}"> Click here to Download </a>
                                     </div>
-                               </div>
+                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/rLHgr') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>2026/2027 STUDENT ADMITTANCE SLIP NEW</h4>
+                                        <p>Use this slip to complete the required admission documentation and verify your student record before registration and enrollment.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/rLHgr') }}"> Click here to Download </a>
+                                    </div>
+                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/4eHD2') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>2026/2027 FRESH STUDENTS ENTRANCE FORM</h4>
+                                        <p>Please complete all sections of this form carefully and accurately. The information you provide will be used to process your admission and maintain school records. Ensure all required documents are attached before submission.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/4eHD2') }}"> Click here to Download </a>
+                                    </div>
+                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/XoBoe') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>2026/2027 RETURNING STUDENTS ENTRANCE FORM</h4>
+                                        <p>Please update any changes in personal, academic, or contact information. Ensure all sections are completed and submit the form along with any required documents by the specified deadline.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/XoBoe') }}"> Click here to Download </a>
+                                    </div>
+                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/WIezK') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>2026/2027 EXTRA CURRICULAR ACTIVITIES CLUBS</h4>
+                                        <p>Please indicate any clubs or activities you are currently involved in or would like to join. Participation in extra-curricular programmes is encouraged to support personal growth, teamwork, and leadership skills.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/WIezK') }}"> Click here to Download </a>
+                                    </div>
+                                </div>
                                 <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
