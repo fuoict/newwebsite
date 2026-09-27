@@ -40,172 +40,127 @@
                     <div class="col-lg-8">
                         <div class="ac-overview">
                             <div class="pera-dec">
-                                {{-- <h4>INTER-UNIVERSITY TRANSFER FORM</h4>
-                                <p>To be completed in Quadruplicate</p> --}}
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/UjjdM') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>STUDENT HANDBOOK</h4>
-                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/UjjdM') }}"> Click here to Download </a>
-                                    </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover align-middle">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Document Title</th>
+                                                <th scope="col" class="text-center">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Student Handbook</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/UjjdM" target="_blank" rel="noopener noreferrer" aria-label="Download Student Handbook">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>University Accommodation Rules</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/kw3Tl" target="_blank" rel="noopener noreferrer" aria-label="Download University Accommodation Rules">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Approved Dress Code for Students</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/lkOdB" target="_blank" rel="noopener noreferrer" aria-label="Download Approved Dress Code for Students">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>2026/2027 Student Admittance Slip New</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/rLHgr" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Student Admittance Slip New">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>2026/2027 Fresh Students Entrance Form</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/4eHD2" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Fresh Students Entrance Form">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>2026/2027 Returning Students Entrance Form</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/XoBoe" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Returning Students Entrance Form">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>2026/2027 Extra Curricular Activities Clubs</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/WIezK" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Extra Curricular Activities Clubs">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>NERD Compliance Clearance for 2025 Batch “C” NYSC Mobilization</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/NQE1O" target="_blank" rel="noopener noreferrer" aria-label="Download NERD Compliance Clearance for 2025 Batch C NYSC Mobilization">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Inter-University Transfer Form</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/r1EBb" target="_blank" rel="noopener noreferrer" aria-label="Download Inter-University Transfer Form">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Change of Degree Programme Form</td>
+                                                <td class="text-center">
+                                                    <a href="{{ URL::to('public/resources/Change-of-Course-form.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="Download Change of Degree Programme Form">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>Offence and Punishment on Student Misconduct as Amended by Senate</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/f8HIW" target="_blank" rel="noopener noreferrer" aria-label="Download Offence and Punishment on Student Misconduct as Amended by Senate">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>Sanctions for Proven Cases of Examination Malpractice</td>
+                                                <td class="text-center">
+                                                    <a href="https://shorturl.at/UKItm" target="_blank" rel="noopener noreferrer" aria-label="Download Sanctions for Proven Cases of Examination Malpractice">
+                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/lkOdB') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>APPROVED DRESS CODE FOR STUDENTS</h4>
-                                        <p>Students are required to comply with the approved dress code guidelines, which promote professionalism, modesty, discipline, and a respectful campus environment.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/lkOdB') }}"> Click here to Download </a>
-                                    </div>
-                                </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/rLHgr') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>2026/2027 STUDENT ADMITTANCE SLIP NEW</h4>
-                                        <p>Use this slip to complete the required admission documentation and verify your student record before registration and enrollment.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/rLHgr') }}"> Click here to Download </a>
-                                    </div>
-                                </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/4eHD2') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>2026/2027 FRESH STUDENTS ENTRANCE FORM</h4>
-                                        <p>Please complete all sections of this form carefully and accurately. The information you provide will be used to process your admission and maintain school records. Ensure all required documents are attached before submission.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/4eHD2') }}"> Click here to Download </a>
-                                    </div>
-                                </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/XoBoe') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>2026/2027 RETURNING STUDENTS ENTRANCE FORM</h4>
-                                        <p>Please update any changes in personal, academic, or contact information. Ensure all sections are completed and submit the form along with any required documents by the specified deadline.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/XoBoe') }}"> Click here to Download </a>
-                                    </div>
-                                </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/WIezK') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>2026/2027 EXTRA CURRICULAR ACTIVITIES CLUBS</h4>
-                                        <p>Please indicate any clubs or activities you are currently involved in or would like to join. Participation in extra-curricular programmes is encouraged to support personal growth, teamwork, and leadership skills.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/WIezK') }}"> Click here to Download </a>
-                                    </div>
-                                </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/NQE1O') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>NERD COMPLIANCE CLEARANCE FOR 2025 BATCH “C” NYSC MOBILIZATION</h4>
-                                        <p>Fountain University, Osogbo announces that all graduating students and prospective Corps Members are required to complete the mandatory Nigeria Education Repository and Databank (NERD) Clearance for NYSC Mobilization, as directed by the Federal Executive Council (FEC)</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/NQE1O') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                                 <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/r1EBb') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>INTER-UNIVERSITY TRANSFER FORM</h4>
-                                        <p>NOTE: (A student seeking transfer should ensure that he /she meets the entry requirements for the Department by obtaining clearance from the receiving HOD, Completed forms should be submitted to the Directorate of Academic Affairs).</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/r1EBb') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                               
-                              
-                                {{-- <div class="number-list">
-                                    <a href="{{ URL::to('public/resources/INTER-UNIVERSITY-TRANSFER-FORM.pdf') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                </div> --}}
-
-                               <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ URL::to('public/resources/Change-of-Course-form.pdf') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>CHANGE OF DEGERE PROGRAMME FORM</h4>
-                                        <p>NOTE: (A student seeking transfer should ensure that he /she meets the entry requirements for the Department by obtaining clearance from the receiving HOD, Completed forms should be submitted to the Directorate of Academic Affairs).</p>
-                                        <a class="btn btn-success" href="{{ URL::to('public/resources/Change-of-Course-form.pdf') }}"> Click here to Download </a>
-                                    </div>
-                               </div> 
-                               <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/f8HIW') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>OFFENCE AND PUNISHMENT ON STUDENT MISCONDUCT AS AMMENDED BY SENATE</h4>
-                                        <p>The Senate's amendments have clarified definitions of offences, 
-                                            introduced stricter penalties, and streamlined the disciplinary process to 
-                                            ensure fairness and deterrence. Punishments may range from warnings and suspension to expulsion, 
-                                            depending on the gravity of the offence. 
-                                            These amendments reflect the institution's commitment to upholding ethical 
-                                            standards and fostering a safe and respectful learning environment for all students.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/f8HIW') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/UKItm') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>SANCTIONS FOR PROVEN CASES OF EXAMINATION MALPRACTICE</h4>
-                                        <p>The Senate has revised the rules on examination malpractice, 
-                                            introducing clearer definitions and stricter penalties.
-                                             Sanctions now range from warning and suspension to expulsion, depending on the seriousness of the offence. 
-                                            These changes aim to promote fairness, discipline, and academic integrity.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/UKItm') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/PfbTH') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>STUDENT HANDBOOK</h4>
-                                        <p>Students are advised to familiarize themselves with the updated Student Handbook, which outlines approved rules, rights, responsibilities, and sanctions for misconduct as revised by the Senate.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/PfbTH') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                               <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/dTrni') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>NEW STUDENTS ENTRANCE FORM</h4>
-                                        <p>Please complete all sections of this form carefully and accurately. The information you provide will be used to process your admission and maintain school records. Ensure all required documents are attached before submission. Incomplete forms may result in delays in enrollment.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/dTrni') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                                  <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/fsJe0') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>ENTRANCE FORM FOR RETURNING STUDENTS</h4>
-                                        <p>Please update any changes in personal, academic, or contact information. Ensure all sections are completed and submit the form along with any required documents by the specified deadline.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/fsJe0') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
-                                <div class="program-points mt-4">
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="{{ ('https://shorturl.at/Azn8A') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>EXTRA CURRICULAR ACTIVITIES CLUBS</h4>
-                                        <p>Please indicate any clubs or activities you are currently involved in or would like to join. Participation in extra-curricular programmes is encouraged to support personal growth, teamwork, and leadership skills.</p>
-                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/Azn8A') }}"> Click here to Download </a>
-                                    </div>
-                               </div>
                             </div>
                         </div>
                     </div>
