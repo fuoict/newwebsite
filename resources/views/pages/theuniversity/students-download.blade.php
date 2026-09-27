@@ -55,6 +55,16 @@
                                 <div class="program-points mt-4">
                                     <div class="single-point-list">
                                         <div class="number-list">
+                                            <a href="{{ ('https://shorturl.at/lkOdB') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                        </div>
+                                        <h4>APPROVED DRESS CODE FOR STUDENTS</h4>
+                                        <p>Students are required to comply with the approved dress code guidelines, which promote professionalism, modesty, discipline, and a respectful campus environment.</p>
+                                        <a class="btn btn-success" href="{{ ('https://shorturl.at/lkOdB') }}"> Click here to Download </a>
+                                    </div>
+                                </div>
+                                <div class="program-points mt-4">
+                                    <div class="single-point-list">
+                                        <div class="number-list">
                                             <a href="{{ ('https://shorturl.at/rLHgr') }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
                                         </div>
                                         <h4>2026/2027 STUDENT ADMITTANCE SLIP NEW</h4>
