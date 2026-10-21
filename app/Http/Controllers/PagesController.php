@@ -405,9 +405,17 @@ class PagesController extends Controller
         return json_decode(file_get_contents($path), true) ?: [];
     }
 
-    private function renderShowcasePage(string $title, string $intro, string $dataFile)
+    private function renderShowcasePage(string $title, string $intro, string $dataFile, ?string $sortField = null)
     {
         $items = $this->loadShowcaseData($dataFile);
+
+        if ($sortField !== null) {
+            $items = collect($items)
+                ->sortBy(fn ($item) => strtolower($item[$sortField] ?? ''))
+                ->values()
+                ->all();
+        }
+
         $filterCategories = collect($items)
             ->pluck('category')
             ->filter()
@@ -428,7 +436,8 @@ class PagesController extends Controller
         return $this->renderShowcasePage(
             'Partnerships & Collaborations',
             'Fountain University’s growth has been shaped by a network of institutional, corporate, and governmental partners who share our commitment to academic excellence, research, and community impact. From international university consortia to specialized technology and healthcare institutions, these collaborations expand opportunities for our students, faculty, and researchers.',
-            'partners.json'
+            'partners.json',
+            'name'
         );
     }
 
