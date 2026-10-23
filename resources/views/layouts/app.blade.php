@@ -14,7 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     @php
-        $styleVersion = file_exists(public_path('css/style.css')) ? filemtime(public_path('css/style.css')) : time();
+        $v = function (string $file) {
+            return file_exists(public_path('css/' . $file)) ? filemtime(public_path('css/' . $file)) : time();
+        };
         $mainJsVersion = file_exists(public_path('js/main.js')) ? filemtime(public_path('js/main.js')) : time();
     @endphp
 
@@ -25,11 +27,11 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ $styleVersion }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ $v('style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $styleVersion }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $styleVersion }}">
-    <link rel="stylesheet" href="{{ asset('css/design-system.css') }}?v={{ $styleVersion }}">
+    <link rel="stylesheet" href="{{ asset('css/showcase.css') }}?v={{ $v('showcase.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}?v={{ $v('responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/design-system.css') }}?v={{ $v('design-system.css') }}">
 
     <title>Fountain University, Osogbo - Welcome to Fountain University | fuo.edu.ng formely fountainuniversity.edu.ng </title>
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/logo/fuo-logo.png') }}">
@@ -196,10 +198,12 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Resources</a>
-                                        <ul class="dropdown-menu" style="max-height:100px;overflow-y:auto">
+                                        <ul class="dropdown-menu" style="max-height:180px;overflow-y:auto">
                                             <li class="nav-item"><a href="{{ route('general-download') }}" class="nav-link">General Downloads</a></li>
                                             <li class="nav-item"><a href="{{ route('students-download') }}" class="nav-link">Students' Downloads</a></li>
                                             <li class="nav-item"><a href="{{ route('staff-downloads') }}" class="nav-link">Staff Downloads</a></li>
+                                            <li class="nav-item"><a href="{{ route('ai-policy') }}" class="nav-link">AI Policy</a></li>
+                                            <li class="nav-item"><a href="{{ route('e-learning-policy') }}" class="nav-link">E-Learning Policy</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -555,6 +559,8 @@
                                                     <div class="accordion-item"><a href="{{ route('general-download') }}" class="accordion-link">General Downloads</a></div>
                                                     <div class="accordion-item"><a href="{{ route('students-download') }}" class="accordion-link">Students' Downloads</a></div>
                                                     <div class="accordion-item"><a href="{{ route('staff-downloads') }}" class="accordion-link">Staff Downloads</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('ai-policy') }}" class="accordion-link">AI Policy</a></div>
+                                                    <div class="accordion-item"><a href="{{ route('e-learning-policy') }}" class="accordion-link">E-Learning Policy</a></div>
                                                 </div>
                                             </div>
                                         </div>

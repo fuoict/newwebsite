@@ -173,6 +173,8 @@ Route::get('/appraisal', [PagesController::class, 'appraisal'])->name('appraisal
 Route::get('/alumni', [PagesController::class, 'alumni'])->name('alumni');
 Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
 Route::get('/the-university-library', [PagesController::class, 'theUniversityLibrary'])->name('the-university-library');
+Route::get('/ai_policy', [PagesController::class, 'aiPolicy'])->name('ai-policy');
+Route::get('/e-learning_policy', [PagesController::class, 'eLearningPolicy'])->name('e-learning-policy');
 
 Route::get('/faq', [PagesController::class, 'faq'])->name('faq');
 Route::get('/gallery', [PagesController::class, 'ourGallery'])->name('gallery');

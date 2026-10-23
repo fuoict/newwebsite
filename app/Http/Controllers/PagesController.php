@@ -154,6 +154,16 @@ class PagesController extends Controller
         return view('pages.theuniversity.the-university-library');
     }
 
+    public function aiPolicy()
+    {
+        return view('pages.theuniversity.ai-policy');
+    }
+
+    public function eLearningPolicy()
+    {
+        return view('pages.theuniversity.e-learning-policy');
+    }
+
     // UNIVERSITY ACADEMICS ..........................
     public function subDegrees()
     {
