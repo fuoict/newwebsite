@@ -18,6 +18,8 @@ use App\Http\Controllers\Admin\AdminDepartmentController;
 use App\Http\Controllers\Admin\AdminNavigationController;
 use App\Http\Controllers\Admin\AdminAuditController;
 use App\Http\Controllers\Admin\AdminPageController;
+use App\Http\Controllers\Admin\AdminDownloadController;
+use App\Http\Controllers\Admin\AdminMemberController;
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\DepartmentPageController;
 use App\Http\Controllers\CentrePageController;
@@ -257,6 +259,7 @@ Route::get('/staff-downloads', [PagesController::class, 'staffDownloads'])->name
 Route::get('/students-download', [PagesController::class, 'studentDownloads'])->name('students-download');
 Route::get('/pg-download', [PagesController::class, 'postgraduateStudentDownload'])->name('pg-download');
 Route::get('/general-download', [PagesController::class, 'generalDownloads'])->name('general-download');
+Route::get('/document/{download}', [PagesController::class, 'serveDownload'])->name('download.file');
 Route::get('/sub-degree-programme', [PagesController::class, 'subDegrees'])->name('subdegree-programme');
 Route::get('/undergradute-programme', [PagesController::class, 'underGraduate'])->name('undergradute-programme');
 Route::get('/postgraduate-programme', [PagesController::class, 'postGraduate'])->name('postgraduate-programme');
@@ -473,6 +476,22 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/course-synopsis/template',                 [AdminCourseSynopsisController::class, 'downloadTemplate'])->name('course-synopsis.template');
     Route::post('/course-synopsis/import',                  [AdminCourseSynopsisController::class, 'import'])->name('course-synopsis.import');
     Route::post('/course-synopsis/bulk-delete',             [AdminCourseSynopsisController::class, 'bulkDelete'])->name('course-synopsis.bulk-delete');
+    // Downloads CMS (General / Students / Staff documents)
+    Route::get('/downloads',                          [AdminDownloadController::class, 'index'])->name('downloads.index');
+    Route::get('/downloads/create',                   [AdminDownloadController::class, 'create'])->name('downloads.create');
+    Route::post('/downloads',                         [AdminDownloadController::class, 'store'])->name('downloads.store');
+    Route::get('/downloads/{download}/edit',          [AdminDownloadController::class, 'edit'])->name('downloads.edit');
+    Route::put('/downloads/{download}',               [AdminDownloadController::class, 'update'])->name('downloads.update');
+    Route::delete('/downloads/{download}',            [AdminDownloadController::class, 'destroy'])->name('downloads.destroy');
+
+    // Governance Members CMS (Board of Trustees & Governing Council)
+    Route::get('/members',                            [AdminMemberController::class, 'index'])->name('members.index');
+    Route::get('/members/create',                     [AdminMemberController::class, 'create'])->name('members.create');
+    Route::post('/members',                           [AdminMemberController::class, 'store'])->name('members.store');
+    Route::get('/members/{member}/edit',              [AdminMemberController::class, 'edit'])->name('members.edit');
+    Route::put('/members/{member}',                   [AdminMemberController::class, 'update'])->name('members.update');
+    Route::delete('/members/{member}',                [AdminMemberController::class, 'destroy'])->name('members.destroy');
+
 
 });
 

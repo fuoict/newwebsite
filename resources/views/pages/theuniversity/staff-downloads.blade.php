@@ -57,51 +57,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @forelse($downloads as $index => $download)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Staff Personal Profile Data Form</td>
+                                        <td>{{ $index + 1 }}</td>
+                                        <td>{{ $download->title }}</td>
                                         <td class="text-center">
-                                            <a href="https://shorturl.at/MiX8h" target="_blank" rel="noopener noreferrer" aria-label="Download Staff Personal Profile Data Form">
+                                            <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}">
                                                 <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>2026 Promotion Circular</td>
-                                        <td class="text-center">
-                                            <a href="https://tinyurl.com/4rah3anw" target="_blank" rel="noopener noreferrer" aria-label="Download 2026 Promotion Circular">
-                                                <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>2026 FUO Approved CV Format</td>
-                                        <td class="text-center">
-                                            <a href="https://tinyurl.com/y4asz6vs" target="_blank" rel="noopener noreferrer" aria-label="Download 2026 FUO Approved CV Format">
-                                                <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>APER Form for Academic Staff</td>
-                                        <td class="text-center">
-                                            <a href="https://tinyurl.com/35tmu4z9" target="_blank" rel="noopener noreferrer" aria-label="Download APER Form for Academic Staff">
-                                                <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>2026 FUO Approved CV Document Format</td>
-                                        <td class="text-center">
-                                            <a href="https://tinyurl.com/2s393cse" target="_blank" rel="noopener noreferrer" aria-label="Download 2026 FUO Approved CV Document Format">
-                                                <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    @empty
+                                    <tr><td colspan="3" class="text-center text-muted py-4">No documents available yet.</td></tr>
+                                    @endforelse
                                 </tbody>
                             </table>
                         </div>

@@ -144,6 +144,8 @@
             <div class="nav-section">Website</div>
             <a href="{{ route('admin.navigation.index') }}" class="nav-link {{ request()->routeIs('admin.navigation.*') ? 'active' : '' }}"><i class='bx bx-menu'></i> Navigation</a>
             <a href="{{ route('admin.pages.index') }}" class="nav-link {{ request()->routeIs('admin.pages.*') ? 'active' : '' }}"><i class='bx bx-file'></i> Pages</a>
+            <a href="{{ route('admin.downloads.index') }}" class="nav-link {{ request()->routeIs('admin.downloads.*') ? 'active' : '' }}"><i class='bx bxs-download'></i> Documents</a>
+            <a href="{{ route('admin.members.index') }}" class="nav-link {{ request()->routeIs('admin.members.*') ? 'active' : '' }}"><i class='bx bx-group'></i> Council &amp; BOT</a>
 
             <div class="nav-section">University</div>
             <a href="javascript:void(0)" class="nav-link has-dropdown" onclick="toggleDropdown(this)">

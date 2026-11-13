@@ -47,33 +47,19 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @forelse($downloads as $index => $download)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Appointment of Vice-Chancellor</td>
+                                            <td>{{ $index + 1 }}</td>
+                                            <td>{{ $download->title }}</td>
                                             <td class="text-center">
-                                                <a href="{{ URL::to('public/resources/appointment-of-vc.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="Download Appointment of Vice-Chancellor">
+                                                <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}">
                                                     <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
                                                 </a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Annual Report Fountain University (2019-2021)</td>
-                                            <td class="text-center">
-                                                <a href="{{ URL::to('public/resources/Annual-Report-Fountain-2019-2021.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="Download Annual Report Fountain University (2019-2021)">
-                                                    <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Annual Report Fountain University (2018-2019)</td>
-                                            <td class="text-center">
-                                                <a href="{{ URL::to('public/resources/2018-2019-Annual-Report-FU-1-1.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="Download Annual Report Fountain University (2018-2019)">
-                                                    <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                </a>
-                                            </td>
-                                        </tr>
+                                        @empty
+                                        <tr><td colspan="3" class="text-center text-muted py-4">No documents available yet.</td></tr>
+                                        @endforelse
                                     </tbody>
                                 </table>
                             </div>

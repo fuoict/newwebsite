@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\College;
 use App\Models\Department;
+use App\Models\Download;
+use App\Models\GovernanceMember;
 use App\Models\Page;
 use App\Models\VcSpeech;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class PagesController extends Controller
 {
@@ -47,7 +50,9 @@ class PagesController extends Controller
     // ABOUT THE UNIVERSITY ......................
     public function aboutBoardOfTrustee()
     {
-        return view('pages.theuniversity.about-board-of-trustee');
+        $members = GovernanceMember::active()->type('bot')->ordered()->get();
+
+        return view('pages.theuniversity.about-board-of-trustee', compact('members'));
     }
 
     public function profileBOT()
@@ -57,7 +62,9 @@ class PagesController extends Controller
 
     public function aboutGoverningCouncil()
     {
-        return view('pages.theuniversity.about-governing-council');
+        $members = GovernanceMember::active()->type('council')->ordered()->get();
+
+        return view('pages.theuniversity.about-governing-council', compact('members'));
     }
 
     public function dirOfCouncil()
@@ -136,17 +143,34 @@ class PagesController extends Controller
 
     public function staffDownloads()
     {
-        return view('pages.theuniversity.staff-downloads');
+        return view('pages.theuniversity.staff-downloads', [
+            'downloads' => Download::active()->category('staff')->orderBy('sort_order')->orderBy('id')->get(),
+        ]);
     }
 
     public function studentDownloads()
     {
-        return view('pages.theuniversity.students-download');
+        return view('pages.theuniversity.students-download', [
+            'downloads' => Download::active()->category('students')->orderBy('sort_order')->orderBy('id')->get(),
+        ]);
     }
 
     public function generalDownloads()
     {
-        return view('pages.theuniversity.general-download');
+        return view('pages.theuniversity.general-download', [
+            'downloads' => Download::active()->category('general')->orderBy('sort_order')->orderBy('id')->get(),
+        ]);
+    }
+
+    /** Serve a CMS-managed document from public/resources (works on any host). */
+    public function serveDownload(Download $download)
+    {
+        abort_if(!$download->file_path, 404);
+
+        $path = public_path('resources' . DIRECTORY_SEPARATOR . basename($download->file_path));
+        abort_unless(File::exists($path), 404);
+
+        return response()->file($path);
     }
 
     public function theUniversityLibrary()

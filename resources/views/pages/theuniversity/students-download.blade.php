@@ -50,114 +50,19 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @forelse($downloads as $index => $download)
                                             <tr>
-                                                <td>1</td>
-                                                <td>Student Handbook</td>
+                                                <td>{{ $index + 1 }}</td>
+                                                <td>{{ $download->title }}</td>
                                                 <td class="text-center">
-                                                    <a href="https://shorturl.at/UjjdM" target="_blank" rel="noopener noreferrer" aria-label="Download Student Handbook">
+                                                    <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}">
                                                         <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
                                                     </a>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>University Accommodation Rules</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/kw3Tl" target="_blank" rel="noopener noreferrer" aria-label="Download University Accommodation Rules">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Approved Dress Code for Students</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/lkOdB" target="_blank" rel="noopener noreferrer" aria-label="Download Approved Dress Code for Students">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>2026/2027 Student Admittance Slip New</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/rLHgr" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Student Admittance Slip New">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>2026/2027 Fresh Students Entrance Form</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/4eHD2" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Fresh Students Entrance Form">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>2026/2027 Returning Students Entrance Form</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/XoBoe" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Returning Students Entrance Form">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>2026/2027 Extra Curricular Activities Clubs</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/WIezK" target="_blank" rel="noopener noreferrer" aria-label="Download 2026/2027 Extra Curricular Activities Clubs">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>NERD Compliance Clearance for 2025 Batch “C” NYSC Mobilization</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/NQE1O" target="_blank" rel="noopener noreferrer" aria-label="Download NERD Compliance Clearance for 2025 Batch C NYSC Mobilization">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>Inter-University Transfer Form</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/r1EBb" target="_blank" rel="noopener noreferrer" aria-label="Download Inter-University Transfer Form">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>10</td>
-                                                <td>Change of Degree Programme Form</td>
-                                                <td class="text-center">
-                                                    <a href="{{ URL::to('public/resources/Change-of-Course-form.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="Download Change of Degree Programme Form">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>Offence and Punishment on Student Misconduct as Amended by Senate</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/f8HIW" target="_blank" rel="noopener noreferrer" aria-label="Download Offence and Punishment on Student Misconduct as Amended by Senate">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>12</td>
-                                                <td>Sanctions for Proven Cases of Examination Malpractice</td>
-                                                <td class="text-center">
-                                                    <a href="https://shorturl.at/UKItm" target="_blank" rel="noopener noreferrer" aria-label="Download Sanctions for Proven Cases of Examination Malpractice">
-                                                        <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                            @empty
+                                            <tr><td colspan="3" class="text-center text-muted py-4">No documents available yet.</td></tr>
+                                            @endforelse
                                         </tbody>
                                     </table>
                                 </div>

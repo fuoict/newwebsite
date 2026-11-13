@@ -1,6 +1,98 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        /* ── "Our Departments" image cards ── */
+        .dept-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: #fff;
+            border: 1px solid #e7ece9;
+            border-radius: 16px;
+            overflow: hidden;
+            text-decoration: none;
+            box-shadow: 0 10px 26px rgba(8, 43, 26, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 42px rgba(8, 43, 26, 0.14);
+            border-color: rgba(3, 95, 57, 0.35);
+            text-decoration: none;
+        }
+
+        .dept-card__img {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            background: linear-gradient(135deg, #0a7a4b 0%, #035f39 55%, #06301e 100%);
+            overflow: hidden;
+        }
+
+        .dept-card__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.45s ease;
+        }
+
+        .dept-card:hover .dept-card__img img { transform: scale(1.07); }
+
+        .dept-card__fallback {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 2.6rem;
+        }
+
+        .dept-card__body {
+            padding: 16px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .dept-card__body h4 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 800;
+            color: #082b1a;
+            line-height: 1.45;
+        }
+
+        .dept-card__code {
+            align-self: flex-start;
+            background: #eef4f0;
+            border: 1px solid #d8e6de;
+            color: #0f3a26;
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+        }
+
+        .dept-card__link {
+            margin-top: auto;
+            font-size: 0.84rem;
+            font-weight: 800;
+            color: #035f39;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .dept-card:hover .dept-card__link { color: #0a7a4b; }
+
+        @media print {
+            .dept-card { box-shadow: none; break-inside: avoid; }
+        }
+    </style>
 
         <!-- Start Section Banner Area -->
         <div class="section-banner bg-12">
@@ -127,40 +219,36 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="problem-sector">
 
                                 <div class="problem-list">
                                     <div class="title">
                                         <h3>Our Departments</h3>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
-                                            <div class="problem-items">
-                                                <ul>
-                                                    {{-- <li><a href="{{ route('departments', $Colleges->id) }}">Business Media</a></li> --}}
-                                                    @foreach ($Departments as $index => $Department)
-                                                        <li class="d-flex align-items-center mb-3">
-                                                            @if($Department->department_image)
-                                                                <img src="{{ asset('storage/'.$Department->department_image) }}" alt="{{ $Department->department_name }}" style="width:56px; height:56px; object-fit:cover; border-radius:8px; margin-right:12px;">
-                                                            @endif
-                                                            <a href="{{ route('department', $Department->slug) }}">{{ $Department->department_name }}</a>
-                                                        </li>
-                                                    @endforeach
-                                                    {{-- <li><a href="#">Corporate Finance</a></li>
-                                                    <li><a href="#">Business Administration</a></li> --}}
-                                                </ul>
-                                            </div>
+                                    <div class="row g-3">
+                                        @forelse ($Departments as $Department)
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <a href="{{ route('department', $Department->slug) }}" class="dept-card" data-aos="fade-up">
+                                                <div class="dept-card__img">
+                                                    @if($Department->department_image)
+                                                        <img src="{{ asset('storage/'.$Department->department_image) }}" alt="{{ $Department->department_name }}" loading="lazy">
+                                                    @else
+                                                        <span class="dept-card__fallback"><i class='bx bx-sitemap'></i></span>
+                                                    @endif
+                                                </div>
+                                                <div class="dept-card__body">
+                                                    <h4>{{ $Department->department_name }}</h4>
+                                                    @if($Department->department_code)
+                                                        <span class="dept-card__code">{{ $Department->department_code }}</span>
+                                                    @endif
+                                                    <span class="dept-card__link">View Department <i class='bx bx-right-arrow-alt'></i></span>
+                                                </div>
+                                            </a>
                                         </div>
-                                        <div class="col-lg-6 col-sm-6 col-md-6">
-                                            <div class="problem-items">
-                                                {{-- <ul>
-                                                    <li><a href="#">Business Ethics</a></li>
-                                                    <li><a href="#">Marketing</a></li>
-                                                    <li><a href="#">Accounting And Finance</a></li>
-                                                </ul> --}}
-                                            </div>
-                                        </div>
+                                        @empty
+                                        <div class="col-12"><p class="text-muted mb-0">No departments have been listed for this college yet.</p></div>
+                                        @endforelse
                                     </div>
                                 </div>
                             </div>
