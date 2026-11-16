@@ -44,6 +44,7 @@
                 <tr>
                     <th class="ps-4">Code</th>
                     <th>Title</th>
+                    <th>Stream</th>
                     <th>Level</th>
                     <th>Unit</th>
                     <th>Type</th>
@@ -57,6 +58,13 @@
                 <tr>
                     <td class="ps-4"><span class="badge bg-dark">{{ $course->course_code }}</span></td>
                     <td style="font-weight:600;font-size:13px">{{ $course->course_title }}</td>
+                    <td>
+                        @if($course->stream)
+                            <span class="badge bg-secondary">{{ $course->stream }}</span>
+                        @else
+                            <span class="text-muted">—</span>
+                        @endif
+                    </td>
                     <td>{{ $course->level }}L</td>
                     <td>{{ $course->unit }}</td>
                     <td>
@@ -84,7 +92,7 @@
                 </tr>
                 @empty
                 <tr>
-                    <td colspan="8" class="text-center text-muted py-5">
+                    <td colspan="9" class="text-center text-muted py-5">
                         No courses found. <a href="{{ route('admin.course-synopsis.create') }}">Add one.</a>
                     </td>
                 </tr>
@@ -114,7 +122,7 @@
                     <input type="file" name="import_file" class="form-control" accept=".csv,.json,.txt" required>
                 </div>
                 <div class="alert alert-info py-2" style="font-size:12px">
-                    <strong>CSV columns:</strong> department_name, course_code, course_title, description, unit, level, type (core/elective/required), is_published
+                    <strong>CSV columns:</strong> department_name, stream (e.g. Arabic or Islamic, optional), course_code, course_title, description, unit, level, type (core/elective/required), is_published
                 </div>
             </div>
             <div class="modal-footer">

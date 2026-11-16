@@ -38,6 +38,7 @@ class AdminCourseSynopsisController extends Controller
             'department_id' => 'required|exists:departments,id',
             'course_code'   => 'required|string|max:20',
             'course_title'  => 'required|string|max:255',
+            'stream'        => 'nullable|string|max:60',
             'description'   => 'nullable|string',
             'unit'          => 'required|integer|min:0|max:10',
             'level'         => 'required|integer|in:100,200,300,400,500,600',
@@ -66,6 +67,7 @@ class AdminCourseSynopsisController extends Controller
             'department_id' => 'required|exists:departments,id',
             'course_code'   => 'required|string|max:20',
             'course_title'  => 'required|string|max:255',
+            'stream'        => 'nullable|string|max:60',
             'description'   => 'nullable|string',
             'unit'          => 'required|integer|min:0|max:10',
             'level'         => 'required|integer|in:100,200,300,400,500,600',
@@ -93,27 +95,27 @@ class AdminCourseSynopsisController extends Controller
     // ── Bulk Upload ──────────────────────────────
     public function downloadTemplate()
     {
-        $headers = ['department_name', 'course_code', 'course_title', 'description', 'unit', 'level', 'type', 'is_published'];
+        $headers = ['department_name', 'stream', 'course_code', 'course_title', 'description', 'unit', 'level', 'type', 'is_published'];
         $callback = function () use ($headers): void {
             $handle = fopen('php://output', 'w');
             fputcsv($handle, $headers);
             fputcsv($handle, [
-                'Department of Biology',
-                'BIO 101',
-                'Introduction to Biology',
-                'An introductory course covering the basics of biology.',
+                'Department of Arabic and Islamic Studies',
+                'Arabic',
+                'ARAB 101',
+                'Sample Arabic stream course (replace or delete)',
                 '3',
                 '100',
                 'core',
                 'true',
             ]);
             fputcsv($handle, [
-                'Department of Biology',
-                'BIO 201',
-                'Cell Biology',
-                'Study of cell structure and function.',
+                'Department of Arabic and Islamic Studies',
+                'Islamic',
+                'ISLS 101',
+                'Sample Islamic stream course (replace or delete)',
                 '3',
-                '200',
+                '100',
                 'core',
                 'true',
             ]);
@@ -165,11 +167,13 @@ class AdminCourseSynopsisController extends Controller
             $level = (int) ($row['level'] ?? 100);
             $type = strtolower(trim($row['type'] ?? 'core'));
             if (!in_array($type, ['core', 'elective', 'required'])) $type = 'core';
+            $stream = trim($row['stream'] ?? $row['sub_department'] ?? '');
 
             CourseSynopsis::updateOrCreate(
                 ['department_id' => $dept->id, 'course_code' => $courseCode],
                 [
                     'course_title' => $courseTitle,
+                    'stream' => $stream !== '' ? $stream : null,
                     'description' => $row['description'] ?? null,
                     'unit' => (int) ($row['unit'] ?? 3),
                     'level' => $level,

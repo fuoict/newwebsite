@@ -67,6 +67,22 @@
                     </div>
 
                     @if($courses->count())
+                    @php
+                        $grouped = $courses->groupBy(fn ($c) => trim((string) $c->stream))->toBase();
+                        $hasStreams = $grouped->keys()->contains(fn ($k) => $k !== '');
+                        $sections = $grouped->except('')->sortKeys();
+                        if ($grouped->has('')) {
+                            $sections->put('', $grouped->get(''));
+                        }
+                    @endphp
+                    @foreach($sections as $streamName => $groupCourses)
+                    @if($hasStreams)
+                    <div style="display:flex;align-items:center;gap:10px;padding:14px 24px;background:#f0f7f0;border-bottom:1px solid #e3efe3">
+                        <span style="width:8px;height:22px;border-radius:4px;background:linear-gradient(135deg,#0a7a4b,#035f39)"></span>
+                        <h5 style="font-weight:800;margin:0;font-size:15px;color:#035F39">{{ $streamName !== '' ? $streamName : 'General Courses' }}</h5>
+                        <span class="badge bg-secondary" style="font-size:11px">{{ $groupCourses->count() }} course(s)</span>
+                    </div>
+                    @endif
                     <div class="table-responsive">
                         <table class="table table-hover align-middle mb-0">
                             <thead class="table-light">
@@ -78,7 +94,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($courses as $course)
+                                @foreach($groupCourses as $course)
                                 <tr>
                                     <td style="padding:12px 16px">
                                         <span class="badge bg-dark" style="font-size:11px">{{ $course->course_code }}</span>
@@ -103,6 +119,7 @@
                             </tbody>
                         </table>
                     </div>
+                    @endforeach
                     @else
                     <div class="text-center py-5">
                         <p class="text-muted">No courses available{{ request('level') ? ' for this level' : '' }} yet.</p>

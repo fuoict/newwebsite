@@ -9,7 +9,7 @@ class CourseSynopsis extends Model
 {
     use Auditable;
     protected $fillable = [
-        'department_id', 'course_code', 'course_title',
+        'department_id', 'stream', 'course_code', 'course_title',
         'description', 'unit', 'level', 'type', 'is_published',
     ];
 

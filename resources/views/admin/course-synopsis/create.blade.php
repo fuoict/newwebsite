@@ -59,6 +59,13 @@
                            value="{{ old('unit', 3) }}" min="0" max="10" required>
                     @error('unit') <div class="invalid-feedback">{{ $message }}</div> @enderror
                 </div>
+                <div class="col-md-4">
+                    <label class="form-label fw-semibold">Stream / Sub-group <span class="text-muted fw-normal">(optional)</span></label>
+                    <input type="text" name="stream" class="form-control @error('stream') is-invalid @enderror"
+                           value="{{ old('stream') }}" maxlength="60" placeholder="e.g. Arabic or Islamic">
+                    <div class="form-text">For departments with sub-streams (e.g. Arabic &amp; Islamic Studies). Leave empty otherwise.</div>
+                    @error('stream') <div class="invalid-feedback">{{ $message }}</div> @enderror
+                </div>
                 <div class="col-12">
                     <label class="form-label fw-semibold">Course Description</label>
                     <textarea name="description" class="form-control" rows="4">{{ old('description') }}</textarea>
