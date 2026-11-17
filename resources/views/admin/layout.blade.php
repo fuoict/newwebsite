@@ -146,6 +146,8 @@
             <a href="{{ route('admin.pages.index') }}" class="nav-link {{ request()->routeIs('admin.pages.*') ? 'active' : '' }}"><i class='bx bx-file'></i> Pages</a>
             <a href="{{ route('admin.downloads.index') }}" class="nav-link {{ request()->routeIs('admin.downloads.*') ? 'active' : '' }}"><i class='bx bxs-download'></i> Documents</a>
             <a href="{{ route('admin.members.index') }}" class="nav-link {{ request()->routeIs('admin.members.*') ? 'active' : '' }}"><i class='bx bx-group'></i> Council &amp; BOT</a>
+            <a href="{{ route('admin.inaugural.index') }}" class="nav-link {{ request()->routeIs('admin.inaugural.*') ? 'active' : '' }}"><i class='bx bx-microphone'></i> Lectures</a>
+            <a href="{{ route('admin.gallery.index') }}" class="nav-link {{ request()->routeIs('admin.gallery.*') ? 'active' : '' }}"><i class='bx bx-images'></i> Gallery</a>
 
             <div class="nav-section">University</div>
             <a href="javascript:void(0)" class="nav-link has-dropdown" onclick="toggleDropdown(this)">

@@ -34,10 +34,10 @@
                     </td>
                     <td><span class="badge {{ $download->is_active ? 'bg-success' : 'bg-secondary' }}">{{ $download->is_active ? 'Active' : 'Hidden' }}</span></td>
                     <td class="text-end pe-4">
-                        @if($download->file_path)
+                        @if($download->publicUrl())
                             <a href="{{ $download->publicUrl() }}" target="_blank" class="btn btn-sm btn-outline-secondary me-1" title="Preview"><i class='bx bx-show'></i></a>
-                        @elseif($download->external_url)
-                            <a href="{{ $download->external_url }}" target="_blank" class="btn btn-sm btn-outline-secondary me-1" title="Open link"><i class='bx bx-show'></i></a>
+                        @elseif($download->file_path)
+                            <span class="badge bg-warning text-dark" title="File not found on server">Missing file</span>
                         @endif
                         <a href="{{ route('admin.downloads.edit', $download) }}" class="btn btn-sm btn-outline-primary me-1"><i class='bx bx-edit'></i></a>
                         <form action="{{ route('admin.downloads.destroy', $download) }}" method="POST" class="d-inline" onsubmit="return confirm('Delete this document?')">@csrf @method('DELETE')<button class="btn btn-sm btn-outline-danger"><i class='bx bx-trash'></i></button></form>

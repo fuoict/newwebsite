@@ -42,7 +42,11 @@
                             <div class="col-lg-6 col-sm-6 col-md-6 mb-4">
                                 <div class="course-item">
                                     <div class="image">
-                                        <img src="{{ asset($lecture->image_path) }}" style="height:250px" alt="image">
+                                        @if($lecture->image_path)
+                                        <img src="{{ asset($lecture->image_path) }}" style="height:250px" alt="{{ $lecture->title }}">
+                                        @else
+                                        <div style="height:250px;display:grid;place-items:center;background:linear-gradient(135deg,#0a7a4b,#06301e);color:rgba(255,255,255,.85)"><i class='bx bx-microphone' style="font-size:3rem"></i></div>
+                                        @endif
                                     </div>
                                     <div class="content">
                                         <span>{{ $lecture->lecture_date->format('M d, Y') }}</span>
@@ -55,6 +59,20 @@
                                                 <span>{{ $lecture->speaker_name }}</span>
                                             </li>
                                         </ul>
+                                        @if($lecture->slides_path || $lecture->event_url)
+                                        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;border-top:1px solid #e5e5e5;padding-top:12px;">
+                                            @if($lecture->slides_path)
+                                            <a href="{{ $lecture->slidesUrl() }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;color:#035F39;background:#f0f7f0;border:1px solid #d8e6de;border-radius:8px;padding:7px 14px;text-decoration:none;">
+                                                <i class='bx bxs-file-doc'></i> Lecture Slides
+                                            </a>
+                                            @endif
+                                            @if($lecture->event_url)
+                                            <a href="{{ $lecture->event_url }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;color:#0f3a26;background:#fff;border:1px solid #d8e6de;border-radius:8px;padding:7px 14px;text-decoration:none;">
+                                                <i class='bx bx-link-external'></i> Event Link
+                                            </a>
+                                            @endif
+                                        </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

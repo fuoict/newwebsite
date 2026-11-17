@@ -142,7 +142,7 @@
                     <h2>VC Spotlight</h2>
                     <p>Moments from the Office of the Vice-Chancellor captured in motion.</p>
                     <div class="vc-spotlight-action">
-                        <a href="{{ route('our-gallery') }}" class="default-btn">Explore VC Moments</a>
+                        <a href="{{ route('gallery') }}" class="default-btn">Explore VC Moments</a>
                     </div>
                 </div>
 

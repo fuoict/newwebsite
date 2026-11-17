@@ -44,56 +44,23 @@
                                 <p>Fountain Chronicles is a monthly bulletin that captures the latest news and events from Fountain University. Dive in and enjoy the latest issue!</p>
                                
                                <div class="program-points">
+                                    @forelse($downloads as $download)
                                     <div class="single-point-list">
                                         <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            @if($download->publicUrl())
+                                            <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            @else
+                                            <span style="display:inline-block;width:7%;min-width:32px;opacity:.35"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width:100%" alt=""></span>
+                                            @endif
                                         </div>
-                                        <h4>Fountain Chronicles Issue I</h4>
-                                        <p>COMAS Distinguished Lecture Series: Senator Donates ICT Facility to Boost FUO Digital Infrastructure</p>
+                                        <h4>{{ $download->title }}</h4>
+                                        @unless($download->publicUrl())
+                                        <span class="badge bg-secondary" style="font-size:11px">Coming soon</span>
+                                        @endunless
                                     </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Issue II</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Issue III</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                    <div class="number-list">
-                                        <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                    </div>
-                                    <h4>Fountain Chronicles Issue I</h4>
-                                    <p>COMAS Distinguished Lecture Series: Senator Donates ICT Facility to Boost FUO Digital Infrastructure</p>
-                                </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Issue II</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Issue IV</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Special Edition</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Chronicles Special Edition II</h4>
-                                    </div>
+                                    @empty
+                                    <p class="text-muted">No chronicle issues published yet.</p>
+                                    @endforelse
                                </div> 
                             </div>
                         </div>

@@ -34,7 +34,7 @@ class AdminDownloadController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'category'     => ['required', 'in:general,students,staff'],
+            'category'     => ['required', 'in:' . implode(',', array_keys(\App\Models\Download::CATEGORIES))],
             'title'        => ['required', 'string', 'max:255'],
             'external_url' => ['nullable', 'url', 'max:500'],
             'file'         => ['nullable', 'file', 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,rtf,zip', 'max:20480'],
@@ -65,7 +65,7 @@ class AdminDownloadController extends Controller
     public function update(Request $request, Download $download)
     {
         $data = $request->validate([
-            'category'     => ['required', 'in:general,students,staff'],
+            'category'     => ['required', 'in:' . implode(',', array_keys(\App\Models\Download::CATEGORIES))],
             'title'        => ['required', 'string', 'max:255'],
             'external_url' => ['nullable', 'url', 'max:500'],
             'file'         => ['nullable', 'file', 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx,rtf,zip', 'max:20480'],

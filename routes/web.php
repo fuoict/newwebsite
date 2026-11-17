@@ -20,6 +20,8 @@ use App\Http\Controllers\Admin\AdminAuditController;
 use App\Http\Controllers\Admin\AdminPageController;
 use App\Http\Controllers\Admin\AdminDownloadController;
 use App\Http\Controllers\Admin\AdminMemberController;
+use App\Http\Controllers\Admin\AdminInauguralController;
+use App\Http\Controllers\Admin\AdminGalleryController;
 use App\Http\Controllers\LecturerController;
 use App\Http\Controllers\DepartmentPageController;
 use App\Http\Controllers\CentrePageController;
@@ -165,6 +167,7 @@ Route::get('/', function () {
 
 Route::get('/centres', [CentrePageController::class, 'index'])->name('centres');
 Route::get('/centres/{slug}', [CentrePageController::class, 'show'])->name('centres.show');
+Route::redirect('/university/our-gallery', '/gallery', 301);
 Route::get('/university/{slug}', [DynamicPageController::class, 'show'])->name('pages.show');
 Route::get('/units', [UnitPageController::class, 'index'])->name('units');
 Route::get('/units/{slug}', [UnitPageController::class, 'show'])->name('units.show');
@@ -254,12 +257,13 @@ Route::get('/sitemap.xml', function () {
         ->header('Cache-Control', 'public, max-age=86400');
 })->name('sitemap');
 
-Route::get('/our-gallery', [PagesController::class, 'ourGallery'])->name('our-gallery');
+Route::redirect('/our-gallery', '/gallery', 301)->name('our-gallery');
 Route::get('/staff-downloads', [PagesController::class, 'staffDownloads'])->name('staff-downloads');
 Route::get('/students-download', [PagesController::class, 'studentDownloads'])->name('students-download');
 Route::get('/pg-download', [PagesController::class, 'postgraduateStudentDownload'])->name('pg-download');
 Route::get('/general-download', [PagesController::class, 'generalDownloads'])->name('general-download');
 Route::get('/document/{download}', [PagesController::class, 'serveDownload'])->name('download.file');
+Route::get('/lecture-material/{inauguralLecture}', [PagesController::class, 'serveLectureMaterial'])->name('lecture-material');
 Route::get('/sub-degree-programme', [PagesController::class, 'subDegrees'])->name('subdegree-programme');
 Route::get('/undergradute-programme', [PagesController::class, 'underGraduate'])->name('undergradute-programme');
 Route::get('/postgraduate-programme', [PagesController::class, 'postGraduate'])->name('postgraduate-programme');
@@ -491,6 +495,25 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/members/{member}/edit',              [AdminMemberController::class, 'edit'])->name('members.edit');
     Route::put('/members/{member}',                   [AdminMemberController::class, 'update'])->name('members.update');
     Route::delete('/members/{member}',                [AdminMemberController::class, 'destroy'])->name('members.destroy');
+
+    // Inaugural Lectures CMS
+    Route::get('/inaugural',                          [AdminInauguralController::class, 'index'])->name('inaugural.index');
+    Route::get('/inaugural/create',                   [AdminInauguralController::class, 'create'])->name('inaugural.create');
+    Route::post('/inaugural',                         [AdminInauguralController::class, 'store'])->name('inaugural.store');
+    Route::get('/inaugural/{inauguralLecture}/edit',  [AdminInauguralController::class, 'edit'])->name('inaugural.edit');
+    Route::put('/inaugural/{inauguralLecture}',       [AdminInauguralController::class, 'update'])->name('inaugural.update');
+    Route::delete('/inaugural/{inauguralLecture}',    [AdminInauguralController::class, 'destroy'])->name('inaugural.destroy');
+
+    // Gallery CMS (albums with heading/subheading + images)
+    Route::get('/gallery-albums',                          [AdminGalleryController::class, 'index'])->name('gallery.index');
+    Route::get('/gallery-albums/create',                   [AdminGalleryController::class, 'create'])->name('gallery.create');
+    Route::post('/gallery-albums',                         [AdminGalleryController::class, 'store'])->name('gallery.store');
+    Route::get('/gallery-albums/{galleryAlbum}/edit',      [AdminGalleryController::class, 'edit'])->name('gallery.edit');
+    Route::put('/gallery-albums/{galleryAlbum}',           [AdminGalleryController::class, 'update'])->name('gallery.update');
+    Route::delete('/gallery-albums/{galleryAlbum}',        [AdminGalleryController::class, 'destroy'])->name('gallery.destroy');
+    Route::get('/gallery-albums/{galleryAlbum}/images',    [AdminGalleryController::class, 'images'])->name('gallery.images');
+    Route::post('/gallery-albums/{galleryAlbum}/images',   [AdminGalleryController::class, 'storeImages'])->name('gallery.images.store');
+    Route::delete('/gallery-images/{galleryImage}',        [AdminGalleryController::class, 'destroyImage'])->name('gallery.images.destroy');
 
 
 });

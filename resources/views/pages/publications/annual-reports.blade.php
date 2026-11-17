@@ -42,36 +42,23 @@
                                 <p>Fountain Annual Reports is a yearly bulletin that captures the latest informations and events from Fountain University. Dive in and enjoy the latest informations!</p>
                                
                                <div class="program-points">
+                                    @forelse($downloads as $download)
                                     <div class="single-point-list">
                                         <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            @if($download->publicUrl())
+                                            <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
+                                            @else
+                                            <span style="display:inline-block;width:7%;min-width:32px;opacity:.35"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width:100%" alt=""></span>
+                                            @endif
                                         </div>
-                                        <h4>Fountain Annual Report 2024/2025</h4>
+                                        <h4>{{ $download->title }}</h4>
+                                        @unless($download->publicUrl())
+                                        <span class="badge bg-secondary" style="font-size:11px">Coming soon</span>
+                                        @endunless
                                     </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Annual Report 2023/2024</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Annual Report 2022/2023</h4>
-                                    </div>
-                                    <div class="single-point-list">
-                                    <div class="number-list">
-                                        <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                    </div>
-                                    <h4>Fountain Annual Report 2021/2022</h4>
-                                </div>
-                                    <div class="single-point-list">
-                                        <div class="number-list">
-                                            <a href="#"><img src="{{ asset('img/icon/pdf.jpg') }}" class="img-res" style="width: 7%" alt=""></a>
-                                        </div>
-                                        <h4>Fountain Annual Report 2020/2021</h4>
-                                    </div>
+                                    @empty
+                                    <p class="text-muted">No annual reports published yet.</p>
+                                    @endforelse
                                     
                                </div> 
                             </div>

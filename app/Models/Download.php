@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\File;
 
 class Download extends Model
 {
@@ -23,6 +24,8 @@ class Download extends Model
         'general' => 'General Downloads',
         'students' => 'Student Downloads',
         'staff' => 'Staff Downloads',
+        'annual' => 'Annual Reports',
+        'chronicles' => 'Fountain Chronicles',
     ];
 
     public function scopeActive($query)
@@ -43,7 +46,12 @@ class Download extends Model
     public function publicUrl(): ?string
     {
         if ($this->file_path) {
-            return route('download.file', $this);
+            // Only offer the file when it actually exists on this server,
+            // otherwise fall through so views can show a "coming soon" state.
+            $exists = File::exists(public_path('resources' . DIRECTORY_SEPARATOR . basename($this->file_path)));
+            if ($exists) {
+                return route('download.file', $this);
+            }
         }
 
         if ($this->external_url) {

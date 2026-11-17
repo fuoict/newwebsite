@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\College;
 use App\Models\Department;
 use App\Models\Download;
+use App\Models\GalleryAlbum;
 use App\Models\GovernanceMember;
+use App\Models\InauguralLecture;
 use App\Models\Page;
 use App\Models\VcSpeech;
 use Illuminate\Http\Request;
@@ -138,7 +140,20 @@ class PagesController extends Controller
 
     public function ourGallery()
     {
-        return view('pages.theuniversity.our-gallery');
+        $albums = GalleryAlbum::active()
+            ->with(['images' => fn ($q) => $q->ordered()])
+            ->ordered()
+            ->get()
+            ->filter(function ($album) {
+                // Hide images whose files are missing, and skip empty albums.
+                $album->setRelation('images', $album->images->filter(
+                    fn ($img) => File::exists(public_path($img->image_path))
+                ));
+
+                return $album->images->isNotEmpty();
+            });
+
+        return view('pages.theuniversity.gallery', compact('albums'));
     }
 
     public function staffDownloads()
@@ -168,6 +183,17 @@ class PagesController extends Controller
         abort_if(!$download->file_path, 404);
 
         $path = public_path('resources' . DIRECTORY_SEPARATOR . basename($download->file_path));
+        abort_unless(File::exists($path), 404);
+
+        return response()->file($path);
+    }
+
+    /** Serve lecture slides from public/resources/inaugural (works on any host). */
+    public function serveLectureMaterial(InauguralLecture $inauguralLecture)
+    {
+        abort_if(!$inauguralLecture->slides_path, 404);
+
+        $path = public_path('resources/inaugural' . DIRECTORY_SEPARATOR . basename($inauguralLecture->slides_path));
         abort_unless(File::exists($path), 404);
 
         return response()->file($path);
@@ -309,12 +335,16 @@ class PagesController extends Controller
 
     public function annualReport()
     {
-        return view('pages.publications.annual-reports');
+        return view('pages.publications.annual-reports', [
+            'downloads' => Download::active()->category('annual')->orderBy('sort_order')->orderBy('id')->get(),
+        ]);
     }
 
     public function fuoChronicles()
     {
-        return view('pages.publications.fountain-chronicles');
+        return view('pages.publications.fountain-chronicles', [
+            'downloads' => Download::active()->category('chronicles')->orderBy('sort_order')->orderBy('id')->get(),
+        ]);
     }
 
     // SPECIAL PAGES ........................................

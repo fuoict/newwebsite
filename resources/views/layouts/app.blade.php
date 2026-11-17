@@ -184,7 +184,7 @@
                                             @endforeach
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a href="{{ url('/university/our-gallery') }}" class="nav-link">Our Gallery</a></li>
+                                    <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link">Our Gallery</a></li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Institutional Showcase</a>
                                         <ul class="dropdown-menu dropdown-menu-end" style="max-height:220px;overflow-y:auto">
@@ -535,7 +535,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item"><a href="{{ url('/university/our-gallery') }}" class="accordion-link">Our Gallery</a></div>
+                                    <div class="accordion-item"><a href="{{ route('gallery') }}" class="accordion-link">Our Gallery</a></div>
                                     <div class="accordion-item">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShowcase" aria-expanded="false">Institutional Showcase</button>
                                         <div id="collapseShowcase" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion8">

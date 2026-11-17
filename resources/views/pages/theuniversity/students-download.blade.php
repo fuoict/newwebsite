@@ -55,9 +55,13 @@
                                                 <td>{{ $index + 1 }}</td>
                                                 <td>{{ $download->title }}</td>
                                                 <td class="text-center">
+                                                    @if($download->publicUrl())
                                                     <a href="{{ $download->publicUrl() }}" target="_blank" rel="noopener noreferrer" aria-label="Download {{ $download->title }}">
                                                         <img src="{{ asset('img/icon/pdf.jpg') }}" class="img-fluid" style="width: 28px;" alt="PDF icon">
                                                     </a>
+                                                    @else
+                                                    <span class="badge bg-secondary" style="font-size:11px">Coming soon</span>
+                                                    @endif
                                                 </td>
                                             </tr>
                                             @empty

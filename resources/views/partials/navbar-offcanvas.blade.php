@@ -95,7 +95,7 @@
                             </div>
 
                             <div class="accordion-item">
-                                <a href="{{ route('our-gallery') }}" class="accordion-link">
+                                <a href="{{ route('gallery') }}" class="accordion-link">
                                     Our Gallery
                                 </a>
                             </div>

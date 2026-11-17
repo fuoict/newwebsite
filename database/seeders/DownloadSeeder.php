@@ -9,12 +9,30 @@ class DownloadSeeder extends Seeder
 {
     public function run(): void
     {
+        // Move the two annual reports out of "general" into their own category (idempotent).
+        Download::where('category', 'general')->where('title', 'LIKE', 'Annual Report%')->update(['category' => 'annual']);
+
         $rows = [
             // ── General ──
             ['category' => 'general', 'title' => 'FUO Grant Management Policy', 'file_path' => 'FUO-Grant-Management-Policy.pdf', 'external_url' => null],
             ['category' => 'general', 'title' => 'Appointment of Vice-Chancellor', 'file_path' => 'appointment-of-vc.pdf', 'external_url' => null],
-            ['category' => 'general', 'title' => 'Annual Report Fountain University (2019-2021)', 'file_path' => 'Annual-Report-Fountain-2019-2021.pdf', 'external_url' => null],
-            ['category' => 'general', 'title' => 'Annual Report Fountain University (2018-2019)', 'file_path' => '2018-2019-Annual-Report-FU-1-1.pdf', 'external_url' => null],
+
+            // ── Annual Reports ──
+            ['category' => 'annual', 'title' => 'Fountain Annual Report 2024/2025', 'file_path' => null, 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Fountain Annual Report 2023/2024', 'file_path' => null, 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Fountain Annual Report 2022/2023', 'file_path' => null, 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Fountain Annual Report 2021/2022', 'file_path' => null, 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Fountain Annual Report 2020/2021', 'file_path' => null, 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Annual Report Fountain University (2019-2021)', 'file_path' => 'Annual-Report-Fountain-2019-2021.pdf', 'external_url' => null],
+            ['category' => 'annual', 'title' => 'Annual Report Fountain University (2018-2019)', 'file_path' => '2018-2019-Annual-Report-FU-1-1.pdf', 'external_url' => null],
+
+            // ── Fountain Chronicles ──
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Issue I', 'file_path' => null, 'external_url' => null],
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Issue II', 'file_path' => null, 'external_url' => null],
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Issue III', 'file_path' => null, 'external_url' => null],
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Issue IV', 'file_path' => null, 'external_url' => null],
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Special Edition', 'file_path' => null, 'external_url' => null],
+            ['category' => 'chronicles', 'title' => 'Fountain Chronicles Special Edition II', 'file_path' => null, 'external_url' => null],
 
             // ── Students ──
             ['category' => 'students', 'title' => 'Student Handbook', 'file_path' => null, 'external_url' => 'https://shorturl.at/UjjdM'],
